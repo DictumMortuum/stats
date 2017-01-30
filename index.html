@@ -19,14 +19,14 @@
     }
 
     h3 {
-      font-family: 'Sail', cursive;
+      font-family: 'Sail', cursive
     }
 
     .grid {
       min-height: 100%;
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
+      flex-direction: row
     }
 
     .grid .row {
@@ -34,67 +34,47 @@
       justify-content: center;
       flex-direction: column;
       margin: 1px;
-      background-color: #f5f5f5;
+      background-color: #f5f5f5
     }
 
     .col2 {
-      flex-basis: calc(50% - 2px);
+      flex-basis: calc(50% - 2px)
     }
 
     .col1 {
-      flex-basis: calc(100% - 2px);
+      flex-basis: calc(100% - 2px)
     }
 
     .grid .row > div {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      flex-direction: column
     }
   </style>
 </head>
 <body>
-  <div class="grid">
-    <div class="row col2">
-      <div id="chart1">
-        <h3>Νίκες</h3>
+  <div class="grid"></div>
+  <script id="template" type="x-tmpl-mustache">
+    <div class="row {{col}}">
+      <div id="chart{{id}}">
+        <h3>{{desc}}</h3>
         <div class="ct-chart ct-octave"></div>
       </div>
     </div>
-    <div class="row col2">
-      <div id="chart2">
-        <h3>Μέσος όρος πόντων</h3>
-        <div class="ct-chart ct-octave"></div>
-      </div>
-    </div>
-    <div class="row col2">
-      <div id="chart3">
-        <h3>Νίκες ανά φυλή</h3>
-        <div class="ct-chart ct-octave"></div>
-      </div>
-    </div>
-    <div class="row col2">
-      <div id="chart4">
-        <h3>Νίκες ανά ταμπλώ</h3>
-        <div class="ct-chart ct-octave"></div>
-      </div>
-    </div>
-    <!--
-    <div class="row col1">
-      <div id="chart5">
-        <h3>Νίκες ανά ταμπλώ</h3>
-        <div class="ct-chart ct-octave"></div>
-      </div>
-    </div>
-    -->
-  </div>
+  </script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
   <script>
-    function stackedBar(id, labels, series, desc) {
-      $(id + ' > h3').html(desc);
+    const template = $('#template').html()
 
-      new Chartist.Bar(id + ' > div', {
+    function stackedBar(id, labels, series, desc, col) {
+      $('.grid').append(Mustache.render(template, {
+        id, col, desc
+      }))
+
+      new Chartist.Bar('#chart' + id + ' > div', {
         labels: labels,
         series: series
       }, {
@@ -135,7 +115,7 @@
     }
 
     stackedBar(
-      '#chart3',
+      3,
       ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea'],
       [
         [1, 0, 2, 0, 1], // Δημήτρης
@@ -144,11 +124,12 @@
         [1, 1, 0, 0, 1], // Κώστας
         [0, 1, 0, 0, 0]  // Καλλιόπη
       ],
-      'Wins by country'
+      'Wins by country',
+      'col2'
     )
 
     stackedBar(
-      '#chart4',
+      4,
       ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'],
       [
         [3, 0, 0, 1, 0], // Δημήτρης
@@ -157,11 +138,12 @@
         [1, 1, 0, 1, 0], // Κώστας
         [1, 0, 0, 0, 0]  // Καλλιόπη
       ],
-      'Wins by board'
+      'Wins by board',
+      'col2'
     )
 
     stackedBar(
-      '#chart1',
+      1,
       ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'],
       //['Δημήτρης', 'Παναγιώτης', 'Έλενα', 'Κώστας', 'Καλλιόπη'],
       [
@@ -171,11 +153,12 @@
         [0, 0, 0, 3, 0], // Κώστας
         [0, 0, 0, 0, 1]  // Καλλιόπη
       ],
-      'Wins'
+      'Wins',
+      'col2'
     )
 
     stackedBar(
-      '#chart2',
+      2,
       ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'],
       [
         [(64 + 66)/2, 0, 0, 0, 0], // Δημήτρης
@@ -184,11 +167,12 @@
         [0, 0, 0, (57 + 75)/2, 0], // Κώστας
         [0, 0, 0, 0, 54/1]  // Καλλιόπη
       ],
-      'Average winning points'
+      'Average winning points',
+      'col2'
     )
 
     /*stackedBar(
-      '#chart5',
+      5,
       [
         'Saxony Industrial', 'Saxony Engineering', 'Saxony Patriotic', 'Saxony Mechanical', 'Saxony Agricultural',
         'Rusviet Industrial', 'Rusviet Engineering', 'Rusviet Patriotic', 'Rusviet Mechanical', 'Rusviet Agricultural',
