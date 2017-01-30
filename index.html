@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Scythe charts</title>
+  <meta name="description" content="Scythe charts">
+  <meta name="author" content="Dimitris Raviolos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=greek">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <style>
+    body, html {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      height: 100%
+    }
+
+    .grid {
+      min-height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .grid > div {
+      display: flex;
+      flex-basis: calc(50% - 2px);
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .grid > div > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .box {
+      margin: 1px;
+      background-color: #f5f5f5;
+    }
+
+    .loader {
+      border: thick solid #fff;
+      border-top: thick solid #2489C5;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      animation: spin 1.5s linear infinite
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg) }
+      100% { transform: rotate(360deg) }
+    }
+
+    /* Saxony, Rusviet, Polania, Nordic, Crimea
+    .ct-series-a .ct-slice-pie {
+      fill: #000000;
+    }
+
+    .ct-series-b .ct-slice-pie {
+      fill: #ff0000;
+    }
+
+    .ct-series-c .ct-slice-pie {
+      fill: #ffffff;
+    }
+
+    .ct-series-d .ct-slice-pie {
+      fill: #0000ff;
+    }
+
+    .ct-series-e .ct-slice-pie {
+      fill: hsl(30, 96%, 52%);
+    }*/
+
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="box">
+      <div>
+        <h3>Νίκες</h3>
+        <div id="chart1" class="ct-chart ct-octave"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div>
+        <h3>Μέσος όρος πόντων</h3>
+        <div id="chart2" class="ct-chart ct-octave"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div>
+        <h3>Νίκες ανά φυλή</h3>
+        <div id="chart3" class="ct-chart ct-octave"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div>
+        <h3>Νίκες ανά ταμπλώ</h3>
+        <div id="chart4" class="ct-chart ct-octave"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <script>
+  function stackedBar(id, labels, series) {
+    new Chartist.Bar(id, {
+      labels: labels,
+      series: series
+    }, {
+      stackBars: true,
+      axisY: {
+        labelInterpolationFnc: function(value) {
+          return value;
+        }
+      }
+    }).on('draw', function(data) {
+      if(data.type === 'bar') {
+        data.element.attr({
+          style: 'stroke-width: 30px'
+        });
+      }
+    });
+  }
+
+  // Wins by country
+  stackedBar(
+    '#chart3',
+    ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea'],
+    [
+      [1, 0, 2, 0, 1], // Δημήτρης
+      [1, 0, 1, 1, 0], // Παναγιώτης
+      [1, 0, 0, 0, 0], // Έλενα
+      [1, 1, 0, 0, 1], // Κώστας
+      [0, 1, 0, 0, 0]  // Καλλιόπη
+    ]
+  )
+
+  // Wins by board
+  stackedBar(
+    '#chart4',
+    ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'],
+    [
+      [3, 0, 0, 1, 0], // Δημήτρης
+      [0, 0, 2, 0, 1], // Παναγιώτης
+      [1, 0, 0, 0, 0], // Έλενα
+      [1, 1, 0, 1, 0], // Κώστας
+      [1, 0, 0, 0, 0]  // Καλλιόπη
+    ]
+  )
+
+  // Wins by player
+  stackedBar(
+    '#chart1',
+    ['Δημήτρης', 'Παναγιώτης', 'Έλενα', 'Κώστας', 'Καλλιόπη'],
+    [
+      [4, 0, 0, 0, 0], // Δημήτρης
+      [0, 3, 0, 0, 0], // Παναγιώτης
+      [0, 0, 1, 0, 0], // Έλενα
+      [0, 0, 0, 3, 0], // Κώστας
+      [0, 0, 0, 0, 1]  // Καλλιόπη
+    ]
+  )
+
+  // Average points per player
+  stackedBar(
+    '#chart2',
+    ['Δημήτρης', 'Παναγιώτης', 'Έλενα', 'Κώστας', 'Καλλιόπη'],
+    [
+      [(64 + 66)/2, 0, 0, 0, 0], // Δημήτρης
+      [0, (99 + 78 + 68)/3, 0, 0, 0], // Παναγιώτης
+      [0, 0, 0, 0, 0], // Έλενα
+      [0, 0, 0, (57 + 75)/2, 0], // Κώστας
+      [0, 0, 0, 0, 54/1]  // Καλλιόπη
+    ]
+  )
+  </script>
+</body>
+</html>
