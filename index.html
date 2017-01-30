@@ -96,7 +96,7 @@
         stackBars: true,
         axisY: {
           labelInterpolationFnc: function(value) {
-            return value;
+            return Number.isInteger(value) ? value : null;
           }
         }
       }).on('draw', function(data) {
