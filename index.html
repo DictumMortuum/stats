@@ -67,18 +67,83 @@
   <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
   <script>
-    const template = $('#template').html()
+    const plays = [{
+      country: 'Crimea',
+      board: 'Industrial',
+      winner: 'Dimitris',
+    }, {
+      country: 'Saxony',
+      board: 'Patriotic',
+      winner: 'Panagiotis',
+      points: 99
+    }, {
+      country: 'Nordic',
+      board: 'Industrial',
+      winner: 'Dimitris'
+    }, {
+      country: 'Saxony',
+      board: 'Industrial',
+      winner: 'Elena'
+    }, {
+      country: 'Crimea',
+      board: 'Engineering',
+      winner: 'Kostas'
+    }, {
+      country: 'Nordic',
+      board: 'Mechanical',
+      winner: 'Dimitris',
+      points: 64
+    }, {
+      country: 'Polania',
+      board: 'Agricultural',
+      winner: 'Panagiotis',
+      points: 78
+    }, {
+      country: 'Rusviet',
+      board: 'Industrial',
+      winner: 'Kostas',
+      points: 57
+    }, {
+      country: 'Nordic',
+      board: 'Patriotic',
+      winner: 'Panagiotis',
+      points: 68
+    }, {
+      country: 'Saxony',
+      board: 'Mechanical',
+      winner: 'Kostas',
+      points: 75
+    }, {
+      country: 'Saxony',
+      board: 'Industrial',
+      winner: 'Dimitris',
+      points: 66
+    }, {
+      country: 'Rusviet',
+      board: 'Industrial',
+      winner: 'Kalliopi',
+      points: 54
+    }, {
+      country: 'Crimea',
+      board: 'Mechanical',
+      winner: 'Kostas',
+      points: 80
+    }];
+    const template = $('#template').html();
+    const countries = ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea'];
+    const players = ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'];
+    const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'];
 
-    function stackedBar(id, labels, series, desc, col) {
-      $('.grid').append(Mustache.render(template, {
-        id, col, desc
-      }))
+    function stackedBar(series, labels, data) {
+      data.col = data.col || 'col2';
+      $('.grid').append(Mustache.render(template, data))
 
-      new Chartist.Bar('#chart' + id + ' > div', {
+      new Chartist.Bar('#chart' + data.id + ' > div', {
         labels: labels,
         series: series
       }, {
         stackBars: true,
+
         axisY: {
           labelInterpolationFnc: function(value) {
             return Number.isInteger(value) ? value : null;
@@ -114,113 +179,86 @@
       });
     }
 
-    stackedBar(
-      3,
-      ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea'],
-      [
-        [1, 0, 2, 0, 1], // Δημήτρης
-        [1, 0, 1, 1, 0], // Παναγιώτης
-        [1, 0, 0, 0, 0], // Έλενα
-        [1, 1, 0, 0, 2], // Κώστας
-        [0, 1, 0, 0, 0]  // Καλλιόπη
-      ],
-      'Wins by country',
-      'col2'
-    )
+    function winsByCountry(acc, cur) {
+      var c = countries.indexOf(cur.country);
+      var p = players.indexOf(cur.winner);
+      acc[p][c]++;
+      return acc;
+    }
 
-    stackedBar(
-      4,
-      ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'],
-      [
-        [3, 0, 0, 1, 0], // Δημήτρης
-        [0, 0, 2, 0, 1], // Παναγιώτης
-        [1, 0, 0, 0, 0], // Έλενα
-        [1, 1, 0, 2, 0], // Κώστας
-        [1, 0, 0, 0, 0]  // Καλλιόπη
-      ],
-      'Wins by board',
-      'col2'
-    )
+    function winsByBoard(acc, cur) {
+      var b = boards.indexOf(cur.board);
+      var p = players.indexOf(cur.winner);
+      acc[p][b]++;
+      return acc;
+    }
 
-    stackedBar(
-      1,
-      ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'],
-      //['Δημήτρης', 'Παναγιώτης', 'Έλενα', 'Κώστας', 'Καλλιόπη'],
-      [
-        [4, 0, 0, 0, 0], // Δημήτρης
-        [0, 3, 0, 0, 0], // Παναγιώτης
-        [0, 0, 1, 0, 0], // Έλενα
-        [0, 0, 0, 4, 0], // Κώστας
-        [0, 0, 0, 0, 1]  // Καλλιόπη
-      ],
-      'Wins',
-      'col2'
-    )
+    function winsByPlayer(acc, cur) {
+      var p = players.indexOf(cur.winner);
+      acc[p][p]++;
+      return acc;
+    }
 
-    stackedBar(
-      2,
-      ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'],
-      [
-        [(64 + 66)/2, 0, 0, 0, 0], // Δημήτρης
-        [0, (99 + 78 + 68)/3, 0, 0, 0], // Παναγιώτης
-        [0, 0, 0, 0, 0], // Έλενα
-        [0, 0, 0, (57 + 75 + 80)/3, 0], // Κώστας
-        [0, 0, 0, 0, 54/1]  // Καλλιόπη
-      ],
-      'Average winning points',
-      'col2'
-    )
+    function winStatistics(acc, cur) {
+      var p = players.indexOf(cur.winner);
+      acc[p][0] += cur.points;
+      acc[p][1]++;
+      return acc;
+    }
 
-    /*stackedBar(
-      5,
-      [
-        'Saxony Industrial', 'Saxony Engineering', 'Saxony Patriotic', 'Saxony Mechanical', 'Saxony Agricultural',
-        'Rusviet Industrial', 'Rusviet Engineering', 'Rusviet Patriotic', 'Rusviet Mechanical', 'Rusviet Agricultural',
-        'Nordic Industrial', 'Nordic Engineering', 'Nordic Patriotic', 'Nordic Mechanical', 'Nordic Agricultural',
-        'Polania Industrial', 'Polania Engineering', 'Polania Patriotic', 'Polania Mechanical', 'Polania Agricultural',
-        'Crimea Industrial', 'Crimea Engineering', 'Crimea Patriotic', 'Crimea Mechanical', 'Crimea Agricultural'
-      ],
-      [
-        [
-          1,0,0,0,0,
-          0,0,0,0,0,
-          1,0,0,1,0,
-          0,0,0,0,0,
-          1,0,0,0,0
-        ], // Δημήτρης
-        [
-          0,0,1,0,0,
-          0,0,0,0,0,
-          0,0,1,0,0,
-          0,0,0,0,1,
-          0,0,0,0,0
-        ], // Παναγιώτης
-        [
-          1,0,0,0,0,
-          0,0,0,0,0,
-          0,0,0,0,0,
-          0,0,0,0,0,
-          0,0,0,0,0
-        ], // Έλενα
-        [
-          0,0,0,1,0,
-          1,0,0,0,0,
-          0,0,0,0,0,
-          0,0,0,0,0,
-          0,1,0,1,0
-        ], // Κώστας
-        [
-          0,0,0,0,0,
-          1,0,0,0,0,
-          0,0,0,0,0,
-          0,0,0,0,0,
-          0,0,0,0,0
-        ] // Καλλιόπη
-      ], {
-        'en': 'Wins by combination',
-        'gr': 'Νίκες ανά συνδυασμούς'
+    function averageWinPoints(acc, cur, p) {
+      if (cur[1] > 0) {
+        acc[p][p] = cur[0] / cur[1];
       }
-    )*/
+      return acc;
+    }
+
+    function combinationOnCountry(id, country) {
+      const combinations = countries.filter(d => d === country).map(
+        (c) => boards.map((b) => c + ' ' + b)
+      ).reduce(
+        (acc, cur) => { cur.forEach((a) => acc.push(a)); return acc; }
+      )
+
+      function winsByCombinations(acc, cur) {
+        var p = players.indexOf(cur.winner);
+        var c = combinations.indexOf(cur.country + ' ' + cur.board);
+        acc[p][c]++;
+        return acc;
+      }
+
+      stackedBar(
+        plays.reduce(winsByCombinations, players.map(() => combinations.map(() => 0))),
+        combinations,
+        { id: id, desc: 'Wins by ' +  country + ' combination' }
+      )
+    }
+
+    stackedBar(
+      plays.reduce(winsByPlayer, players.map(() => players.map(() => 0))),
+      players, { id: 1, desc: 'Wins' }
+    )
+
+    stackedBar(
+      plays.filter(d => d.points !== undefined)
+      .reduce(winStatistics, players.map(() => [0, 0]))
+      .reduce(averageWinPoints, players.map(() => players.map(() => 0))),
+      players, { id: 2, desc: 'Average winning points' }
+    )
+
+    stackedBar(
+      plays.reduce(winsByCountry, players.map(() => countries.map(() => 0))),
+      countries, { id: 3, desc: 'Wins by country' }
+    )
+
+    stackedBar(
+      plays.reduce(winsByBoard, players.map(() => boards.map(() => 0))),
+      boards, { id: 4, desc: 'Wins by board' }
+    )
+
+    countries.forEach(
+      (country, index) => combinationOnCountry(5 + index, country)
+    )
   </script>
 </body>
 </html>
