@@ -80,67 +80,87 @@
       country: 'Crimea',
       board: 'Industrial',
       winner: 'Dimitris',
+      rounds: 16
     }, {
       country: 'Saxony',
       board: 'Patriotic',
       winner: 'Panagiotis',
-      points: 99
+      points: 99,
+      rounds: 17
     }, {
       country: 'Nordic',
       board: 'Industrial',
-      winner: 'Dimitris'
+      winner: 'Dimitris',
+      rounds: 18
     }, {
       country: 'Saxony',
       board: 'Industrial',
-      winner: 'Elena'
+      winner: 'Elena',
+      points: 64,
+      rounds: 19
     }, {
       country: 'Crimea',
       board: 'Engineering',
-      winner: 'Kostas'
+      winner: 'Kostas',
+      points: 64,
+      rounds: 16
     }, {
       country: 'Nordic',
       board: 'Mechanical',
       winner: 'Dimitris',
-      points: 64
+      points: 64,
+      rounds: 16
     }, {
       country: 'Polania',
       board: 'Agricultural',
       winner: 'Panagiotis',
-      points: 78
+      points: 78,
+      rounds: 20
     }, {
       country: 'Rusviet',
       board: 'Industrial',
       winner: 'Kostas',
-      points: 57
+      points: 57,
+      rounds: 20
     }, {
       country: 'Nordic',
       board: 'Patriotic',
       winner: 'Panagiotis',
-      points: 68
+      points: 68,
+      rounds: 17
     }, {
       country: 'Saxony',
       board: 'Mechanical',
       winner: 'Kostas',
-      points: 75
+      points: 75,
+      rounds: 18
     }, {
       country: 'Saxony',
       board: 'Industrial',
       winner: 'Dimitris',
-      points: 66
+      points: 66,
+      rounds: 19
     }, {
       country: 'Rusviet',
       board: 'Industrial',
       winner: 'Kalliopi',
-      points: 54
+      points: 54,
+      rounds: 20
     }, {
       country: 'Crimea',
       board: 'Mechanical',
       winner: 'Kostas',
-      points: 80
+      points: 80,
+      rounds: 20
     }];
     const template = $('#template').html();
     const countries = ['Rusviet', 'Polania', 'Crimea', 'Nordic', 'Saxony'];
     const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'];
+    const rounds = plays
+      .filter(d => d.rounds)                   // those that have points
+      .map(d => d.rounds)                      // return them
+      .sort()                                  // sort the array
+      .filter((el,i,a) => i == a.indexOf(el)); // unique elements
 
     function stackedBar(series, labels, data) {
       data.col = data.col || 'col2';
@@ -207,6 +227,13 @@
       return acc;
     }
 
+    function winsByRounds(acc, cur) {
+      var r = rounds.indexOf(cur.rounds);
+      var c = countries.indexOf(cur.country);
+      acc[c][r]++;
+      return acc;
+    }
+
     function winStatistics(acc, cur) {
       var c = countries.indexOf(cur.country);
       acc[c][0] += cur.points;
@@ -232,10 +259,16 @@
     )
 
     stackedBar(
-      plays.filter(d => d.points !== undefined)
+      plays.filter(d => d.points)
       .reduce(winStatistics, countries.map(() => [0, 0]))
       .reduce(averageWinPoints, countries.map(() => countries.map(() => 0))),
       countries, { id: 3, desc: 'Average winning points' }
+    )
+
+    stackedBar(
+      plays.filter(d => d.points)
+      .reduce(winsByRounds, countries.map(() => rounds.map(() => 0))),
+      rounds, { id: 4, desc: 'Wins by rounds' }
     )
   </script>
 </body>
