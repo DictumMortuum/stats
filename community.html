@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Scythe charts</title>
+  <meta name="description" content="Scythe charts">
+  <meta name="author" content="Dimitris Raviolos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sail" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <style>
+    body, html {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bolder;
+      height: 100%
+    }
+
+    h3 {
+      font-family: 'Sail', cursive
+    }
+
+    .grid {
+      min-height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row
+    }
+
+    .grid .row {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 1px;
+      background-color: #f5f5f5
+    }
+
+    .col2 {
+      flex-basis: calc(50% - 2px)
+    }
+
+    .col1 {
+      flex-basis: calc(100% - 2px)
+    }
+
+    .grid .row > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column
+    }
+
+    .ct-chart .ct-series.ct-series-b .ct-bar {
+      stroke: #80CBC4
+    }
+
+    .ct-chart .ct-series.ct-series-d .ct-bar {
+      stroke: #1E88E5
+    }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <script id="template" type="x-tmpl-mustache">
+    <div class="row {{col}}">
+      <div id="chart{{id}}">
+        <h3>{{desc}}</h3>
+        <div class="ct-chart ct-octave"></div>
+      </div>
+    </div>
+  </script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+  <script>
+    const plays = [{
+      country: 'Crimea',
+      board: 'Industrial',
+      winner: 'Dimitris',
+    }, {
+      country: 'Saxony',
+      board: 'Patriotic',
+      winner: 'Panagiotis',
+      points: 99
+    }, {
+      country: 'Nordic',
+      board: 'Industrial',
+      winner: 'Dimitris'
+    }, {
+      country: 'Saxony',
+      board: 'Industrial',
+      winner: 'Elena'
+    }, {
+      country: 'Crimea',
+      board: 'Engineering',
+      winner: 'Kostas'
+    }, {
+      country: 'Nordic',
+      board: 'Mechanical',
+      winner: 'Dimitris',
+      points: 64
+    }, {
+      country: 'Polania',
+      board: 'Agricultural',
+      winner: 'Panagiotis',
+      points: 78
+    }, {
+      country: 'Rusviet',
+      board: 'Industrial',
+      winner: 'Kostas',
+      points: 57
+    }, {
+      country: 'Nordic',
+      board: 'Patriotic',
+      winner: 'Panagiotis',
+      points: 68
+    }, {
+      country: 'Saxony',
+      board: 'Mechanical',
+      winner: 'Kostas',
+      points: 75
+    }, {
+      country: 'Saxony',
+      board: 'Industrial',
+      winner: 'Dimitris',
+      points: 66
+    }, {
+      country: 'Rusviet',
+      board: 'Industrial',
+      winner: 'Kalliopi',
+      points: 54
+    }, {
+      country: 'Crimea',
+      board: 'Mechanical',
+      winner: 'Kostas',
+      points: 80
+    }];
+    const template = $('#template').html();
+    const countries = ['Rusviet', 'Polania', 'Crimea', 'Nordic', 'Saxony'];
+    const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'];
+
+    function stackedBar(series, labels, data) {
+      data.col = data.col || 'col2';
+      $('.grid').append(Mustache.render(template, data))
+
+      new Chartist.Bar('#chart' + data.id + ' > div', {
+        labels: labels,
+        series: series
+      }, {
+        stackBars: true,
+
+        axisY: {
+          labelInterpolationFnc: function(value) {
+            return Number.isInteger(value) ? value : null;
+          }
+        }
+      }).on('draw', function (data) {
+        if (data.type === 'bar') {
+          data.element.attr({
+            style: 'stroke-width: 0px'
+          });
+
+          for (var s = 0; s < data.series.length; ++s) {
+            if (data.seriesIndex === s) {
+              data.element.animate({
+                y2: {
+                  begin:  s * 500,
+                  dur:    500,
+                  from:   data.y1,
+                  to:     data.y2,
+                  easing: Chartist.Svg.Easing.easeOutSine
+                },
+                'stroke-width': {
+                  begin: s * 500,
+                  dur:   1,
+                  from:  0,
+                  to:    30,
+                  fill:  'freeze'
+                }
+              }, false);
+            }
+          }
+        }
+      });
+    }
+
+    function averageWinPoints(acc, cur, p) {
+      if (cur[1] > 0) {
+        acc[p][p] = cur[0] / cur[1];
+      }
+      return acc;
+    }
+
+    function winsByCountry(acc, cur) {
+      var c = countries.indexOf(cur.country);
+      acc[c][c]++;
+      return acc;
+    }
+
+    function winsByBoard(acc, cur) {
+      var b = boards.indexOf(cur.board);
+      var c = countries.indexOf(cur.country);
+      acc[c][b]++;
+      return acc;
+    }
+
+    function winStatistics(acc, cur) {
+      var c = countries.indexOf(cur.country);
+      acc[c][0] += cur.points;
+      acc[c][1]++;
+      return acc;
+    }
+
+    function averageWinPoints(acc, cur, p) {
+      if (cur[1] > 0) {
+        acc[p][p] = cur[0] / cur[1];
+      }
+      return acc;
+    }
+
+    stackedBar(
+      plays.reduce(winsByCountry, countries.map(() => countries.map(() => 0))),
+      countries, { id: 1, desc: 'Wins' }
+    )
+
+    stackedBar(
+      plays.reduce(winsByBoard, countries.map(() => boards.map(() => 0))),
+      boards, { id: 2, desc: 'Wins by board' }
+    )
+
+    stackedBar(
+      plays.filter(d => d.points !== undefined)
+      .reduce(winStatistics, countries.map(() => [0, 0]))
+      .reduce(averageWinPoints, countries.map(() => countries.map(() => 0))),
+      countries, { id: 3, desc: 'Average winning points' }
+    )
+  </script>
+</body>
+</html>
