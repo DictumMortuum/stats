@@ -1,0 +1,51 @@
+body, html {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  height: 100%
+}
+
+h3 {
+  text-align: center;
+  margin-top: -13px;
+  background-color: transparent;
+  font-family: 'Sail', cursive
+}
+
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row
+}
+
+.grid .row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1px;
+  background-color: #f5f5f5
+}
+
+.col2 {
+  flex-basis: calc(50% - 2px)
+}
+
+.col1 {
+  flex-basis: calc(100% - 2px)
+}
+
+.grid .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.ct-chart .ct-series.ct-series-b .ct-bar {
+  stroke: #80CBC4
+}
+
+.ct-chart .ct-series.ct-series-d .ct-bar {
+  stroke: #1E88E5
+}
