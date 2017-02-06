@@ -4,7 +4,7 @@ Tabletop.init({
   simplesheet: true,
   callback: s => {
     // Initial data transformations from google docs
-    const sheet = s.plays.elements.map(d => {
+    const sheet = s['Form responses 1'].elements.map(d => {
       d.rounds = Number(d.rounds);
       d.points = Number(d.points);
       return d;
