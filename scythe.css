@@ -7,9 +7,8 @@ body, html {
 
 h3 {
   text-align: center;
-  margin-top: -13px;
   background-color: transparent;
-  font-family: 'Sail', cursive
+  font-family: 'Sail', cursive;
 }
 
 .grid {
@@ -33,13 +32,6 @@ h3 {
 
 .col1 {
   flex-basis: calc(100% - 2px)
-}
-
-.grid .row > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column
 }
 
 .ct-chart .ct-series.ct-series-b .ct-bar {
