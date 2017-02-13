@@ -39,6 +39,20 @@
     "country": "Polania", "board": "Patriotic", "winner": "Elena", "points": 47, "rounds": 16
   }, {
     "country": "Polania", "board": "Agricultural", "winner": "Elena", "points": 58, "rounds": 19
+  }, {
+    "country": "Crimea", "board": "Mechanical", "winner": "Kostas", "points": 56, "rounds": 14
+  }, {
+    "country": "Crimea", "board": "Patriotic", "winner": "Dimitris", "points": 68
+  }, {
+    "country": "Saxony", "board": "Agricultural", "winner": "Panagiotis", "points": 60, "rounds": 18
+  }, {
+    "country": "Rusviet", "board": "Engineering", "winner": "Kostas", "points": 45, "rounds": 16
+  }, {
+    "country": "Rusviet", "board": "Mechanical", "points": 67
+  }, {
+    "country": "Crimea", "board": "Patriotic", "points": 66
+  }, {
+    "country": "Nordic", "board": "Patriotic", "winner": "Dimitris", "points": 79, "rounds": 16
   }],
   "template": "<div class='row {{col}}'><h3>{{desc}}</h3><div id='chart{{id}}'><div class='ct-chart ct-octave'></div></div></div>"
 }

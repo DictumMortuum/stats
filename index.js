@@ -100,30 +100,35 @@ $.getJSON('scythe.json', scythe => {
     }
 
     stackedBar(
-      scythe.plays.reduce(winsByCombinations, players.map(() => combinations.map(() => 0))),
+      scythe.plays.filter(d => d.winner !== undefined)
+      .reduce(winsByCombinations, players.map(() => combinations.map(() => 0))),
       combinations, { id: id, desc: 'Wins by ' + country + ' combination' }
     );
   }
 
   stackedBar(
-    scythe.plays.reduce(winsByPlayer, players.map(() => players.map(() => 0))),
+    scythe.plays.filter(d => d.winner !== undefined)
+    .reduce(winsByPlayer, players.map(() => players.map(() => 0))),
     players, { id: 1, desc: 'Wins' }
   );
 
   stackedBar(
     scythe.plays.filter(d => d.points !== undefined)
+    .filter(d => d.winner !== undefined)
     .reduce(winStatistics, players.map(() => [0, 0]))
     .reduce(averageWinPoints, players.map(() => players.map(() => 0))),
     players, { id: 2, desc: 'Average winning points' }
   );
 
   stackedBar(
-    scythe.plays.reduce(winsByCountry, players.map(() => countries.map(() => 0))),
+    scythe.plays.filter(d => d.winner !== undefined)
+    .reduce(winsByCountry, players.map(() => countries.map(() => 0))),
     countries, { id: 3, desc: 'Wins by country' }
   );
 
   stackedBar(
-    scythe.plays.reduce(winsByBoard, players.map(() => boards.map(() => 0))),
+    scythe.plays.filter(d => d.winner !== undefined)
+    .reduce(winsByBoard, players.map(() => boards.map(() => 0))),
     boards, { id: 4, desc: 'Wins by board' }
   );
 
