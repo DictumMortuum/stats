@@ -3,6 +3,8 @@ $.getJSON('scythe.json', scythe => {
   const countries = ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea'];
   const players = ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'];
   const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'];
+  const r = scythe.plays.filter(d => d.rounds).map(d => d.rounds).sort();
+  const rounds = Array(r.length).fill(r[0]).map((d, i) => d + i);
 
   function stackedBar(series, labels, data) {
     data.col = data.col || 'col2';
@@ -83,6 +85,13 @@ $.getJSON('scythe.json', scythe => {
     return acc;
   }
 
+  function winsByRounds(acc, cur) {
+    let r = rounds.indexOf(cur.rounds);
+    let p = players.indexOf(cur.winner);
+    acc[p][r]++;
+    return acc;
+  }
+
   function combinationOnCountry(id, country) {
     const combinations = countries.filter(d => d === country).map(
       (c) => boards.map((b) => c + ' ' + b)
@@ -122,17 +131,24 @@ $.getJSON('scythe.json', scythe => {
 
   stackedBar(
     scythe.plays.filter(d => d.winner !== undefined)
+    .filter(d => d.rounds !== undefined)
+    .reduce(winsByRounds, players.map(() => rounds.map(() => 0))),
+    rounds, { id: 3, desc: 'Wins by rounds' }
+  );
+
+  stackedBar(
+    scythe.plays.filter(d => d.winner !== undefined)
     .reduce(winsByCountry, players.map(() => countries.map(() => 0))),
-    countries, { id: 3, desc: 'Wins by country' }
+    countries, { id: 4, desc: 'Wins by country' }
   );
 
   stackedBar(
     scythe.plays.filter(d => d.winner !== undefined)
     .reduce(winsByBoard, players.map(() => boards.map(() => 0))),
-    boards, { id: 4, desc: 'Wins by board' }
+    boards, { id: 5, desc: 'Wins by board' }
   );
 
   countries.forEach(
-    (country, index) => combinationOnCountry(5 + index, country)
+    (country, index) => combinationOnCountry(6 + index, country)
   );
 });
