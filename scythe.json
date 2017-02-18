@@ -53,6 +53,12 @@
     "country": "Crimea", "board": "Patriotic", "points": 66
   }, {
     "country": "Nordic", "board": "Patriotic", "winner": "Dimitris", "points": 79, "rounds": 16
+  }, {
+    "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 58, "rounds": 15
+  }, {
+    "country": "Nordic", "board": "Engineering", "winner": "Panagiotis", "points": 53, "rounds": 18
+  }, {
+    "country": "Rusviet", "board": "Industrial", "winner": "Dimitris", "points": 53, "rounds": 18
   }],
   "template": "<div class='row {{col}}'><h3>{{desc}}</h3><div id='chart{{id}}'><div class='ct-chart ct-octave'></div></div></div>"
 }
