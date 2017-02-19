@@ -3,7 +3,10 @@ $.getJSON('scythe.json', scythe => {
   const countries = ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea'];
   const players = ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'];
   const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'];
-  const r = scythe.plays.filter(d => d.rounds).map(d => d.rounds).sort();
+  const objectives = ['Upgrade', 'Deploy', 'Build', 'Enlist', 'Worker',
+    'Objective', 'Battle1', 'Battle2', 'Power', 'Popularity'];
+  const r = scythe.plays.filter(d => d.rounds).map(d => d.rounds).sort()
+    .filter((el, i, a) => i === a.indexOf(el));
   const rounds = Array(r.length).fill(r[0]).map((d, i) => d + i);
 
   function stackedBar(series, labels, data) {
@@ -55,6 +58,19 @@ $.getJSON('scythe.json', scythe => {
     let c = countries.indexOf(cur.country);
     let p = players.indexOf(cur.winner);
     acc[p][c]++;
+    return acc;
+  }
+
+  function winsByObjectives(acc, cur) {
+    let o;
+    let p;
+
+    cur.objectives.map(d => {
+      o = objectives.indexOf(d);
+      p = players.indexOf(cur.winner);
+      acc[p][o]++;
+    });
+
     return acc;
   }
 
@@ -148,7 +164,14 @@ $.getJSON('scythe.json', scythe => {
     boards, { id: 5, desc: 'Wins by board' }
   );
 
+  stackedBar(
+    scythe.plays.filter(d => d.winner !== undefined)
+    .filter(d => d.objectives !== undefined)
+    .reduce(winsByObjectives, players.map(() => objectives.map(() => 0))),
+    objectives, { id: 6, desc: 'Wins by objectives' }
+  );
+
   countries.forEach(
-    (country, index) => combinationOnCountry(6 + index, country)
+    (country, index) => combinationOnCountry(7 + index, country)
   );
 });

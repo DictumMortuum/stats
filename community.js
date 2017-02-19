@@ -13,8 +13,8 @@ Tabletop.init({
     $.getJSON('./scythe.json', scythe => {
       const countries = ['Rusviet', 'Polania', 'Crimea', 'Nordic', 'Saxony'];
       const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'];
-      const r = sheet.filter(d => d.rounds).map(d => d.rounds).sort();
-      // .filter((el, i, a) => i === a.indexOf(el));
+      const r = sheet.filter(d => d.rounds).map(d => d.rounds).sort()
+        .filter((el, i, a) => i === a.indexOf(el));
       // If the rounds object has "holes", then chartist has a bug!
       // It doesn't render all the objects!
       const rounds = Array(r.length).fill(r[0]).map((d, i) => d + i);
