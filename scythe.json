@@ -69,6 +69,12 @@
     "country": "Crimea", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 15, "objectives": ["Enlist", "Worker", "Objective", "Battle1", "Battle2"]
   }, {
     "country": "Rusviet", "board": "Industrial", "winner": "Kostas", "points": 66, "rounds": 14, "objectives": ["Upgrade", "Deploy", "Worker", "Battle1", "Battle2", "Power"]
+  }, {
+    "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 16, "objectives": ["Upgrade", "Deploy", "Worker", "Objective", "Battle1", "Enlist"]
+  }, {
+    "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 65, "rounds": 18, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Power"]
+  }, {
+    "country": "Rusviet", "board": "Mechanical", "winner": "Kostas", "points": 61, "rounds": 13, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Battle2"]
   }],
   "template": "<div class='row {{col}}'><h3>{{desc}}</h3><div id='chart{{id}}'><div class='ct-chart ct-octave'></div></div></div>"
 }
