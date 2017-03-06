@@ -79,6 +79,8 @@
     "country": "Crimea", "board": "Patriotic", "winner": "Kostas", "points": 77, "rounds": 17, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Battle2"]
   }, {
     "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 54, "rounds": 15, "objectives": ["Enlist", "Worker", "Battle1", "Battle2"]
+  }, {
+    "counry": "Rusviet", "board": "Industrial", "winner": "Panagiotis", "points": 66, "rounds": 16, "objectives": ["Upgrade", "Worker", "Deploy", "Power", "Objective", "Battle1"]
   }],
   "template": "<div class='row {{col}}'><h3>{{desc}}</h3><div id='chart{{id}}'><div class='ct-chart ct-octave'></div></div></div>"
 }
