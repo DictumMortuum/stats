@@ -1,8 +1,9 @@
 /* global Mustache Chartist*/
 $.getJSON('scythe.json', scythe => {
-  const countries = ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea'];
-  const players = ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi'];
-  const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical', 'Agricultural'];
+  const countries = ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea', 'Albion', 'Togawa'];
+  const players = ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi', 'Giorgos'];
+  const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical',
+    'Agricultural', 'Innovative', 'Militant'];
   const objectives = ['Upgrade', 'Deploy', 'Build', 'Enlist', 'Worker',
     'Objective', 'Battle1', 'Battle2', 'Power', 'Popularity'];
   const r = scythe.plays.filter(d => d.rounds).map(d => d.rounds).sort()
