@@ -91,6 +91,14 @@
     "country": "Nordic", "board": "Innovative", "winner": "Kostas", "points": 66, "rounds": 18, "objectives": ["Battle1", "Objective", "Worker", "Deploy", "Upgrade"]
   }, {
     "country": "Polania", "board": "Agricultural", "winner": "Giorgos", "points": 81, "rounds": 20, "objectives": ["Popularity", "Deploy", "Build", "Objective", "Worker", "Battle1"]
+  }, {
+    "country": "Crimea", "board": "Engineering", "winner": "Kostas", "points": 46, "rounds": 16, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Battle2"]
+  }, {
+    "country": "Crimea", "board": "Industrial", "winner": "Kostas", "points": 52, "rounds": 17, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Power"]
+  }, {
+    "country": "Albion", "board": "Agricultural", "winner": "Panagiotis", "points": 64, "rounds": 18, "objectives": ["Enlist", "Worker", "Objective", "Power", "Battle1", "Battle2"]
+  }, {
+    "country": "Crimea", "board": "Engineering", "winner": "Panagiotis", "points": 64, "rounds": 17, "objectives": ["Battle1", "Battle2", "Worker", "Enlist", "Build", "Mech"]
   }],
   "template": "<div class='row {{col}}'><h3>{{desc}}</h3><div id='chart{{id}}'><div class='ct-chart ct-octave'></div></div></div>"
 }
