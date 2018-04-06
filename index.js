@@ -127,48 +127,48 @@ $.getJSON('scythe.json', scythe => {
 
     stackedBar(
       scythe.plays.filter(d => d.winner !== undefined)
-      .reduce(winsByCombinations, players.map(() => combinations.map(() => 0))),
+        .reduce(winsByCombinations, players.map(() => combinations.map(() => 0))),
       combinations, { id: id, desc: 'Wins by ' + country + ' combination' }
     );
   }
 
   stackedBar(
     scythe.plays.filter(d => d.winner !== undefined)
-    .reduce(winsByPlayer, players.map(() => players.map(() => 0))),
+      .reduce(winsByPlayer, players.map(() => players.map(() => 0))),
     players, { id: 1, desc: 'Wins' }
   );
 
   stackedBar(
     scythe.plays.filter(d => d.points !== undefined)
-    .filter(d => d.winner !== undefined)
-    .reduce(winStatistics, players.map(() => [0, 0]))
-    .reduce(averageWinPoints, players.map(() => players.map(() => 0))),
+      .filter(d => d.winner !== undefined)
+      .reduce(winStatistics, players.map(() => [0, 0]))
+      .reduce(averageWinPoints, players.map(() => players.map(() => 0))),
     players, { id: 2, desc: 'Average winning points' }
   );
 
   stackedBar(
     scythe.plays.filter(d => d.winner !== undefined)
-    .filter(d => d.rounds !== undefined)
-    .reduce(winsByRounds, players.map(() => rounds.map(() => 0))),
+      .filter(d => d.rounds !== undefined)
+      .reduce(winsByRounds, players.map(() => rounds.map(() => 0))),
     rounds, { id: 3, desc: 'Wins by rounds' }
   );
 
   stackedBar(
     scythe.plays.filter(d => d.winner !== undefined)
-    .reduce(winsByCountry, players.map(() => countries.map(() => 0))),
+      .reduce(winsByCountry, players.map(() => countries.map(() => 0))),
     countries, { id: 4, desc: 'Wins by country' }
   );
 
   stackedBar(
     scythe.plays.filter(d => d.winner !== undefined)
-    .reduce(winsByBoard, players.map(() => boards.map(() => 0))),
+      .reduce(winsByBoard, players.map(() => boards.map(() => 0))),
     boards, { id: 5, desc: 'Wins by board' }
   );
 
   stackedBar(
     scythe.plays.filter(d => d.winner !== undefined)
-    .filter(d => d.objectives !== undefined)
-    .reduce(winsByObjectives, players.map(() => objectives.map(() => 0))),
+      .filter(d => d.objectives !== undefined)
+      .reduce(winsByObjectives, players.map(() => objectives.map(() => 0))),
     objectives, { id: 6, desc: 'Wins by objectives' }
   );
 
