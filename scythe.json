@@ -99,6 +99,16 @@
     "country": "Albion", "board": "Agricultural", "winner": "Panagiotis", "points": 64, "rounds": 18, "objectives": ["Enlist", "Worker", "Objective", "Power", "Battle1", "Battle2"]
   }, {
     "country": "Crimea", "board": "Engineering", "winner": "Panagiotis", "points": 64, "rounds": 17, "objectives": ["Battle1", "Battle2", "Worker", "Enlist", "Build", "Mech"]
+  }, {
+    "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 58, "rounds": 17, "objectives": ["Battle1", "Worker", "Upgrade"]
+  }, {
+    "country": "Togawa", "board": "Engineering", "winner": "Kostas", "points": 63, "rounds": 16, "objectives": ["Battle1", "Battle2", "Enlist", "Upgrade", "Worker", "Objective"]
+  }, {
+    "country": "Crimea", "board": "Agricultural", "winner": "Kostas", "points": 71, "objectives": ["Battle1", "Deploy", "Power", "Battle2", "Enlist", "Worker"]
+  }, {
+    "country": "Saxony", "board": "Engineering", "winner": "Kostas", "points": 39, "objectives": ["Battle1", "Worker", "Upgrade", "Deploy", "Achievement", "Achievement"]
+  }, {
+    "country": "Crimean", "board": "Innovative", "winner": "Dimitris", "points": 77, "rounds": 16, "objectives": ["Battle1", "Worker", "Achievement", "Enlist", "Deploy"]
   }],
   "template": "<div class='row {{col}}'><h3>{{desc}}</h3><div id='chart{{id}}'><div class='ct-chart ct-octave'></div></div></div>"
 }
