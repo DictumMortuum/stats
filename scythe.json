@@ -109,6 +109,8 @@
     "country": "Saxony", "board": "Engineering", "winner": "Kostas", "points": 39, "objectives": ["Battle1", "Worker", "Upgrade", "Deploy", "Achievement", "Achievement"]
   }, {
     "country": "Crimea", "board": "Innovative", "winner": "Dimitris", "points": 77, "rounds": 16, "objectives": ["Battle1", "Worker", "Achievement", "Enlist", "Deploy"]
+  }, {
+    "country": "Togawa", "board": "Militant", "winner": "Dimitris", "points": 98, "rounds": 20, "objectives": ["Battle1", "Worker", "Achievement", "Enlist", "Deploy", "Battle2"]
   }],
   "template": "<div class='row {{col}}'><h3>{{desc}}</h3><div id='chart{{id}}'><div class='ct-chart ct-octave'></div></div></div>"
 }
