@@ -1,21 +1,20 @@
 'use strict';
 
-const {players, countries} = require('../../scythe.json');
-const {matrix} = require('./common');
+module.exports = ({data, players, countries}) => {
+  const Filter = ({winner, country}) => winner !== undefined && country !== undefined;
 
-const Filter = ({winner, country}) => winner !== undefined && country !== undefined;
+  const Reduce = (acc, {country, winner}) => {
+    let c = countries.indexOf(country);
+    let p = players.indexOf(winner);
+    acc[p][c]++;
+    return acc;
+  };
+  
+  const Init = players.map(() => countries.map(() => 0));
 
-const Reduce = (acc, {country, winner}) => {
-  let c = countries.indexOf(country);
-  let p = players.indexOf(winner);
-  acc[p][c]++;
-  return acc;
+  return {
+    'series': data.filter(Filter).reduce(Reduce, Init),
+    'labels': countries,
+    'desc': 'Wins by country'
+  };
 };
-
-const Init = matrix(players, countries);
-
-module.exports = data => ({
-  'series': data.filter(Filter).reduce(Reduce, Init),
-  'labels': countries,
-  'desc': 'Wins by country'
-});
