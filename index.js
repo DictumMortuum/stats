@@ -1,5 +1,5 @@
 /* global Mustache Chartist*/
-$.getJSON('scythe.json', scythe => {
+$.getJSON('plays.json', scythe => {
   const countries = ['Saxony', 'Rusviet', 'Nordic', 'Polania', 'Crimea', 'Albion', 'Togawa'];
   const players = ['Dimitris', 'Panagiotis', 'Elena', 'Kostas', 'Kalliopi', 'Giorgos'];
   const boards = ['Industrial', 'Engineering', 'Patriotic', 'Mechanical',
