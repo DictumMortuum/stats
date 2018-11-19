@@ -27,31 +27,31 @@ const common = {
 
 const charts = [{
   'text': 'Wins by player',
-  'path': '/',
+  'path': '/scythe/',
   'component': () => <WinsByPlayer {...common} />
 }, {
   'text': 'Average winning points',
-  'path': '/average/',
+  'path': '/scythe/average/',
   'component': () => <AverageWinningPoints {...common} />
 }, {
   'text': 'Wins by country',
-  'path': '/country/',
+  'path': '/scythe/country/',
   'component': () => <WinsByCountry {...common} />
 }, {
   'text': 'Wins by objectives',
-  'path': '/objectives/',
+  'path': '/scythe/objectives/',
   'component': () => <WinsByObjectives {...common} />
 }, {
   'text': 'Wins by rounds',
-  'path': '/rounds/',
+  'path': '/scythe/rounds/',
   'component': () => <WinsByRounds {...common} />
 }, {
   'text': 'Wins by board',
-  'path': '/board/',
+  'path': '/scythe/board/',
   'component': () => <WinsByBoard {...common} />
 }, {
   'text': 'Wins by stars',
-  'path': '/stars/',
+  'path': '/scythe/stars/',
   'component': () => <WinsByStars {...common} />
 }];
 
@@ -60,7 +60,7 @@ common.countries.forEach(c => {
 
   charts.push({
     'text': 'Wins by ' + c,
-    'path': '/' + c + '/',
+    'path': '/scythe/' + c + '/',
     'component': () => <Country {...common} />
   });
 });
@@ -70,7 +70,7 @@ common.boards.forEach(c => {
 
   charts.push({
     'text': 'Wins by ' + c,
-    'path': '/' + c + '/',
+    'path': '/scythe/' + c + '/',
     'component': () => <Board {...common} />
   });
 });
