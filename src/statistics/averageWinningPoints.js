@@ -12,7 +12,7 @@ module.exports = ({data, players}) => {
     let ia = stats[p];
     acc[p][p] = ia.add(points);
     return acc;
-  }
+  };
   
   const Init = players.map(() => players.map(() => 0));
 

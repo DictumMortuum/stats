@@ -7,7 +7,7 @@ module.exports = ({data, players}) => {
     let p = players.indexOf(winner);
     acc[p][p]++;
     return acc;
-  }
+  };
   
   const Init = players.map(() => players.map(() => 0));
 
