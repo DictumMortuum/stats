@@ -1,5 +1,5 @@
 import React from 'react';
-import Chartist from './chart';
+import Chartist from './bar';
 
 const graph = base => ({data, players, boards}) => {
   const combinations = boards.map(d => base + ' ' + d);
@@ -22,4 +22,4 @@ const graph = base => ({data, players, boards}) => {
   };
 };
 
-export default base => props => (<Chartist data={graph(base)(props)} />);
+export default base => props => (<Chartist data={graph(base)(props)} className={"ct-octave players"} />);

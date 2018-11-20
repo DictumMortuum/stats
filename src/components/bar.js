@@ -34,6 +34,6 @@ const listener = (data) => {
   }
 }
 
-export default ({data}) => (
-  <Chartist data={data} options={options} type={'Bar'} className={'ct-octave'} listener={{"draw": listener}} />
+export default ({data, className}) => (
+  <Chartist data={data} options={options} type={'Bar'} className={className} listener={{"draw": listener}} />
 );

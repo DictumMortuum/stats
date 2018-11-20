@@ -13,10 +13,18 @@ code {
     monospace;
 }
 
-.ct-chart .ct-series.ct-series-b .ct-bar {
+.countries.ct-chart .ct-series.ct-series-b .ct-slice-pie {
+  fill: rgb(255, 233, 233)
+}
+
+.countries.ct-chart .ct-series.ct-series-d .ct-slice-pie {
+  fill: rgb(163, 107, 195)
+}
+
+.players.ct-chart .ct-series.ct-series-b .ct-bar {
   stroke: #80CBC4
 }
 
-.ct-chart .ct-series.ct-series-d .ct-bar {
+.players.ct-chart .ct-series.ct-series-d .ct-bar {
   stroke: #1E88E5
 }

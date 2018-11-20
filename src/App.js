@@ -16,7 +16,7 @@ import Divider from '@material-ui/core/Divider';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import charts from './common';
+import charts from './charts';
 
 const drawerWidth = 240;
 

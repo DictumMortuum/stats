@@ -1,5 +1,5 @@
 import React from 'react';
-import Chartist from './chart';
+import Chartist from './bar';
 
 const graph = ({data, players}) => {
   const Filter = ({winner}) => winner !== undefined;
@@ -18,4 +18,4 @@ const graph = ({data, players}) => {
   };
 };
 
-export default props => (<Chartist data={graph(props)} />);
+export default props => (<Chartist data={graph(props)} className={"ct-octave players"} />);
