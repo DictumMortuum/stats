@@ -11,6 +11,7 @@ import WinsByPlayer from './components/winsByPlayer';
 import WinsByStars from './components/winsByStars';
 import CountryFrequency from './components/countryFrequency';
 import BoardFrequency from './components/boardFrequency';
+import Sweetspot from './components/sweetspot';
 import common from './analysis';
 
 const charts = [{
@@ -21,6 +22,10 @@ const charts = [{
   'text': 'Average winning points',
   'path': '/scythe/average/',
   'component': () => <AverageWinningPoints {...common} />
+}, {
+  'text': 'Player sweetspot',
+  'path': '/scythe/sweetspot/',
+  'component': () => <Sweetspot {...common} />
 }, {
   'text': 'Wins by country',
   'path': '/scythe/country/',

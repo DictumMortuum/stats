@@ -1,7 +1,7 @@
 import React from 'react';
 import Chartist from 'react-chartist';
 
-const options = {
+const dflt = {
   stackBars: true,
   axisY: {
     labelInterpolationFnc: function (value) {
@@ -34,6 +34,16 @@ const listener = (data) => {
   }
 }
 
-export default ({data, className}) => (
-  <Chartist data={data} options={options} type={'Bar'} className={className} listener={{"draw": listener}} />
-);
+export default props => {
+  const {data, className, options = {}, draw = listener} = props;
+
+  return (
+    <Chartist
+      data={data}
+      options={{...dflt, ...options}}
+      type={'Bar'}
+      className={className}
+      listener={{'draw': draw}}
+    />
+  );
+}

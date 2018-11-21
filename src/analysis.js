@@ -2,12 +2,11 @@ import {countries, players, boards, objectives} from './scythe.json';
 import data from './plays.json';
 
 /*
- * Returns an array from the least amount of rounds played to the maximum.
- * e.g. [13, 14, 15, 16, 17, 18]
+ * Returns an array from the least amount to the maximum.
+ * e.g. discrete([13, 18]) => [13, 14, 15, 16, 17, 18]
  */
-const rounds = data => {
-  let temp = data.filter(d => d.rounds).map(d => d.rounds);
-  let distinct = [...new Set(temp)].sort();
+const discrete = data => {
+  let distinct = [...new Set(data)].sort();
   let low = distinct[0];
   let high = distinct.slice(-1);
   return Array(high - low + 1).fill(low).map((d, i) => d + i);
@@ -23,13 +22,24 @@ const relativeFrequency = cols => data => cols.map(x => data.filter(y => x === y
  */
 const absoluteFrequency = cols => data => relativeFrequency(cols)(data).map(x => x / data.length);
 
+/*
+ * percentile([1,2,3,4]) = [ 25, 33.333333333333336, 50, 100 ]
+ */
+const percentile = col => {
+  let l = col.length;
+  let modifier = x => x / l * 100;
+  return Array(l).fill(1).map((x, i) => modifier(x + i));
+}
+
 export default {
   countries,
   players,
   boards,
   objectives,
   data,
-  rounds: rounds(data),
+  rounds: discrete(data.filter(d => d.rounds).map(d => d.rounds)),
+  points: discrete(data.filter(d => d.points).map(d => d.points)),
   relativeFrequency,
-  absoluteFrequency
+  absoluteFrequency,
+  percentile
 };
