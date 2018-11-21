@@ -1,5 +1,6 @@
 import React from 'react';
 import incrementalAverage from 'incremental-average';
+import Typography from '@material-ui/core/Typography';
 import Chartist from './bar';
 
 const graph = ({data, players, rounds: r, points: p, percentile}) => {
@@ -8,9 +9,7 @@ const graph = ({data, players, rounds: r, points: p, percentile}) => {
 
   const percentileRounds = [...Array(r[0]).fill(0), ...percentile(r).reverse()];
   const percentilePoints = percentile(Array(max_points));
-  const percentileObjectives = percentile(Array(7));
-
-  console.log();
+  const percentileObjectives = [0, ...percentile(Array(6)).reverse()];
 
   const round_stats = players.map(() => incrementalAverage());
   const point_stats = players.map(() => incrementalAverage());
@@ -25,7 +24,6 @@ const graph = ({data, players, rounds: r, points: p, percentile}) => {
 
   const Reduce = (acc, {winner, points, rounds, objectives}) => {
     let p = players.indexOf(winner);
-    console.log(rounds, percentileRounds[rounds]);
 
     if (rounds !== undefined) {
       acc[0][p] = round_stats[p].add(percentileRounds[rounds]);
@@ -50,4 +48,27 @@ const graph = ({data, players, rounds: r, points: p, percentile}) => {
   };
 };
 
-export default props => (<Chartist data={graph(props)} options={{stackBars: false}} draw={() => 1} className={"ct-octave players"} />);
+const options = {
+  stackBars: false,
+  high: 100
+};
+
+export default props => (
+  <div>
+    <Chartist
+      data={graph(props)}
+      options={options}
+      draw={() => 1}
+      className={"ct-octave players"} 
+    />
+    <Typography paragraph>
+      <b>1st bar: round sweetspot.</b> The higher the score, the earlier does this player end the game.
+    </Typography>
+    <Typography paragraph>
+      <b>2nd bar: points sweetspot.</b> The higher the score, the more the player scores on average.
+    </Typography>
+    <Typography paragraph>
+      <b>3rd bar: objectives sweetspot.</b> The higher the score, the more time this player wins with less than 6 objectives.
+    </Typography>
+  </div>
+);
