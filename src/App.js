@@ -5,18 +5,15 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import classNames from 'classnames';
 import Divider from '@material-ui/core/Divider';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import charts from './charts';
+import { BrowserRouter as Router } from "react-router-dom";
+import { ChartLinks, ChartContent} from './Charts';
 
 const drawerWidth = 240;
 
@@ -133,15 +130,7 @@ class PersistentDrawerLeft extends React.Component {
               </IconButton>
             </div>
             <Divider />
-            <List>
-              {charts.map(({path, text}) => (
-                <ListItem>
-                  <Link to={path}>
-                    <ListItemText primary={text} />
-                  </Link>
-                </ListItem>
-              ))}
-            </List>
+            <ChartLinks />
           </Drawer>
           <main
             className={classNames(classes.content, {
@@ -149,9 +138,7 @@ class PersistentDrawerLeft extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            {charts.map(({path, component}) => (
-              <Route path={path} exact component={component} />
-            ))}
+            <ChartContent />
           </main>
         </div>
       </Router>
