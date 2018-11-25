@@ -8,16 +8,14 @@
     "@material-ui/icons": "^3.0.1",
     "chartist": "^0.11.0",
     "incremental-average": "^1.1.0",
+    "js-combinatorics": "^0.5.4",
     "react": "^16.6.3",
     "react-chartist": "^0.13.1",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
-    "yaml": "^1.0.2"
+    "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -26,11 +26,11 @@ code {
 }
 
 .countries.ct-chart .ct-series.ct-series-d .ct-slice-pie {
-  fill: #e7e1e1
+  fill: #fff3f3
 }
 
 .countries.ct-chart .ct-series.ct-series-e .ct-slice-pie {
-  fill: #f05b4f;
+  fill: #d70206;
 }
 
 .countries.ct-chart .ct-series.ct-series-f .ct-slice-pie {
@@ -38,7 +38,7 @@ code {
 }
 
 .countries.ct-chart .ct-series.ct-series-g .ct-slice-pie {
-  fill: #3f3d94;
+  fill: #1E88E5;
 }
 
 .players.ct-chart .ct-series.ct-series-b .ct-bar {

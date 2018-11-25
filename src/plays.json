@@ -1,150 +1,209 @@
 [{
-  "country": "Crimea", "board": "Industrial", "winner": "Dimitris"
+  "country": "Crimea", "board": "Industrial", "winner": "Dimitris",
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Saxony", "board": "Patriotic", "winner": "Panagiotis", "points": 99
+  "country": "Saxony", "board": "Patriotic", "winner": "Panagiotis", "points": 99,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Nordic", "board": "Industrial", "winner": "Dimitris"
+  "country": "Nordic", "board": "Industrial", "winner": "Dimitris",
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Saxony", "board": "Industrial", "winner": "Elena"
+  "country": "Saxony", "board": "Industrial", "winner": "Elena",
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Crimea", "board": "Engineering", "winner": "Kostas"
+  "country": "Crimea", "board": "Engineering", "winner": "Kostas",
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Nordic", "board": "Mechanical", "winner": "Dimitris", "points": 64
+  "country": "Nordic", "board": "Mechanical", "winner": "Dimitris", "points": 64,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Polania", "board": "Agricultural", "winner": "Panagiotis", "points": 78
+  "country": "Polania", "board": "Agricultural", "winner": "Panagiotis", "points": 78,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Rusviet", "board": "Industrial", "winner": "Kostas", "points": 57
+  "country": "Rusviet", "board": "Industrial", "winner": "Kostas", "points": 57,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Nordic", "board": "Patriotic", "winner": "Panagiotis", "points": 68
+  "country": "Nordic", "board": "Patriotic", "winner": "Panagiotis", "points": 68,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Saxony", "board": "Mechanical", "winner": "Kostas", "points": 75
+  "country": "Saxony", "board": "Mechanical", "winner": "Kostas", "points": 75,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Saxony", "board": "Industrial", "winner": "Dimitris", "points": 66
+  "country": "Saxony", "board": "Industrial", "winner": "Dimitris", "points": 66,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Rusviet", "board": "Industrial", "winner": "Kalliopi", "points": 54
+  "country": "Rusviet", "board": "Industrial", "winner": "Kalliopi", "points": 54,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Crimea", "board": "Mechanical", "winner": "Kostas", "points": 80
+  "country": "Crimea", "board": "Mechanical", "winner": "Kostas", "points": 80,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Rusviet", "board": "Industrial", "winner": "Dimitris", "points": 60
+  "country": "Rusviet", "board": "Industrial", "winner": "Dimitris", "points": 60,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 76
+  "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 76,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 77
+  "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 77,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Crimea", "board": "Engineering", "winner": "Dimitris", "points": 53, "rounds": 18
+  "country": "Crimea", "board": "Engineering", "winner": "Dimitris", "points": 53, "rounds": 18,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Nordic", "board": "Mechanical", "winner": "Dimitris", "points": 56, "rounds": 18
+  "country": "Nordic", "board": "Mechanical", "winner": "Dimitris", "points": 56, "rounds": 18,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Polania", "board": "Patriotic", "winner": "Elena", "points": 47, "rounds": 16
+  "country": "Polania", "board": "Patriotic", "winner": "Elena", "points": 47, "rounds": 16,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Polania", "board": "Agricultural", "winner": "Elena", "points": 58, "rounds": 19
+  "country": "Polania", "board": "Agricultural", "winner": "Elena", "points": 58, "rounds": 19,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Crimea", "board": "Mechanical", "winner": "Kostas", "points": 56, "rounds": 14
+  "country": "Crimea", "board": "Mechanical", "winner": "Kostas", "points": 56, "rounds": 14,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Crimea", "board": "Patriotic", "winner": "Dimitris", "points": 68
+  "country": "Crimea", "board": "Patriotic", "winner": "Dimitris", "points": 68,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Saxony", "board": "Agricultural", "winner": "Panagiotis", "points": 60, "rounds": 18
+  "country": "Saxony", "board": "Agricultural", "winner": "Panagiotis", "points": 60, "rounds": 18,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Rusviet", "board": "Engineering", "winner": "Kostas", "points": 45, "rounds": 16
+  "country": "Rusviet", "board": "Engineering", "winner": "Kostas", "points": 45, "rounds": 16,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Rusviet", "board": "Mechanical", "points": 67
+  "country": "Rusviet", "board": "Mechanical", "points": 67,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Crimea", "board": "Patriotic", "points": 66
+  "country": "Crimea", "board": "Patriotic", "points": 66,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Nordic", "board": "Patriotic", "winner": "Dimitris", "points": 79, "rounds": 16
+  "country": "Nordic", "board": "Patriotic", "winner": "Dimitris", "points": 79, "rounds": 16,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 58, "rounds": 15
+  "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 58, "rounds": 15,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Nordic", "board": "Engineering", "winner": "Panagiotis", "points": 53, "rounds": 18
+  "country": "Nordic", "board": "Engineering", "winner": "Panagiotis", "points": 53, "rounds": 18,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
-  "country": "Rusviet", "board": "Industrial", "winner": "Dimitris", "points": 53, "rounds": 18
+  "country": "Rusviet", "board": "Industrial", "winner": "Dimitris", "points": 53, "rounds": 18,
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Nordic", "board": "Agricultural", "winner": "Panagiotis", "points": 70, "rounds": 17,
-  "objectives": ["Build", "Power"]
+  "objectives": ["Build", "Power"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Polania", "board": "Patriotic", "winner": "Panagiotis", "points": 62, "rounds": 18,
-  "objectives": ["Power", "Battle1", "Battle2", "Worker", "Enlist", "Objective1"]
+  "objectives": ["Power", "Battle1", "Battle2", "Worker", "Enlist", "Objective1"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Patriotic", "winner": "Kostas", "points": 70, "rounds": 15,
-  "objectives": ["Enlist", "Worker", "Battle1", "Battle2", "Power", "Deploy"]
+  "objectives": ["Enlist", "Worker", "Battle1", "Battle2", "Power", "Deploy"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 15,
-  "objectives": ["Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
+  "objectives": ["Enlist", "Worker", "Objective1", "Battle1", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Industrial", "winner": "Kostas", "points": 66, "rounds": 14,
-  "objectives": ["Upgrade", "Deploy", "Worker", "Battle1", "Battle2", "Power"]
+  "objectives": ["Upgrade", "Deploy", "Worker", "Battle1", "Battle2", "Power"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 16,
-  "objectives": ["Upgrade", "Deploy", "Worker", "Objective1", "Battle1", "Enlist"]
+  "objectives": ["Upgrade", "Deploy", "Worker", "Objective1", "Battle1", "Enlist"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 65, "rounds": 18,
-  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Power"]
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Power"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Mechanical", "winner": "Kostas", "points": 61, "rounds": 13,
-  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Patriotic", "winner": "Kostas", "points": 77, "rounds": 17,
-  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 54, "rounds": 15,
-  "objectives": ["Enlist", "Worker", "Battle1", "Battle2"]
+  "objectives": ["Enlist", "Worker", "Battle1", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Industrial", "winner": "Panagiotis", "points": 66, "rounds": 16,
-  "objectives": ["Upgrade", "Worker", "Deploy", "Power", "Objective1", "Battle1"]
+  "objectives": ["Upgrade", "Worker", "Deploy", "Power", "Objective1", "Battle1"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Nordic", "board": "Industrial", "winner": "Dimitris", "points": 72, "rounds": 18,
-  "objectives": ["Build", "Worker", "Objective1", "Battle1", "Battle2", "Power"]
+  "objectives": ["Build", "Worker", "Objective1", "Battle1", "Battle2", "Power"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Patriotic", "winner": "Kostas", "points": 64, "rounds": 16,
-  "objectives": ["Power", "Battle1", "Upgrade", "Objective1", "Worker", "Deploy"]
+  "objectives": ["Power", "Battle1", "Upgrade", "Objective1", "Worker", "Deploy"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Agricultural", "winner": "Dimitris", "points": 61, "rounds": 17,
-  "objectives": ["Battle1", "Worker", "Objective1", "Deploy", "Enlist"]
+  "objectives": ["Battle1", "Worker", "Objective1", "Deploy", "Enlist"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Nordic", "board": "Innovative", "winner": "Kostas", "points": 66, "rounds": 18,
-  "objectives": ["Battle1", "Objective1", "Worker", "Deploy", "Upgrade"]
+  "objectives": ["Battle1", "Objective1", "Worker", "Deploy", "Upgrade"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Polania", "board": "Agricultural", "winner": "Giorgos", "points": 81, "rounds": 20,
-  "objectives": ["Popularity", "Deploy", "Build", "Objective1", "Worker", "Battle1"]
+  "objectives": ["Popularity", "Deploy", "Build", "Objective1", "Worker", "Battle1"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Engineering", "winner": "Kostas", "points": 46, "rounds": 16,
-  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Industrial", "winner": "Kostas", "points": 52, "rounds": 17,
-  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Power"]
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Power"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Albion", "board": "Agricultural", "winner": "Panagiotis", "points": 64, "rounds": 18,
-  "objectives": ["Enlist", "Worker", "Objective1", "Power", "Battle1", "Battle2"]
+  "objectives": ["Enlist", "Worker", "Objective1", "Power", "Battle1", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Engineering", "winner": "Panagiotis", "points": 64, "rounds": 17,
-  "objectives": ["Battle1", "Battle2", "Worker", "Enlist", "Build", "Deploy"]
+  "objectives": ["Battle1", "Battle2", "Worker", "Enlist", "Build", "Deploy"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 58, "rounds": 17,
-  "objectives": ["Battle1", "Worker", "Upgrade"]
+  "objectives": ["Battle1", "Worker", "Upgrade"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Togawa", "board": "Engineering", "winner": "Kostas", "points": 63, "rounds": 16,
-  "objectives": ["Battle1", "Battle2", "Enlist", "Upgrade", "Worker", "Objective1"]
+  "objectives": ["Battle1", "Battle2", "Enlist", "Upgrade", "Worker", "Objective1"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Agricultural", "winner": "Kostas", "points": 71,
-  "objectives": ["Battle1", "Deploy", "Power", "Battle2", "Enlist", "Worker"]
+  "objectives": ["Battle1", "Deploy", "Power", "Battle2", "Enlist", "Worker"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Saxony", "board": "Engineering", "winner": "Kostas", "points": 39,
-  "objectives": ["Battle1", "Worker", "Upgrade", "Deploy", "Objective1", "Objective2"]
+  "objectives": ["Battle1", "Worker", "Upgrade", "Deploy", "Objective1", "Objective2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Innovative", "winner": "Dimitris", "points": 77, "rounds": 16,
-  "objectives": ["Battle1", "Worker", "Objective1", "Enlist", "Deploy"]
+  "objectives": ["Battle1", "Worker", "Objective1", "Enlist", "Deploy"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Togawa", "board": "Militant", "winner": "Dimitris", "points": 98, "rounds": 20,
-  "objectives": ["Battle1", "Worker", "Objective1", "Enlist", "Deploy", "Battle2"]
+  "objectives": ["Battle1", "Worker", "Objective1", "Enlist", "Deploy", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Crimea", "board": "Militant", "winner": "Dimitris", "points": 61, "rounds": 14,
-  "objectives": ["Deploy", "Enlist", "Objective1"]
+  "objectives": ["Deploy", "Enlist", "Objective1"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 72, "rounds": 21, "players": 5,
-  "objectives": ["Deploy", "Power", "Upgrade", "Objective1", "Battle1", "Battle2"]
+  "objectives": ["Deploy", "Power", "Upgrade", "Objective1", "Battle1", "Battle2"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Engineering", "winner": "Kostas", "points": 53, "rounds": 17, "players": 5,
-  "objectives": ["Deploy", "Upgrade", "Battle1", "Battle2", "Worker", "Enlist"]
+  "objectives": ["Deploy", "Upgrade", "Battle1", "Battle2", "Worker", "Enlist"],
+  "aggressive": "None", "passive": "None", "resolution": "None"
 }, {
   "country": "Rusviet", "board": "Innovative", "winner": "Dimitris", "points": 68, "rounds": 14, "players": 3,
   "objectives": ["Deploy", "Worker", "Enlist", "Battle1", "Objective1", "MissionPossible1"],

@@ -1,4 +1,4 @@
-export default ({Filter, Reduce, Init, labels, data}) => {
+export default ({Filter, Reduce, Init, labels = [], data}) => {
   let temp = data.filter(Filter);
 
   return {

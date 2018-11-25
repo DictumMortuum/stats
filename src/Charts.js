@@ -2,8 +2,10 @@ import React from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListSubheader from '@material-ui/core/ListSubheader';
 import Divider from '@material-ui/core/Divider';
+import Collapse from '@material-ui/core/Collapse';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Route, Link } from "react-router-dom";
 import AverageWinningPoints from './components/averageWinningPoints';
 import WinsByBoard from './components/winsByBoard';
@@ -20,6 +22,7 @@ import Sweetspot from './components/sweetspot';
 import Resolution from './components/resolution';
 import Passive from './components/passive';
 import Aggressive from './components/aggressive';
+import Generator from './components/generator';
 import common from './analysis';
 
 const {countries, boards} = common;
@@ -79,7 +82,13 @@ const windgambit = [{
 }, {
   'text': 'Passive tiles',
   'path': '/scythe/windgambit/passive/',
-  'component': () => <Passive {...common}/>
+  'component': () => <Passive {...common} />
+}];
+
+const generator = [{
+  'text': 'Generator',
+  'path': '/scythe/generator/',
+  'component': () => <Generator {...common} />
 }];
 
 const countryCombination = countries.map(c => {
@@ -102,37 +111,60 @@ const boardCombination = boards.map(c => {
   };
 });
 
-const Links = ({title, charts}) => (
-  <List
-    component="nav"
-    subheader={<ListSubheader component="div">{title}</ListSubheader>}
-  >
-  {charts.map(({path, text}) => (
-    <Link key={path} to={path} style={{ textDecoration: 'none' }}>
-      <ListItem button>
-        <ListItemText primary={text} />
-      </ListItem>
-    </Link>
-  ))}
-  </List>
-);
+class Links extends React.Component {
+  state = {
+    open: this.props.open || false
+  };
+
+  handleClick = () => {
+    this.setState(state => ({ open: !state.open }));
+  };
+
+  render() {
+    const {title, charts} = this.props;
+
+    return (
+      <List
+        component="nav"
+        subheader={
+          <ListItem onClick={this.handleClick} button>
+            <ListItemText secondary={<b>{title}</b>} />
+            {this.state.open ? <ExpandLess /> : <ExpandMore />}
+          </ListItem>
+        }
+      >
+      <Collapse in={this.state.open} timeout="auto" unmountOnExit>
+        {charts.map(({path, text}) => (
+          <Link key={path} to={path} style={{ textDecoration: 'none' }}>
+            <ListItem button>
+              <ListItemText primary={text} />
+            </ListItem>
+          </Link>
+        ))}
+      </Collapse>
+      </List>
+    );
+  };
+};
 
 const ChartLinks = () => (
   <div>
-    <Links charts={wins} title={"Wins"} key={"Wins"} />
+    <Links charts={wins} title={"General Stats"} key={"Wins"} open={true} />
     <Divider />
     <Links charts={windgambit} title={"Wind Gambit"} key={"Wind Gambit"} />
     <Divider />
     <Links charts={frequencies} title={"Frequencies"} key={"Frequencies"} />
     <Divider />
-    <Links charts={countryCombination} title={"Country combinations"} key={"Country combinations"} />
+    <Links charts={countryCombination} title={"Country Combinations"} key={"Country combinations"} />
     <Divider />
-    <Links charts={boardCombination} title={"Board combinations"} key={"Board combinations"} />
+    <Links charts={boardCombination} title={"Board Combinations"} key={"Board combinations"} />
+    <Divider />
+    <Links charts={generator} title={"Generator"} key={"Generator"} />
   </div>
 );
 
 const ChartContent = () => (
-  [...wins, ...frequencies, ...windgambit, ...countryCombination, ...boardCombination].map(({path, component}) => (
+  [...wins, ...frequencies, ...windgambit, ...countryCombination, ...boardCombination, ...generator].map(({path, component}) => (
     <Route key={path} path={path} exact component={component} />
   ))
 );
