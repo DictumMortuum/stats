@@ -112,4 +112,8 @@
   "country": "Togawa", "board": "Militant", "winner": "Dimitris", "points": 98, "rounds": 20, "objectives": ["Battle1", "Worker", "Achievement", "Enlist", "Deploy", "Battle2"]
 }, {
   "country": "Crimea", "board": "Militant", "winner": "Dimitris", "points": 61, "rounds": 14, "objectives": ["Deploy", "Enlist", "Achievement"]
+}, {
+  "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 72, "rounds": 21, "objectives": ["Deploy", "Power", "Upgrade", "Achievement", "Battle1", "Battle2"], "players": 5
+}, {
+  "country": "Rusviet", "board": "Engineering", "winner": "Kostas", "points": 53, "rounds": 17, "objectives": ["Deploy", "Upgrade", "Battle1", "Battle2", "Worker", "Enlist"], "players": 5
 }]
