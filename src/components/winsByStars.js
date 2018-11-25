@@ -1,5 +1,6 @@
 import React from 'react';
 import Chartist from './bar';
+import common from './common';
 
 const graph = ({data, players}) => {
   const Filter = ({winner, objectives}) => winner !== undefined && objectives !== undefined;
@@ -13,10 +14,13 @@ const graph = ({data, players}) => {
   
   const Init = players.map(() => Array(6).fill(0));
 
-  return {
-    'series': data.filter(Filter).reduce(Reduce, Init),
-    'labels': Array(6).fill(0).map((_, i) => i + 1)
-  };
+  return common({
+    'labels': Array(6).fill(0).map((_, i) => i + 1),
+    Reduce,
+    Filter,
+    Init,
+    data
+  });
 };
 
 export default props => (<Chartist data={graph(props)} className={"ct-octave players"} />);

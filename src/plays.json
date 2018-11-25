@@ -59,61 +59,106 @@
 }, {
   "country": "Rusviet", "board": "Industrial", "winner": "Dimitris", "points": 53, "rounds": 18
 }, {
-  "country": "Nordic", "board": "Agricultural", "winner": "Panagiotis", "points": 70, "rounds": 17, "objectives": ["Build", "Power"]
+  "country": "Nordic", "board": "Agricultural", "winner": "Panagiotis", "points": 70, "rounds": 17,
+  "objectives": ["Build", "Power"]
 }, {
-  "country": "Polania", "board": "Patriotic", "winner": "Panagiotis", "points": 62, "rounds": 18, "objectives": ["Power", "Battle1", "Battle2", "Worker", "Enlist", "Objective"]
+  "country": "Polania", "board": "Patriotic", "winner": "Panagiotis", "points": 62, "rounds": 18,
+  "objectives": ["Power", "Battle1", "Battle2", "Worker", "Enlist", "Objective1"]
 }, {
-  "country": "Crimea", "board": "Patriotic", "winner": "Kostas", "points": 70, "rounds": 15, "objectives": ["Enlist", "Worker", "Battle1", "Battle2", "Power", "Deploy"]
+  "country": "Crimea", "board": "Patriotic", "winner": "Kostas", "points": 70, "rounds": 15,
+  "objectives": ["Enlist", "Worker", "Battle1", "Battle2", "Power", "Deploy"]
 }, {
-  "country": "Crimea", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 15, "objectives": ["Enlist", "Worker", "Objective", "Battle1", "Battle2"]
+  "country": "Crimea", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 15,
+  "objectives": ["Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
 }, {
-  "country": "Rusviet", "board": "Industrial", "winner": "Kostas", "points": 66, "rounds": 14, "objectives": ["Upgrade", "Deploy", "Worker", "Battle1", "Battle2", "Power"]
+  "country": "Rusviet", "board": "Industrial", "winner": "Kostas", "points": 66, "rounds": 14,
+  "objectives": ["Upgrade", "Deploy", "Worker", "Battle1", "Battle2", "Power"]
 }, {
-  "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 16, "objectives": ["Upgrade", "Deploy", "Worker", "Objective", "Battle1", "Enlist"]
+  "country": "Saxony", "board": "Engineering", "winner": "Dimitris", "points": 84, "rounds": 16,
+  "objectives": ["Upgrade", "Deploy", "Worker", "Objective1", "Battle1", "Enlist"]
 }, {
-  "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 65, "rounds": 18, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Power"]
+  "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 65, "rounds": 18,
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Power"]
 }, {
-  "country": "Rusviet", "board": "Mechanical", "winner": "Kostas", "points": 61, "rounds": 13, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Battle2"]
+  "country": "Rusviet", "board": "Mechanical", "winner": "Kostas", "points": 61, "rounds": 13,
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
 }, {
-  "country": "Crimea", "board": "Patriotic", "winner": "Kostas", "points": 77, "rounds": 17, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Battle2"]
+  "country": "Crimea", "board": "Patriotic", "winner": "Kostas", "points": 77, "rounds": 17,
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
 }, {
-  "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 54, "rounds": 15, "objectives": ["Enlist", "Worker", "Battle1", "Battle2"]
+  "country": "Polania", "board": "Patriotic", "winner": "Dimitris", "points": 54, "rounds": 15,
+  "objectives": ["Enlist", "Worker", "Battle1", "Battle2"]
 }, {
-  "country": "Rusviet", "board": "Industrial", "winner": "Panagiotis", "points": 66, "rounds": 16, "objectives": ["Upgrade", "Worker", "Deploy", "Power", "Objective", "Battle1"]
+  "country": "Rusviet", "board": "Industrial", "winner": "Panagiotis", "points": 66, "rounds": 16,
+  "objectives": ["Upgrade", "Worker", "Deploy", "Power", "Objective1", "Battle1"]
 }, {
-  "country": "Nordic", "board": "Industrial", "winner": "Dimitris", "points": 72, "rounds": 18, "objectives": ["Build", "Worker", "Objective", "Battle1", "Battle2", "Power"]
+  "country": "Nordic", "board": "Industrial", "winner": "Dimitris", "points": 72, "rounds": 18,
+  "objectives": ["Build", "Worker", "Objective1", "Battle1", "Battle2", "Power"]
 }, {
-  "country": "Rusviet", "board": "Patriotic", "winner": "Kostas", "points": 64, "rounds": 16, "objectives": ["Power", "Battle1", "Upgrade", "Objective", "Worker", "Deploy"]
+  "country": "Rusviet", "board": "Patriotic", "winner": "Kostas", "points": 64, "rounds": 16,
+  "objectives": ["Power", "Battle1", "Upgrade", "Objective1", "Worker", "Deploy"]
 }, {
-  "country": "Rusviet", "board": "Agricultural", "winner": "Dimitris", "points": 61, "rounds": 17, "objectives": ["Battle1", "Worker", "Objective", "Deploy", "Enlist"]
+  "country": "Rusviet", "board": "Agricultural", "winner": "Dimitris", "points": 61, "rounds": 17,
+  "objectives": ["Battle1", "Worker", "Objective1", "Deploy", "Enlist"]
 }, {
-  "country": "Nordic", "board": "Innovative", "winner": "Kostas", "points": 66, "rounds": 18, "objectives": ["Battle1", "Objective", "Worker", "Deploy", "Upgrade"]
+  "country": "Nordic", "board": "Innovative", "winner": "Kostas", "points": 66, "rounds": 18,
+  "objectives": ["Battle1", "Objective1", "Worker", "Deploy", "Upgrade"]
 }, {
-  "country": "Polania", "board": "Agricultural", "winner": "Giorgos", "points": 81, "rounds": 20, "objectives": ["Popularity", "Deploy", "Build", "Objective", "Worker", "Battle1"]
+  "country": "Polania", "board": "Agricultural", "winner": "Giorgos", "points": 81, "rounds": 20,
+  "objectives": ["Popularity", "Deploy", "Build", "Objective1", "Worker", "Battle1"]
 }, {
-  "country": "Crimea", "board": "Engineering", "winner": "Kostas", "points": 46, "rounds": 16, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Battle2"]
+  "country": "Crimea", "board": "Engineering", "winner": "Kostas", "points": 46, "rounds": 16,
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"]
 }, {
-  "country": "Crimea", "board": "Industrial", "winner": "Kostas", "points": 52, "rounds": 17, "objectives": ["Deploy", "Enlist", "Worker", "Objective", "Battle1", "Power"]
+  "country": "Crimea", "board": "Industrial", "winner": "Kostas", "points": 52, "rounds": 17,
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Power"]
 }, {
-  "country": "Albion", "board": "Agricultural", "winner": "Panagiotis", "points": 64, "rounds": 18, "objectives": ["Enlist", "Worker", "Objective", "Power", "Battle1", "Battle2"]
+  "country": "Albion", "board": "Agricultural", "winner": "Panagiotis", "points": 64, "rounds": 18,
+  "objectives": ["Enlist", "Worker", "Objective1", "Power", "Battle1", "Battle2"]
 }, {
-  "country": "Crimea", "board": "Engineering", "winner": "Panagiotis", "points": 64, "rounds": 17, "objectives": ["Battle1", "Battle2", "Worker", "Enlist", "Build", "Mech"]
+  "country": "Crimea", "board": "Engineering", "winner": "Panagiotis", "points": 64, "rounds": 17,
+  "objectives": ["Battle1", "Battle2", "Worker", "Enlist", "Build", "Deploy"]
 }, {
-  "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 58, "rounds": 17, "objectives": ["Battle1", "Worker", "Upgrade"]
+  "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 58, "rounds": 17,
+  "objectives": ["Battle1", "Worker", "Upgrade"]
 }, {
-  "country": "Togawa", "board": "Engineering", "winner": "Kostas", "points": 63, "rounds": 16, "objectives": ["Battle1", "Battle2", "Enlist", "Upgrade", "Worker", "Objective"]
+  "country": "Togawa", "board": "Engineering", "winner": "Kostas", "points": 63, "rounds": 16,
+  "objectives": ["Battle1", "Battle2", "Enlist", "Upgrade", "Worker", "Objective1"]
 }, {
-  "country": "Crimea", "board": "Agricultural", "winner": "Kostas", "points": 71, "objectives": ["Battle1", "Deploy", "Power", "Battle2", "Enlist", "Worker"]
+  "country": "Crimea", "board": "Agricultural", "winner": "Kostas", "points": 71,
+  "objectives": ["Battle1", "Deploy", "Power", "Battle2", "Enlist", "Worker"]
 }, {
-  "country": "Saxony", "board": "Engineering", "winner": "Kostas", "points": 39, "objectives": ["Battle1", "Worker", "Upgrade", "Deploy", "Achievement", "Achievement"]
+  "country": "Saxony", "board": "Engineering", "winner": "Kostas", "points": 39,
+  "objectives": ["Battle1", "Worker", "Upgrade", "Deploy", "Objective1", "Objective2"]
 }, {
-  "country": "Crimea", "board": "Innovative", "winner": "Dimitris", "points": 77, "rounds": 16, "objectives": ["Battle1", "Worker", "Achievement", "Enlist", "Deploy"]
+  "country": "Crimea", "board": "Innovative", "winner": "Dimitris", "points": 77, "rounds": 16,
+  "objectives": ["Battle1", "Worker", "Objective1", "Enlist", "Deploy"]
 }, {
-  "country": "Togawa", "board": "Militant", "winner": "Dimitris", "points": 98, "rounds": 20, "objectives": ["Battle1", "Worker", "Achievement", "Enlist", "Deploy", "Battle2"]
+  "country": "Togawa", "board": "Militant", "winner": "Dimitris", "points": 98, "rounds": 20,
+  "objectives": ["Battle1", "Worker", "Objective1", "Enlist", "Deploy", "Battle2"]
 }, {
-  "country": "Crimea", "board": "Militant", "winner": "Dimitris", "points": 61, "rounds": 14, "objectives": ["Deploy", "Enlist", "Achievement"]
+  "country": "Crimea", "board": "Militant", "winner": "Dimitris", "points": 61, "rounds": 14,
+  "objectives": ["Deploy", "Enlist", "Objective1"]
 }, {
-  "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 72, "rounds": 21, "objectives": ["Deploy", "Power", "Upgrade", "Achievement", "Battle1", "Battle2"], "players": 5
+  "country": "Rusviet", "board": "Patriotic", "winner": "Dimitris", "points": 72, "rounds": 21, "players": 5,
+  "objectives": ["Deploy", "Power", "Upgrade", "Objective1", "Battle1", "Battle2"]
 }, {
-  "country": "Rusviet", "board": "Engineering", "winner": "Kostas", "points": 53, "rounds": 17, "objectives": ["Deploy", "Upgrade", "Battle1", "Battle2", "Worker", "Enlist"], "players": 5
+  "country": "Rusviet", "board": "Engineering", "winner": "Kostas", "points": 53, "rounds": 17, "players": 5,
+  "objectives": ["Deploy", "Upgrade", "Battle1", "Battle2", "Worker", "Enlist"]
+}, {
+  "country": "Rusviet", "board": "Innovative", "winner": "Dimitris", "points": 68, "rounds": 14, "players": 3,
+  "objectives": ["Deploy", "Worker", "Enlist", "Battle1", "Objective1", "MissionPossible1"],
+  "aggressive": "Blitzkrieg", "passive": "Negotiate", "resolution": "Mission Possible"
+}, {
+  "winner": "Kostas", "points": 77, "rounds": 16,
+  "objectives": ["Deploy", "Enlist", "Worker", "Objective1", "Battle1", "Battle2"],
+  "aggressive": "Toll", "passive": "Ferry", "resolution": "Factory Explosion"
+}, {
+  "winner": "Kostas", "country": "Saxony", "points": 49, "rounds": 17,
+  "objectives": ["Deploy", "Worker", "Objective1", "Battle1", "Battle2"],
+  "aggressive": "Toll", "passive": "Drill", "resolution": "Mission Possible"
+}, {
+  "winner": "Kostas",
+  "objectives": ["Deploy", "Worker", "Objective1", "Battle1", "Battle2", "Battle3"],
+  "aggressive": "Blitzkrieg", "passive": "Drill", "resolution": "Deja vu"
 }]

@@ -1,5 +1,30 @@
-import {countries, players, boards, objectives} from './scythe.json';
 import data from './plays.json';
+
+/*
+ * Returns the distinct elements of an array.
+ */
+const unique = col => [...new Set(col)];
+
+/*
+ * Flattens an array.
+ */
+const flatten = col => [].concat.apply([], col);
+
+/*
+ * Creates a flat array of the distinct elements identified by function f.
+ * Useful for extracting collections of elements from the data.
+ * If series length < 4, chartist has an issue with that.
+ */
+const collection = f => {
+  let temp = unique(flatten(data.filter(f).map(f)));
+  let l = temp.length;
+  
+  if (l < 4) {
+    return [...temp, ...Array(4 - l).fill("")];
+  } else {
+    return temp;
+  }
+}
 
 /*
  * Returns an array from the least amount to the maximum.
@@ -32,13 +57,16 @@ const percentile = col => {
 }
 
 export default {
-  countries,
-  players,
-  boards,
-  objectives,
+  countries: collection(d => d.country).sort(),
+  players: collection(d => d.winner),
+  boards: collection(d => d.board),
+  objectives: collection(d => d.objectives).sort(),
   data,
-  rounds: discrete(data.filter(d => d.rounds).map(d => d.rounds)),
-  points: discrete(data.filter(d => d.points).map(d => d.points)),
+  rounds: discrete(collection(d => d.rounds)),
+  points: discrete(collection(d => d.points)),
+  passives: collection(d => d.passive),
+  aggressives: collection(d => d.aggressive),
+  resolutions: collection(d => d.resolution),
   relativeFrequency,
   absoluteFrequency,
   percentile

@@ -1,5 +1,4 @@
 import React from 'react';
-import {countries, boards} from './scythe.json';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -18,7 +17,12 @@ import WinsByStars from './components/winsByStars';
 import CountryFrequency from './components/countryFrequency';
 import BoardFrequency from './components/boardFrequency';
 import Sweetspot from './components/sweetspot';
+import Resolution from './components/resolution';
+import Passive from './components/passive';
+import Aggressive from './components/aggressive';
 import common from './analysis';
+
+const {countries, boards} = common;
 
 const wins = [{
   'text': 'Wins by player',
@@ -60,8 +64,22 @@ const frequencies = [{
   'component': () => <CountryFrequency {...common} />
 }, {
   'text': 'Board frequency',
-  'path': '/scythe/board/frequency',
+  'path': '/scythe/board/frequency/',
   'component': () => <BoardFrequency {...common} />
+}];
+
+const windgambit = [{
+  'text': 'Resolution tiles',
+  'path': '/scythe/resolution/',
+  'component': () => <Resolution {...common} />
+}, {
+  'text': 'Aggressive tiles',
+  'path': '/scythe/windgambit/aggressive/',
+  'component': () => <Aggressive {...common} />
+}, {
+  'text': 'Passive tiles',
+  'path': '/scythe/windgambit/passive/',
+  'component': () => <Passive {...common}/>
 }];
 
 const countryCombination = countries.map(c => {
@@ -82,7 +100,7 @@ const boardCombination = boards.map(c => {
     'path': '/scythe/' + c + '/',
     'component': () => <Board {...common} />
   };
-})
+});
 
 const Links = ({title, charts}) => (
   <List
@@ -90,8 +108,8 @@ const Links = ({title, charts}) => (
     subheader={<ListSubheader component="div">{title}</ListSubheader>}
   >
   {charts.map(({path, text}) => (
-    <Link to={path} style={{ textDecoration: 'none' }}>
-      <ListItem key={path} button>
+    <Link key={path} to={path} style={{ textDecoration: 'none' }}>
+      <ListItem button>
         <ListItemText primary={text} />
       </ListItem>
     </Link>
@@ -101,18 +119,20 @@ const Links = ({title, charts}) => (
 
 const ChartLinks = () => (
   <div>
-  <Links charts={wins} title={"Wins"} />
-  <Divider />
-  <Links charts={frequencies} title={"Frequencies"} />
-  <Divider />
-  <Links charts={countryCombination} title={"Country combinations"} />
-  <Divider />
-  <Links charts={boardCombination} title={"Board combinations"} />
+    <Links charts={wins} title={"Wins"} key={"Wins"} />
+    <Divider />
+    <Links charts={windgambit} title={"Wind Gambit"} key={"Wind Gambit"} />
+    <Divider />
+    <Links charts={frequencies} title={"Frequencies"} key={"Frequencies"} />
+    <Divider />
+    <Links charts={countryCombination} title={"Country combinations"} key={"Country combinations"} />
+    <Divider />
+    <Links charts={boardCombination} title={"Board combinations"} key={"Board combinations"} />
   </div>
 );
 
 const ChartContent = () => (
-  [...wins, ...frequencies, ...countryCombination, ...boardCombination].map(({path, component}) => (
+  [...wins, ...frequencies, ...windgambit, ...countryCombination, ...boardCombination].map(({path, component}) => (
     <Route key={path} path={path} exact component={component} />
   ))
 );

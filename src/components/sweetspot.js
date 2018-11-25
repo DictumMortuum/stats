@@ -2,6 +2,7 @@ import React from 'react';
 import incrementalAverage from 'incremental-average';
 import Typography from '@material-ui/core/Typography';
 import Chartist from './bar';
+import common from './common';
 
 const graph = ({data, players, rounds: r, points: p, percentile}) => {
 
@@ -40,12 +41,13 @@ const graph = ({data, players, rounds: r, points: p, percentile}) => {
     return acc;
   };
 
-  const Init = players.map(() => players.map(() => 0));
-
-  return {
-    'series': data.filter(Filter).reduce(Reduce, Init),
-    'labels': players
-  };
+  return common({
+    'labels': players,
+    Reduce,
+    Filter,
+    Init: players.map(() => players.map(() => 0)),
+    data
+  });
 };
 
 const options = {

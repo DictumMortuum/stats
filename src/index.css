@@ -13,12 +13,32 @@ code {
     monospace;
 }
 
+.countries.ct-chart .ct-series.ct-series-a .ct-slice-pie {
+  fill: #59922b;
+}
+
 .countries.ct-chart .ct-series.ct-series-b .ct-slice-pie {
-  fill: rgb(255, 233, 233)
+  fill: #f4c63d;
+}
+
+.countries.ct-chart .ct-series.ct-series-c .ct-slice-pie {
+  fill: #0544d3;
 }
 
 .countries.ct-chart .ct-series.ct-series-d .ct-slice-pie {
-  fill: rgb(163, 107, 195)
+  fill: #e7e1e1
+}
+
+.countries.ct-chart .ct-series.ct-series-e .ct-slice-pie {
+  fill: #f05b4f;
+}
+
+.countries.ct-chart .ct-series.ct-series-f .ct-slice-pie {
+  fill: #453d3f;
+}
+
+.countries.ct-chart .ct-series.ct-series-g .ct-slice-pie {
+  fill: #3f3d94;
 }
 
 .players.ct-chart .ct-series.ct-series-b .ct-bar {

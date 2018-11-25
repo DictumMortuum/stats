@@ -1,5 +1,6 @@
 import React from 'react';
 import Chartist from 'react-chartist';
+import Typography from '@material-ui/core/Typography';
 
 const dflt = {
   stackBars: true,
@@ -35,15 +36,20 @@ const listener = (data) => {
 }
 
 export default props => {
-  const {data, className, options = {}, draw = listener} = props;
+  const {data: {total, sample, ...rest}, className, options = {}, draw = listener} = props;
 
   return (
-    <Chartist
-      data={data}
-      options={{...dflt, ...options}}
-      type={'Bar'}
-      className={className}
-      listener={{'draw': draw}}
-    />
+    <div>
+      <Typography paragraph>
+        <b>Sample size: {sample} / {total}</b>
+      </Typography>
+      <Chartist
+        data={rest}
+        options={{...dflt, ...options}}
+        type={'Bar'}
+        className={className}
+        listener={{'draw': draw}}
+      />
+    </div>
   );
-}
+};
