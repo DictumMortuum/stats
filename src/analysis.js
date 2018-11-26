@@ -57,6 +57,7 @@ const percentile = col => {
 }
 
 export default {
+  unique,
   countries: collection(d => d.country).sort(),
   players: collection(d => d.winner),
   boards: collection(d => d.board),

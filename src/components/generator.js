@@ -20,7 +20,19 @@ import Paper from '@material-ui/core/Paper';
 import TableRow from '@material-ui/core/TableRow';
 import Combinatorics from 'js-combinatorics';
 
-const container = ({boards, countries, data, winscutoff = 1, filters = []}, playernumber = 4) => {
+Array.prototype.shuffle = function() {
+  var i = this.length, j, temp;
+  if ( i === 0 ) return this;
+  while ( --i ) {
+     j = Math.floor( Math.random() * ( i + 1 ) );
+     temp = this[i];
+     this[i] = this[j];
+     this[j] = temp;
+  }
+  return this;
+};
+
+const container = ({boards, countries, data, winscutoff = 1, filters = [], playernumber = 4}) => {
 
   const info = data.filter(d => d.board !== undefined && d.country !== undefined);
 
@@ -37,7 +49,7 @@ const container = ({boards, countries, data, winscutoff = 1, filters = []}, play
       });
     });
 
-    return temp;
+    return temp.shuffle().slice(0, 30);
   })();
   
   const hashmap = (() => {
@@ -75,7 +87,7 @@ const container = ({boards, countries, data, winscutoff = 1, filters = []}, play
     return retval;
   };
 
-  return Combinatorics.bigCombination(combinations, playernumber).lazyFilter(impossible);
+  return Combinatorics.bigCombination(combinations, playernumber).filter(impossible);
 };
 
 const styles = theme => ({
@@ -102,7 +114,7 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3,
   }, 
   card: {
-    minHeight: 200
+    minHeight: 100
   }
 });
 
@@ -120,30 +132,51 @@ const MenuProps = {
 class Generator extends React.Component {
   state = {
     filters: [],
-    total: 0,
+    total: "",
+    i: 0,
     game: [],
-    games: {}
+    games: {},
+    playernumber: 3,
+    winscutoff: 1
   };
 
-  handleChange = event => {
+  handleFilters = event => {
     this.setState({ filters: event.target.value });
+  };
+
+  handlePlayers = event => {
+    this.setState({ playernumber: event.target.value });
+  };
+
+  handleCutoff = event => {
+    this.setState({ winscutoff: event.target.value });
   };
 
   handleSubmit = () => {
     const games = container({...this.state, ...this.props});
 
-    this.setState({
-      games,
-      total: games.length,
-      game: games.next()
-    });
-  }
+    console.log(games);
+
+    if (games.length !== 0) {
+      this.setState({
+        i: 0,
+        games,
+        total: "Found " + games.length + " combinations.",
+        game: games[0]
+      });
+    } else {
+      this.setState({
+        total: "There are no combinations with this setup. Please try again."
+      });
+    }
+  };
 
   handleNext = () => {
-    const games = this.state.games;
+    const {i, games} = this.state;
 
     this.setState({
-      game: games.next()
+      game: games[i],
+      i: i + 1,
     });
   }
 
@@ -154,15 +187,24 @@ class Generator extends React.Component {
       <div>
         <Card>
           <CardContent className={classes.card}>
-            <Typography variant="h5" component="h2" gutterBottom>
-              Combinations: {this.state.total}
-            </Typography>
+            <FormControl className={classes.formControl}>
+              <InputLabel htmlFor="players-simple">Player #</InputLabel>
+              <Select value={this.state.playernumber} onChange={this.handlePlayers}>
+                {[2, 3, 4, 5, 6, 7].map(d => (<MenuItem key={d} value={d}>{d} players</MenuItem>))}
+              </Select>
+            </FormControl>
+            <FormControl className={classes.formControl}>
+              <InputLabel htmlFor="winscutoff-simple">Maximum wins</InputLabel>
+              <Select value={this.state.winscutoff} onChange={this.handleCutoff}>
+                {[0, 1, 2, 3, 4, 5, 6, 7].map(d => (<MenuItem key={d} value={d}>{d} wins</MenuItem>))}
+              </Select>
+            </FormControl>
             <FormControl className={classes.formControl}>
               <InputLabel htmlFor="select-multiple-chip">Must Include</InputLabel>
               <Select
                 multiple
                 value={this.state.filters}
-                onChange={this.handleChange}
+                onChange={this.handleFilters}
                 input={<Input id="select-multiple-chip" />}
                 renderValue={selected => (
                   <div className={classes.chips}>
@@ -184,8 +226,21 @@ class Generator extends React.Component {
           <CardActions>
             <Button variant="contained" color="primary" onClick={this.handleSubmit}>Generate</Button>
             <Button variant="outlined" onClick={this.handleNext}>Next</Button>
+            <Typography variant="h5" component="h2">
+              {this.state.total}
+            </Typography>
           </CardActions>
         </Card>
+        <div className={classes.result}>
+          <p>Using the generator: TL;DR - Select the number of players and press "generate".</p>
+          <h3>Maximum Wins</h3>
+          <p>The generator uses the [board, country] combinations that have zero recorded wins to generate a game.</p>
+          <p>However, those choices are not always enough to generate a game. Thus, if you can't generate a game, you can use this dropdown to also include combinations with more than 0 recorded wins.</p>
+          <h3>Must Include</h3>
+          <p>Use this dropdown to select boards and/or countries that you absolutely want in the results (e.g. if a player wants to play a specific country)</p>
+          <h3>Next</h3>
+          <p>The generator will inform you of how many combinations it has generated. If you don't like a particular combination, use the next button to see the next one.</p>
+        </div>
         <Paper className={classes.result}>
           <Table>
             <TableHead>

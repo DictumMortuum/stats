@@ -159,7 +159,7 @@ const ChartLinks = () => (
     <Divider />
     <Links charts={boardCombination} title={"Board Combinations"} key={"Board combinations"} />
     <Divider />
-    <Links charts={generator} title={"Generator"} key={"Generator"} />
+    <Links charts={generator} title={"Tools"} key={"Generator"} />
   </div>
 );
 
