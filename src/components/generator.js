@@ -20,17 +20,7 @@ import Paper from '@material-ui/core/Paper';
 import TableRow from '@material-ui/core/TableRow';
 import Combinatorics from 'js-combinatorics';
 
-Array.prototype.shuffle = function() {
-  var i = this.length, j, temp;
-  if ( i === 0 ) return this;
-  while ( --i ) {
-     j = Math.floor( Math.random() * ( i + 1 ) );
-     temp = this[i];
-     this[i] = this[j];
-     this[j] = temp;
-  }
-  return this;
-};
+const shuffle = arr => arr.map(a => [Math.random(), a]).sort((a, b) => a[0] - b[0]).map(a => a[1]);
 
 const container = ({boards, countries, data, winscutoff = 1, filters = [], playernumber = 4}) => {
 
@@ -49,7 +39,7 @@ const container = ({boards, countries, data, winscutoff = 1, filters = [], playe
       });
     });
 
-    return temp.shuffle().slice(0, 30);
+    return shuffle(temp).slice(0, 30);
   })();
   
   const hashmap = (() => {

@@ -29,65 +29,65 @@ const {countries, boards} = common;
 
 const wins = [{
   'text': 'Wins by player',
-  'path': '/scythe/',
+  'path': '/',
   'component': () => <WinsByPlayer {...common} />
 }, {
   'text': 'Average winning points',
-  'path': '/scythe/average/',
+  'path': '/average/',
   'component': () => <AverageWinningPoints {...common} />
 }, {
   'text': 'Player sweetspot',
-  'path': '/scythe/sweetspot/',
+  'path': '/sweetspot/',
   'component': () => <Sweetspot {...common} />
 }, {
   'text': 'Wins by country',
-  'path': '/scythe/country/',
+  'path': '/country/',
   'component': () => <WinsByCountry {...common} />
 }, {
   'text': 'Wins by objectives',
-  'path': '/scythe/objectives/',
+  'path': '/objectives/',
   'component': () => <WinsByObjectives {...common} />
 }, {
   'text': 'Wins by rounds',
-  'path': '/scythe/rounds/',
+  'path': '/rounds/',
   'component': () => <WinsByRounds {...common} />
 }, {
   'text': 'Wins by board',
-  'path': '/scythe/board/',
+  'path': '/board/',
   'component': () => <WinsByBoard {...common} />
 }, {
   'text': 'Wins by stars',
-  'path': '/scythe/stars/',
+  'path': '/stars/',
   'component': () => <WinsByStars {...common} />
 }];
 
 const frequencies = [{
   'text': 'Country frequency',
-  'path': '/scythe/country/frequency/',
+  'path': '/country/frequency/',
   'component': () => <CountryFrequency {...common} />
 }, {
   'text': 'Board frequency',
-  'path': '/scythe/board/frequency/',
+  'path': '/board/frequency/',
   'component': () => <BoardFrequency {...common} />
 }];
 
 const windgambit = [{
   'text': 'Resolution tiles',
-  'path': '/scythe/resolution/',
+  'path': '/resolution/',
   'component': () => <Resolution {...common} />
 }, {
   'text': 'Aggressive tiles',
-  'path': '/scythe/windgambit/aggressive/',
+  'path': '/windgambit/aggressive/',
   'component': () => <Aggressive {...common} />
 }, {
   'text': 'Passive tiles',
-  'path': '/scythe/windgambit/passive/',
+  'path': '/windgambit/passive/',
   'component': () => <Passive {...common} />
 }];
 
 const generator = [{
   'text': 'Generator',
-  'path': '/scythe/generator/',
+  'path': '/generator/',
   'component': () => <Generator {...common} />
 }];
 
@@ -96,7 +96,7 @@ const countryCombination = countries.map(c => {
 
   return {
     'text': 'Wins by ' + c,
-    'path': '/scythe/' + c + '/',
+    'path': '/' + c + '/',
     'component': () => <Country {...common} />
   };
 });
@@ -106,7 +106,7 @@ const boardCombination = boards.map(c => {
 
   return {
     'text': 'Wins by ' + c,
-    'path': '/scythe/' + c + '/',
+    'path': '/' + c + '/',
     'component': () => <Board {...common} />
   };
 });

@@ -92,7 +92,7 @@ class PersistentDrawerLeft extends React.Component {
     const { open } = this.state;
 
     return (
-      <Router>
+      <Router basename="/scythe/">
         <div className={classes.root}>
           <CssBaseline />
           <AppBar
