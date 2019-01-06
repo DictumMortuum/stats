@@ -1,18 +1,16 @@
 import React from 'react';
 import Chartist from '../../Bar';
 import common from '../../Template';
-import winner from '../winner';
 
 const graph = ({data, players}) => {
 
-  const Filter = ({order, setup}) => order !== undefined && setup !== undefined;
+  const Filter = ({setup}) => setup !== undefined;
 
-  const Reduce = (acc, {order, setup}) => {
+  const Reduce = (acc, {setup}) => {
 
-    winner(order, setup).forEach(({player}, i) => {
+    setup.forEach(({player, position}) => {
       let p = players.indexOf(player);
-      console.log(player, i);
-      acc[i][p]++;
+      acc[position][p]++;
     });
 
     return acc;
@@ -32,6 +30,6 @@ export default props => (
     data={graph(props)}
     options={{stackBars: false}}
     draw={() => 1}
-    className={"ct-octave players"}
+    className={"ct-octave"}
   />
 );

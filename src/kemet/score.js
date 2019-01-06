@@ -45,4 +45,4 @@ const transform = ({player, vp}) => {
   }
 }
 
-export default (order, setup) => setup.map(transform).sort(f(order));
+export default ({order, setup}) => setup.map(transform).sort(f(order));
