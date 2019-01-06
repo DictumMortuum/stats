@@ -1,13 +1,14 @@
 {
-  "main.css": "/scythe/static/css/main.5ea67bea.chunk.css",
-  "main.js": "/scythe/static/js/main.57e25e35.chunk.js",
-  "main.js.map": "/scythe/static/js/main.57e25e35.chunk.js.map",
-  "static/js/1.75b91aba.chunk.js": "/scythe/static/js/1.75b91aba.chunk.js",
-  "static/js/1.75b91aba.chunk.js.map": "/scythe/static/js/1.75b91aba.chunk.js.map",
+  "main.css": "/scythe/static/css/main.00d419bb.chunk.css",
+  "main.js": "/scythe/static/js/main.d53d7317.chunk.js",
+  "main.js.map": "/scythe/static/js/main.d53d7317.chunk.js.map",
+  "static/js/1.d8017238.chunk.js": "/scythe/static/js/1.d8017238.chunk.js",
+  "static/js/1.d8017238.chunk.js.map": "/scythe/static/js/1.d8017238.chunk.js.map",
   "runtime~main.js": "/scythe/static/js/runtime~main.f171c6eb.js",
   "runtime~main.js.map": "/scythe/static/js/runtime~main.f171c6eb.js.map",
-  "static/css/main.5ea67bea.chunk.css.map": "/scythe/static/css/main.5ea67bea.chunk.css.map",
+  "static/css/main.00d419bb.chunk.css.map": "/scythe/static/css/main.00d419bb.chunk.css.map",
+  "static/media/img.jpg": "/scythe/static/media/img.4f228389.jpg",
   "index.html": "/scythe/index.html",
-  "precache-manifest.71eede65223caf6d3b22febf4ef87325.js": "/scythe/precache-manifest.71eede65223caf6d3b22febf4ef87325.js",
+  "precache-manifest.197e52f08483199d77db79ccae3be028.js": "/scythe/precache-manifest.197e52f08483199d77db79ccae3be028.js",
   "service-worker.js": "/scythe/service-worker.js"
 }
