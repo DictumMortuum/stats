@@ -25,7 +25,7 @@ const tiles = [
 
     return {
       'text': c + ' tiles by position',
-      'path': '/tiles/position' + c + '/',
+      'path': '/tiles/position/' + c + '/',
       'component': () => <Tiles {...analysis} />
     };
   })
