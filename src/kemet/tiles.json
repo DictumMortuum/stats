@@ -1,0 +1,217 @@
+{
+  "charge!": {
+    "color": "red",
+    "level": 1,
+    "phase": "battle"
+  },
+  "stargate": {
+    "color": "red",
+    "level": 1,
+    "phase": "day"
+  },
+  "god speed": {
+    "color": "red",
+    "level": 1,
+    "phase": "day"
+  },
+  "carnage": {
+    "color": "red",
+    "level": 2,
+    "phase": "battle"
+  },
+  "offensive strategy": {
+    "color": "red",
+    "level": 2,
+    "phase": "day"
+  },
+  "open gates": {
+    "color": "red",
+    "level": 2,
+    "phase": "day"
+  },
+  "teleport": {
+    "color": "red",
+    "level": 2,
+    "phase": "day"
+  },
+  "royal scarab": {
+    "color": "red",
+    "level": 3,
+    "phase": "day"
+  },
+  "blades of neith": {
+    "color": "red",
+    "level": 3,
+    "phase": "battle"
+  },
+  "divine wound": {
+    "color": "red",
+    "level": 3,
+    "phase": "battle"
+  },
+  "red victory point": {
+    "color": "red",
+    "level": 3,
+    "phase": "day"
+  },
+  "giant scorpion": {
+    "color": "red",
+    "level": 4,
+    "phase": "day"
+  },
+  "initiative": {
+    "color": "red",
+    "level": 4,
+    "phase": "day"
+  },
+  "phoenix": {
+    "color": "red",
+    "level": 4,
+    "phase": "day"
+  },
+  "red act of god": {
+    "color": "red",
+    "level": 4,
+    "phase": "day"
+  },
+  "recruiting scribe": {
+    "color": "blue",
+    "level": 1,
+    "phase": "day"
+  },
+  "defense!": {
+    "color": "blue",
+    "level": 1,
+    "phase": "battle"
+  },
+  "legion": {
+    "color": "blue",
+    "level": 2,
+    "phase": "day"
+  },
+  "ancenstral elephant": {
+    "color": "blue",
+    "level": 2,
+    "phase": "day"
+  },
+  "defensive strategy": {
+    "color": "blue",
+    "level": 2,
+    "phase": "day"
+  },
+  "deep desert snake": {
+    "color": "blue",
+    "level": 2,
+    "phase": "battle"
+  },
+  "shield of neith": {
+    "color": "blue",
+    "level": 3,
+    "phase": "battle"
+  },
+  "defensive victory": {
+    "color": "blue",
+    "level": 3,
+    "phase": "battle"
+  },
+  "prescience": {
+    "color": "blue",
+    "level": 3,
+    "phase": "battle"
+  },
+  "blue victory point": {
+    "color": "blue",
+    "level": 3,
+    "phase": "day"
+  },
+  "reinforcement": {
+    "color": "blue",
+    "level": 4,
+    "phase": "night"
+  },
+  "sphinx": {
+    "color": "blue",
+    "level": 4,
+    "phase": "day"
+  },
+  "divine will": {
+    "color": "blue",
+    "level": 4,
+    "phase": "day"
+  },
+  "blue act of god": {
+    "color": "blue",
+    "level": 4,
+    "phase": "day"
+  },
+  "priest": {
+    "color": "white",
+    "level": 1,
+    "phase": "day"
+  },
+  "priestess": {
+    "color": "white",
+    "level": 1,
+    "phase": "day"
+  },
+  "slaves": {
+    "color": "white",
+    "level": 2,
+    "phase": "day"
+  },
+  "high priest": {
+    "color": "white",
+    "level": 2,
+    "phase": "night"
+  },
+  "crusade": {
+    "color": "white",
+    "level": 2,
+    "phase": "battle"
+  },
+  "divine boon": {
+    "color": "white",
+    "level": 2,
+    "phase": "night"
+  },
+  "hand of god": {
+    "color": "white",
+    "level": 3,
+    "phase": "night"
+  },
+  "vision": {
+    "color": "white",
+    "level": 3,
+    "phase": "night"
+  },
+  "holy war": {
+    "color": "white",
+    "level": 3,
+    "phase": "battle"
+  },
+  "white victory point": {
+    "color": "white",
+    "level": 3,
+    "phase": "day"
+  },
+  "priest of ra": {
+    "color": "white",
+    "level": 4,
+    "phase": "day"
+  },
+  "priest of amon": {
+    "color": "white",
+    "level": 4,
+    "phase": "night"
+  },
+  "the mummy": {
+    "color": "white",
+    "level": 4,
+    "phase": "night"
+  },
+  "white act of god": {
+    "color": "white",
+    "level": 4,
+    "phase": "day"
+  }
+}

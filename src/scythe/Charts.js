@@ -1,12 +1,7 @@
 import React from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
-import Collapse from '@material-ui/core/Collapse';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
-import { Route, Link } from "react-router-dom";
+import Links from '../Links';
+import { Route } from "react-router-dom";
 import AverageWinningPoints from './components/averageWinningPoints';
 import WinsByBoard from './components/winsByBoard';
 import WinsByCombination from './components/winsByCombination';
@@ -24,6 +19,7 @@ import Passive from './components/passive';
 import Aggressive from './components/aggressive';
 import Generator from './components/generator';
 import common from './analysis';
+import ScytheImg from './img.jpg';
 
 const {countries, boards} = common;
 
@@ -111,43 +107,7 @@ const boardCombination = boards.map(c => {
   };
 });
 
-class Links extends React.Component {
-  state = {
-    open: this.props.open || false
-  };
-
-  handleClick = () => {
-    this.setState(state => ({ open: !state.open }));
-  };
-
-  render() {
-    const {title, charts} = this.props;
-
-    return (
-      <List
-        component="nav"
-        subheader={
-          <ListItem onClick={this.handleClick} button>
-            <ListItemText secondary={<b>{title}</b>} />
-            {this.state.open ? <ExpandLess /> : <ExpandMore />}
-          </ListItem>
-        }
-      >
-      <Collapse in={this.state.open} timeout="auto" unmountOnExit>
-        {charts.map(({path, text}) => (
-          <Link key={path} to={path} style={{ textDecoration: 'none' }}>
-            <ListItem button>
-              <ListItemText primary={text} />
-            </ListItem>
-          </Link>
-        ))}
-      </Collapse>
-      </List>
-    );
-  };
-};
-
-const ChartLinks = () => (
+const ScytheLinks = () => (
   <div>
     <Links charts={wins} title={"General Stats"} key={"Wins"} open={true} />
     <Divider />
@@ -163,10 +123,10 @@ const ChartLinks = () => (
   </div>
 );
 
-const ChartContent = () => (
+const ScytheContent = () => (
   [...wins, ...frequencies, ...windgambit, ...countryCombination, ...boardCombination, ...generator].map(({path, component}) => (
     <Route key={path} path={path} exact component={component} />
   ))
 );
 
-export {ChartContent, ChartLinks};
+export {ScytheContent, ScytheLinks, ScytheImg};

@@ -1,6 +1,6 @@
 import React from 'react';
-import Chartist from './bar';
-import common from './common';
+import Chartist from '../../Bar';
+import common from '../../Template';
 
 const graph = base => ({data, players, countries}) => {
   const combinations = countries.map(d => d + ' ' + base);

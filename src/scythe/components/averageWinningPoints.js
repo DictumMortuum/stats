@@ -1,7 +1,7 @@
 import React from 'react';
 import incrementalAverage from 'incremental-average';
-import Chartist from './bar';
-import common from './common';
+import Chartist from '../../Bar';
+import common from '../../Template';
 
 const graph = ({data, players}) => {
   const stats = players.map(() => incrementalAverage());

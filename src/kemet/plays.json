@@ -1,0 +1,76 @@
+[{
+  "victory": "8 points",
+  "rounds": 4,
+  "date": "2019-01-06",
+  "order": [
+    "Kostas",
+    "Elena",
+    "Dimitris",
+    "Panagiotis"
+  ],
+  "setup": [{
+    "player": "Dimitris",
+    "vp": {
+      "battle": 3,
+      "pyramid": 2,
+      "temple_temporary": 1
+    },
+    "tiles": [
+      "recruiting scribe",
+      "the mummy",
+      "priest of amon",
+      "legion",
+      "charge!",
+      "defense!",
+      "hand of god"
+    ]
+  }, {
+    "player": "Panagiotis",
+    "vp": {
+      "battle": 3,
+      "temple_permanent": 1,
+      "temple_temporary": 1,
+      "pyramid": 1
+    },
+    "tiles": [
+      "phoenix",
+      "royal scarab",
+      "priest",
+      "initiative"
+    ]
+  }, {
+    "player": "Kostas",
+    "vp": {
+      "battle": 4,
+      "temple_permanent": 1,
+      "temple_temporary": 1,
+      "tile": 1,
+      "pyramid": 1
+    },
+    "tiles": [
+      "priest",
+      "recruiting scribe",
+      "red victory point",
+      "giant scorpion",
+      "god speed",
+      "red act of god"
+    ]
+  }, {
+    "player": "Elena",
+    "vp": {
+      "battle": 3,
+      "pyramid": 1,
+      "tile": 1,
+      "sphinx": 1
+    },
+    "tiles": [
+      "priestess",
+      "white victory point",
+      "defense!",
+      "ancestral elephant",
+      "sphinx",
+      "charge!",
+      "holy war"
+    ]
+  }]
+}]

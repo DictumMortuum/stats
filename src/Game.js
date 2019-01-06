@@ -13,7 +13,6 @@ import Divider from '@material-ui/core/Divider';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { BrowserRouter as Router } from "react-router-dom";
-import { ChartLinks, ChartContent} from './Charts';
 
 const drawerWidth = 240;
 
@@ -88,11 +87,11 @@ class PersistentDrawerLeft extends React.Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes, theme, basename, links, content } = this.props;
     const { open } = this.state;
 
     return (
-      <Router basename="/scythe/">
+      <Router basename={basename}>
         <div className={classes.root}>
           <CssBaseline />
           <AppBar
@@ -111,7 +110,7 @@ class PersistentDrawerLeft extends React.Component {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" color="inherit" noWrap>
-                Scythe Stats
+                {basename}
               </Typography>
             </Toolbar>
           </AppBar>
@@ -130,7 +129,7 @@ class PersistentDrawerLeft extends React.Component {
               </IconButton>
             </div>
             <Divider />
-            <ChartLinks />
+            {links}
           </Drawer>
           <main
             className={classNames(classes.content, {
@@ -138,7 +137,7 @@ class PersistentDrawerLeft extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            <ChartContent />
+            {content}
           </main>
         </div>
       </Router>

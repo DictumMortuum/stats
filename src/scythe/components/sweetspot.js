@@ -1,8 +1,8 @@
 import React from 'react';
 import incrementalAverage from 'incremental-average';
 import Typography from '@material-ui/core/Typography';
-import Chartist from './bar';
-import common from './common';
+import Chartist from '../../Bar';
+import common from '../../Template';
 
 const graph = ({data, players, rounds: r, points: p, percentile}) => {
 

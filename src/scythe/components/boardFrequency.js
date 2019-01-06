@@ -1,5 +1,5 @@
 import React from 'react';
-import Chartist from './pie';
+import Chartist from '../../Pie';
 
 const graph = ({data, boards, relativeFrequency}) => ({
   'series': relativeFrequency(boards)(data.map(x => x.board)),
