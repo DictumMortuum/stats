@@ -5,8 +5,7 @@ import { Route } from "react-router-dom";
 import analysis from "./analysis";
 import KemetImg from './img.jpg';
 import Standings from "./components/standings";
-import TilesByVP from "./components/tilesByVP";
-import TilesByPosition from './components/tilesByPosition';
+import { TilesByVP, TilesByPosition, TilesByPicks } from "./components/coloredTiles";
 
 const colors = ['red', 'blue', 'white'];
 
@@ -26,6 +25,15 @@ const tiles = [
     return {
       'text': c + ' tiles by position',
       'path': '/tiles/position/' + c + '/',
+      'component': () => <Tiles {...analysis} />
+    };
+  }),
+  ...colors.map(c => {
+    const Tiles = TilesByPicks(c);
+
+    return {
+      'text': c + ' tiles by # of picks',
+      'path': '/tiles/picks/' + c + '/',
       'component': () => <Tiles {...analysis} />
     };
   })
