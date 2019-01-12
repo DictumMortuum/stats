@@ -5,7 +5,17 @@ import Game from './Game';
 import Grid from '@material-ui/core/Grid';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { ScytheLinks, ScytheContent, ScytheImg } from './scythe/Charts';
-import { KemetLinks, KemetContent, KemetImg } from './kemet/Charts';
+import { KemetLinks, KemetContent, KemetImg } from './kemet';
+import { combineReducers, createStore } from 'redux';
+import { Provider } from 'react-redux';
+import kemetReducer from './kemet/reducer';
+import { kemetInit } from './kemet/actions';
+
+const store = createStore(combineReducers({
+  kemetReducer
+}));
+
+store.dispatch(kemetInit())
 
 const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={<ScytheContent />} />;
 const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={<KemetContent />} />;
@@ -37,10 +47,10 @@ const Index = () => (
 
 ReactDOM.render(
   <Router>
-    <div>
+    <Provider store={store}>
       <Route path="/stats/" exact component={Index} />
       <Route path="/stats/scythe" component={Scythe} />
       <Route path="/stats/kemet" component={Kemet} />
-    </div>
+    </Provider>
   </Router>
 , document.getElementById('root'));

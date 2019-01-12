@@ -73,4 +73,69 @@
       "holy war"
     ]
   }]
+}, {
+  "victory": "8 points",
+  "rounds": 6,
+  "date": "2019-01-09",
+  "order": [
+    "Kostas",
+    "Elena",
+    "Dimitris"
+  ],
+  "setup": [{
+    "player": "Dimitris",
+    "vp": {
+      "battle": 4,
+      "pyramid": 1,
+      "temple_temporary": 1,
+      "tile": 1
+    },
+    "tiles": [
+      "initiative",
+      "phoenix",
+      "recruiting scribe",
+      "charge!",
+      "god speed",
+      "royal scarab",
+      "defense!",
+      "red victory point"
+    ]
+  }, {
+    "player": "Elena",
+    "vp": {
+      "battle": 2,
+      "sanctuary": 3,
+      "sphinx": 1,
+      "pyramid": 1,
+      "tile": 1,
+      "temple_temporary": 1
+    },
+    "tiles": [
+      "ancestral elephant",
+      "blue victory point",
+      "deep desert snake",
+      "sphinx",
+      "priestess",
+      "priest"
+    ]
+  }, {
+    "player": "Kostas",
+    "vp": {
+      "battle": 5,
+      "sanctuary": 1,
+      "pyramid": 2
+    },
+    "tiles": [
+      "priest",
+      "priestess",
+      "reinforcement",
+      "divine will",
+      "defensive victory",
+      "legion",
+      "red act of god",
+      "giant scorpion",
+      "blades of neith",
+      "open gates"
+    ]
+  }]
 }]
