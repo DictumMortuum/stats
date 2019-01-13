@@ -213,5 +213,80 @@
     "color": "white",
     "level": 4,
     "phase": "day"
+  },
+  "mercenaries": {
+    "color": "black",
+    "level": 1,
+    "phase": "day"
+  },
+  "enforced recruitment": {
+    "color": "black",
+    "level": 1,
+    "phase": "day"
+  },
+  "dark ritual": {
+    "color": "black",
+    "level": 1,
+    "phase": "day"
+  },
+  "honor in battle": {
+    "color": "black",
+    "level": 2,
+    "phase": "battle"
+  },
+  "dedication to battle": {
+    "color": "black",
+    "level": 2,
+    "phase": "day"
+  },
+  "khnum's sphinx": {
+    "color": "black",
+    "level": 2,
+    "phase": "day"
+  },
+  "twin ceremony": {
+    "color": "black",
+    "level": 2,
+    "phase": "day"
+  },
+  "griffin sphinx": {
+    "color": "black",
+    "level": 3,
+    "phase": "day"
+  },
+  "forced march": {
+    "color": "black",
+    "level": 3,
+    "phase": "day"
+  },
+  "deadly trap": {
+    "color": "black",
+    "level": 3,
+    "phase": "day"
+  },
+  "black victory point": {
+    "color": "black",
+    "level": 3,
+    "phase": "day"
+  },
+  "devourer": {
+    "color": "black",
+    "level": 4,
+    "phase": "battle"
+  },
+  "bestial fury": {
+    "color": "black",
+    "level": 4,
+    "phase": "battle"
+  },
+  "divine strength": {
+    "color": "black",
+    "level": 4,
+    "phase": "day"
+  },
+  "black act of god": {
+    "color": "black",
+    "level": 4,
+    "phase": "day"
   }
 }

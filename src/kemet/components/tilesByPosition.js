@@ -17,6 +17,10 @@ const graph = ({games, players, tiles, color, config: {perPlayer}}) => {
 
         if(i > -1) {
           acc[p][i].add(position + 1);
+        } else {
+          if (tiles.indexOf(t) === -1) {
+            console.log(t);
+          }
         }
       });
     });

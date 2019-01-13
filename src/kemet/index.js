@@ -9,7 +9,7 @@ import TilesByPicks from './components/tilesByPicks';
 import TilesByVP from './components/tilesByVP';
 import TilesByPosition from './components/tilesByPosition';
 
-const colors = ['red', 'blue', 'white'];
+const colors = ['red', 'blue', 'white', 'black'];
 
 const tiles = [
   ...colors.map(c => ({

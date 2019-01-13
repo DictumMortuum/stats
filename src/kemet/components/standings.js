@@ -3,9 +3,9 @@ import Chartist from '../../Bar';
 import { connect } from 'react-redux';
 
 const graph = ({games, players}) => {
-  const I = Array(5).fill(0).map(() => players.map(() => 0));
+  const Init = Array(5).fill(0).map(() => players.map(() => 0));
 
-  const R = (acc, {setup}) => {
+  const Reduce = (acc, {setup}) => {
     setup.forEach(({player, position}) => {
       let p = players.indexOf(player);
       acc[position][p]++;
@@ -15,7 +15,7 @@ const graph = ({games, players}) => {
 
   return {
     'labels': players,
-    'series': games.reduce(R, I),
+    'series': games.reduce(Reduce, Init),
     'total': games.length,
     'sample': games.length
   };
