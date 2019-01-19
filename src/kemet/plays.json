@@ -74,7 +74,9 @@
       "holy war"
     ]
   }]
-}, {
+},
+
+{
   "victory": "8 points",
   "expansions": [],
   "rounds": 6,
@@ -140,7 +142,9 @@
       "open gates"
     ]
   }]
-}, {
+},
+
+{
   "victory": "8 points",
   "expansions": ["black"],
   "rounds": 4,
@@ -224,4 +228,99 @@
       "priest"
     ]
   }]
-}]
+},
+
+{
+  "victory": "8 points",
+  "expansions": ["black"],
+  "rounds": 6,
+  "date": "2019-01-18",
+  "order": [
+    "Kostas",
+    "Elena",
+    "Dimitris",
+    "Manolis"
+  ],
+  "setup": [{
+    "player": "Dimitris",
+    "vp": {
+      "battle": 7,
+      "pyramid": 2,
+      "tile": 1
+    },
+    "tiles": [
+      "black act of god",
+      "giant scorpion",
+      "priest",
+      "slaves",
+      "dark ritual",
+      "charge!",
+      "red victory point",
+      "devourer",
+      "open gates",
+      "forced march",
+      "offensive strategy"
+    ]
+  }, {
+    "player": "Elena",
+    "vp": {
+      "battle": 2,
+      "temple_permanent": 1,
+      "temple_temporary": 3,
+      "pyramid": 1,
+      "sphinx": 1,
+      "tile": 1
+    },
+    "tiles": [
+      "charge!",
+      "priestess",
+      "white victory point",
+      "deep desert snake",
+      "ancestral elephant",
+      "sphinx",
+      "stargate",
+      "teleport",
+      "blades of neith",
+      "divine boon"
+    ]
+  }, {
+    "player": "Manolis",
+    "vp": {
+      "battle": 2,
+      "temple_permanent": 1,
+      "tile": 1,
+      "pyramid": 1
+    },
+    "tiles": [
+      "high priest",
+      "priestess",
+      "black victory point",
+      "god speed",
+      "carnage",
+      "divine wound",
+      "bestial fury",
+      "griffin sphinx",
+      "khnum's sphinx"
+    ]
+  }, {
+    "player": "Kostas",
+    "vp": {
+      "battle": 6,
+      "pyramid": 1,
+      "temple_permanent": 2,
+      "temple_temporary": 2
+    },
+    "tiles": [
+      "mercenaries",
+      "initiative",
+      "royal scarab",
+      "red act of god",
+      "phoenix",
+      "priest",
+      "enforced recruitment",
+      "deadly trap"
+    ]
+  }]
+}
+
+]
