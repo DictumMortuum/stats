@@ -9,17 +9,13 @@ const graph = ({games, players, tiles, color, config: {perPlayer}}) => {
   const I = players.map(() => colored_tiles.map(() => 0));
 
   const R = (acc, {setup}) => {
-    setup.forEach(({tiles, player}) => {
-      tiles.forEach(t => {
+    setup.forEach(({tiles: _tiles, player}) => {
+      _tiles.forEach(t => {
         let p = perPlayer ? players.indexOf(player) : 0;
         let i = colored_tiles.indexOf(t);
 
         if(i > -1) {
           acc[p][i]++;
-        } else {
-          if (tiles.indexOf(t) === -1) {
-            console.log(t);
-          }
         }
       });
     });

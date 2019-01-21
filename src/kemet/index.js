@@ -8,10 +8,15 @@ import Standings from './components/standings';
 import TilesByPicks from './components/tilesByPicks';
 import TilesByVP from './components/tilesByVP';
 import TilesByPosition from './components/tilesByPosition';
+import BestTiles from './components/bestTiles';
 
 const colors = ['red', 'blue', 'white', 'black'];
 
-const tiles = [
+const tiles = [{
+    'text': 'Best tiles',
+    'path': '/tiles/best',
+    'component': () => <BestTiles />
+  },
   ...colors.map(c => ({
     'text': c + ' tiles by VP',
     'path': '/tiles/vp/' + c + '/',

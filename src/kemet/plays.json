@@ -321,6 +321,109 @@
       "deadly trap"
     ]
   }]
+},
+
+{
+  "victory": "8 points",
+  "expansions": ["black"],
+  "rounds": 5,
+  "date": "2019-01-20",
+  "order": [
+    "Kostas",
+    "Elena",
+    "Dimitris",
+    "Manolis",
+    "Ifigenia"
+  ],
+  "setup": [{
+    "player": "Elena",
+    "vp": {
+      "battle": 3,
+      "pyramid": 3,
+      "tile": 1,
+      "sphinx": 1,
+      "temple_permanent": 1,
+      "temple_allgods": 1
+    },
+    "tiles": [
+      "priest",
+      "priestess",
+      "priest of amon",
+      "white victory point",
+      "sphinx"
+    ]
+  }, {
+    "player": "Kostas",
+    "vp": {
+      "battle": 2,
+      "temple_allgods": 1,
+      "pyramid": 2
+    },
+    "tiles": [
+      "priest",
+      "priestess",
+      "teleport",
+      "stargate",
+      "red act of god",
+      "god speed",
+      "twin ceremony",
+      "mercenaries",
+      "charge!",
+      "devourer",
+      "forced march"
+    ]
+  }, {
+    "player": "Manolis",
+    "vp": {
+      "battle": 3,
+      "temple_allgods": 2,
+      "temple_temporary": 1,
+      "tile": 1,
+      "pyramid": 2
+    },
+    "tiles": [
+      "charge!",
+      "the mummy",
+      "slaves",
+      "red victory point",
+      "high priest",
+      "divine wound",
+      "divine boon"
+    ]
+  }, {
+    "player": "Ifigenia",
+    "vp": {
+      "battle": 1,
+      "pyramid": 1,
+      "temple_permanent": 1,
+      "temple_temporary": 1,
+      "temple_allgods": 1,
+      "tile": 1
+    },
+    "tiles": [
+      "deep desert snake",
+      "blue victory point",
+      "enforced recruitment",
+      "khnum's sphinx"
+    ]
+  }, {
+    "player": "Dimitris",
+    "vp": {
+      "battle": 6,
+      "pyramid": 2,
+      "temple_permanent": 1,
+      "tile": 1
+    },
+    "tiles": [
+      "dark ritual",
+      "black victory point",
+      "royal scarab",
+      "initiative",
+      "giant scorpion",
+      "open gates",
+      "deadly trap"
+    ]
+  }]
 }
 
 ]
