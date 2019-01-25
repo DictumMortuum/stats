@@ -9,6 +9,7 @@ import TilesByPicks from './components/tilesByPicks';
 import TilesByVP from './components/tilesByVP';
 import TilesByPosition from './components/tilesByPosition';
 import BestTiles from './components/bestTiles';
+import PlayerByColor from './components/playersByColor';
 
 const colors = ['red', 'blue', 'white', 'black'];
 
@@ -38,6 +39,10 @@ const wins = [{
   'text': 'Standings',
   'path': '/',
   'component': () => <Standings />
+}, {
+  'text': 'Players by color',
+  'path': '/players/color',
+  'component': () => <PlayerByColor />
 }];
 
 const KemetLinks = () => (

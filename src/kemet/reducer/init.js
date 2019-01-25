@@ -46,6 +46,7 @@ export default {
   games: data.map(addScoreToData),
   rounds: discrete([1, ...data.map(d => d.rounds)]),
   tiles: tilesToArray(tiles),
+  colors: ['red', 'blue', 'white', 'black'],
   config: {
     perPlayer: true
   }

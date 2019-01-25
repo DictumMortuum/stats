@@ -48,3 +48,15 @@ code {
 .players.ct-chart .ct-series.ct-series-d .ct-bar {
   stroke: #1E88E5
 }
+
+.pyramids.ct-chart .ct-series.ct-series-b .ct-bar {
+  stroke: #1E88E5
+}
+
+.pyramids.ct-chart .ct-series.ct-series-c .ct-bar {
+  stroke: #c7c7c7
+}
+
+.pyramids.ct-chart .ct-series.ct-series-d .ct-bar {
+  stroke: #453d3f;
+}
