@@ -5,7 +5,7 @@ import incrementalAverage from 'incremental-average';
 
 const n = 20;
 
-const graph = ({games, players, tiles, config: {perPlayer}}) => {
+const graph = ({games, tiles}) => {
 
   const data = tiles.map(d => d.name);
 
@@ -44,7 +44,7 @@ const compare = (a, b) => {
   }
 }
 
-const sort = ({labels, sample, total, series: [first, second, ...rest]}) => {
+const sort = ({labels, sample, total, series: [first, second]}) => {
   let merged = [];
   const labels_sorted = [];
   const first_sorted = [];
@@ -89,9 +89,7 @@ const mapStateToProps = state => ({
 class Element extends React.Component {
   render() {
     const data = graph(this.props);
-    console.log(data);
     const args = {...this.props, data: sort(data)}
-    console.log(args);
     return <Chartist {...args} />;
   }
 }

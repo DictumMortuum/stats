@@ -48,6 +48,6 @@ export default {
   tiles: tilesToArray(tiles),
   colors: ['red', 'blue', 'white', 'black'],
   config: {
-    perPlayer: true
+    perPlayer: false
   }
 };

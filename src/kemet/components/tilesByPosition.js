@@ -1,6 +1,7 @@
 import React from 'react';
 import Chartist from '../../Bar';
 import { connect } from 'react-redux';
+import { sort } from './util';
 import incrementalAverage from 'incremental-average';
 
 const graph = ({games, players, tiles, color, config: {perPlayer}}) => {
@@ -44,7 +45,9 @@ const mapStateToProps = state => ({
 class Element extends React.Component {
 
   render() {
-    const args = {...this.props, data: graph(this.props)}
+    const {config: {perPlayer}} = this.props;
+    const data = !perPlayer ? sort(graph(this.props)) : graph(this.props);
+    const args = {...this.props, data};
     return <Chartist {...args} />;
   }
 }

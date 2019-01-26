@@ -36,13 +36,14 @@ const listener = (data) => {
 }
 
 export default props => {
-  const {data: {total, sample, ...rest}, className, options = {}, draw = listener} = props;
+  const {data: {total, sample, ...rest}, desc, className, options = {}, draw = listener} = props;
 
   return (
     <div>
       <Typography paragraph>
         <b>Sample size: {sample} / {total}</b>
       </Typography>
+      {desc ? desc : <div />}
       <Chartist
         data={rest}
         options={{...dflt, ...options}}

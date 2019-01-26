@@ -424,6 +424,90 @@
       "deadly trap"
     ]
   }]
+},
+
+{
+  "victory": "8 points",
+  "expansions": ["black"],
+  "rounds": 5,
+  "date": "2019-01-25",
+  "order": [
+    "Manolis",
+    "Dimitris",
+    "Kostas",
+    "Panagiotis"
+  ],
+  "setup": [{
+    "player": "Kostas",
+    "vp": {
+      "battle": 4,
+      "pyramid": 2,
+      "temple_permanent": 1,
+      "temple_temporary": 2
+    },
+    "tiles": [
+      "priest",
+      "slaves",
+      "god speed",
+      "dark ritual",
+      "giant scorpion",
+      "blades of neith",
+      "devourer",
+      "black act of god"
+    ]
+  }, {
+    "player": "Manolis",
+    "vp": {
+      "battle": 1,
+      "temple_permanent": 3,
+      "pyramid": 1,
+      "tile": 1,
+      "temple_temporary": 2,
+      "sphinx": 1
+    },
+    "tiles": [
+      "priestess",
+      "priest of amon",
+      "white victory point",
+      "sphinx",
+      "open gates",
+      "deep desert snake",
+      "divine wound",
+      "defense!",
+      "divine boon"
+    ]
+  }, {
+    "player": "Panagiotis",
+    "vp": {
+      "battle": 2,
+      "temple_temporary": 1,
+      "pyramid": 2
+    },
+    "tiles": [
+      "hand of god",
+      "white act of god",
+      "recruiting scribe",
+      "the mummy",
+      "carnage",
+      "high priest"
+    ]
+  }, {
+    "player": "Dimitris",
+    "vp": {
+      "battle": 4,
+      "pyramid": 2,
+      "tile": 1
+    },
+    "tiles": [
+      "royal scarab",
+      "initiative",
+      "red act of god",
+      "red victory point",
+      "recruiting scribe",
+      "teleport",
+      "enforced recruitment"
+    ]
+  }]
 }
 
 ]
