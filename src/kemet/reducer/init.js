@@ -29,6 +29,23 @@ const addScoreToData = game => {
   return {...game, setup: temp};
 };
 
+const transformGames = game => {
+  const {setup} = game;
+  const temp = [];
+
+  setup.forEach(({tiles: _tiles, ...rest}) => {
+    _tiles.forEach(t => {
+      temp.push({
+        ...rest,
+        ...tiles[t],
+        tile: t
+      });
+    });
+  });
+
+  return temp;
+};
+
 const tilesToArray = json => {
   const temp = [];
 
@@ -44,6 +61,7 @@ const tilesToArray = json => {
 export default {
   players: unique(flatten(['Dimitris', 'Panagiotis', 'Elena', 'Kostas', ...collection(data)(d => d.order)])),
   games: data.map(addScoreToData),
+  games2: flatten(data.map(addScoreToData).map(transformGames)),
   rounds: discrete([1, ...data.map(d => d.rounds)]),
   tiles: tilesToArray(tiles),
   colors: ['red', 'blue', 'white', 'black'],

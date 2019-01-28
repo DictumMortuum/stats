@@ -5,24 +5,16 @@ import incrementalAverage from 'incremental-average';
 
 const n = 20;
 
-const graph = ({games, tiles}) => {
+const graph = ({games2: games, tiles}) => {
 
   const data = tiles.map(d => d.name);
 
-  const I = Array(2).fill(0).map(() => tiles.map(() => incrementalAverage()));
+  const I = [0, 0].map(() => tiles.map(() => incrementalAverage()));
 
-  const R = (acc, {setup}) => {
-    setup.forEach(({tiles: _tiles, score, position}) => {
-      _tiles.forEach(t => {
-        let i = data.indexOf(t);
-
-        if(i > -1) {
-          acc[0][i].add(score);
-          acc[1][i].add(position + 1);
-        }
-      });
-    });
-
+  const R = (acc, {score, position, tile}) => {
+    let i = data.indexOf(tile);
+    acc[0][i].add(score);
+    acc[1][i].add(position + 1);
     return acc;
   };
 
