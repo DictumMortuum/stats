@@ -508,6 +508,83 @@
       "enforced recruitment"
     ]
   }]
+},
+
+{
+  "victory": "8 points",
+  "expansions": ["black"],
+  "rounds": 5,
+  "date": "2019-02-04",
+  "order": [
+    "Kostas",
+    "Giorgos",
+    "Panagiotis",
+    "Dimitris"
+  ],
+  "setup": [{
+    "player": "Dimitris",
+    "vp": {
+      "battle": 1,
+      "pyramid": 3
+    },
+    "tiles": [
+      "priest",
+      "god speed",
+      "dark ritual",
+      "bestial fury",
+      "the mummy",
+      "teleport",
+      "black act of god",
+      "devourer",
+      "open gates",
+      "divine boon"
+    ]
+  }, {
+    "player": "Kostas",
+    "vp": {
+      "battle": 1,
+      "temple_permanent": 2,
+      "pyramid": 2,
+      "tile": 1,
+      "temple_temporary": 1
+    },
+    "tiles": [
+      "priest",
+      "divine wound",
+      "giant scorpion",
+      "initiative",
+      "red victory point"
+    ]
+  }, {
+    "player": "Giorgos",
+    "vp": {
+      "battle": 2,
+      "temple_temporary": 3,
+      "pyramid": 1,
+      "temple_permanent": 3
+    },
+    "tiles": [
+      "royal scarab",
+      "mercenaries",
+      "red act of god",
+      "phoenix",
+      "khnum's sphinx"
+    ]
+  }, {
+    "player": "Panagiotis",
+    "vp": {
+      "battle": 1,
+      "temple_temporary": 1,
+      "tile": 1
+    },
+    "tiles": [
+      "white act of god",
+      "priest of amon",
+      "hand of god",
+      "defense!",
+      "blue victory point"
+    ]
+  }]
 }
 
 ]
