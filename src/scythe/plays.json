@@ -220,4 +220,7 @@
   "winner": "Kostas",
   "objectives": ["Deploy", "Worker", "Objective1", "Battle1", "Battle2", "Battle3"],
   "aggressive": "Blitzkrieg", "passive": "Drill", "resolution": "Deja vu"
+}, {
+  "winner": "Dimitris", "board": "Innovative", "country": "Togawa", "points": 87, "rounds": 20, "players": 3,
+  "objectives": ["Enlist", "Deploy", "Worker", "Objective1"]
 }]
