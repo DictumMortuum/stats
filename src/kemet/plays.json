@@ -586,5 +586,97 @@
     ]
   }]
 }
+,
+
+{
+  "victory": "8 points",
+  "expansions": ["black"],
+  "rounds": 4,
+  "date": "2019-06-09",
+  "order": [
+    "Panagiotis",
+    "Dimitris",
+    "Kostas",
+    "Thodoris",
+    "Manolis"
+  ],
+  "setup": [{
+    "player": "Dimitris",
+    "vp": {
+      "battle": 2,
+      "pyramid": 3,
+      "tile": 1,
+      "temple_allgods": 1
+    },
+    "tiles": [
+      "priest",
+      "god speed",
+      "red act of god",
+      "white victory point",
+      "divine wound",
+      "hand of god"
+    ]
+  }, {
+    "player": "Kostas",
+    "vp": {
+      "battle": 4,
+      "temple_permanent": 1,
+      "pyramid": 3,
+      "tile": 1
+    },
+    "tiles": [
+      "priest",
+      "royal scarab",
+      "giant scorpion",
+      "teleport",
+      "red victory point"
+    ]
+  }, {
+    "player": "Manolis",
+    "vp": {
+      "battle": 1,
+      "temple_temporary": 2,
+      "pyramid": 1,
+      "temple_permanent": 1,
+      "temple_allgods": 1
+    },
+    "tiles": [
+      "divine boon",
+      "high priest",
+      "blue act of god",
+      "deep desert snake",
+      "stargate",
+      "priestess",
+      "recruiting scribe",
+      "charge!"
+    ]
+  }, {
+    "player": "Panagiotis",
+    "vp": {
+      "battle": 4,
+      "temple_allgods": 1,
+      "tile": 1
+    },
+    "tiles": [
+      "white act of god",
+      "black victory point",
+      "dark ritual",
+      "the mummy"
+    ]
+  }, {
+    "player": "Thodoris",
+    "vp": {
+      "battle": 3,
+      "temple_temporary": 1,
+      "pyramid": 1
+    },
+    "tiles": [
+      "mercenaries",
+      "phoenix",
+      "initiative",
+      "carnage"
+    ]
+  }]
+}
 
 ]

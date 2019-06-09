@@ -1,6 +1,6 @@
 
 
-const sort = ({labels, sample, total, series: [first]}) => {
+const sort = ({labels, sample, total, series: [first]}, cmp = (a, b) => b.score - a.score) => {
   let merged = [];
   const labels_sorted = [];
   const first_sorted = [];
@@ -12,7 +12,7 @@ const sort = ({labels, sample, total, series: [first]}) => {
     });
   }
 
-  merged = merged.sort((a, b) => b.score - a.score);
+  merged = merged.sort(cmp);
 
   for (let i = 0; i < merged.length; i++) {
     labels_sorted[i] = merged[i].label;

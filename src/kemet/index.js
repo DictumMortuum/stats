@@ -12,6 +12,7 @@ import BestTiles from './components/bestTiles';
 import PlayerVPByColor from './components/playerVPByColor';
 import PlayerPicksByColor from './components/playerPicksByColor';
 import Typography from '@material-ui/core/Typography';
+import BestPlayer from './components/bestPlayer';
 
 const colors = ['red', 'blue', 'white', 'black'];
 
@@ -54,6 +55,13 @@ const wins = [{
   'path': '/',
   'component': () => <Standings desc={<Typography variant="body1" gutterBottom>
     The game can be played at most with 5 players, so there are 5 positions. The bars represent these positions, so for a certain player the first bar represents how many times he came first, the second bar how many he came second, etc.
+  </Typography>}/>
+}, {
+  'text': 'Best player',
+  'path': '/players/best',
+  'component': () => <BestPlayer desc={<Typography variant="body1" gutterBottom>
+    This is the sum of all the positions that the player obtained, divided by the number of games he participated in.
+    Less is better, it means that the player got 1st place more often.
   </Typography>}/>
 }, {
   'text': 'Player VP by color',
