@@ -32,7 +32,7 @@ const result = ({
     return rest2.player;
   }
 
-  if (score1 == score2) {
+  if (score1 === score2) {
     return "tie";
   } else if (score1 > score2) {
     return rest1.player;
