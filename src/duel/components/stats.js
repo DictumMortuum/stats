@@ -1,33 +1,34 @@
 import React from 'react';
 import Chartist from '../../Bar';
 import { connect } from 'react-redux';
+import incrementalAverage from 'incremental-average';
 
 const graph = ({games, players}) => {
-  const Init = Array(3).fill(0).map(() => players.map(() => 0));
+  const Init = Array(8).fill(0).map(() => players.map(() => incrementalAverage()));
 
-  const Reduce = (acc, {player1, player2, winner}) => {
+  const Reduce = (acc, {player1, player2}) => {
     let p1 = players.indexOf(player1.player);
     let p2 = players.indexOf(player2.player);
 
-    // win , tie, lose
-
-    if (winner === 'tie') {
-      acc[1][p1]++;
-      acc[1][p2]++;
-    } else if (winner === player1.player) {
-      acc[0][p1]++;
-      acc[2][p2]++;
-    } else {
-      acc[2][p1]++;
-      acc[0][p2]++;
-    }
+    [{id: p1, ...player1}, {id: p2, ...player2}].forEach(({
+      id, blue, green, yellow, purple, wonder, marker, coin, battle
+    }) => {
+      acc[0][id].add(blue);
+      acc[1][id].add(green);
+      acc[2][id].add(yellow);
+      acc[3][id].add(purple);
+      acc[4][id].add(wonder);
+      acc[5][id].add(marker);
+      acc[6][id].add(coin);
+      acc[7][id].add(battle);
+    });
 
     return acc;
   };
 
   return {
     'labels': players,
-    'series': games.reduce(Reduce, Init),
+    'series': games.reduce(Reduce, Init).map(d => d.map(v => v.getAverage())),
     'total': games.length,
     'sample': games.length
   };
@@ -39,7 +40,7 @@ const mapStateToProps = state => ({
   options: {
     stackBars: false
   },
-  className: "ct-octave"
+  className: "ct-octave duel"
 });
 
 class Element extends React.Component {

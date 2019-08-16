@@ -2,7 +2,7 @@
   {
     "date": "20190719",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 10,
       "green": 6,
       "yellow": 9,
@@ -15,7 +15,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 29,
       "green": 2,
       "yellow": 0,
@@ -31,7 +31,7 @@
   {
     "date": "20190719",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 20,
       "green": 8,
       "yellow": 9,
@@ -44,7 +44,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 31,
       "green": 5,
       "yellow": 3,
@@ -60,7 +60,7 @@
   {
     "date": "20190720",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 26,
       "green": 2,
       "yellow": 3,
@@ -73,7 +73,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 10,
       "green": 13,
       "yellow": 6,
@@ -89,7 +89,7 @@
   {
     "date": "20190720",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 16,
       "green": 2,
       "yellow": 6,
@@ -102,7 +102,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 44,
       "green": 8,
       "yellow": 3,
@@ -118,7 +118,7 @@
   {
     "date": "20190720",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 22,
       "green": 8,
       "yellow": 0,
@@ -131,7 +131,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 14,
       "green": 1,
       "yellow": 9,
@@ -147,7 +147,7 @@
   {
     "date": "20190727",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 14,
       "green": 0,
       "yellow": 0,
@@ -160,7 +160,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 7,
       "green": 5,
       "yellow": 0,
@@ -176,7 +176,7 @@
   {
     "date": "20190727",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 8,
       "green": 13,
       "yellow": 9,
@@ -189,7 +189,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 43,
       "green": 0,
       "yellow": 3,
@@ -205,7 +205,7 @@
   {
     "date": "20190729",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 16,
       "green": 0,
       "yellow": 9,
@@ -218,7 +218,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 16,
       "green": 10,
       "yellow": 3,
@@ -234,7 +234,7 @@
   {
     "date": "20190729",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 8,
       "green": 11,
       "yellow": 9,
@@ -247,7 +247,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 24,
       "green": 0,
       "yellow": 6,
@@ -263,7 +263,7 @@
   {
     "date": "20190803",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 44,
       "green": 3,
       "yellow": 6,
@@ -276,7 +276,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 6,
       "green": 12,
       "yellow": 3,
@@ -292,7 +292,7 @@
   {
     "date": "20190803",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 16,
       "green": 7,
       "yellow": 3,
@@ -305,7 +305,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 16,
       "green": 2,
       "yellow": 6,
@@ -321,7 +321,7 @@
   {
     "date": "20190803",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 7,
       "green": 15,
       "yellow": 6,
@@ -334,7 +334,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 33,
       "green": 1,
       "yellow": 6,
@@ -350,7 +350,7 @@
   {
     "date": "20190803",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 18,
       "green": 7,
       "yellow": 9,
@@ -363,7 +363,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 30,
       "green": 9,
       "yellow": 3,
@@ -379,7 +379,7 @@
   {
     "date": "20190803",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 10,
       "green": 9,
       "yellow": 9,
@@ -392,7 +392,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 37,
       "green": 3,
       "yellow": 6,
@@ -408,7 +408,7 @@
   {
     "date": "20190805",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 18,
       "green": 5,
       "yellow": 0,
@@ -421,7 +421,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 11,
       "green": 2,
       "yellow": 0,
@@ -437,7 +437,7 @@
   {
     "date": "20190807",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 33,
       "green": 6,
       "yellow": 9,
@@ -450,7 +450,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 23,
       "green": 4,
       "yellow": 3,
@@ -466,7 +466,7 @@
   {
     "date": "20190807",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 9,
       "green": 6,
       "yellow": 9,
@@ -479,7 +479,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 25,
       "green": 4,
       "yellow": 0,
@@ -495,7 +495,7 @@
   {
     "date": "20190807",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 9,
       "green": 4,
       "yellow": 3,
@@ -508,7 +508,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 37,
       "green": 2,
       "yellow": 0,
@@ -524,7 +524,7 @@
   {
     "date": "20190811",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 18,
       "green": 1,
       "yellow": 6,
@@ -537,7 +537,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 22,
       "green": 3,
       "yellow": 6,
@@ -553,7 +553,7 @@
   {
     "date": "20190811",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 41,
       "green": 4,
       "yellow": 3,
@@ -566,7 +566,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 18,
       "green": 9,
       "yellow": 6,
@@ -582,7 +582,7 @@
   {
     "date": "20190815",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 0,
       "green": 7,
       "yellow": 3,
@@ -595,7 +595,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 30,
       "green": 0,
       "yellow": 6,
@@ -611,7 +611,7 @@
   {
     "date": "20190815",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 18,
       "green": 6,
       "yellow": 6,
@@ -624,7 +624,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 45,
       "green": 6,
       "yellow": 3,
@@ -640,7 +640,7 @@
   {
     "date": "20190815",
     "player1": {
-      "player": "theoni",
+      "player": "Theoni",
       "blue": 34,
       "green": 11,
       "yellow": 6,
@@ -653,7 +653,7 @@
       "science_victory": false
     },
     "player2": {
-      "player": "dimitris",
+      "player": "Dimitris",
       "blue": 27,
       "green": 2,
       "yellow": 6,

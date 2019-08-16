@@ -9,6 +9,7 @@
     "chartist": "^0.11.0",
     "incremental-average": "^1.1.0",
     "js-combinatorics": "^0.5.4",
+    "material-ui-image": "^3.2.0",
     "react": "^16.6.3",
     "react-chartist": "^0.13.1",
     "react-dom": "^16.6.3",

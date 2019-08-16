@@ -39,19 +39,19 @@ const Index = () => (
     alignItems="center"
     >
     <Grid item xs={6}>
-        <Link to="/stats/scythe">
-          <img src={ScytheImg} alt="scythe" style={style} />
-        </Link>
+      <Link to="/stats/scythe">
+        <img src={ScytheImg} alt="scythe" style={style} />
+      </Link>
     </Grid>
     <Grid item xs={6}>
-        <Link to="/stats/kemet">
-          <img src={KemetImg} alt="kemet" style={style} />
-        </Link>
+      <Link to="/stats/kemet">
+        <img src={KemetImg} alt="kemet" style={style} />
+      </Link>
     </Grid>
     <Grid item xs={6}>
-        <Link to="/stats/duel">
-          <img src={DuelImg} alt="duel" style={style} />
-        </Link>
+      <Link to="/stats/duel">
+        <img src={DuelImg} alt="duel" style={style} />
+      </Link>
     </Grid>
   </Grid>
 );
