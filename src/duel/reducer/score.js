@@ -9,7 +9,7 @@ const tally = ({
   battle
 }) => blue + green + yellow + purple + wonder + marker + coin + battle;
 
-const winner = ({
+const result = ({
   player1: {
     battle_victory: bv1,
     science_victory: sv1,
@@ -21,6 +21,9 @@ const winner = ({
     ...rest2
   }
 }) => {
+  let score1 = tally(rest1);
+  let score2 = tally(rest2);
+
   if (bv1 || sv1) {
     return rest1.player;
   }
@@ -28,9 +31,6 @@ const winner = ({
   if (bv2 || sv2) {
     return rest2.player;
   }
-
-  let score1 = tally(rest1);
-  let score2 = tally(rest2);
 
   if (score1 == score2) {
     return "tie";
@@ -41,4 +41,7 @@ const winner = ({
   }
 }
 
-export default winner;
+export {
+  result,
+  tally
+};
