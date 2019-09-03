@@ -723,5 +723,39 @@
       "battle_victory": false,
       "science_victory": false
     }
+  },
+  {
+    "date": "20190903",
+    "expansion": ["pantheon"],
+    "player1": {
+      "player": "Theoni",
+      "blue": 32,
+      "green": 4,
+      "yellow": 3,
+      "purple": 0,
+      "temple": 5,
+      "pantheon": 4,
+      "wonder": 18,
+      "marker": 0,
+      "coin": 5,
+      "battle": 0,
+      "battle_victory": false,
+      "science_victory": false
+    },
+    "player2": {
+      "player": "Dimitris",
+      "blue": 16,
+      "green": 4,
+      "yellow": 6,
+      "purple": 0,
+      "temple": 5,
+      "pantheon": 9,
+      "wonder": 9,
+      "marker": 16,
+      "coin": 3,
+      "battle": 5,
+      "battle_victory": false,
+      "science_victory": false
+    }
   }
 ]

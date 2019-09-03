@@ -4,14 +4,14 @@ import { connect } from 'react-redux';
 import incrementalAverage from 'incremental-average';
 
 const graph = ({games, players}) => {
-  const Init = Array(8).fill(0).map(() => players.map(() => incrementalAverage()));
+  const Init = Array(10).fill(0).map(() => players.map(() => incrementalAverage()));
 
   const Reduce = (acc, {player1, player2}) => {
     let p1 = players.indexOf(player1.player);
     let p2 = players.indexOf(player2.player);
 
     [{id: p1, ...player1}, {id: p2, ...player2}].forEach(({
-      id, blue, green, yellow, purple, wonder, marker, coin, battle
+      id, blue, green, yellow, purple, wonder, marker, coin, battle, pantheon = 0, temple = 0
     }) => {
       acc[0][id].add(blue);
       acc[1][id].add(green);
@@ -21,6 +21,8 @@ const graph = ({games, players}) => {
       acc[5][id].add(marker);
       acc[6][id].add(coin);
       acc[7][id].add(battle);
+      acc[8][id].add(pantheon);
+      acc[9][id].add(temple);
     });
 
     return acc;

@@ -6,8 +6,10 @@ const tally = ({
   wonder,
   marker,
   coin,
-  battle
-}) => blue + green + yellow + purple + wonder + marker + coin + battle;
+  battle,
+  temple = 0,
+  pantheon = 0
+}) => blue + green + yellow + purple + wonder + marker + coin + battle + temple + pantheon;
 
 const result = ({
   player1: {

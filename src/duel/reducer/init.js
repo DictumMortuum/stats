@@ -31,5 +31,5 @@ const addScoreToData = game => {
 export default {
   players: unique(flatten(collection(data)(d => [d.player2.player, d.player1.player]))),
   games: data.map(addScoreToData),
-  colors: ['blue', 'green', 'yellow', 'purple', 'wonder', 'marker', 'coin', 'battle']
+  colors: ['blue', 'green', 'yellow', 'purple', 'wonder', 'marker', 'coin', 'battle', 'temple', 'pantheon']
 };

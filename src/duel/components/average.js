@@ -10,10 +10,10 @@ const graph = ({games, colors}) => {
     [player1, player2].forEach(player => {
       colors.forEach((color, i) => {
         let {won} = player;
-        acc[0][i].add(player[colors[i]]);
+        acc[0][i].add(player[colors[i]] || 0);
 
         if (won) {
-          acc[1][i].add(player[colors[i]]);
+          acc[1][i].add(player[colors[i]] || 0);
         }
       });
     });
