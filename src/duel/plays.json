@@ -757,5 +757,150 @@
       "battle_victory": false,
       "science_victory": false
     }
+  },
+  {
+    "date": "20191124",
+    "player1": {
+      "player": "Theoni",
+      "blue": 35,
+      "green": 8,
+      "yellow": 3,
+      "purple": 7,
+      "wonder": 11,
+      "marker": 6,
+      "coin": 0,
+      "battle": 0,
+      "battle_victory": false,
+      "science_victory": false
+    },
+    "player2": {
+      "player": "Dimitris",
+      "blue": 19,
+      "green": 6,
+      "yellow": 9,
+      "purple": 12,
+      "wonder": 12,
+      "marker": 0,
+      "coin": 6,
+      "battle": 10,
+      "battle_victory": false,
+      "science_victory": false
+    }
+  },
+  {
+    "date": "20191124",
+    "player1": {
+      "player": "Theoni",
+      "blue": 6,
+      "green": 0,
+      "yellow": 0,
+      "purple": 6,
+      "wonder": 12,
+      "marker": 0,
+      "coin": 2,
+      "battle": 10,
+      "battle_victory": true,
+      "science_victory": false
+    },
+    "player2": {
+      "player": "Dimitris",
+      "blue": 18,
+      "green": 7,
+      "yellow": 6,
+      "purple": 0,
+      "wonder": 7,
+      "marker": 0,
+      "coin": 11,
+      "battle": 0,
+      "battle_victory": false,
+      "science_victory": false
+    }
+  },
+  {
+    "date": "20191226",
+    "player1": {
+      "player": "Theoni",
+      "blue": 22,
+      "green": 2,
+      "yellow": 0,
+      "purple": 9,
+      "wonder": 13,
+      "marker": 4,
+      "coin": 0,
+      "battle": 5,
+      "battle_victory": false,
+      "science_victory": false
+    },
+    "player2": {
+      "player": "Dimitris",
+      "blue": 7,
+      "green": 12,
+      "yellow": 6,
+      "purple": 0,
+      "wonder": 13,
+      "marker": 9,
+      "coin": 9,
+      "battle": 0,
+      "battle_victory": false,
+      "science_victory": true
+    }
+  },
+  {
+    "date": "20200413",
+    "player1": {
+      "player": "Theoni",
+      "blue": 4,
+      "green": 9,
+      "yellow": 9,
+      "purple": 0,
+      "wonder": 15,
+      "marker": 16,
+      "coin": 3,
+      "battle": 5,
+      "battle_victory": false,
+      "science_victory": true
+    },
+    "player2": {
+      "player": "Dimitris",
+      "blue": 31,
+      "green": 0,
+      "yellow": 0,
+      "purple": 2,
+      "wonder": 0,
+      "marker": 0,
+      "coin": 4,
+      "battle": 0,
+      "battle_victory": false,
+      "science_victory": false
+    }
+  },
+  {
+    "date": "20200413",
+    "player1": {
+      "player": "Theoni",
+      "blue": 30,
+      "green": 6,
+      "yellow": 3,
+      "purple": 14,
+      "wonder": 9,
+      "marker": 0,
+      "coin": 3,
+      "battle": 10,
+      "battle_victory": false,
+      "science_victory": true
+    },
+    "player2": {
+      "player": "Dimitris",
+      "blue": 24,
+      "green": 7,
+      "yellow": 9,
+      "purple": 6,
+      "wonder": 19,
+      "marker": 20,
+      "coin": 10,
+      "battle": 0,
+      "battle_victory": false,
+      "science_victory": false
+    }
   }
 ]
