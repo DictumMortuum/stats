@@ -226,4 +226,7 @@
 }, {
   "winner": "Panagiotis", "board": "Mechanical", "country": "Polania", "points": 89, "rounds": 19, "players": 6,
   "objectives": ["Power", "Enlist", "Deploy", "Objective1", "Battle1", "Battle2"]
+},{
+  "winner": "Dimitris", "board": "Patriotic", "country": "Albion", "points": 87, "rounds": 21, "players": 3,
+  "objectives": ["Power", "Enlist", "Deploy", "Objective1", "Upgrade", "Worker"]
 }]
