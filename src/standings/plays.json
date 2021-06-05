@@ -1,0 +1,4481 @@
+[
+  {
+    "play": {
+      "id": 85,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:31:59+03:00",
+      "date": "2019-01-09T02:00:00+02:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 201,
+        "play_id": 85,
+        "player_id": 4,
+        "data": {
+          "battle": 2,
+          "order": 2,
+          "pyramid": 1,
+          "sanctuary": 3,
+          "score": 9,
+          "sphinx": 1,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 200,
+        "play_id": 85,
+        "player_id": 5,
+        "data": {
+          "battle": 5,
+          "order": 3,
+          "pyramid": 2,
+          "sanctuary": 1,
+          "score": 8
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 202,
+        "play_id": 85,
+        "player_id": 1,
+        "data": {
+          "battle": 4,
+          "order": 1,
+          "pyramid": 1,
+          "score": 7,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 86,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:33:23+03:00",
+      "date": "2019-01-13T02:00:00+02:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 203,
+        "play_id": 86,
+        "player_id": 1,
+        "data": {
+          "battle": 6,
+          "order": 1,
+          "pyramid": 2,
+          "score": 9,
+          "sphinx": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 206,
+        "play_id": 86,
+        "player_id": 3,
+        "data": {
+          "battle": 3,
+          "order": 4,
+          "pyramid": 1,
+          "sanctuary": 2,
+          "score": 7,
+          "temple_temporary": 1
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 204,
+        "play_id": 86,
+        "player_id": 5,
+        "data": {
+          "battle": 1,
+          "order": 3,
+          "pyramid": 2,
+          "score": 6,
+          "temple_permanent": 1,
+          "temple_temporary": 2
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 205,
+        "play_id": 86,
+        "player_id": 4,
+        "data": {
+          "battle": 1,
+          "order": 2,
+          "pyramid": 2,
+          "score": 5,
+          "temple_permanent": 1,
+          "tile": 1
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 207,
+        "play_id": 86,
+        "player_id": 6,
+        "data": {
+          "battle": 1,
+          "order": 5,
+          "score": 3,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 87,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:34:52+03:00",
+      "date": "2019-01-18T02:00:00+02:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 211,
+        "play_id": 87,
+        "player_id": 5,
+        "data": {
+          "battle": 6,
+          "order": 1,
+          "pyramid": 1,
+          "score": 11,
+          "temple_permanent": 2,
+          "temple_temporary": 2
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 208,
+        "play_id": 87,
+        "player_id": 1,
+        "data": {
+          "battle": 7,
+          "order": 3,
+          "pyramid": 2,
+          "score": 10,
+          "tile": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 209,
+        "play_id": 87,
+        "player_id": 4,
+        "data": {
+          "battle": 2,
+          "order": 2,
+          "pyramid": 1,
+          "score": 9,
+          "sphinx": 1,
+          "temple_permanent": 1,
+          "temple_temporary": 3,
+          "tile": 1
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 210,
+        "play_id": 87,
+        "player_id": 13,
+        "data": {
+          "battle": 2,
+          "order": 4,
+          "pyramid": 1,
+          "score": 5,
+          "temple_permanent": 1,
+          "tile": 1
+        },
+        "player": "Manolis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 88,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:37:28+03:00",
+      "date": "2019-01-20T02:00:00+02:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 216,
+        "play_id": 88,
+        "player_id": 1,
+        "data": {
+          "battle": 6,
+          "order": 3,
+          "pyramid": 2,
+          "score": 10,
+          "temple_permanent": 1,
+          "tile": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 212,
+        "play_id": 88,
+        "player_id": 4,
+        "data": {
+          "battle": 3,
+          "order": 2,
+          "pyramid": 3,
+          "score": 10,
+          "sphinx": 1,
+          "temple_allgods": 1,
+          "temple_permanent": 1,
+          "tile": 1
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 214,
+        "play_id": 88,
+        "player_id": 13,
+        "data": {
+          "battle": 3,
+          "order": 4,
+          "pyramid": 2,
+          "score": 9,
+          "temple_allgods": 2,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Manolis"
+      },
+      {
+        "id": 215,
+        "play_id": 88,
+        "player_id": 14,
+        "data": {
+          "battle": 1,
+          "order": 5,
+          "pyramid": 1,
+          "score": 6,
+          "temple_allgods": 1,
+          "temple_permanent": 1,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Ifigenia"
+      },
+      {
+        "id": 213,
+        "play_id": 88,
+        "player_id": 5,
+        "data": {
+          "battle": 2,
+          "order": 1,
+          "pyramid": 2,
+          "score": 5,
+          "temple_allgods": 1
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 89,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:39:02+03:00",
+      "date": "2019-01-25T02:00:00+02:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 217,
+        "play_id": 89,
+        "player_id": 5,
+        "data": {
+          "battle": 4,
+          "order": 3,
+          "pyramid": 2,
+          "score": 9,
+          "temple_permanent": 1,
+          "temple_temporary": 2
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 218,
+        "play_id": 89,
+        "player_id": 13,
+        "data": {
+          "battle": 1,
+          "order": 1,
+          "pyramid": 1,
+          "score": 9,
+          "sphinx": 1,
+          "temple_permanent": 3,
+          "temple_temporary": 2,
+          "tile": 1
+        },
+        "player": "Manolis"
+      },
+      {
+        "id": 220,
+        "play_id": 89,
+        "player_id": 1,
+        "data": {
+          "battle": 4,
+          "order": 2,
+          "pyramid": 2,
+          "score": 7,
+          "tile": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 219,
+        "play_id": 89,
+        "player_id": 3,
+        "data": {
+          "battle": 2,
+          "order": 4,
+          "pyramid": 2,
+          "score": 5,
+          "temple_temporary": 1
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 90,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:40:07+03:00",
+      "date": "2019-02-04T02:00:00+02:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 223,
+        "play_id": 90,
+        "player_id": 7,
+        "data": {
+          "battle": 2,
+          "order": 2,
+          "pyramid": 1,
+          "score": 9,
+          "temple_permanent": 3,
+          "temple_temporary": 3
+        },
+        "player": "Giorgos"
+      },
+      {
+        "id": 222,
+        "play_id": 90,
+        "player_id": 5,
+        "data": {
+          "battle": 1,
+          "order": 1,
+          "pyramid": 2,
+          "score": 7,
+          "temple_permanent": 2,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 221,
+        "play_id": 90,
+        "player_id": 1,
+        "data": {
+          "battle": 1,
+          "order": 4,
+          "pyramid": 3,
+          "score": 4
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 224,
+        "play_id": 90,
+        "player_id": 3,
+        "data": {
+          "battle": 1,
+          "order": 3,
+          "score": 3,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 92,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:42:52+03:00",
+      "date": "2019-06-09T03:00:00+03:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 231,
+        "play_id": 92,
+        "player_id": 5,
+        "data": {
+          "battle": 4,
+          "order": 3,
+          "pyramid": 3,
+          "score": 9,
+          "temple_permanent": 1,
+          "tile": 1
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 230,
+        "play_id": 92,
+        "player_id": 1,
+        "data": {
+          "battle": 2,
+          "order": 2,
+          "pyramid": 3,
+          "score": 7,
+          "temple_allgods": 1,
+          "tile": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 233,
+        "play_id": 92,
+        "player_id": 3,
+        "data": {
+          "battle": 4,
+          "order": 1,
+          "score": 6,
+          "temple_allgods": 1,
+          "tile": 1
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 232,
+        "play_id": 92,
+        "player_id": 13,
+        "data": {
+          "battle": 1,
+          "order": 5,
+          "pyramid": 1,
+          "score": 6,
+          "temple_allgods": 1,
+          "temple_permanent": 1,
+          "temple_temporary": 2
+        },
+        "player": "Manolis"
+      },
+      {
+        "id": 234,
+        "play_id": 92,
+        "player_id": 15,
+        "data": {
+          "battle": 3,
+          "order": 4,
+          "pyramid": 1,
+          "score": 5,
+          "temple_temporary": 1
+        },
+        "player": "Thodoris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 91,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:41:19+03:00",
+      "date": "2019-06-09T03:00:00+03:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 226,
+        "play_id": 91,
+        "player_id": 5,
+        "data": {
+          "battle": 4,
+          "order": 3,
+          "pyramid": 3,
+          "score": 9,
+          "temple_permanent": 1,
+          "tile": 1
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 225,
+        "play_id": 91,
+        "player_id": 1,
+        "data": {
+          "battle": 2,
+          "order": 2,
+          "pyramid": 3,
+          "score": 7,
+          "temple_allgods": 1,
+          "tile": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 228,
+        "play_id": 91,
+        "player_id": 3,
+        "data": {
+          "battle": 4,
+          "order": 1,
+          "score": 6,
+          "temple_allgods": 1,
+          "tile": 1
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 227,
+        "play_id": 91,
+        "player_id": 13,
+        "data": {
+          "battle": 1,
+          "order": 5,
+          "pyramid": 1,
+          "score": 6,
+          "temple_allgods": 1,
+          "temple_permanent": 1,
+          "temple_temporary": 2
+        },
+        "player": "Manolis"
+      },
+      {
+        "id": 229,
+        "play_id": 91,
+        "player_id": 15,
+        "data": {
+          "battle": 3,
+          "order": 4,
+          "pyramid": 1,
+          "score": 5,
+          "temple_temporary": 1
+        },
+        "player": "Thodoris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 1,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T15:52:18+02:00",
+      "date": "2019-07-19T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 1,
+        "play_id": 1,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 10,
+          "coin_points": 5,
+          "expansions": "",
+          "green_points": 6,
+          "marker_points": 13,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 59,
+          "wonder_points": 16,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 2,
+        "play_id": 1,
+        "player_id": 1,
+        "data": {
+          "battle_points": 2,
+          "battle_victory": false,
+          "blue_points": 29,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 10,
+          "science_victory": false,
+          "score": 54,
+          "wonder_points": 8,
+          "yellow_points": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 2,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-19T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 3,
+        "play_id": 2,
+        "player_id": 2,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 20,
+          "coin_points": 4,
+          "expansions": "",
+          "green_points": 8,
+          "marker_points": 11,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 67,
+          "wonder_points": 10,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 4,
+        "play_id": 2,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 31,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 5,
+          "marker_points": 5,
+          "pantheon_points": 0,
+          "purple_points": 11,
+          "science_victory": false,
+          "score": 67,
+          "wonder_points": 12,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 5,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-20T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 9,
+        "play_id": 5,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 22,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 8,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 18,
+          "science_victory": false,
+          "score": 64,
+          "wonder_points": 14,
+          "yellow_points": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 10,
+        "play_id": 5,
+        "player_id": 1,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 14,
+          "coin_points": 5,
+          "expansions": "",
+          "green_points": 1,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 41,
+          "wonder_points": 7,
+          "yellow_points": 9
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 4,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-20T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 7,
+        "play_id": 4,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 16,
+          "coin_points": 5,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 9,
+          "science_victory": false,
+          "score": 59,
+          "wonder_points": 11,
+          "yellow_points": 6
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 8,
+        "play_id": 4,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 44,
+          "coin_points": 1,
+          "expansions": "",
+          "green_points": 8,
+          "marker_points": 7,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 70,
+          "wonder_points": 7,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 3,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-20T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 6,
+        "play_id": 3,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 10,
+          "coin_points": 9,
+          "expansions": "",
+          "green_points": 13,
+          "marker_points": 5,
+          "pantheon_points": 0,
+          "purple_points": 4,
+          "science_victory": false,
+          "score": 62,
+          "wonder_points": 15,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 5,
+        "play_id": 3,
+        "player_id": 2,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 26,
+          "coin_points": 7,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 4,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 59,
+          "wonder_points": 12,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 6,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-27T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 11,
+        "play_id": 6,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 14,
+          "coin_points": 1,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 28,
+          "wonder_points": 3,
+          "yellow_points": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 12,
+        "play_id": 6,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 7,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 5,
+          "marker_points": 4,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 18,
+          "wonder_points": 2,
+          "yellow_points": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 7,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-27T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 14,
+        "play_id": 7,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 43,
+          "coin_points": 5,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 15,
+          "science_victory": false,
+          "score": 73,
+          "wonder_points": 7,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 13,
+        "play_id": 7,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 8,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 13,
+          "marker_points": 11,
+          "pantheon_points": 0,
+          "purple_points": 8,
+          "science_victory": false,
+          "score": 73,
+          "wonder_points": 11,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 8,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-29T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 16,
+        "play_id": 8,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 16,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 10,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 20,
+          "science_victory": false,
+          "score": 61,
+          "wonder_points": 10,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 15,
+        "play_id": 8,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 16,
+          "coin_points": 8,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 3,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 51,
+          "wonder_points": 15,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 9,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-07-29T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 17,
+        "play_id": 9,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 8,
+          "coin_points": 7,
+          "expansions": "",
+          "green_points": 11,
+          "marker_points": 9,
+          "pantheon_points": 0,
+          "purple_points": 13,
+          "science_victory": false,
+          "score": 72,
+          "wonder_points": 15,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 18,
+        "play_id": 9,
+        "player_id": 1,
+        "data": {
+          "battle_points": 2,
+          "battle_victory": false,
+          "blue_points": 24,
+          "coin_points": 1,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 5,
+          "science_victory": false,
+          "score": 47,
+          "wonder_points": 9,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 13,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-03T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 26,
+        "play_id": 13,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 30,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 9,
+          "marker_points": 13,
+          "pantheon_points": 0,
+          "purple_points": 10,
+          "science_victory": false,
+          "score": 80,
+          "wonder_points": 12,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 25,
+        "play_id": 13,
+        "player_id": 2,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 18,
+          "coin_points": 10,
+          "expansions": "",
+          "green_points": 7,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 12,
+          "science_victory": false,
+          "score": 71,
+          "wonder_points": 10,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 12,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-03T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 23,
+        "play_id": 12,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 7,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 15,
+          "marker_points": 19,
+          "pantheon_points": 0,
+          "purple_points": 11,
+          "science_victory": false,
+          "score": 83,
+          "wonder_points": 12,
+          "yellow_points": 6
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 24,
+        "play_id": 12,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 33,
+          "coin_points": 9,
+          "expansions": "",
+          "green_points": 1,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 9,
+          "science_victory": false,
+          "score": 71,
+          "wonder_points": 13,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 10,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-03T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 20,
+        "play_id": 10,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 6,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 12,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 5,
+          "science_victory": true,
+          "score": 46,
+          "wonder_points": 20,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 19,
+        "play_id": 10,
+        "player_id": 2,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 44,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 3,
+          "marker_points": 7,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 77,
+          "wonder_points": 10,
+          "yellow_points": 6
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 11,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-03T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 22,
+        "play_id": 11,
+        "player_id": 1,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 16,
+          "coin_points": 5,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 59,
+          "wonder_points": 20,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 21,
+        "play_id": 11,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 16,
+          "coin_points": 1,
+          "expansions": "",
+          "green_points": 7,
+          "marker_points": 10,
+          "pantheon_points": 0,
+          "purple_points": 5,
+          "science_victory": false,
+          "score": 51,
+          "wonder_points": 9,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 14,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-03T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 27,
+        "play_id": 14,
+        "player_id": 2,
+        "data": {
+          "battle_points": 2,
+          "battle_victory": false,
+          "blue_points": 10,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 9,
+          "marker_points": 10,
+          "pantheon_points": 0,
+          "purple_points": 6,
+          "science_victory": false,
+          "score": 65,
+          "wonder_points": 17,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 28,
+        "play_id": 14,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 37,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 3,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 4,
+          "science_victory": false,
+          "score": 60,
+          "wonder_points": 7,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 15,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-05T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 30,
+        "play_id": 15,
+        "player_id": 1,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 11,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 3,
+          "science_victory": false,
+          "score": 32,
+          "wonder_points": 6,
+          "yellow_points": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 29,
+        "play_id": 15,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 18,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 5,
+          "marker_points": 13,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 49,
+          "wonder_points": 13,
+          "yellow_points": 0
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 16,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-07T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 31,
+        "play_id": 16,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 33,
+          "coin_points": 5,
+          "expansions": "",
+          "green_points": 6,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 5,
+          "science_victory": false,
+          "score": 82,
+          "wonder_points": 14,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 32,
+        "play_id": 16,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 23,
+          "coin_points": 13,
+          "expansions": "",
+          "green_points": 4,
+          "marker_points": 3,
+          "pantheon_points": 0,
+          "purple_points": 10,
+          "science_victory": false,
+          "score": 67,
+          "wonder_points": 11,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 18,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-07T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 35,
+        "play_id": 18,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 9,
+          "coin_points": 1,
+          "expansions": "",
+          "green_points": 4,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 5,
+          "science_victory": false,
+          "score": 44,
+          "wonder_points": 12,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 36,
+        "play_id": 18,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 37,
+          "coin_points": 1,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 43,
+          "wonder_points": 3,
+          "yellow_points": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 17,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-07T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 33,
+        "play_id": 17,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 9,
+          "coin_points": 4,
+          "expansions": "",
+          "green_points": 6,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 51,
+          "wonder_points": 13,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 34,
+        "play_id": 17,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 25,
+          "coin_points": 1,
+          "expansions": "",
+          "green_points": 4,
+          "marker_points": 7,
+          "pantheon_points": 0,
+          "purple_points": 9,
+          "science_victory": false,
+          "score": 56,
+          "wonder_points": 10,
+          "yellow_points": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 20,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-08-11T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 39,
+        "play_id": 20,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 41,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 4,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 69,
+          "wonder_points": 9,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 40,
+        "play_id": 20,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 18,
+          "coin_points": 4,
+          "expansions": "",
+          "green_points": 9,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 10,
+          "science_victory": false,
+          "score": 55,
+          "wonder_points": 8,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 19,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:11+02:00",
+      "date": "2019-08-11T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 37,
+        "play_id": 19,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 18,
+          "coin_points": 8,
+          "expansions": "",
+          "green_points": 1,
+          "marker_points": 4,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 57,
+          "wonder_points": 10,
+          "yellow_points": 6
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 38,
+        "play_id": 19,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 22,
+          "coin_points": 7,
+          "expansions": "",
+          "green_points": 3,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 53,
+          "wonder_points": 15,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 23,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-08-15T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 45,
+        "play_id": 23,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 34,
+          "coin_points": 4,
+          "expansions": "",
+          "green_points": 11,
+          "marker_points": 4,
+          "pantheon_points": 0,
+          "purple_points": 9,
+          "science_victory": false,
+          "score": 78,
+          "wonder_points": 10,
+          "yellow_points": 6
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 46,
+        "play_id": 23,
+        "player_id": 1,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 27,
+          "coin_points": 9,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 7,
+          "pantheon_points": 0,
+          "purple_points": 8,
+          "science_victory": false,
+          "score": 76,
+          "wonder_points": 12,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 22,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-08-15T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 44,
+        "play_id": 22,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 45,
+          "coin_points": 7,
+          "expansions": "",
+          "green_points": 6,
+          "marker_points": 6,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 74,
+          "wonder_points": 7,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 43,
+        "play_id": 22,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 18,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 6,
+          "marker_points": 11,
+          "pantheon_points": 0,
+          "purple_points": 16,
+          "science_victory": false,
+          "score": 74,
+          "wonder_points": 15,
+          "yellow_points": 6
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 21,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-08-15T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 41,
+        "play_id": 21,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 0,
+          "coin_points": 4,
+          "expansions": "",
+          "green_points": 7,
+          "marker_points": 4,
+          "pantheon_points": 0,
+          "purple_points": 5,
+          "science_victory": false,
+          "score": 46,
+          "wonder_points": 13,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 42,
+        "play_id": 21,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 30,
+          "coin_points": 9,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 9,
+          "science_victory": false,
+          "score": 56,
+          "wonder_points": 2,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 24,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-08-18T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 47,
+        "play_id": 24,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 7,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 5,
+          "marker_points": 9,
+          "pantheon_points": 0,
+          "purple_points": 13,
+          "science_victory": false,
+          "score": 65,
+          "wonder_points": 15,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 48,
+        "play_id": 24,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 39,
+          "coin_points": 5,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 53,
+          "wonder_points": 6,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 25,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-08-18T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 50,
+        "play_id": 25,
+        "player_id": 1,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 34,
+          "coin_points": 4,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 14,
+          "science_victory": false,
+          "score": 79,
+          "wonder_points": 17,
+          "yellow_points": 3
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 49,
+        "play_id": 25,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 18,
+          "coin_points": 10,
+          "expansions": "",
+          "green_points": 13,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 64,
+          "wonder_points": 11,
+          "yellow_points": 12
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 26,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-09-03T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 52,
+        "play_id": 26,
+        "player_id": 1,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 16,
+          "coin_points": 3,
+          "expansions": "pantheon",
+          "green_points": 4,
+          "marker_points": 16,
+          "pantheon_points": 9,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 68,
+          "wonder_points": 9,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 51,
+        "play_id": 26,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 32,
+          "coin_points": 5,
+          "expansions": "pantheon",
+          "green_points": 4,
+          "marker_points": 0,
+          "pantheon_points": 4,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 66,
+          "wonder_points": 18,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 27,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:12+02:00",
+      "date": "2019-11-24T00:00:00+02:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 54,
+        "play_id": 27,
+        "player_id": 1,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 19,
+          "coin_points": 6,
+          "expansions": "",
+          "green_points": 6,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 12,
+          "science_victory": false,
+          "score": 74,
+          "wonder_points": 12,
+          "yellow_points": 9
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 53,
+        "play_id": 27,
+        "player_id": 2,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 35,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 8,
+          "marker_points": 6,
+          "pantheon_points": 0,
+          "purple_points": 7,
+          "science_victory": false,
+          "score": 70,
+          "wonder_points": 11,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 28,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:13+02:00",
+      "date": "2019-11-24T00:00:00+02:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 55,
+        "play_id": 28,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": true,
+          "blue_points": 6,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 6,
+          "science_victory": false,
+          "score": 36,
+          "wonder_points": 12,
+          "yellow_points": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 56,
+        "play_id": 28,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 18,
+          "coin_points": 11,
+          "expansions": "",
+          "green_points": 7,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": false,
+          "score": 49,
+          "wonder_points": 7,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 84,
+      "boardgame_id": 127023,
+      "cr_date": "2021-06-05T11:30:23+03:00",
+      "date": "2019-12-01T02:00:00+02:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 198,
+        "play_id": 84,
+        "player_id": 5,
+        "data": {
+          "battle": 4,
+          "order": 1,
+          "pyramid": 1,
+          "score": 8,
+          "temple_permanent": 1,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 199,
+        "play_id": 84,
+        "player_id": 4,
+        "data": {
+          "battle": 3,
+          "order": 2,
+          "pyramid": 1,
+          "score": 6,
+          "sphinx": 1,
+          "tile": 1
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 196,
+        "play_id": 84,
+        "player_id": 1,
+        "data": {
+          "battle": 3,
+          "order": 3,
+          "pyramid": 2,
+          "score": 6,
+          "temple_temporary": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 197,
+        "play_id": 84,
+        "player_id": 3,
+        "data": {
+          "battle": 3,
+          "order": 4,
+          "pyramid": 1,
+          "score": 6,
+          "temple_permanent": 1,
+          "temple_temporary": 1
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 29,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:13+02:00",
+      "date": "2019-12-26T00:00:00+02:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 58,
+        "play_id": 29,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 7,
+          "coin_points": 9,
+          "expansions": "",
+          "green_points": 12,
+          "marker_points": 9,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": true,
+          "score": 56,
+          "wonder_points": 13,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 57,
+        "play_id": 29,
+        "player_id": 2,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 22,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 2,
+          "marker_points": 4,
+          "pantheon_points": 0,
+          "purple_points": 9,
+          "science_victory": false,
+          "score": 55,
+          "wonder_points": 13,
+          "yellow_points": 0
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 30,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:13+02:00",
+      "date": "2020-04-13T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 59,
+        "play_id": 30,
+        "player_id": 2,
+        "data": {
+          "battle_points": 5,
+          "battle_victory": false,
+          "blue_points": 4,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 9,
+          "marker_points": 16,
+          "pantheon_points": 0,
+          "purple_points": 0,
+          "science_victory": true,
+          "score": 61,
+          "wonder_points": 15,
+          "yellow_points": 9
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 60,
+        "play_id": 30,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 31,
+          "coin_points": 4,
+          "expansions": "",
+          "green_points": 0,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 2,
+          "science_victory": false,
+          "score": 37,
+          "wonder_points": 0,
+          "yellow_points": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 31,
+      "boardgame_id": 173346,
+      "cr_date": "2021-02-06T16:01:13+02:00",
+      "date": "2020-04-13T00:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 61,
+        "play_id": 31,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 30,
+          "coin_points": 3,
+          "expansions": "",
+          "green_points": 6,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 14,
+          "science_victory": true,
+          "score": 75,
+          "wonder_points": 9,
+          "yellow_points": 3
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 62,
+        "play_id": 31,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 24,
+          "coin_points": 10,
+          "expansions": "",
+          "green_points": 7,
+          "marker_points": 20,
+          "pantheon_points": 0,
+          "purple_points": 6,
+          "science_victory": false,
+          "score": 95,
+          "wonder_points": 19,
+          "yellow_points": 9
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 37,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T18:14:36+03:00",
+      "date": "2021-03-01T02:00:00+02:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 63,
+        "play_id": 37,
+        "player_id": 1,
+        "data": {
+          "birds": 41,
+          "bonus": 0,
+          "eggs": 23,
+          "endofround": 6,
+          "food": 6,
+          "score": 85,
+          "tucked": 9
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 64,
+        "play_id": 37,
+        "player_id": 2,
+        "data": {
+          "birds": 28,
+          "bonus": 7,
+          "eggs": 17,
+          "endofround": 7,
+          "food": 4,
+          "score": 76,
+          "tucked": 13
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 38,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T18:14:50+03:00",
+      "date": "2021-03-04T02:00:00+02:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 65,
+        "play_id": 38,
+        "player_id": 1,
+        "data": {
+          "birds": 28,
+          "bonus": 3,
+          "eggs": 15,
+          "endofround": 11,
+          "food": 11,
+          "score": 68,
+          "tucked": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 66,
+        "play_id": 38,
+        "player_id": 2,
+        "data": {
+          "birds": 34,
+          "bonus": 0,
+          "eggs": 13,
+          "endofround": 5,
+          "food": 0,
+          "score": 57,
+          "tucked": 5
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 39,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T18:43:47+03:00",
+      "date": "2021-03-04T02:00:00+02:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 67,
+        "play_id": 39,
+        "player_id": 1,
+        "data": {
+          "birds": 27,
+          "bonus": 7,
+          "eggs": 3,
+          "endofround": 8,
+          "food": 1,
+          "score": 61,
+          "tucked": 15
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 68,
+        "play_id": 39,
+        "player_id": 2,
+        "data": {
+          "birds": 24,
+          "bonus": 0,
+          "eggs": 8,
+          "endofround": 8,
+          "food": 4,
+          "score": 58,
+          "tucked": 14
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 41,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T18:56:53+03:00",
+      "date": "2021-03-06T02:00:00+02:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 72,
+        "play_id": 41,
+        "player_id": 2,
+        "data": {
+          "birds": 27,
+          "bonus": 0,
+          "eggs": 23,
+          "endofround": 15,
+          "food": 0,
+          "score": 82,
+          "tucked": 17
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 73,
+        "play_id": 41,
+        "player_id": 3,
+        "data": {
+          "birds": 31,
+          "bonus": 3,
+          "eggs": 12,
+          "endofround": 16,
+          "food": 0,
+          "score": 72,
+          "tucked": 10
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 71,
+        "play_id": 41,
+        "player_id": 1,
+        "data": {
+          "birds": 28,
+          "bonus": 2,
+          "eggs": 5,
+          "endofround": 15,
+          "food": 12,
+          "score": 69,
+          "tucked": 7
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 40,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T18:56:42+03:00",
+      "date": "2021-03-06T02:00:00+02:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 69,
+        "play_id": 40,
+        "player_id": 1,
+        "data": {
+          "birds": 33,
+          "bonus": 2,
+          "eggs": 10,
+          "endofround": 13,
+          "food": 2,
+          "score": 71,
+          "tucked": 11
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 70,
+        "play_id": 40,
+        "player_id": 2,
+        "data": {
+          "birds": 26,
+          "bonus": 0,
+          "eggs": 5,
+          "endofround": 19,
+          "food": 9,
+          "score": 69,
+          "tucked": 10
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 42,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T18:57:16+03:00",
+      "date": "2021-03-07T02:00:00+02:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 74,
+        "play_id": 42,
+        "player_id": 2,
+        "data": {
+          "birds": 43,
+          "bonus": 3,
+          "eggs": 7,
+          "endofround": 13,
+          "food": 0,
+          "score": 99,
+          "tucked": 33
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 75,
+        "play_id": 42,
+        "player_id": 1,
+        "data": {
+          "birds": 30,
+          "bonus": 3,
+          "eggs": 26,
+          "endofround": 19,
+          "food": 1,
+          "score": 91,
+          "tucked": 12
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 43,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T18:57:30+03:00",
+      "date": "2021-03-13T02:00:00+02:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 76,
+        "play_id": 43,
+        "player_id": 2,
+        "data": {
+          "birds": 35,
+          "bonus": 0,
+          "eggs": 10,
+          "endofround": 16,
+          "food": 7,
+          "score": 79,
+          "tucked": 11
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 77,
+        "play_id": 43,
+        "player_id": 1,
+        "data": {
+          "birds": 32,
+          "bonus": 7,
+          "eggs": 12,
+          "endofround": 16,
+          "food": 0,
+          "score": 78,
+          "tucked": 11
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 47,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T19:17:33+03:00",
+      "date": "2021-04-04T03:00:00+03:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 85,
+        "play_id": 47,
+        "player_id": 2,
+        "data": {
+          "birds": 44,
+          "bonus": 0,
+          "eggs": 12,
+          "endofround": 16,
+          "food": 0,
+          "score": 100,
+          "tucked": 28
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 86,
+        "play_id": 47,
+        "player_id": 1,
+        "data": {
+          "birds": 50,
+          "bonus": 3,
+          "eggs": 14,
+          "endofround": 13,
+          "food": 3,
+          "score": 94,
+          "tucked": 11
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 89,
+        "play_id": 47,
+        "player_id": 3,
+        "data": {
+          "birds": 40,
+          "bonus": 4,
+          "eggs": 16,
+          "endofround": 19,
+          "food": 0,
+          "score": 85,
+          "tucked": 6
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 88,
+        "play_id": 47,
+        "player_id": 4,
+        "data": {
+          "birds": 36,
+          "bonus": 1,
+          "eggs": 12,
+          "endofround": 6,
+          "food": 0,
+          "score": 75,
+          "tucked": 20
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 87,
+        "play_id": 47,
+        "player_id": 5,
+        "data": {
+          "birds": 38,
+          "bonus": 3,
+          "eggs": 3,
+          "endofround": 12,
+          "food": 5,
+          "score": 75,
+          "tucked": 14
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 50,
+      "boardgame_id": 110327,
+      "cr_date": "2021-06-01T20:14:49+03:00",
+      "date": "2021-04-08T03:00:00+03:00",
+      "boardgame": "Lords of Waterdeep"
+    },
+    "stats": [
+      {
+        "id": 97,
+        "play_id": 50,
+        "player_id": 1,
+        "data": {
+          "character": 28,
+          "cubes": 3,
+          "diamonds": 6,
+          "money": 3,
+          "quests": 105,
+          "score": 145
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 96,
+        "play_id": 50,
+        "player_id": 2,
+        "data": {
+          "character": 24,
+          "cubes": 4,
+          "diamonds": 6,
+          "money": 0,
+          "quests": 108,
+          "score": 142
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 48,
+      "boardgame_id": 266810,
+      "cr_date": "2021-06-01T19:36:36+03:00",
+      "date": "2021-04-10T03:00:00+03:00",
+      "boardgame": "Paladins of the West Kingdom"
+    },
+    "stats": [
+      {
+        "id": 90,
+        "play_id": 48,
+        "player_id": 1,
+        "data": {
+          "absolve": 1,
+          "attack": 0,
+          "black": 20,
+          "blue": 3,
+          "coin": 0,
+          "commission": 0,
+          "convert": 5,
+          "debt": 2,
+          "develop": 6,
+          "fortify": 0,
+          "garrison": 9,
+          "order": 8,
+          "red": 6,
+          "score": 60
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 91,
+        "play_id": 48,
+        "player_id": 2,
+        "data": {
+          "absolve": 6,
+          "attack": 0,
+          "black": 11,
+          "blue": 9,
+          "coin": 0,
+          "commission": 9,
+          "convert": 2,
+          "debt": 1,
+          "develop": 0,
+          "fortify": 4,
+          "garrison": 0,
+          "order": 12,
+          "red": 3,
+          "score": 57
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 93,
+        "play_id": 48,
+        "player_id": 4,
+        "data": {
+          "absolve": 6,
+          "attack": 0,
+          "black": 9,
+          "blue": 11,
+          "coin": 0,
+          "commission": 9,
+          "convert": 0,
+          "debt": 2,
+          "develop": 6,
+          "fortify": 3,
+          "garrison": 0,
+          "order": 8,
+          "red": 3,
+          "score": 57
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 92,
+        "play_id": 48,
+        "player_id": 5,
+        "data": {
+          "absolve": 0,
+          "attack": 0,
+          "black": 3,
+          "blue": 20,
+          "coin": 0,
+          "commission": 0,
+          "convert": 0,
+          "debt": 3,
+          "develop": 2,
+          "fortify": 6,
+          "garrison": 0,
+          "order": 10,
+          "red": 11,
+          "score": 55
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 51,
+      "boardgame_id": 283863,
+      "cr_date": "2021-06-01T20:17:03+03:00",
+      "date": "2021-04-14T03:00:00+03:00",
+      "boardgame": "The Magnificent"
+    },
+    "stats": [
+      {
+        "id": 98,
+        "play_id": 51,
+        "player_id": 2,
+        "data": {
+          "player": 3,
+          "score": 124
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 99,
+        "play_id": 51,
+        "player_id": 1,
+        "data": {
+          "player": 1,
+          "score": 99
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 62,
+      "boardgame_id": 163412,
+      "cr_date": "2021-06-01T20:51:24+03:00",
+      "date": "2021-04-15T03:00:00+03:00",
+      "boardgame": "Patchwork"
+    },
+    "stats": [
+      {
+        "id": 130,
+        "play_id": 62,
+        "player_id": 2,
+        "data": {
+          "7x7": true,
+          "buttons": 33,
+          "empty": 11,
+          "score": 18
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 131,
+        "play_id": 62,
+        "player_id": 1,
+        "data": {
+          "7x7": false,
+          "buttons": 20,
+          "empty": 11,
+          "score": -2
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 78,
+      "boardgame_id": 110327,
+      "cr_date": "2021-06-02T09:45:41+03:00",
+      "date": "2021-04-18T03:00:00+03:00",
+      "boardgame": "Lords of Waterdeep"
+    },
+    "stats": [
+      {
+        "id": 178,
+        "play_id": 78,
+        "player_id": 1,
+        "data": {
+          "character": 24,
+          "cubes": 7,
+          "diamonds": 6,
+          "money": 0,
+          "quests": 96,
+          "score": 133
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 179,
+        "play_id": 78,
+        "player_id": 10,
+        "data": {
+          "character": 16,
+          "cubes": 4,
+          "diamonds": 4,
+          "money": 0,
+          "quests": 93,
+          "score": 117
+        },
+        "player": "Takis"
+      },
+      {
+        "id": 180,
+        "play_id": 78,
+        "player_id": 9,
+        "data": {
+          "character": 8,
+          "cubes": 5,
+          "diamonds": 0,
+          "money": 7,
+          "quests": 68,
+          "score": 88
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 177,
+        "play_id": 78,
+        "player_id": 2,
+        "data": {
+          "character": 8,
+          "cubes": 8,
+          "diamonds": 5,
+          "money": 4,
+          "quests": 53,
+          "score": 78
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 181,
+        "play_id": 78,
+        "player_id": 8,
+        "data": {
+          "character": 4,
+          "cubes": 4,
+          "diamonds": 6,
+          "money": 1,
+          "quests": 59,
+          "score": 74
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 79,
+      "boardgame_id": 110327,
+      "cr_date": "2021-06-02T09:46:01+03:00",
+      "date": "2021-04-19T03:00:00+03:00",
+      "boardgame": "Lords of Waterdeep"
+    },
+    "stats": [
+      {
+        "id": 182,
+        "play_id": 79,
+        "player_id": 12,
+        "data": {
+          "character": 36,
+          "cubes": 0,
+          "diamonds": 15,
+          "money": 3,
+          "quests": 76,
+          "score": 130
+        },
+        "player": "Dionisis"
+      },
+      {
+        "id": 187,
+        "play_id": 79,
+        "player_id": 1,
+        "data": {
+          "character": 28,
+          "cubes": 3,
+          "diamonds": 6,
+          "money": 0,
+          "quests": 93,
+          "score": 130
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 184,
+        "play_id": 79,
+        "player_id": 11,
+        "data": {
+          "character": 20,
+          "cubes": 3,
+          "diamonds": 0,
+          "money": 6,
+          "quests": 82,
+          "score": 111
+        },
+        "player": "Evi"
+      },
+      {
+        "id": 183,
+        "play_id": 79,
+        "player_id": 3,
+        "data": {
+          "character": 20,
+          "cubes": 3,
+          "diamonds": 11,
+          "money": 7,
+          "quests": 68,
+          "score": 109
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 186,
+        "play_id": 79,
+        "player_id": 5,
+        "data": {
+          "character": 16,
+          "cubes": 3,
+          "diamonds": 6,
+          "money": 2,
+          "quests": 80,
+          "score": 107
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 185,
+        "play_id": 79,
+        "player_id": 10,
+        "data": {
+          "character": 12,
+          "cubes": 9,
+          "diamonds": 1,
+          "money": 3,
+          "quests": 70,
+          "score": 95
+        },
+        "player": "Takis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 52,
+      "boardgame_id": 230802,
+      "cr_date": "2021-06-01T20:26:30+03:00",
+      "date": "2021-04-20T03:00:00+03:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 102,
+        "play_id": 52,
+        "player_id": 2,
+        "data": {
+          "colors": 2,
+          "columns": 2,
+          "rows": 2,
+          "score": 108
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 103,
+        "play_id": 52,
+        "player_id": 1,
+        "data": {
+          "colors": 1,
+          "columns": 0,
+          "rows": 1,
+          "score": 55
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 57,
+      "boardgame_id": 183394,
+      "cr_date": "2021-06-01T20:42:25+03:00",
+      "date": "2021-04-21T03:00:00+03:00",
+      "boardgame": "Viticulture essential edition"
+    },
+    "stats": [
+      {
+        "id": 118,
+        "play_id": 57,
+        "player_id": 1,
+        "data": {
+          "score": 23
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 117,
+        "play_id": 57,
+        "player_id": 2,
+        "data": {
+          "score": 20
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 44,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T19:10:38+03:00",
+      "date": "2021-04-23T03:00:00+03:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 79,
+        "play_id": 44,
+        "player_id": 1,
+        "data": {
+          "birds": 19,
+          "bonus": 0,
+          "eggs": 3,
+          "endofround": 16,
+          "food": 5,
+          "score": 86,
+          "tucked": 43
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 78,
+        "play_id": 44,
+        "player_id": 2,
+        "data": {
+          "birds": 30,
+          "bonus": 4,
+          "eggs": 17,
+          "endofround": 19,
+          "food": 2,
+          "score": 75,
+          "tucked": 3
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 55,
+      "boardgame_id": 230802,
+      "cr_date": "2021-06-01T20:35:42+03:00",
+      "date": "2021-04-24T03:00:00+03:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 110,
+        "play_id": 55,
+        "player_id": 8,
+        "data": {
+          "colors": 1,
+          "columns": 1,
+          "rows": 1,
+          "score": 68
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 111,
+        "play_id": 55,
+        "player_id": 2,
+        "data": {
+          "colors": 0,
+          "columns": 0,
+          "rows": 0,
+          "score": 38
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 112,
+        "play_id": 55,
+        "player_id": 9,
+        "data": {
+          "colors": 0,
+          "columns": 0,
+          "rows": 0,
+          "score": 27
+        },
+        "player": "Mairi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 54,
+      "boardgame_id": 230802,
+      "cr_date": "2021-06-01T20:26:56+03:00",
+      "date": "2021-04-24T03:00:00+03:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 107,
+        "play_id": 54,
+        "player_id": 8,
+        "data": {
+          "colors": 0,
+          "columns": 1,
+          "rows": 1,
+          "score": 56
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 109,
+        "play_id": 54,
+        "player_id": 9,
+        "data": {
+          "colors": 0,
+          "columns": 0,
+          "rows": 1,
+          "score": 52
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 108,
+        "play_id": 54,
+        "player_id": 2,
+        "data": {
+          "colors": 1,
+          "columns": 0,
+          "rows": 0,
+          "score": 48
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 65,
+      "boardgame_id": 42,
+      "cr_date": "2021-06-01T20:58:20+03:00",
+      "date": "2021-04-24T03:00:00+03:00",
+      "boardgame": "Tigris & Euphrates"
+    },
+    "stats": [
+      {
+        "id": 139,
+        "play_id": 65,
+        "player_id": 2,
+        "data": {
+          "score": 7
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 138,
+        "play_id": 65,
+        "player_id": 8,
+        "data": {
+          "score": 6
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 140,
+        "play_id": 65,
+        "player_id": 1,
+        "data": {
+          "score": 4
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 53,
+      "boardgame_id": 230802,
+      "cr_date": "2021-06-01T20:26:47+03:00",
+      "date": "2021-04-24T03:00:00+03:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 106,
+        "play_id": 53,
+        "player_id": 8,
+        "data": {
+          "colors": 2,
+          "columns": 1,
+          "rows": 2,
+          "score": 110
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 104,
+        "play_id": 53,
+        "player_id": 2,
+        "data": {
+          "colors": 2,
+          "columns": 1,
+          "rows": 2,
+          "score": 97
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 105,
+        "play_id": 53,
+        "player_id": 1,
+        "data": {
+          "colors": 3,
+          "columns": 1,
+          "rows": 1,
+          "score": 96
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 56,
+      "boardgame_id": 230802,
+      "cr_date": "2021-06-01T20:39:29+03:00",
+      "date": "2021-04-24T03:00:00+03:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 113,
+        "play_id": 56,
+        "player_id": 1,
+        "data": {
+          "colors": 1,
+          "columns": 2,
+          "rows": 2,
+          "score": 92
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 114,
+        "play_id": 56,
+        "player_id": 2,
+        "data": {
+          "colors": 2,
+          "columns": 1,
+          "rows": 1,
+          "score": 90
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 115,
+        "play_id": 56,
+        "player_id": 8,
+        "data": {
+          "colors": 1,
+          "columns": 2,
+          "rows": 1,
+          "score": 84
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 116,
+        "play_id": 56,
+        "player_id": 9,
+        "data": {
+          "colors": 1,
+          "columns": 1,
+          "rows": 0,
+          "score": 60
+        },
+        "player": "Mairi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 63,
+      "boardgame_id": 163412,
+      "cr_date": "2021-06-01T20:51:34+03:00",
+      "date": "2021-04-24T03:00:00+03:00",
+      "boardgame": "Patchwork"
+    },
+    "stats": [
+      {
+        "id": 133,
+        "play_id": 63,
+        "player_id": 1,
+        "data": {
+          "7x7": true,
+          "buttons": 31,
+          "empty": 9,
+          "score": 20
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 132,
+        "play_id": 63,
+        "player_id": 8,
+        "data": {
+          "7x7": false,
+          "buttons": 19,
+          "empty": 18,
+          "score": -17
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 64,
+      "boardgame_id": 822,
+      "cr_date": "2021-06-01T20:56:02+03:00",
+      "date": "2021-04-24T03:00:00+03:00",
+      "boardgame": "Carcassonne"
+    },
+    "stats": [
+      {
+        "id": 137,
+        "play_id": 64,
+        "player_id": 1,
+        "data": {
+          "score": 70
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 135,
+        "play_id": 64,
+        "player_id": 8,
+        "data": {
+          "score": 50
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 136,
+        "play_id": 64,
+        "player_id": 2,
+        "data": {
+          "score": 46
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 45,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T19:10:57+03:00",
+      "date": "2021-04-25T03:00:00+03:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 81,
+        "play_id": 45,
+        "player_id": 1,
+        "data": {
+          "birds": 46,
+          "bonus": 3,
+          "eggs": 7,
+          "endofround": 18,
+          "food": 1,
+          "score": 76,
+          "tucked": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 80,
+        "play_id": 45,
+        "player_id": 2,
+        "data": {
+          "birds": 30,
+          "bonus": 0,
+          "eggs": 5,
+          "endofround": 16,
+          "food": 7,
+          "score": 65,
+          "tucked": 7
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 82,
+        "play_id": 45,
+        "player_id": 3,
+        "data": {
+          "birds": 24,
+          "bonus": 0,
+          "eggs": 2,
+          "endofround": 12,
+          "food": 5,
+          "score": 53,
+          "tucked": 10
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 46,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T19:11:13+03:00",
+      "date": "2021-04-27T03:00:00+03:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 83,
+        "play_id": 46,
+        "player_id": 2,
+        "data": {
+          "birds": 41,
+          "bonus": 4,
+          "eggs": 22,
+          "endofround": 16,
+          "food": 0,
+          "score": 85,
+          "tucked": 2
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 84,
+        "play_id": 46,
+        "player_id": 1,
+        "data": {
+          "birds": 43,
+          "bonus": 3,
+          "eggs": 1,
+          "endofround": 19,
+          "food": 9,
+          "score": 82,
+          "tucked": 7
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 58,
+      "boardgame_id": 183394,
+      "cr_date": "2021-06-01T20:43:20+03:00",
+      "date": "2021-04-30T03:00:00+03:00",
+      "boardgame": "Viticulture essential edition"
+    },
+    "stats": [
+      {
+        "id": 119,
+        "play_id": 58,
+        "player_id": 2,
+        "data": {
+          "score": 32
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 120,
+        "play_id": 58,
+        "player_id": 1,
+        "data": {
+          "score": 26
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 59,
+      "boardgame_id": 237182,
+      "cr_date": "2021-06-01T20:44:31+03:00",
+      "date": "2021-04-30T03:00:00+03:00",
+      "boardgame": "Root"
+    },
+    "stats": [
+      {
+        "id": 121,
+        "play_id": 59,
+        "player_id": 2,
+        "data": {
+          "faction": "marquise de cat",
+          "place": 1,
+          "score": 1
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 122,
+        "play_id": 59,
+        "player_id": 1,
+        "data": {
+          "faction": "eyrie dynasties",
+          "place": 2,
+          "score": 2
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 49,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-01T19:48:20+03:00",
+      "date": "2021-05-01T03:00:00+03:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 95,
+        "play_id": 49,
+        "player_id": 2,
+        "data": {
+          "birds": 37,
+          "bonus": 6,
+          "eggs": 9,
+          "endofround": 16,
+          "food": 11,
+          "score": 94,
+          "tucked": 15
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 94,
+        "play_id": 49,
+        "player_id": 1,
+        "data": {
+          "birds": 52,
+          "bonus": 3,
+          "eggs": 6,
+          "endofround": 16,
+          "food": 11,
+          "score": 92,
+          "tucked": 4
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 66,
+      "boardgame_id": 170042,
+      "cr_date": "2021-06-01T21:28:05+03:00",
+      "date": "2021-05-01T03:00:00+03:00",
+      "boardgame": "Raiders of the north sea"
+    },
+    "stats": [
+      {
+        "id": 141,
+        "play_id": 66,
+        "player_id": 1,
+        "data": {
+          "armor": 6,
+          "loot": 0,
+          "points": 99,
+          "score": 120,
+          "valkyrie": 15
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 142,
+        "play_id": 66,
+        "player_id": 2,
+        "data": {
+          "armor": 6,
+          "loot": 0,
+          "points": 68,
+          "score": 84,
+          "valkyrie": 10
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 60,
+      "boardgame_id": 237182,
+      "cr_date": "2021-06-01T20:44:45+03:00",
+      "date": "2021-05-02T03:00:00+03:00",
+      "boardgame": "Root"
+    },
+    "stats": [
+      {
+        "id": 123,
+        "play_id": 60,
+        "player_id": 2,
+        "data": {
+          "faction": "marquise de cat",
+          "place": 1,
+          "score": 1
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 124,
+        "play_id": 60,
+        "player_id": 1,
+        "data": {
+          "faction": "eyrie dynasties",
+          "place": 2,
+          "score": 2
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 125,
+        "play_id": 60,
+        "player_id": 3,
+        "data": {
+          "faction": "woodland alliance",
+          "place": 3,
+          "score": 3
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 61,
+      "boardgame_id": 237182,
+      "cr_date": "2021-06-01T20:44:56+03:00",
+      "date": "2021-05-03T03:00:00+03:00",
+      "boardgame": "Root"
+    },
+    "stats": [
+      {
+        "id": 127,
+        "play_id": 61,
+        "player_id": 5,
+        "data": {
+          "faction": "marquise de cat",
+          "place": 1,
+          "score": 1
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 128,
+        "play_id": 61,
+        "player_id": 1,
+        "data": {
+          "faction": "eyrie dynasties",
+          "place": 2,
+          "score": 2
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 129,
+        "play_id": 61,
+        "player_id": 3,
+        "data": {
+          "faction": "woodland alliance",
+          "place": 3,
+          "score": 3
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 70,
+      "boardgame_id": 183394,
+      "cr_date": "2021-06-01T21:39:01+03:00",
+      "date": "2021-05-13T03:00:00+03:00",
+      "boardgame": "Viticulture essential edition"
+    },
+    "stats": [
+      {
+        "id": 158,
+        "play_id": 70,
+        "player_id": 3,
+        "data": {
+          "score": 21
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 159,
+        "play_id": 70,
+        "player_id": 1,
+        "data": {
+          "score": 20
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 160,
+        "play_id": 70,
+        "player_id": 2,
+        "data": {
+          "score": 14
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 68,
+      "boardgame_id": 14996,
+      "cr_date": "2021-06-01T21:33:46+03:00",
+      "date": "2021-05-15T03:00:00+03:00",
+      "boardgame": "Ticket to ride: Europe"
+    },
+    "stats": [
+      {
+        "id": 147,
+        "play_id": 68,
+        "player_id": 1,
+        "data": {
+          "longest": true,
+          "score": 116
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 148,
+        "play_id": 68,
+        "player_id": 10,
+        "data": {
+          "longest": false,
+          "score": 90
+        },
+        "player": "Takis"
+      },
+      {
+        "id": 149,
+        "play_id": 68,
+        "player_id": 9,
+        "data": {
+          "longest": false,
+          "score": 89
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 150,
+        "play_id": 68,
+        "player_id": 8,
+        "data": {
+          "longest": false,
+          "score": 73
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 151,
+        "play_id": 68,
+        "player_id": 2,
+        "data": {
+          "longest": false,
+          "score": 68
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 69,
+      "boardgame_id": 183394,
+      "cr_date": "2021-06-01T21:36:21+03:00",
+      "date": "2021-05-16T03:00:00+03:00",
+      "boardgame": "Viticulture essential edition"
+    },
+    "stats": [
+      {
+        "id": 152,
+        "play_id": 69,
+        "player_id": 2,
+        "data": {
+          "score": 25
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 153,
+        "play_id": 69,
+        "player_id": 1,
+        "data": {
+          "score": 23
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 157,
+        "play_id": 69,
+        "player_id": 11,
+        "data": {
+          "score": 17
+        },
+        "player": "Evi"
+      },
+      {
+        "id": 156,
+        "play_id": 69,
+        "player_id": 9,
+        "data": {
+          "score": 16
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 154,
+        "play_id": 69,
+        "player_id": 10,
+        "data": {
+          "score": 15
+        },
+        "player": "Takis"
+      },
+      {
+        "id": 155,
+        "play_id": 69,
+        "player_id": 8,
+        "data": {
+          "score": 6
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 67,
+      "boardgame_id": 170042,
+      "cr_date": "2021-06-01T21:31:10+03:00",
+      "date": "2021-05-16T03:00:00+03:00",
+      "boardgame": "Raiders of the north sea"
+    },
+    "stats": [
+      {
+        "id": 143,
+        "play_id": 67,
+        "player_id": 1,
+        "data": {
+          "armor": 6,
+          "loot": 3,
+          "points": 32,
+          "score": 51,
+          "valkyrie": 10
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 146,
+        "play_id": 67,
+        "player_id": 9,
+        "data": {
+          "armor": 4,
+          "loot": 2,
+          "points": 35,
+          "score": 45,
+          "valkyrie": 4
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 144,
+        "play_id": 67,
+        "player_id": 2,
+        "data": {
+          "armor": 6,
+          "loot": 1,
+          "points": 37,
+          "score": 45,
+          "valkyrie": 1
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 145,
+        "play_id": 67,
+        "player_id": 8,
+        "data": {
+          "armor": 2,
+          "loot": 3,
+          "points": 22,
+          "score": 27,
+          "valkyrie": 0
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 73,
+      "boardgame_id": 312484,
+      "cr_date": "2021-06-01T21:57:56+03:00",
+      "date": "2021-05-22T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 168,
+        "play_id": 73,
+        "player_id": 2,
+        "data": {
+          "cards": 6,
+          "fear": -1,
+          "guardian": 20,
+          "idols": 12,
+          "research": 29,
+          "score": 70,
+          "tiles": 4
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 169,
+        "play_id": 73,
+        "player_id": 1,
+        "data": {
+          "cards": 12,
+          "fear": 0,
+          "guardian": 10,
+          "idols": 13,
+          "research": 22,
+          "score": 57,
+          "tiles": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 74,
+      "boardgame_id": 312484,
+      "cr_date": "2021-06-01T21:58:14+03:00",
+      "date": "2021-05-25T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 171,
+        "play_id": 74,
+        "player_id": 1,
+        "data": {
+          "cards": 10,
+          "fear": -3,
+          "guardian": 15,
+          "idols": 13,
+          "research": 33,
+          "score": 74,
+          "tiles": 6
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 170,
+        "play_id": 74,
+        "player_id": 2,
+        "data": {
+          "cards": 6,
+          "fear": -1,
+          "guardian": 20,
+          "idols": 15,
+          "research": 27,
+          "score": 69,
+          "tiles": 2
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 75,
+      "boardgame_id": 312484,
+      "cr_date": "2021-06-01T21:58:33+03:00",
+      "date": "2021-05-26T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 173,
+        "play_id": 75,
+        "player_id": 1,
+        "data": {
+          "cards": 7,
+          "fear": -2,
+          "guardian": 20,
+          "idols": 15,
+          "research": 29,
+          "score": 80,
+          "tiles": 11
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 172,
+        "play_id": 75,
+        "player_id": 3,
+        "data": {
+          "cards": 8,
+          "fear": 0,
+          "guardian": 15,
+          "idols": 12,
+          "research": 31,
+          "score": 77,
+          "tiles": 11
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 71,
+      "boardgame_id": 236457,
+      "cr_date": "2021-06-01T21:44:28+03:00",
+      "date": "2021-05-27T03:00:00+03:00",
+      "boardgame": "Architects of the west kingdom"
+    },
+    "stats": [
+      {
+        "id": 161,
+        "play_id": 71,
+        "player_id": 1,
+        "data": {
+          "buildings": 15,
+          "cathedral": 20,
+          "debt": 0,
+          "gold-marble": 2,
+          "money": 0,
+          "prison": 0,
+          "score": 44,
+          "virtue": 7
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 162,
+        "play_id": 71,
+        "player_id": 2,
+        "data": {
+          "buildings": 27,
+          "cathedral": 0,
+          "debt": 0,
+          "gold-marble": 3,
+          "money": 1,
+          "prison": 0,
+          "score": 38,
+          "virtue": 7
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 72,
+      "boardgame_id": 236457,
+      "cr_date": "2021-06-01T21:44:39+03:00",
+      "date": "2021-05-28T03:00:00+03:00",
+      "boardgame": "Architects of the west kingdom"
+    },
+    "stats": [
+      {
+        "id": 164,
+        "play_id": 72,
+        "player_id": 1,
+        "data": {
+          "buildings": 0,
+          "cathedral": 20,
+          "debt": 0,
+          "gold-marble": 16,
+          "money": 0,
+          "prison": 0,
+          "score": 43,
+          "virtue": 7
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 166,
+        "play_id": 72,
+        "player_id": 10,
+        "data": {
+          "buildings": 13,
+          "cathedral": 12,
+          "debt": 0,
+          "gold-marble": 13,
+          "money": 2,
+          "prison": 0,
+          "score": 43,
+          "virtue": 3
+        },
+        "player": "Takis"
+      },
+      {
+        "id": 163,
+        "play_id": 72,
+        "player_id": 2,
+        "data": {
+          "buildings": 33,
+          "cathedral": 0,
+          "debt": 0,
+          "gold-marble": 2,
+          "money": 1,
+          "prison": 0,
+          "score": 39,
+          "virtue": 3
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 167,
+        "play_id": 72,
+        "player_id": 9,
+        "data": {
+          "buildings": 36,
+          "cathedral": 0,
+          "debt": 0,
+          "gold-marble": 1,
+          "money": 0,
+          "prison": 0,
+          "score": 37,
+          "virtue": 0
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 165,
+        "play_id": 72,
+        "player_id": 8,
+        "data": {
+          "buildings": 29,
+          "cathedral": 2,
+          "debt": 0,
+          "gold-marble": 2,
+          "money": 0,
+          "prison": 0,
+          "score": 36,
+          "virtue": 3
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 76,
+      "boardgame_id": 170216,
+      "cr_date": "2021-06-01T22:54:40+03:00",
+      "date": "2021-05-30T03:00:00+03:00",
+      "boardgame": "Blood rage"
+    },
+    "stats": [
+      {
+        "id": 174,
+        "play_id": 76,
+        "player_id": 1,
+        "data": {
+          "score": 130
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 175,
+        "play_id": 76,
+        "player_id": 5,
+        "data": {
+          "score": 43
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 176,
+        "play_id": 76,
+        "player_id": 3,
+        "data": {
+          "score": 28
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 81,
+      "boardgame_id": 256916,
+      "cr_date": "2021-06-02T20:54:29+03:00",
+      "date": "2021-06-01T03:00:00+03:00",
+      "boardgame": "Concordia Venus"
+    },
+    "stats": [
+      {
+        "id": 189,
+        "play_id": 81,
+        "player_id": 2,
+        "data": {
+          "concordia": 7,
+          "jupiter": 36,
+          "mars": 24,
+          "mercurius": 20,
+          "minerva": 43,
+          "saturnus": 36,
+          "score": 212,
+          "venus": 40,
+          "vesta": 6
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 188,
+        "play_id": 81,
+        "player_id": 1,
+        "data": {
+          "jupiter": 50,
+          "mars": 56,
+          "mercurius": 30,
+          "minerva": 15,
+          "saturnus": 27,
+          "score": 206,
+          "venus": 20,
+          "vesta": 8
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 82,
+      "boardgame_id": 256916,
+      "cr_date": "2021-06-04T09:23:52+03:00",
+      "date": "2021-06-03T03:00:00+03:00",
+      "boardgame": "Concordia Venus"
+    },
+    "stats": [
+      {
+        "id": 190,
+        "play_id": 82,
+        "player_id": 1,
+        "data": {
+          "jupiter": 24,
+          "mars": 16,
+          "mercurius": 30,
+          "minerva": 15,
+          "saturnus": 36,
+          "score": 137,
+          "venus": 12,
+          "vesta": 4
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 192,
+        "play_id": 82,
+        "player_id": 8,
+        "data": {
+          "jupiter": 54,
+          "mars": 12,
+          "mercurius": 10,
+          "minerva": 5,
+          "saturnus": 36,
+          "score": 128,
+          "venus": 6,
+          "vesta": 5
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 191,
+        "play_id": 82,
+        "player_id": 2,
+        "data": {
+          "concordia": 7,
+          "jupiter": 24,
+          "mars": 20,
+          "mercurius": 20,
+          "minerva": 17,
+          "saturnus": 20,
+          "score": 127,
+          "venus": 16,
+          "vesta": 3
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 83,
+      "boardgame_id": 312484,
+      "cr_date": "2021-06-04T09:27:44+03:00",
+      "date": "2021-06-03T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 194,
+        "play_id": 83,
+        "player_id": 2,
+        "data": {
+          "cards": 2,
+          "fear": -2,
+          "guardian": 10,
+          "idols": 13,
+          "research": 25,
+          "score": 70,
+          "tiles": 22
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 195,
+        "play_id": 83,
+        "player_id": 8,
+        "data": {
+          "cards": 8,
+          "fear": 0,
+          "guardian": 20,
+          "idols": 12,
+          "research": 21,
+          "score": 65,
+          "tiles": 4
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 193,
+        "play_id": 83,
+        "player_id": 1,
+        "data": {
+          "cards": 13,
+          "fear": -3,
+          "guardian": 15,
+          "idols": 12,
+          "research": 22,
+          "score": 59,
+          "tiles": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  }
+]

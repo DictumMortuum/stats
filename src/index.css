@@ -61,6 +61,14 @@ code {
   stroke: #453d3f;
 }
 
+.standalone.ct-chart .ct-series.ct-series-a .ct-bar {
+  stroke: #1E88E5
+}
+
+.standalone.ct-chart .ct-series.ct-series-b .ct-bar {
+  stroke: #80CBC4
+}
+
 /*
 acc[0][id].add(blue);
 acc[1][id].add(green);

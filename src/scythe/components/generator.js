@@ -28,11 +28,11 @@ const container = ({boards, countries, data, winscutoff = 1, filters = [], playe
 
   const combinations = (() => {
     let temp = [];
-  
+
     countries.forEach(country => {
       boards.forEach(board => {
         let n = info.filter(d => board === d.board && country === d.country).length;
-        
+
         if (n <= winscutoff) {
           temp.push([board, country]);
         }
@@ -41,20 +41,20 @@ const container = ({boards, countries, data, winscutoff = 1, filters = [], playe
 
     return shuffle(temp).slice(0, 30);
   })();
-  
+
   const hashmap = (() => {
     let hash = {};
-  
+
     [...boards, ...countries].forEach(c => {
       hash[c] = 0;
     });
-  
+
     return hash;
   })();
 
   const impossible = col => {
     let hash = {...hashmap};
-  
+
     col.forEach(([board, country]) => {
       hash[board]++;
       hash[country]++;
@@ -102,7 +102,7 @@ const styles = theme => ({
   },
   result: {
     marginTop: theme.spacing.unit * 3,
-  }, 
+  },
   card: {
     minHeight: 100
   }

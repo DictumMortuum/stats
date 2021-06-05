@@ -229,4 +229,7 @@
 },{
   "winner": "Dimitris", "board": "Patriotic", "country": "Albion", "points": 87, "rounds": 21, "players": 3,
   "objectives": ["Power", "Enlist", "Deploy", "Objective1", "Upgrade", "Worker"]
+},{
+  "winner": "Dimitris", "board": "Mechanical", "country": "Saxony", "points": 71, "rounds": 17, "players": 3,
+  "objectives": ["Battle1", "Objective1", "Objective2", "Deploy", "Build", "Worker"]
 }]

@@ -1,0 +1,1 @@
+export const STANDINGS_INIT = 'STANDINGS_INIT';

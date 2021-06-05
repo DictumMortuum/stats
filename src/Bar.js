@@ -4,11 +4,11 @@ import Typography from '@material-ui/core/Typography';
 
 const dflt = {
   stackBars: true,
-  axisY: {
-    labelInterpolationFnc: function (value) {
-      return Number.isInteger(value) ? value : null;
-    }
-  },
+  // axisY: {
+  //   labelInterpolationFnc: function (value) {
+  //     return Number.isInteger(value) ? value : null;
+  //   }
+  // },
   low: 0
 };
 
