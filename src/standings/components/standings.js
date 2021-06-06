@@ -3,9 +3,13 @@ import Chartist from '../../Bar';
 import { connect } from 'react-redux';
 import { rate, Rating } from 'ts-trueskill';
 
-const graph = ({data, players}) => {
+const graph = ({data, players, boardgame}) => {
   const ratings = {}
   const plays = {}
+
+  if (boardgame !== undefined) {
+    data = data.filter(d => d.play.boardgame === boardgame)
+  }
 
   players.map(player => {
     plays[player] = 0
@@ -40,7 +44,7 @@ const graph = ({data, players}) => {
     // } else {
     //   return a.sigma - b.sigma
     // }
-  })
+  }).filter(d => plays[d.player] !== 0)
 
   console.log(results)
 

@@ -4506,5 +4506,46 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 94,
+      "boardgame_id": 266192,
+      "cr_date": "2021-06-06T21:26:53+03:00",
+      "date": "2021-06-06T03:00:00+03:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 237,
+        "play_id": 94,
+        "player_id": 2,
+        "data": {
+          "birds": 52,
+          "bonus": 13,
+          "eggs": 13,
+          "endofround": 16,
+          "food": 0,
+          "score": 106,
+          "tucked": 12
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 238,
+        "play_id": 94,
+        "player_id": 1,
+        "data": {
+          "birds": 59,
+          "bonus": 0,
+          "eggs": 6,
+          "endofround": 16,
+          "food": 1,
+          "score": 92,
+          "tucked": 10
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]
