@@ -5,8 +5,10 @@ import { rate, Rating } from 'ts-trueskill';
 
 const graph = ({data, players}) => {
   const ratings = {}
+  const plays = {}
 
   players.map(player => {
+    plays[player] = 0
     ratings[player] = new Rating()
   })
 
@@ -20,11 +22,13 @@ const graph = ({data, players}) => {
       let new_rating = rated[i]
       console.log(i, "Updating", stat.player, "from", game_participants[i].toString(), "to", new_rating[0].toString())
       ratings[stat.player] = new_rating[0]
+      plays[stat.player]++
     })
   })
 
   const results = players.map(player => ({
     player,
+    matches: plays[player],
     mu: ratings[player].mu.toFixed(3),
     sigma: ratings[player].sigma.toFixed(3)
   })).sort((a, b) => {
