@@ -4547,5 +4547,34 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 95,
+      "boardgame_id": 199792,
+      "cr_date": "2021-06-10T10:45:12+03:00",
+      "date": "2021-06-10T03:00:00+03:00",
+      "boardgame": "Everdell"
+    },
+    "stats": [
+      {
+        "id": 239,
+        "play_id": 95,
+        "player_id": 2,
+        "data": {
+          "score": 69
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 240,
+        "play_id": 95,
+        "player_id": 1,
+        "data": {
+          "score": 61
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]

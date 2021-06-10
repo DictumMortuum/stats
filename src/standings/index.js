@@ -30,7 +30,7 @@ import Typography from '@material-ui/core/Typography';
 // +--------+--------------------------------+
 
 const boardgames = [
-  "Tigris \& Euphrates",
+  "Tigris & Euphrates",
   "Ticket to ride: Europe",
   "Carcassonne",
   "Lords of Waterdeep",
@@ -48,7 +48,8 @@ const boardgames = [
   "Paladins of the West Kingdom",
   "Castles of Burgundy",
   "The Magnificent",
-  "Lost ruins of Arnak"
+  "Lost ruins of Arnak",
+  "Everdell"
 ]
 
 const wins = [{
