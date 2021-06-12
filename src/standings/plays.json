@@ -4576,5 +4576,70 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 96,
+      "boardgame_id": 183394,
+      "cr_date": "2021-06-12T23:37:07+03:00",
+      "date": "2021-06-12T03:00:00+03:00",
+      "boardgame": "Viticulture essential edition"
+    },
+    "stats": [
+      {
+        "id": 241,
+        "play_id": 96,
+        "player_id": 1,
+        "data": {
+          "score": 23
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 242,
+        "play_id": 96,
+        "player_id": 2,
+        "data": {
+          "score": 19
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 243,
+        "play_id": 96,
+        "player_id": 10,
+        "data": {
+          "score": 18
+        },
+        "player": "Takis"
+      },
+      {
+        "id": 244,
+        "play_id": 96,
+        "player_id": 9,
+        "data": {
+          "score": 17
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 245,
+        "play_id": 96,
+        "player_id": 8,
+        "data": {
+          "score": 15
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 246,
+        "play_id": 96,
+        "player_id": 11,
+        "data": {
+          "score": 12
+        },
+        "player": "Evi"
+      }
+    ]
   }
 ]
