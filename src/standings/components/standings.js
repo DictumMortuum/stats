@@ -49,7 +49,7 @@ const graph = ({data, players, boardgame}) => {
   console.log(results)
 
   return {
-    'labels': results.map(d => d.player),
+    'labels': results.map(d => d.player + "\n" + d.mu),
     'series': [
       results.map(d => d.mu),
       results.map(d => d.sigma),
