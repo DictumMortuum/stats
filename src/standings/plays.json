@@ -1,6 +1,2593 @@
 [
   {
     "play": {
+      "id": 97,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T00:54:31+03:00",
+      "date": "2017-04-01T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 251,
+        "play_id": 97,
+        "player_id": 1,
+        "data": {
+          "score": 64
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 248,
+        "play_id": 97,
+        "player_id": 3,
+        "data": {
+          "score": 61
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 247,
+        "play_id": 97,
+        "player_id": 5,
+        "data": {
+          "score": 54
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 250,
+        "play_id": 97,
+        "player_id": 6,
+        "data": {
+          "score": 31
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 249,
+        "play_id": 97,
+        "player_id": 15,
+        "data": {
+          "score": 16
+        },
+        "player": "Thodoris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 98,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T00:56:25+03:00",
+      "date": "2017-04-02T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 253,
+        "play_id": 98,
+        "player_id": 3,
+        "data": {
+          "score": 78
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 256,
+        "play_id": 98,
+        "player_id": 1,
+        "data": {
+          "score": 55
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 252,
+        "play_id": 98,
+        "player_id": 5,
+        "data": {
+          "score": 43
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 255,
+        "play_id": 98,
+        "player_id": 4,
+        "data": {
+          "score": 29
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 254,
+        "play_id": 98,
+        "player_id": 13,
+        "data": {
+          "score": 28
+        },
+        "player": "Manolis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 99,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T00:57:59+03:00",
+      "date": "2017-04-03T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 257,
+        "play_id": 99,
+        "player_id": 5,
+        "data": {
+          "score": 75
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 258,
+        "play_id": 99,
+        "player_id": 3,
+        "data": {
+          "score": 71
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 260,
+        "play_id": 99,
+        "player_id": 1,
+        "data": {
+          "score": 67
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 259,
+        "play_id": 99,
+        "player_id": 6,
+        "data": {
+          "score": 52
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 100,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T00:59:56+03:00",
+      "date": "2017-04-04T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 261,
+        "play_id": 100,
+        "player_id": 5,
+        "data": {
+          "score": 57
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 262,
+        "play_id": 100,
+        "player_id": 3,
+        "data": {
+          "score": 43
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 265,
+        "play_id": 100,
+        "player_id": 1,
+        "data": {
+          "score": 42
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 264,
+        "play_id": 100,
+        "player_id": 4,
+        "data": {
+          "score": 34
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 263,
+        "play_id": 100,
+        "player_id": 13,
+        "data": {
+          "score": 10
+        },
+        "player": "Manolis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 103,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:38:39+03:00",
+      "date": "2017-04-04T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 276,
+        "play_id": 103,
+        "player_id": 5,
+        "data": {
+          "score": 80
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 277,
+        "play_id": 103,
+        "player_id": 1,
+        "data": {
+          "score": 56
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 278,
+        "play_id": 103,
+        "player_id": 4,
+        "data": {
+          "score": 48
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 101,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:10:41+03:00",
+      "date": "2017-04-06T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 269,
+        "play_id": 101,
+        "player_id": 1,
+        "data": {
+          "score": 66
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 266,
+        "play_id": 101,
+        "player_id": 5,
+        "data": {
+          "score": 55
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 270,
+        "play_id": 101,
+        "player_id": 4,
+        "data": {
+          "score": 44
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 267,
+        "play_id": 101,
+        "player_id": 3,
+        "data": {
+          "score": 39
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 268,
+        "play_id": 101,
+        "player_id": 6,
+        "data": {
+          "score": 26
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 102,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:28:32+03:00",
+      "date": "2017-04-07T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 273,
+        "play_id": 102,
+        "player_id": 6,
+        "data": {
+          "score": 54
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 272,
+        "play_id": 102,
+        "player_id": 3,
+        "data": {
+          "score": 47
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 274,
+        "play_id": 102,
+        "player_id": 1,
+        "data": {
+          "score": 39
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 275,
+        "play_id": 102,
+        "player_id": 4,
+        "data": {
+          "score": 33
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 271,
+        "play_id": 102,
+        "player_id": 5,
+        "data": {
+          "score": 24
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 105,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-19T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 330,
+        "play_id": 105,
+        "player_id": 1,
+        "data": {
+          "score": 76
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 379,
+        "play_id": 105,
+        "player_id": 3,
+        "data": {
+          "score": 54
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 281,
+        "play_id": 105,
+        "player_id": 5,
+        "data": {
+          "score": 38
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 104,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-20T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 425,
+        "play_id": 104,
+        "player_id": 4,
+        "data": {
+          "score": 47
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 328,
+        "play_id": 104,
+        "player_id": 3,
+        "data": {
+          "score": 42
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 376,
+        "play_id": 104,
+        "player_id": 1,
+        "data": {
+          "score": 40
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 279,
+        "play_id": 104,
+        "player_id": 5,
+        "data": {
+          "score": 24
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 106,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-21T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 427,
+        "play_id": 106,
+        "player_id": 4,
+        "data": {
+          "score": 58
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 378,
+        "play_id": 106,
+        "player_id": 1,
+        "data": {
+          "score": 55
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 280,
+        "play_id": 106,
+        "player_id": 5,
+        "data": {
+          "score": 47
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 329,
+        "play_id": 106,
+        "player_id": 3,
+        "data": {
+          "score": 29
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 107,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-22T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 282,
+        "play_id": 107,
+        "player_id": 5,
+        "data": {
+          "score": 56
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 332,
+        "play_id": 107,
+        "player_id": 3,
+        "data": {
+          "score": 53
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 381,
+        "play_id": 107,
+        "player_id": 1,
+        "data": {
+          "score": 36
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 109,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-23T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 383,
+        "play_id": 109,
+        "player_id": 1,
+        "data": {
+          "score": 68
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 285,
+        "play_id": 109,
+        "player_id": 5,
+        "data": {
+          "score": 56
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 334,
+        "play_id": 109,
+        "player_id": 3,
+        "data": {
+          "score": 43
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 108,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-24T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 331,
+        "play_id": 108,
+        "player_id": 3,
+        "data": {
+          "score": 60
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 283,
+        "play_id": 108,
+        "player_id": 5,
+        "data": {
+          "score": 51
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 380,
+        "play_id": 108,
+        "player_id": 1,
+        "data": {
+          "score": 30
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 111,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-25T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 284,
+        "play_id": 111,
+        "player_id": 5,
+        "data": {
+          "score": 45
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 333,
+        "play_id": 111,
+        "player_id": 3,
+        "data": {
+          "score": 37
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 382,
+        "play_id": 111,
+        "player_id": 1,
+        "data": {
+          "score": 36
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 429,
+        "play_id": 111,
+        "player_id": 7,
+        "data": {
+          "score": 22
+        },
+        "player": "Giorgos"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 110,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-26T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 385,
+        "play_id": 110,
+        "player_id": 1,
+        "data": {
+          "score": 67
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 287,
+        "play_id": 110,
+        "player_id": 5,
+        "data": {
+          "score": 66
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 336,
+        "play_id": 110,
+        "player_id": 3,
+        "data": {
+          "score": 44
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 430,
+        "play_id": 110,
+        "player_id": 7,
+        "data": {
+          "score": 16
+        },
+        "player": "Giorgos"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 113,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-27T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 387,
+        "play_id": 113,
+        "player_id": 1,
+        "data": {
+          "score": 79
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 289,
+        "play_id": 113,
+        "player_id": 5,
+        "data": {
+          "score": 60
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 431,
+        "play_id": 113,
+        "player_id": 7,
+        "data": {
+          "score": 39
+        },
+        "player": "Giorgos"
+      },
+      {
+        "id": 339,
+        "play_id": 113,
+        "player_id": 3,
+        "data": {
+          "score": 36
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 112,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-28T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 384,
+        "play_id": 112,
+        "player_id": 1,
+        "data": {
+          "score": 58
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 335,
+        "play_id": 112,
+        "player_id": 3,
+        "data": {
+          "score": 46
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 428,
+        "play_id": 112,
+        "player_id": 6,
+        "data": {
+          "score": 42
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 286,
+        "play_id": 112,
+        "player_id": 5,
+        "data": {
+          "score": 40
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 114,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-29T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 386,
+        "play_id": 114,
+        "player_id": 1,
+        "data": {
+          "score": 53
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 337,
+        "play_id": 114,
+        "player_id": 3,
+        "data": {
+          "score": 53
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 288,
+        "play_id": 114,
+        "player_id": 5,
+        "data": {
+          "score": 43
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 433,
+        "play_id": 114,
+        "player_id": 6,
+        "data": {
+          "score": 26
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 115,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:48+03:00",
+      "date": "2017-04-30T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 338,
+        "play_id": 115,
+        "player_id": 3,
+        "data": {
+          "score": 70
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 291,
+        "play_id": 115,
+        "player_id": 5,
+        "data": {
+          "score": 57
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 389,
+        "play_id": 115,
+        "player_id": 1,
+        "data": {
+          "score": 54
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 434,
+        "play_id": 115,
+        "player_id": 6,
+        "data": {
+          "score": 45
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 456,
+        "play_id": 115,
+        "player_id": 4,
+        "data": {
+          "score": 35
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 117,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-01T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 342,
+        "play_id": 117,
+        "player_id": 3,
+        "data": {
+          "score": 62
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 391,
+        "play_id": 117,
+        "player_id": 1,
+        "data": {
+          "score": 45
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 293,
+        "play_id": 117,
+        "player_id": 5,
+        "data": {
+          "score": 27
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 116,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-02T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 290,
+        "play_id": 116,
+        "player_id": 5,
+        "data": {
+          "score": 70
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 341,
+        "play_id": 116,
+        "player_id": 3,
+        "data": {
+          "score": 38
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 432,
+        "play_id": 116,
+        "player_id": 4,
+        "data": {
+          "score": 36
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 388,
+        "play_id": 116,
+        "player_id": 1,
+        "data": {
+          "score": 32
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 119,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-03T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 392,
+        "play_id": 119,
+        "player_id": 1,
+        "data": {
+          "score": 84
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 345,
+        "play_id": 119,
+        "player_id": 3,
+        "data": {
+          "score": 81
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 295,
+        "play_id": 119,
+        "player_id": 5,
+        "data": {
+          "score": 81
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 118,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-04T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 292,
+        "play_id": 118,
+        "player_id": 5,
+        "data": {
+          "score": 66
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 340,
+        "play_id": 118,
+        "player_id": 3,
+        "data": {
+          "score": 53
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 390,
+        "play_id": 118,
+        "player_id": 1,
+        "data": {
+          "score": 16
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 120,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-05T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 343,
+        "play_id": 120,
+        "player_id": 1,
+        "data": {
+          "score": 84
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 393,
+        "play_id": 120,
+        "player_id": 4,
+        "data": {
+          "score": 57
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 294,
+        "play_id": 120,
+        "player_id": 5,
+        "data": {
+          "score": 46
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 121,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-06T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 346,
+        "play_id": 121,
+        "player_id": 1,
+        "data": {
+          "score": 65
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 394,
+        "play_id": 121,
+        "player_id": 4,
+        "data": {
+          "score": 62
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 297,
+        "play_id": 121,
+        "player_id": 5,
+        "data": {
+          "score": 26
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 122,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-07T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 298,
+        "play_id": 122,
+        "player_id": 5,
+        "data": {
+          "score": 61
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 347,
+        "play_id": 122,
+        "player_id": 1,
+        "data": {
+          "score": 34
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 397,
+        "play_id": 122,
+        "player_id": 4,
+        "data": {
+          "score": 22
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 123,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-08T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 296,
+        "play_id": 123,
+        "player_id": 5,
+        "data": {
+          "score": 77
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 395,
+        "play_id": 123,
+        "player_id": 1,
+        "data": {
+          "score": 53
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 344,
+        "play_id": 123,
+        "player_id": 3,
+        "data": {
+          "score": 53
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 435,
+        "play_id": 123,
+        "player_id": 6,
+        "data": {
+          "score": 52
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 457,
+        "play_id": 123,
+        "player_id": 4,
+        "data": {
+          "score": 24
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 125,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-09T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 401,
+        "play_id": 125,
+        "player_id": 1,
+        "data": {
+          "score": 54
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 301,
+        "play_id": 125,
+        "player_id": 5,
+        "data": {
+          "score": 49
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 350,
+        "play_id": 125,
+        "player_id": 3,
+        "data": {
+          "score": 39
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 439,
+        "play_id": 125,
+        "player_id": 6,
+        "data": {
+          "score": 33
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 124,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-10T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 348,
+        "play_id": 124,
+        "player_id": 3,
+        "data": {
+          "score": 66
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 396,
+        "play_id": 124,
+        "player_id": 1,
+        "data": {
+          "score": 38
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 437,
+        "play_id": 124,
+        "player_id": 6,
+        "data": {
+          "score": 31
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 299,
+        "play_id": 124,
+        "player_id": 5,
+        "data": {
+          "score": 29
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 127,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-11T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 400,
+        "play_id": 127,
+        "player_id": 1,
+        "data": {
+          "score": 72
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 352,
+        "play_id": 127,
+        "player_id": 3,
+        "data": {
+          "score": 65
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 303,
+        "play_id": 127,
+        "player_id": 5,
+        "data": {
+          "score": 53
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 438,
+        "play_id": 127,
+        "player_id": 4,
+        "data": {
+          "score": 34
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 126,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-12T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 300,
+        "play_id": 126,
+        "player_id": 5,
+        "data": {
+          "score": 64
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 349,
+        "play_id": 126,
+        "player_id": 3,
+        "data": {
+          "score": 56
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 399,
+        "play_id": 126,
+        "player_id": 1,
+        "data": {
+          "score": 34
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 129,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-13T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 402,
+        "play_id": 129,
+        "player_id": 1,
+        "data": {
+          "score": 61
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 305,
+        "play_id": 129,
+        "player_id": 5,
+        "data": {
+          "score": 60
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 353,
+        "play_id": 129,
+        "player_id": 3,
+        "data": {
+          "score": 57
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 441,
+        "play_id": 129,
+        "player_id": 6,
+        "data": {
+          "score": 38
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 461,
+        "play_id": 129,
+        "player_id": 4,
+        "data": {
+          "score": 37
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 128,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-14T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 302,
+        "play_id": 128,
+        "player_id": 5,
+        "data": {
+          "score": 66
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 398,
+        "play_id": 128,
+        "player_id": 1,
+        "data": {
+          "score": 62
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 436,
+        "play_id": 128,
+        "player_id": 6,
+        "data": {
+          "score": 56
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 459,
+        "play_id": 128,
+        "player_id": 4,
+        "data": {
+          "score": 47
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 351,
+        "play_id": 128,
+        "player_id": 3,
+        "data": {
+          "score": 45
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 130,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-15T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 464,
+        "play_id": 130,
+        "player_id": 7,
+        "data": {
+          "score": 81
+        },
+        "player": "Giorgos"
+      },
+      {
+        "id": 306,
+        "play_id": 130,
+        "player_id": 5,
+        "data": {
+          "score": 66
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 405,
+        "play_id": 130,
+        "player_id": 1,
+        "data": {
+          "score": 62
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 356,
+        "play_id": 130,
+        "player_id": 3,
+        "data": {
+          "score": 56
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 460,
+        "play_id": 130,
+        "player_id": 4,
+        "data": {
+          "score": 49
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 443,
+        "play_id": 130,
+        "player_id": 6,
+        "data": {
+          "score": 45
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 131,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-16T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 304,
+        "play_id": 131,
+        "player_id": 5,
+        "data": {
+          "score": 46
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 403,
+        "play_id": 131,
+        "player_id": 1,
+        "data": {
+          "score": 45
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 354,
+        "play_id": 131,
+        "player_id": 3,
+        "data": {
+          "score": 41
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 458,
+        "play_id": 131,
+        "player_id": 4,
+        "data": {
+          "score": 39
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 440,
+        "play_id": 131,
+        "player_id": 6,
+        "data": {
+          "score": 35
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 132,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-17T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 307,
+        "play_id": 132,
+        "player_id": 5,
+        "data": {
+          "score": 52
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 442,
+        "play_id": 132,
+        "player_id": 1,
+        "data": {
+          "score": 50
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 355,
+        "play_id": 132,
+        "player_id": 3,
+        "data": {
+          "score": 45
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 404,
+        "play_id": 132,
+        "player_id": 12,
+        "data": {
+          "score": 28
+        },
+        "player": "Dionisis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 133,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-18T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 357,
+        "play_id": 133,
+        "player_id": 3,
+        "data": {
+          "score": 64
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 406,
+        "play_id": 133,
+        "player_id": 1,
+        "data": {
+          "score": 57
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 308,
+        "play_id": 133,
+        "player_id": 5,
+        "data": {
+          "score": 54
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 135,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-19T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 358,
+        "play_id": 135,
+        "player_id": 3,
+        "data": {
+          "score": 64
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 407,
+        "play_id": 135,
+        "player_id": 1,
+        "data": {
+          "score": 47
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 310,
+        "play_id": 135,
+        "player_id": 5,
+        "data": {
+          "score": 33
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 134,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-20T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 408,
+        "play_id": 134,
+        "player_id": 1,
+        "data": {
+          "score": 58
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 309,
+        "play_id": 134,
+        "player_id": 5,
+        "data": {
+          "score": 56
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 359,
+        "play_id": 134,
+        "player_id": 3,
+        "data": {
+          "score": 45
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 444,
+        "play_id": 134,
+        "player_id": 4,
+        "data": {
+          "score": 23
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 137,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-21T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 313,
+        "play_id": 137,
+        "player_id": 5,
+        "data": {
+          "score": 63
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 410,
+        "play_id": 137,
+        "player_id": 1,
+        "data": {
+          "score": 55
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 446,
+        "play_id": 137,
+        "player_id": 6,
+        "data": {
+          "score": 42
+        },
+        "player": "Kalliopi"
+      },
+      {
+        "id": 361,
+        "play_id": 137,
+        "player_id": 3,
+        "data": {
+          "score": 38
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 462,
+        "play_id": 137,
+        "player_id": 4,
+        "data": {
+          "score": 37
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 136,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-22T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 311,
+        "play_id": 136,
+        "player_id": 5,
+        "data": {
+          "score": 71
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 445,
+        "play_id": 136,
+        "player_id": 4,
+        "data": {
+          "score": 63
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 409,
+        "play_id": 136,
+        "player_id": 1,
+        "data": {
+          "score": 59
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 360,
+        "play_id": 136,
+        "player_id": 3,
+        "data": {
+          "score": 49
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 138,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-23T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 314,
+        "play_id": 138,
+        "player_id": 5,
+        "data": {
+          "score": 39
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 363,
+        "play_id": 138,
+        "player_id": 3,
+        "data": {
+          "score": 34
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 447,
+        "play_id": 138,
+        "player_id": 1,
+        "data": {
+          "score": 29
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 413,
+        "play_id": 138,
+        "player_id": 15,
+        "data": {
+          "score": 24
+        },
+        "player": "Thodoris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 139,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-24T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 411,
+        "play_id": 139,
+        "player_id": 1,
+        "data": {
+          "score": 77
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 362,
+        "play_id": 139,
+        "player_id": 3,
+        "data": {
+          "score": 57
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 312,
+        "play_id": 139,
+        "player_id": 5,
+        "data": {
+          "score": 34
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 141,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-25T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 414,
+        "play_id": 141,
+        "player_id": 1,
+        "data": {
+          "score": 97
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 365,
+        "play_id": 141,
+        "player_id": 3,
+        "data": {
+          "score": 63
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 315,
+        "play_id": 141,
+        "player_id": 5,
+        "data": {
+          "score": 49
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 140,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-26T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 317,
+        "play_id": 140,
+        "player_id": 5,
+        "data": {
+          "score": 84
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 364,
+        "play_id": 140,
+        "player_id": 3,
+        "data": {
+          "score": 72
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 412,
+        "play_id": 140,
+        "player_id": 1,
+        "data": {
+          "score": 65
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 142,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-27T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 415,
+        "play_id": 142,
+        "player_id": 1,
+        "data": {
+          "score": 61
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 366,
+        "play_id": 142,
+        "player_id": 3,
+        "data": {
+          "score": 39
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 316,
+        "play_id": 142,
+        "player_id": 5,
+        "data": {
+          "score": 34
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 143,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-28T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 417,
+        "play_id": 143,
+        "player_id": 1,
+        "data": {
+          "score": 72
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 367,
+        "play_id": 143,
+        "player_id": 3,
+        "data": {
+          "score": 46
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 319,
+        "play_id": 143,
+        "player_id": 5,
+        "data": {
+          "score": 42
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 449,
+        "play_id": 143,
+        "player_id": 4,
+        "data": {
+          "score": 31
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 144,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-29T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 318,
+        "play_id": 144,
+        "player_id": 5,
+        "data": {
+          "score": 53
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 416,
+        "play_id": 144,
+        "player_id": 3,
+        "data": {
+          "score": 38
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 448,
+        "play_id": 144,
+        "player_id": 1,
+        "data": {
+          "score": 37
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 369,
+        "play_id": 144,
+        "player_id": 13,
+        "data": {
+          "score": 22
+        },
+        "player": "Manolis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 145,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-30T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 420,
+        "play_id": 145,
+        "player_id": 1,
+        "data": {
+          "score": 68
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 321,
+        "play_id": 145,
+        "player_id": 5,
+        "data": {
+          "score": 48
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 370,
+        "play_id": 145,
+        "player_id": 3,
+        "data": {
+          "score": 36
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 146,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-05-31T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 418,
+        "play_id": 146,
+        "player_id": 1,
+        "data": {
+          "score": 75
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 368,
+        "play_id": 146,
+        "player_id": 3,
+        "data": {
+          "score": 49
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 450,
+        "play_id": 146,
+        "player_id": 4,
+        "data": {
+          "score": 35
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 320,
+        "play_id": 146,
+        "player_id": 5,
+        "data": {
+          "score": 25
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 147,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-06-01T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 421,
+        "play_id": 147,
+        "player_id": 1,
+        "data": {
+          "score": 80
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 322,
+        "play_id": 147,
+        "player_id": 5,
+        "data": {
+          "score": 70
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 372,
+        "play_id": 147,
+        "player_id": 3,
+        "data": {
+          "score": 58
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 453,
+        "play_id": 147,
+        "player_id": 4,
+        "data": {
+          "score": 36
+        },
+        "player": "Elena"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 149,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-06-02T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 422,
+        "play_id": 149,
+        "player_id": 1,
+        "data": {
+          "score": 68
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 324,
+        "play_id": 149,
+        "player_id": 5,
+        "data": {
+          "score": 48
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 373,
+        "play_id": 149,
+        "player_id": 3,
+        "data": {
+          "score": 36
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 148,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-06-03T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 419,
+        "play_id": 148,
+        "player_id": 1,
+        "data": {
+          "score": 68
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 323,
+        "play_id": 148,
+        "player_id": 5,
+        "data": {
+          "score": 62
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 451,
+        "play_id": 148,
+        "player_id": 13,
+        "data": {
+          "score": 61
+        },
+        "player": "Manolis"
+      },
+      {
+        "id": 371,
+        "play_id": 148,
+        "player_id": 3,
+        "data": {
+          "score": 59
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 150,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-06-04T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 424,
+        "play_id": 150,
+        "player_id": 1,
+        "data": {
+          "score": 78
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 375,
+        "play_id": 150,
+        "player_id": 3,
+        "data": {
+          "score": 72
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 327,
+        "play_id": 150,
+        "player_id": 5,
+        "data": {
+          "score": 67
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 463,
+        "play_id": 150,
+        "player_id": 4,
+        "data": {
+          "score": 48
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 454,
+        "play_id": 150,
+        "player_id": 6,
+        "data": {
+          "score": 38
+        },
+        "player": "Kalliopi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 151,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-06-05T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 325,
+        "play_id": 151,
+        "player_id": 5,
+        "data": {
+          "score": 77
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 452,
+        "play_id": 151,
+        "player_id": 1,
+        "data": {
+          "score": 67
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 423,
+        "play_id": 151,
+        "player_id": 3,
+        "data": {
+          "score": 26
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 374,
+        "play_id": 151,
+        "player_id": 15,
+        "data": {
+          "score": 12
+        },
+        "player": "Thodoris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 152,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-14T01:39:49+03:00",
+      "date": "2017-06-06T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 326,
+        "play_id": 152,
+        "player_id": 5,
+        "data": {
+          "score": 49
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 426,
+        "play_id": 152,
+        "player_id": 1,
+        "data": {
+          "score": 44
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 455,
+        "play_id": 152,
+        "player_id": 4,
+        "data": {
+          "score": 36
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 377,
+        "play_id": 152,
+        "player_id": 3,
+        "data": {
+          "score": 31
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 465,
+        "play_id": 152,
+        "player_id": 13,
+        "data": {
+          "score": 22
+        },
+        "player": "Manolis"
+      }
+    ]
+  },
+  {
+    "play": {
       "id": 85,
       "boardgame_id": 127023,
       "cr_date": "2021-06-05T11:31:59+03:00",

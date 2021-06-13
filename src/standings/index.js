@@ -49,7 +49,8 @@ const boardgames = [
   "Castles of Burgundy",
   "The Magnificent",
   "Lost ruins of Arnak",
-  "Everdell"
+  "Everdell",
+  "Scythe"
 ]
 
 const wins = [{
