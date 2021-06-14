@@ -49,7 +49,7 @@ const graph = ({data, players, boardgame}) => {
   console.log(results)
 
   return {
-    'labels': results.map(d => d.player + "\n" + d.mu),
+    'labels': results.map(d => d.player + " " + plays[d.player] + "\n" + d.mu),
     'series': [
       results.map(d => d.mu),
       results.map(d => d.sigma),
@@ -59,15 +59,16 @@ const graph = ({data, players, boardgame}) => {
   };
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state, ownProps) => ({
   ...state.standingsReducer,
   options: {
     high: 35,
     seriesBarDistance: 40,
-    stackBars: false
+    stackBars: false,
   },
-  className: "ct-octave standalone"
-});
+  open: ownProps.open,
+  className: "ct-major-eleventh standalone"
+})
 
 class Element extends React.Component {
   render() {

@@ -36,7 +36,7 @@ const listener = (data) => {
 }
 
 export default props => {
-  const {data: {total, sample, ...rest}, desc, className, options = {}, draw = listener} = props;
+  const {data: {total, sample, ...rest}, desc, className, className2 = "",  options = {}, draw = listener, open} = props;
 
   return (
     <div>
@@ -48,7 +48,7 @@ export default props => {
         data={rest}
         options={{...dflt, ...options}}
         type={'Bar'}
-        className={className}
+        className={open ? className2 : className}
         listener={{'draw': draw}}
       />
     </div>

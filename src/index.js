@@ -27,10 +27,10 @@ store.dispatch(kemetInit());
 store.dispatch(duelInit());
 store.dispatch(standingsInit());
 
-const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={<ScytheContent />} />;
-const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={<KemetContent />} />;
-const Duel = () => <Game basename="stats/duel" links={<DuelLinks />} content={<DuelContent />} />;
-const Standings = () => <Game basename="stats/standings" links={<StandingsLinks />} content={<StandingsContent />} />;
+const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={() => <ScytheContent />} />;
+const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={() => <KemetContent />} />;
+const Duel = () => <Game basename="stats/duel" links={<DuelLinks />} content={() => <DuelContent />} />;
+const Standings = () => <Game basename="stats/standings" links={<StandingsLinks />} content={props => <StandingsContent open={props.open} />} open={false} />;
 
 const style = {
   width: '100%',

@@ -74,9 +74,12 @@ const styles = theme => ({
 });
 
 class PersistentDrawerLeft extends React.Component {
-  state = {
-    open: true,
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      open: props.open !== undefined ? props.open : true
+    }
+  }
 
   handleDrawerOpen = () => {
     this.setState({ open: true });
@@ -137,7 +140,7 @@ class PersistentDrawerLeft extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            {content}
+            {content(this.state)}
           </main>
         </div>
       </Router>
