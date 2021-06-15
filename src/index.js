@@ -16,21 +16,23 @@ import duelReducer from './duel/reducer';
 import { duelInit } from './duel/actions';
 import standingsReducer from './standings/reducer';
 import { standingsInit } from './standings/actions';
+import { reducer as configReducer } from './reducers/config';
 
 const store = createStore(combineReducers({
   kemetReducer,
   duelReducer,
   standingsReducer,
+  configReducer,
 }));
 
 store.dispatch(kemetInit());
 store.dispatch(duelInit());
 store.dispatch(standingsInit());
 
-const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={() => <ScytheContent />} />;
-const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={() => <KemetContent />} />;
-const Duel = () => <Game basename="stats/duel" links={<DuelLinks />} content={() => <DuelContent />} />;
-const Standings = () => <Game basename="stats/standings" links={<StandingsLinks />} content={props => <StandingsContent open={props.open} />} open={false} />;
+const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={<ScytheContent />} />;
+const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={<KemetContent />} />;
+const Duel = () => <Game basename="stats/duel" links={<DuelLinks />} content={<DuelContent />} />;
+const Standings = () => <Game basename="stats/standings" links={<StandingsLinks />} content={<StandingsContent />} open={false} />;
 
 const style = {
   width: '100%',

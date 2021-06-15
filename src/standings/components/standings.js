@@ -37,13 +37,6 @@ const graph = ({data, players, boardgame}) => {
     sigma: ratings[player].sigma.toFixed(3)
   })).sort((a, b) => {
     return b.mu - a.mu
-    // console.log(a.mu, b.mu, diff)
-
-    // if (diff > 0.1 && diff < -0.1) {
-    //   return diff
-    // } else {
-    //   return a.sigma - b.sigma
-    // }
   }).filter(d => plays[d.player] !== 0)
 
   console.log(results)
@@ -59,14 +52,14 @@ const graph = ({data, players, boardgame}) => {
   };
 };
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = state => ({
   ...state.standingsReducer,
+  open: state.configReducer.open,
   options: {
     high: 35,
     seriesBarDistance: 40,
     stackBars: false,
   },
-  open: ownProps.open,
   className: "ct-major-eleventh standalone"
 })
 

@@ -13,6 +13,7 @@ import Divider from '@material-ui/core/Divider';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { BrowserRouter as Router } from "react-router-dom";
+import { connect } from 'react-redux';
 
 const drawerWidth = 240;
 
@@ -74,24 +75,8 @@ const styles = theme => ({
 });
 
 class PersistentDrawerLeft extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      open: props.open !== undefined ? props.open : true
-    }
-  }
-
-  handleDrawerOpen = () => {
-    this.setState({ open: true });
-  };
-
-  handleDrawerClose = () => {
-    this.setState({ open: false });
-  };
-
   render() {
-    const { classes, theme, basename, links, content } = this.props;
-    const { open } = this.state;
+    const { classes, theme, basename, links, content, dispatch, config: { open } } = this.props;
 
     return (
       <Router basename={basename}>
@@ -107,7 +92,7 @@ class PersistentDrawerLeft extends React.Component {
               <IconButton
                 color="inherit"
                 aria-label="Open drawer"
-                onClick={this.handleDrawerOpen}
+                onClick={() => dispatch({ type: 'TOGGLE_DRAWER' })}
                 className={classNames(classes.menuButton, open && classes.hide)}
               >
                 <MenuIcon />
@@ -127,7 +112,7 @@ class PersistentDrawerLeft extends React.Component {
             }}
           >
             <div className={classes.drawerHeader}>
-              <IconButton onClick={this.handleDrawerClose}>
+              <IconButton onClick={() => dispatch({ type: 'TOGGLE_DRAWER' })}>
                 {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
               </IconButton>
             </div>
@@ -140,7 +125,7 @@ class PersistentDrawerLeft extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            {content(this.state)}
+            {content}
           </main>
         </div>
       </Router>
@@ -153,4 +138,8 @@ PersistentDrawerLeft.propTypes = {
   theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(PersistentDrawerLeft);
+const mapStateToProps = state => ({
+  config: {...state.configReducer},
+})
+
+export default connect(mapStateToProps)(withStyles(styles, { withTheme: true })(PersistentDrawerLeft))

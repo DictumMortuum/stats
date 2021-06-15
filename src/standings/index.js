@@ -53,10 +53,10 @@ const boardgames = [
   "Scythe"
 ]
 
-const wins = props => [{
+const wins = [{
   'text': 'Standings',
   'path': '/',
-  'component': () => <Standings {...props} desc={<Typography variant="body1" gutterBottom>
+  'component': () => <Standings desc={<Typography variant="body1" gutterBottom>
     For each player, the first column represents μ (mu) and the second σ (sigma), based on the <a href="https://en.wikipedia.org/wiki/TrueSkill">TrueSkill</a> algorithm. <br />
     A player's skill is represented as a normal distribution N characterized by a mean value μ (mu, representing perceived skill) and a variance σ (sigma, representing how "unconfident" test system is in the player's μ value).
   </Typography>}/>
@@ -64,19 +64,19 @@ const wins = props => [{
 ...boardgames.map((d, i) => ({
   'text': d,
   'path': '/' + i,
-  'component': () => <Standings boardgame={d} {...props} />
+  'component': () => <Standings boardgame={d} />
 }))];
 
-const StandingsLinks = props => (
+const StandingsLinks = () => (
   <div>
-    <Links charts={wins(props)} title={"Standings"} key={"Wins"} open={false} />
+    <Links charts={wins} title={"Standings"} key={"Wins"} open={false} />
     <Divider />
   </div>
 );
 
-const StandingsContent = props => (
-  wins(props).map(({path, component}) => (
-    <Route key={path} path={path} exact component={component} {...props} />
+const StandingsContent = () => (
+  wins.map(({path, component}) => (
+    <Route key={path} path={path} exact component={component} />
   ))
 );
 
