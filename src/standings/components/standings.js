@@ -1,7 +1,18 @@
 import React from 'react';
-import Chartist from '../../Bar';
 import { connect } from 'react-redux';
 import { rate, Rating } from 'ts-trueskill';
+import {
+  ResponsiveContainer,
+  BarChart,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Bar,
+  Legend,
+  ReferenceLine,
+  LabelList
+} from 'recharts';
 
 const graph = ({data, players, boardgame}) => {
   const ratings = {}
@@ -42,6 +53,7 @@ const graph = ({data, players, boardgame}) => {
   console.log(results)
 
   return {
+    results,
     'labels': results.map(d => d.player + " " + plays[d.player] + "\n" + d.mu),
     'series': [
       results.map(d => d.mu),
@@ -65,8 +77,24 @@ const mapStateToProps = state => ({
 
 class Element extends React.Component {
   render() {
-    const args = {...this.props, data: graph(this.props)}
-    return <Chartist {...args} />;
+    const { results } = graph(this.props)
+
+    return (
+      <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
+        <BarChart data={results} layout="vertical" margin={{ top: 5, right: 0, left: 15, bottom: 0 }}>
+          <XAxis type="number" />
+          <YAxis type="category" dataKey="player" />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Tooltip />
+          <Legend />
+          <ReferenceLine x={results[0].mu} stroke="red" strokeDasharray="3 3" />
+          <Bar dataKey="mu" fill="#8884d8">
+            <LabelList dataKey="mu" position="insideRight" fill="white" />
+          </Bar>
+          <Bar dataKey="sigma" fill="#82ca9d" />
+        </BarChart>
+      </ResponsiveContainer>
+    )
   }
 }
 

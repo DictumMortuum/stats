@@ -19,6 +19,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^2.0.0",
+    "recharts": "^2.0.9",
     "redux": "^4.1.0",
     "ts-trueskill": "^3.2.2"
   },
