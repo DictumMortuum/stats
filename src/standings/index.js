@@ -63,20 +63,17 @@ const wins = [{
 },{
   'text': 'Trueskill',
   'path': '/trueskill',
-  'component': () => <Standings dataKey="trueskill" desc={<Typography variant="body1" gutterBottom>
-    For each player, the first column represents μ (mu) and the second σ (sigma), based on the <a href="https://en.wikipedia.org/wiki/TrueSkill">TrueSkill</a> algorithm. <br />
-    A player's skill is represented as a normal distribution N characterized by a mean value μ (mu, representing perceived skill) and a variance σ (sigma, representing how "unconfident" test system is in the player's μ value).
-  </Typography>}/>
+  'component': () => <Standings dataKey="trueskill" />
 },
 ...boardgames.map((d, i) => ({
   'text': d,
   'path': '/' + i,
-  'component': () => <Standings boardgame={d} />
+  'component': () => <Standings boardgame={d} dataKey="mu" />
 }))];
 
 const StandingsLinks = () => (
   <div>
-    <Links charts={wins} title={"Standings"} key={"Wins"} open={false} />
+    <Links charts={wins} title={"Standings"} key={"Wins"} open={true} />
     <Divider />
   </div>
 );
