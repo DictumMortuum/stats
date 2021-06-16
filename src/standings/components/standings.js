@@ -11,10 +11,11 @@ import {
   Bar,
   Legend,
   ReferenceLine,
-  LabelList
+  LabelList,
+  ErrorBar
 } from 'recharts';
 
-const graph = ({data, players, boardgame}) => {
+const graph = ({ data, players, boardgame }) => {
   const ratings = {}
   const plays = {}
 
@@ -27,7 +28,7 @@ const graph = ({data, players, boardgame}) => {
     ratings[player] = new Rating()
   })
 
-  data.map(({play, stats}) => {
+  data.map(({ play, stats }) => {
     let game_participants = stats.map(stat => [ratings[stat.player]])
     let rated = rate(game_participants)
 
@@ -44,13 +45,15 @@ const graph = ({data, players, boardgame}) => {
   const results = players.map(player => ({
     player,
     matches: plays[player],
-    mu: ratings[player].mu.toFixed(3),
-    sigma: ratings[player].sigma.toFixed(3)
+    mu: parseFloat(ratings[player].mu.toFixed(3)),
+    sigma: parseFloat(ratings[player].sigma.toFixed(3)),
+    error: [parseFloat(ratings[player].sigma.toFixed(3)), parseFloat(ratings[player].sigma.toFixed(3))],
+    trueskill: parseFloat(ratings[player].mu.toFixed(3)) - (3 * parseFloat(ratings[player].sigma.toFixed(3)))
   })).sort((a, b) => {
     return b.mu - a.mu
   }).filter(d => plays[d.player] !== 0)
 
-  console.log(results)
+  console.log("yay", results)
 
   return {
     results,
@@ -81,17 +84,18 @@ class Element extends React.Component {
 
     return (
       <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
-        <BarChart data={results} layout="vertical" margin={{ top: 5, right: 0, left: 15, bottom: 0 }}>
+        <BarChart data={results} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
           <XAxis type="number" />
           <YAxis type="category" dataKey="player" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <Legend />
+          {/* <Legend /> */}
           <ReferenceLine x={results[0].mu} stroke="red" strokeDasharray="3 3" />
           <Bar dataKey="mu" fill="#8884d8">
-            <LabelList dataKey="mu" position="insideRight" fill="white" />
+            <LabelList dataKey="mu" position="insideLeft" fill="white" />
+            <ErrorBar dataKey="error" width={4} strokeWidth={2} />
           </Bar>
-          <Bar dataKey="sigma" fill="#82ca9d" />
+          {/* <Bar dataKey="sigma" fill="#82ca9d" /> */}
         </BarChart>
       </ResponsiveContainer>
     )
