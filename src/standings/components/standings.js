@@ -9,7 +9,6 @@ import {
   CartesianGrid,
   Tooltip,
   Bar,
-  Legend,
   ReferenceLine,
   LabelList,
   ErrorBar
@@ -26,34 +25,48 @@ const graph = ({ data, players, boardgame }) => {
   players.map(player => {
     plays[player] = 0
     ratings[player] = new Rating()
+    return player[player]
   })
+
+  console.groupCollapsed("Games")
 
   data.map(({ play, stats }) => {
     let game_participants = stats.map(stat => [ratings[stat.player]])
     let rated = rate(game_participants)
 
-    console.log(play.boardgame)
+    console.groupCollapsed(play.boardgame)
 
     stats.map((stat, i) => {
       let new_rating = rated[i]
       console.log(i, "Updating", stat.player, "from", game_participants[i].toString(), "to", new_rating[0].toString())
       ratings[stat.player] = new_rating[0]
       plays[stat.player]++
+      return plays[stats.player]
     })
+
+    console.groupEnd()
+    return stats
   })
 
-  const results = players.map(player => ({
-    player,
-    matches: plays[player],
-    mu: parseFloat(ratings[player].mu.toFixed(3)),
-    sigma: parseFloat(ratings[player].sigma.toFixed(3)),
-    error: [parseFloat(ratings[player].sigma.toFixed(3)), parseFloat(ratings[player].sigma.toFixed(3))],
-    trueskill: parseFloat(ratings[player].mu.toFixed(3)) - (3 * parseFloat(ratings[player].sigma.toFixed(3)))
-  })).sort((a, b) => {
+  console.groupEnd()
+
+  const results = players.map(player => {
+    let mu = parseFloat(ratings[player].mu.toFixed(3))
+    let sigma = parseFloat(ratings[player].sigma.toFixed(3))
+
+    return ({
+      player,
+      matches: plays[player],
+      mu,
+      sigma,
+      error: [sigma, sigma],
+      trueskill: mu - (3 * sigma)
+    })
+  }).sort((a, b) => {
     return b.mu - a.mu
   }).filter(d => plays[d.player] !== 0)
 
-  console.log("yay", results)
+  console.table(results)
 
   return {
     results,
@@ -86,13 +99,13 @@ class Element extends React.Component {
       <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
         <BarChart data={results} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
           <XAxis type="number" />
-          <YAxis type="category" dataKey="player" />
+          <YAxis type="category" dataKey="player" stroke="black" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           {/* <Legend /> */}
           <ReferenceLine x={results[0].mu} stroke="red" strokeDasharray="3 3" />
-          <Bar dataKey="mu" fill="#8884d8">
-            <LabelList dataKey="mu" position="insideLeft" fill="white" />
+          <Bar dataKey="mu" fill="#64b5f6">
+            <LabelList dataKey="mu" position="insideLeft" />
             <ErrorBar dataKey="error" width={4} strokeWidth={2} />
           </Bar>
           {/* <Bar dataKey="sigma" fill="#82ca9d" /> */}
