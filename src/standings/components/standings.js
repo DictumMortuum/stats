@@ -14,7 +14,7 @@ import {
   ErrorBar
 } from 'recharts';
 
-const graph = ({ data, players, boardgame }) => {
+const graph = ({ data, players, boardgame, dataKey }) => {
   const ratings = {}
   const plays = {}
 
@@ -60,10 +60,10 @@ const graph = ({ data, players, boardgame }) => {
       mu,
       sigma,
       error: [sigma, sigma],
-      trueskill: mu - (3 * sigma)
+      trueskill: (mu - (3 * sigma)).toFixed(3)
     })
   }).sort((a, b) => {
-    return b.mu - a.mu
+    return b[dataKey] - a[dataKey]
   }).filter(d => plays[d.player] !== 0)
 
   console.table(results)
@@ -80,19 +80,15 @@ const graph = ({ data, players, boardgame }) => {
   };
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state, props) => ({
   ...state.standingsReducer,
   open: state.configReducer.open,
-  options: {
-    high: 35,
-    seriesBarDistance: 40,
-    stackBars: false,
-  },
-  className: "ct-major-eleventh standalone"
+  dataKey: props.dataKey,
 })
 
 class Element extends React.Component {
   render() {
+    const { dataKey } = this.props
     const { results } = graph(this.props)
 
     return (
@@ -102,13 +98,11 @@ class Element extends React.Component {
           <YAxis type="category" dataKey="player" stroke="black" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          {/* <Legend /> */}
           <ReferenceLine x={results[0].mu} stroke="red" strokeDasharray="3 3" />
-          <Bar dataKey="mu" fill="#64b5f6">
-            <LabelList dataKey="mu" position="insideLeft" />
-            <ErrorBar dataKey="error" width={4} strokeWidth={2} />
+          <Bar dataKey={dataKey} fill="#64b5f6">
+            <LabelList dataKey={dataKey} position="insideLeft" />
+            {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
           </Bar>
-          {/* <Bar dataKey="sigma" fill="#82ca9d" /> */}
         </BarChart>
       </ResponsiveContainer>
     )
