@@ -575,4 +575,7 @@
 },{
   "winner": "Dimitris", "board": "Mechanical", "country": "Saxony", "points": 71, "rounds": 17, "players": 3,
   "objectives": ["Battle1", "Objective1", "Objective2", "Deploy", "Build", "Worker"]
+},{
+  "winner": "Kostas", "board": "Militant", "country": "Albion", "points": 68, "rounds": 16, "players": 4,
+  "objectives": ["Battle1", "Battle2", "Objective", "Deploy", "Enlist", "Worker"]
 }]
