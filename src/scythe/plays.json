@@ -578,4 +578,7 @@
 },{
   "winner": "Kostas", "board": "Militant", "country": "Albion", "points": 68, "rounds": 16, "players": 4,
   "objectives": ["Battle1", "Battle2", "Objective", "Deploy", "Enlist", "Worker"]
+},{
+  "winner": "Kostas", "board": "Innovative", "country": "Saxony", "points": 72, "rounds": 16, "players": 4,
+  "objectives": ["Battle1", "Battle2", "Objective", "Deploy", "Enlist", "Worker"]
 }]

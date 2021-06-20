@@ -6907,6 +6907,44 @@
   },
   {
     "play": {
+      "id": 156,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-21T01:46:26+03:00",
+      "date": "2021-05-30T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 476,
+        "play_id": 156,
+        "player_id": 1,
+        "data": {
+          "score": 71
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 478,
+        "play_id": 156,
+        "player_id": 5,
+        "data": {
+          "score": 37
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 477,
+        "play_id": 156,
+        "player_id": 3,
+        "data": {
+          "score": 36
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
       "id": 81,
       "boardgame_id": 256916,
       "cr_date": "2021-06-02T20:54:29+03:00",
@@ -7316,6 +7354,100 @@
           "transcribe": 0
         },
         "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 155,
+      "boardgame_id": 169786,
+      "cr_date": "2021-06-21T01:42:42+03:00",
+      "date": "2021-06-20T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 472,
+        "play_id": 155,
+        "player_id": 5,
+        "data": {
+          "score": 72
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 475,
+        "play_id": 155,
+        "player_id": 3,
+        "data": {
+          "score": 53
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 473,
+        "play_id": 155,
+        "player_id": 1,
+        "data": {
+          "score": 40
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 474,
+        "play_id": 155,
+        "player_id": 16,
+        "data": {
+          "score": 33
+        },
+        "player": "Andreas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 157,
+      "boardgame_id": 170216,
+      "cr_date": "2021-06-21T01:47:46+03:00",
+      "date": "2021-06-21T03:00:00+03:00",
+      "boardgame": "Blood rage"
+    },
+    "stats": [
+      {
+        "id": 479,
+        "play_id": 157,
+        "player_id": 1,
+        "data": {
+          "score": 143
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 482,
+        "play_id": 157,
+        "player_id": 16,
+        "data": {
+          "score": 67
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 480,
+        "play_id": 157,
+        "player_id": 5,
+        "data": {
+          "score": 64
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 481,
+        "play_id": 157,
+        "player_id": 3,
+        "data": {
+          "score": 54
+        },
+        "player": "Panagiotis"
       }
     ]
   }
