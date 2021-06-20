@@ -7275,5 +7275,48 @@
         "player": "Andreas"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 154,
+      "boardgame_id": 296151,
+      "cr_date": "2021-06-20T14:03:39+03:00",
+      "date": "2021-06-20T03:00:00+03:00",
+      "boardgame": "Viscounts of the West Kingdom"
+    },
+    "stats": [
+      {
+        "id": 471,
+        "play_id": 154,
+        "player_id": 2,
+        "data": {
+          "build": 9,
+          "castle": 11,
+          "castle_leader": 0,
+          "deeds": 10,
+          "dept": 0,
+          "poverty": 12,
+          "score": 74,
+          "transcribe": 32
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 470,
+        "play_id": 154,
+        "player_id": 1,
+        "data": {
+          "build": 19,
+          "castle": 28,
+          "castle_leader": 5,
+          "deeds": 10,
+          "dept": -2,
+          "poverty": 12,
+          "score": 72,
+          "transcribe": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]
