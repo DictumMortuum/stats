@@ -63,8 +63,6 @@ const graph = ({ data, players, boardgame, dataKey }) => {
       error: [sigma, sigma],
       trueskill: (mu - (3 * sigma)).toFixed(3)
     })
-  }).sort((a, b) => {
-    return b[dataKey] - a[dataKey]
   }).filter(d => plays[d.player] !== 0)
 
   console.table(results)
@@ -105,14 +103,18 @@ class Element extends React.Component {
   render() {
     const { dataKey, results } = this.props
 
+    const sorted = results.sort((a, b) => {
+      return b[dataKey] - a[dataKey]
+    })
+
     return (
       <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
-        <BarChart data={results} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
+        <BarChart data={sorted} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
           <XAxis type="number" orientation="top" />
           <YAxis type="category" dataKey="player" stroke="black" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <ReferenceLine x={results[0].mu} stroke="red" strokeDasharray="3 3" />
+          <ReferenceLine x={sorted[0].mu} stroke="red" strokeDasharray="3 3" />
           <Bar dataKey={dataKey} fill="#64b5f6">
             <LabelList dataKey={dataKey} position="insideLeft" />
             {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}

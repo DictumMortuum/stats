@@ -7506,5 +7506,184 @@
         "player": "Popi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 159,
+      "boardgame_id": 283863,
+      "cr_date": "2021-06-27T23:48:16+03:00",
+      "date": "2021-06-27T03:00:00+03:00",
+      "boardgame": "The Magnificent"
+    },
+    "stats": [
+      {
+        "id": 487,
+        "play_id": 159,
+        "player_id": 1,
+        "data": {
+          "player": 1,
+          "score": 127
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 486,
+        "play_id": 159,
+        "player_id": 2,
+        "data": {
+          "player": 3,
+          "score": 110
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 160,
+      "boardgame_id": 312484,
+      "cr_date": "2021-06-27T23:49:58+03:00",
+      "date": "2021-06-27T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 489,
+        "play_id": 160,
+        "player_id": 9,
+        "data": {
+          "cards": 1,
+          "fear": -1,
+          "guardian": 25,
+          "idols": 21,
+          "research": 20,
+          "score": 66,
+          "tiles": 0
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 488,
+        "play_id": 160,
+        "player_id": 2,
+        "data": {
+          "cards": 15,
+          "fear": -3,
+          "guardian": 10,
+          "idols": 13,
+          "research": 25,
+          "score": 64,
+          "tiles": 4
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 490,
+        "play_id": 160,
+        "player_id": 10,
+        "data": {
+          "cards": 12,
+          "fear": -2,
+          "guardian": 5,
+          "idols": 12,
+          "research": 24,
+          "score": 62,
+          "tiles": 11
+        },
+        "player": "Takis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 161,
+      "boardgame_id": 256916,
+      "cr_date": "2021-06-27T23:54:24+03:00",
+      "date": "2021-06-27T03:00:00+03:00",
+      "boardgame": "Concordia Venus"
+    },
+    "stats": [
+      {
+        "id": 491,
+        "play_id": 161,
+        "player_id": 1,
+        "data": {
+          "jupiter": 24,
+          "mars": 8,
+          "mercurius": 20,
+          "minerva": 36,
+          "saturnus": 24,
+          "score": 122,
+          "venus": 8,
+          "vesta": 2
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 493,
+        "play_id": 161,
+        "player_id": 13,
+        "data": {
+          "jupiter": 24,
+          "mars": 36,
+          "mercurius": 20,
+          "minerva": 0,
+          "saturnus": 15,
+          "score": 108,
+          "venus": 12,
+          "vesta": 1
+        },
+        "player": "Manolis"
+      },
+      {
+        "id": 494,
+        "play_id": 161,
+        "player_id": 16,
+        "data": {
+          "concordia": 7,
+          "jupiter": 32,
+          "mars": 20,
+          "mercurius": 20,
+          "minerva": 0,
+          "saturnus": 18,
+          "score": 107,
+          "venus": 8,
+          "vesta": 2
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 492,
+        "play_id": 161,
+        "player_id": 3,
+        "data": {
+          "jupiter": 14,
+          "mars": 8,
+          "mercurius": 16,
+          "minerva": 12,
+          "saturnus": 30,
+          "score": 98,
+          "venus": 12,
+          "vesta": 6
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 495,
+        "play_id": 161,
+        "player_id": 5,
+        "data": {
+          "jupiter": 16,
+          "mars": 24,
+          "mercurius": 16,
+          "minerva": 0,
+          "saturnus": 15,
+          "score": 92,
+          "venus": 16,
+          "vesta": 5
+        },
+        "player": "Kostas"
+      }
+    ]
   }
 ]

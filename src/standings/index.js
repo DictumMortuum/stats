@@ -65,11 +65,12 @@ const wins = [{
   'path': '/trueskill',
   'component': () => <Standings dataKey="trueskill" />
 },
-...boardgames.map((d, i) => ({
-  'text': d,
-  'path': '/' + i,
-  'component': () => <Standings boardgame={d} dataKey="mu" />
-}))];
+// ...boardgames.map((d, i) => ({
+//   'text': d,
+//   'path': '/' + i,
+//   'component': () => <Standings boardgame={d} dataKey="mu" />
+// }))
+];
 
 const StandingsLinks = () => (
   <div>
