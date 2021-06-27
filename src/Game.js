@@ -49,6 +49,24 @@ const styles = theme => ({
   drawerPaper: {
     width: drawerWidth,
   },
+  title: {
+    flexGrow: 1,
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+  },
+  search: {
+    position: 'relative',
+    borderRadius: theme.shape.borderRadius,
+    marginLeft: 20,
+    marginRight: 12,
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      marginLeft: theme.spacing(1),
+      width: 'auto',
+    },
+  },
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
@@ -76,7 +94,7 @@ const styles = theme => ({
 
 class PersistentDrawerLeft extends React.Component {
   render() {
-    const { classes, theme, basename, links, content, dispatch, config: { open } } = this.props;
+    const { classes, theme, basename, links, content, dispatch, config: { open, msg } } = this.props;
 
     return (
       <Router basename={basename}>
@@ -97,8 +115,11 @@ class PersistentDrawerLeft extends React.Component {
               >
                 <MenuIcon />
               </IconButton>
-              <Typography variant="h6" color="inherit" noWrap>
+              <Typography variant="h6" color="inherit" noWrap className={classes.title}>
                 {basename}
+              </Typography>
+              <Typography color="inherit" noWrap className={classes.search}>
+                {msg}
               </Typography>
             </Toolbar>
           </AppBar>

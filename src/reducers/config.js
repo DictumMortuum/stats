@@ -1,8 +1,10 @@
 export const TOGGLE_DRAWER = 'TOGGLE_DRAWER';
 export const CLOSE_DRAWER = 'CLOSE_DRAWER';
+export const SET_MSG = 'SET_MSG';
 
 const init = {
-  open: false
+  open: false,
+  msg: ""
 }
 
 export const reducer = (state = init, action) => {
@@ -16,6 +18,11 @@ export const reducer = (state = init, action) => {
       return {
         ...state,
         open: false
+      }
+    case SET_MSG:
+      return {
+        ...state,
+        msg: action.msg
       }
     default:
       return state;

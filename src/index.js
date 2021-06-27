@@ -10,12 +10,9 @@ import { DuelLinks, DuelContent, DuelImg } from './duel';
 import { StandingsLinks, StandingsContent, StandingsImg } from './standings';
 import { combineReducers, createStore } from 'redux';
 import { Provider } from 'react-redux';
-import kemetReducer from './kemet/reducer';
-import { kemetInit } from './kemet/actions';
-import duelReducer from './duel/reducer';
-import { duelInit } from './duel/actions';
-import standingsReducer from './standings/reducer';
-import { standingsInit } from './standings/actions';
+import { reducer as kemetReducer } from './reducers/kemet';
+import { reducer as duelReducer } from './reducers/duel';
+import { reducer as standingsReducer } from './reducers/standings';
 import { reducer as configReducer } from './reducers/config';
 
 const store = createStore(combineReducers({
@@ -25,9 +22,17 @@ const store = createStore(combineReducers({
   configReducer,
 }));
 
-store.dispatch(kemetInit());
-store.dispatch(duelInit());
-store.dispatch(standingsInit());
+store.dispatch({
+  type: "KEMET_INIT"
+});
+
+store.dispatch({
+  type: "DUEL_INIT"
+});
+
+// store.dispatch({
+//   type: "STANDINGS_INIT"
+// });
 
 const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={<ScytheContent />} />;
 const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={<KemetContent />} />;

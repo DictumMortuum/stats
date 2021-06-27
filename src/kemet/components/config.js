@@ -4,7 +4,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import ListItem from '@material-ui/core/ListItem';
 import Switch from '@material-ui/core/Switch';
 import { connect } from 'react-redux';
-import { kemetConfig } from '../actions';
+import { config as kemetConfig } from '../../reducers/kemet';
 
 const mapStateToProps = state => ({
   ...state.kemetReducer

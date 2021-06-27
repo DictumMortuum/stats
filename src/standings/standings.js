@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { rate, Rating } from 'ts-trueskill';
+import { createSelectorCreator, defaultMemoize } from 'reselect';
 import {
   ResponsiveContainer,
   BarChart,
@@ -70,31 +71,44 @@ const graph = ({ data, players, boardgame, dataKey }) => {
 
   return {
     results,
-    'labels': results.map(d => d.player + " " + plays[d.player] + "\n" + d.mu),
-    'series': [
-      results.map(d => d.mu),
-      results.map(d => d.sigma),
-    ],
     'total': data.length,
     'sample': data.length
   };
 };
 
+const customSelector = createSelectorCreator(
+  defaultMemoize,
+  (a, b) => a.data.length === b.data.length
+)
+
+const graphSelector = customSelector(
+  (state, props) => ({...state, ...props}),
+  graph
+)
+
 const mapStateToProps = (state, props) => ({
   ...state.standingsReducer,
   open: state.configReducer.open,
   dataKey: props.dataKey,
+  ...graphSelector({...state.standingsReducer}, {dataKey: props.dataKey})
 })
 
 class Element extends React.Component {
+  componentDidMount() {
+    const { dispatch, sample, total } = this.props
+    dispatch({
+      type: "SET_MSG",
+      msg: "Sample size: " + sample + " / " + total
+    })
+  }
+
   render() {
-    const { dataKey } = this.props
-    const { results } = graph(this.props)
+    const { dataKey, results } = this.props
 
     return (
       <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
         <BarChart data={results} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
-          <XAxis type="number" />
+          <XAxis type="number" orientation="top" />
           <YAxis type="category" dataKey="player" stroke="black" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
@@ -110,3 +124,31 @@ class Element extends React.Component {
 }
 
 export default connect(mapStateToProps)(Element);
+
+// return (
+//   <div style={{position: 'relative', width: '100%', paddingBottom: '1000px'}}>
+//     <div
+//       style={{
+//         position: 'absolute',
+//         left: 0,
+//         right: 0,
+//         bottom: 0,
+//         top: 0,
+//       }}
+//     >
+//         <ResponsiveContainer height="95%">
+//           <BarChart data={results} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
+//             <XAxis type="number" orientation="top" />
+//             <YAxis type="category" dataKey="player" stroke="black" />
+//             <CartesianGrid strokeDasharray="3 3" />
+//             <Tooltip />
+//             <ReferenceLine x={results[0].mu} stroke="red" strokeDasharray="3 3" />
+//             <Bar dataKey={dataKey} fill="#64b5f6">
+//               <LabelList dataKey={dataKey} position="insideLeft" />
+//               {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
+//             </Bar>
+//           </BarChart>
+//         </ResponsiveContainer>
+//   </div></div>
+
+//       )

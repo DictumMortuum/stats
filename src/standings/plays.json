@@ -7450,5 +7450,61 @@
         "player": "Panagiotis"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 158,
+      "boardgame_id": 312484,
+      "cr_date": "2021-06-25T23:09:54+03:00",
+      "date": "2021-06-25T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 483,
+        "play_id": 158,
+        "player_id": 2,
+        "data": {
+          "cards": 6,
+          "fear": 0,
+          "guardian": 10,
+          "idols": 13,
+          "research": 33,
+          "score": 77,
+          "tiles": 15
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 484,
+        "play_id": 158,
+        "player_id": 1,
+        "data": {
+          "cards": 14,
+          "fear": 0,
+          "guardian": 20,
+          "idols": 12,
+          "research": 29,
+          "score": 75,
+          "tiles": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 485,
+        "play_id": 158,
+        "player_id": 8,
+        "data": {
+          "cards": 16,
+          "fear": -1,
+          "guardian": 5,
+          "idols": 12,
+          "research": 7,
+          "score": 39,
+          "tiles": 0
+        },
+        "player": "Popi"
+      }
+    ]
   }
 ]

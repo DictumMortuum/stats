@@ -3,7 +3,7 @@ import Divider from '@material-ui/core/Divider';
 import Links from '../Links';
 import { Route } from 'react-router-dom';
 import StandingsImg from './img.jpg';
-import Standings from './components/standings';
+import Standings from './standings';
 import Typography from '@material-ui/core/Typography';
 
 

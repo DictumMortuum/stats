@@ -1,6 +1,6 @@
-import data from '../plays.json';
+import data from '../../kemet/plays.json';
 import score from './score';
-import tiles from '../tiles.json';
+import tiles from '../../kemet/tiles.json';
 import {
   unique,
   flatten,

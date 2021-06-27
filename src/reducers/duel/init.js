@@ -1,4 +1,4 @@
-import data from '../plays.json';
+import data from '../../duel/plays.json';
 import {result, tally} from './score';
 import {
   unique,
