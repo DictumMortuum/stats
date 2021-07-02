@@ -7685,5 +7685,108 @@
         "player": "Kostas"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 162,
+      "boardgame_id": 312484,
+      "cr_date": "2021-07-03T00:10:28+03:00",
+      "date": "2021-07-03T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 497,
+        "play_id": 162,
+        "player_id": 1,
+        "data": {
+          "cards": 11,
+          "fear": 0,
+          "guardian": 15,
+          "idols": 19,
+          "research": 23,
+          "score": 68,
+          "tiles": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 498,
+        "play_id": 162,
+        "player_id": 2,
+        "data": {
+          "cards": 13,
+          "fear": -3,
+          "guardian": 5,
+          "idols": 12,
+          "research": 29,
+          "score": 67,
+          "tiles": 11
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 496,
+        "play_id": 162,
+        "player_id": 8,
+        "data": {
+          "cards": 17,
+          "fear": 0,
+          "guardian": 5,
+          "idols": 12,
+          "research": 16,
+          "score": 50,
+          "tiles": 0
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 163,
+      "boardgame_id": 271320,
+      "cr_date": "2021-07-03T00:13:09+03:00",
+      "date": "2021-07-03T03:00:00+03:00",
+      "boardgame": "Castles of Burgundy"
+    },
+    "stats": [
+      {
+        "id": 499,
+        "play_id": 163,
+        "player_id": 1,
+        "data": {
+          "score": 226
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 500,
+        "play_id": 163,
+        "player_id": 2,
+        "data": {
+          "score": 216
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 501,
+        "play_id": 163,
+        "player_id": 3,
+        "data": {
+          "score": 201
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 502,
+        "play_id": 163,
+        "player_id": 8,
+        "data": {
+          "score": 179
+        },
+        "player": "Popi"
+      }
+    ]
   }
 ]

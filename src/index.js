@@ -30,9 +30,9 @@ store.dispatch({
   type: "DUEL_INIT"
 });
 
-// store.dispatch({
-//   type: "STANDINGS_INIT"
-// });
+store.dispatch({
+  type: "STANDINGS_INIT"
+});
 
 const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={<ScytheContent />} />;
 const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={<KemetContent />} />;
