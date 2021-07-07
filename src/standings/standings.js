@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { rate, Rating } from 'ts-trueskill';
-import { createSelectorCreator, defaultMemoize } from 'reselect';
 import {
   ResponsiveContainer,
   BarChart,
@@ -24,9 +23,9 @@ const graph = ({ data, players, boardgame, dataKey }) => {
   }
 
   players.map(player => {
-    plays[player] = 0
-    ratings[player] = new Rating()
-    return player[player]
+    plays[player.name] = 0
+    ratings[player.name] = new Rating()
+    return player[player.name]
   })
 
   console.groupCollapsed("Games")
@@ -52,12 +51,12 @@ const graph = ({ data, players, boardgame, dataKey }) => {
   console.groupEnd()
 
   const results = players.map(player => {
-    let mu = parseFloat(ratings[player].mu.toFixed(3))
-    let sigma = parseFloat(ratings[player].sigma.toFixed(3))
+    let mu = parseFloat(ratings[player.name].mu.toFixed(3))
+    let sigma = parseFloat(ratings[player.name].sigma.toFixed(3))
 
     return ({
-      player,
-      matches: plays[player],
+      player: player.name,
+      matches: plays[player.name],
       mu,
       sigma,
       error: [sigma, sigma],
@@ -69,31 +68,22 @@ const graph = ({ data, players, boardgame, dataKey }) => {
 
   return {
     results,
+    dataKey,
     'total': data.length,
     'sample': data.length
   };
 };
 
-const customSelector = createSelectorCreator(
-  defaultMemoize,
-  (a, b) => a.data.length === b.data.length
-)
-
-const graphSelector = customSelector(
-  (state, props) => ({...state, ...props}),
-  graph
-)
-
 const mapStateToProps = (state, props) => ({
   ...state.standingsReducer,
   open: state.configReducer.open,
-  dataKey: props.dataKey,
-  ...graphSelector({...state.standingsReducer}, {dataKey: props.dataKey})
+  dataKey: props.dataKey
 })
 
 class Element extends React.Component {
   componentDidMount() {
-    const { dispatch, sample, total } = this.props
+    const { dispatch } = this.props
+    const { sample, total } = graph(this.props)
     dispatch({
       type: "SET_MSG",
       msg: "Sample size: " + sample + " / " + total
@@ -101,7 +91,7 @@ class Element extends React.Component {
   }
 
   render() {
-    const { dataKey, results } = this.props
+    const { dataKey, results } = graph(this.props)
 
     const sorted = results.sort((a, b) => {
       return b[dataKey] - a[dataKey]

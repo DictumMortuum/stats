@@ -1,6 +1,5 @@
 import initialState from './kemet/init';
 
-export const KEMET_INIT = 'KEMET_INIT';
 export const KEMET_CONFIG = 'KEMET_CONFIG';
 
 export const config = config => ({
@@ -10,7 +9,7 @@ export const config = config => ({
 
 export const reducer = (state = {}, action) => {
   switch (action.type) {
-    case KEMET_INIT:
+    case "INIT":
       return initialState;
     case KEMET_CONFIG:
       return {...state, config: action.config};

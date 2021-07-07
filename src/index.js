@@ -23,15 +23,7 @@ const store = createStore(combineReducers({
 }));
 
 store.dispatch({
-  type: "KEMET_INIT"
-});
-
-store.dispatch({
-  type: "DUEL_INIT"
-});
-
-store.dispatch({
-  type: "STANDINGS_INIT"
+  type: "INIT"
 });
 
 const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={<ScytheContent />} />;

@@ -7817,5 +7817,44 @@
         "player": "Theoni"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 165,
+      "boardgame_id": 170042,
+      "cr_date": "2021-07-07T22:08:59+03:00",
+      "date": "2021-07-07T03:00:00+03:00",
+      "boardgame": "Raiders of the north sea"
+    },
+    "stats": [
+      {
+        "id": 506,
+        "play_id": 165,
+        "player_id": 2,
+        "data": {
+          "armor": 6,
+          "cards": 2,
+          "loot": 5,
+          "points": 59,
+          "score": 79,
+          "valkyrie": 7
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 505,
+        "play_id": 165,
+        "player_id": 1,
+        "data": {
+          "armor": 6,
+          "cards": 0,
+          "loot": 5,
+          "points": 51,
+          "score": 72,
+          "valkyrie": 10
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]

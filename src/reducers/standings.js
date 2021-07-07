@@ -1,95 +1,33 @@
 import data from '../standings/plays.json';
-import {
-  unique,
-  flatten,
-  collection
-} from '../common';
-import { rate, Rating } from 'ts-trueskill';
-
-export const STANDINGS_INIT = 'STANDINGS_INIT';
-
-const getPlayers = data => unique(flatten(collection(data)(d => d.stats.map(p => p.player))))
 
 const getPositions = data => Math.max(...data.map(d => d.stats.length))
 
-// returns an array of arrays, because I assume we don't play team games.
-const statsToRatings = (state, stats) => stats.map(({ player }) => [state[player].rating])
+const getPlayers = data => {
+  let rs = []
 
-const initPlays = players => players.reduce((plays, player) => ({
-  ...plays,
-  [player]: {
-    "matches": 0,
-    "name": player,
-    "rating": new Rating()
-  }
-}), {})
+  data.map(play => play.stats).flat().map(p => {
+    rs[p.player_id] = {
+      "name": p.player,
+      "id": p.player_id,
+      "plays": 0
+    }
 
-// const initPlays = players => players.map(player => ({
-//   "matches": 0,
-//   "name": player,
-//   "rating": new Rating()
-// }))
-
-const addStats = state => ({ play, stats }) => {
-  let current_ratings = statsToRatings(state, stats)
-  let new_ratings = rate(current_ratings)
-
-  console.groupCollapsed(play.boardgame)
-
-  stats.map((stat, i) => {
-    let new_rating = new_ratings[i]
-    console.log(i, "Updating", stat.player, "from", current_ratings[i].toString(), "to", new_rating[0].toString())
-    state[stat.player].rating = new_rating[0]
-    state[stat.player].matches++
-    return state[stat.player]
+    return rs[p.player_id]
   })
 
-  console.groupEnd()
-
-  return state
+  return rs
 }
-
-const calculateScore = state => state.map(key => {
-  let player = state[key]
-  let mu = parseFloat(player.rating.mu.toFixed(3))
-  let sigma = parseFloat(player.rating.sigma.toFixed(3))
-
-  return ({
-    ...player,
-    mu,
-    sigma,
-    error: [sigma, sigma],
-    trueskill: (mu - (3 * sigma)).toFixed(3),
-  })
-})//.filter(d => state[d.player].matches !== 0)
-
-const graph = data => {
-  const players = getPlayers(data)
-  let state = initPlays(players)
-  data.map(addStats(state))
-  console.table(state)
-
-  return {
-    results: calculateScore(state),
-    'total': data.length,
-    'sample': data.length
-  };
-};
 
 export const reducer = (state = {}, action) => {
   switch (action.type) {
-    case STANDINGS_INIT:
+    case "INIT":
       return {
         ...state,
         positions: getPositions(data),
         players: getPlayers(data),
-        // ...graph(data)
-      };
+        data
+      }
     default:
-      return {
-        players: getPlayers(data),
-        positions: getPositions(data),
-        data,
-      };
+      return state
   }
 };
