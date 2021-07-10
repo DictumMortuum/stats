@@ -7885,5 +7885,52 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 167,
+      "boardgame_id": 199792,
+      "cr_date": "2021-07-10T10:59:44+03:00",
+      "date": "2021-07-09T03:00:00+03:00",
+      "boardgame": "Everdell"
+    },
+    "stats": [
+      {
+        "id": 509,
+        "play_id": 167,
+        "player_id": 1,
+        "data": {
+          "score": 58
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 510,
+        "play_id": 167,
+        "player_id": 2,
+        "data": {
+          "score": 46
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 512,
+        "play_id": 167,
+        "player_id": 10,
+        "data": {
+          "score": 35
+        },
+        "player": "Takis"
+      },
+      {
+        "id": 511,
+        "play_id": 167,
+        "player_id": 9,
+        "data": {
+          "score": 29
+        },
+        "player": "Mairi"
+      }
+    ]
   }
 ]
