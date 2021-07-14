@@ -7932,5 +7932,81 @@
         "player": "Mairi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 168,
+      "boardgame_id": 198994,
+      "cr_date": "2021-07-14T22:45:39+03:00",
+      "date": "2021-07-11T03:00:00+03:00",
+      "boardgame": "Hero Realms"
+    },
+    "stats": [
+      {
+        "id": 514,
+        "play_id": 168,
+        "player_id": 2,
+        "data": {
+          "health": 36,
+          "score": 36
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 513,
+        "play_id": 168,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 169,
+      "boardgame_id": 164928,
+      "cr_date": "2021-07-14T22:47:07+03:00",
+      "date": "2021-07-14T03:00:00+03:00",
+      "boardgame": "Orléans"
+    },
+    "stats": [
+      {
+        "id": 516,
+        "play_id": 169,
+        "player_id": 2,
+        "data": {
+          "brocade": 5,
+          "buildings": 25,
+          "cheese": 4,
+          "citizen": 20,
+          "coin": 54,
+          "grain": 0,
+          "score": 114,
+          "wine": 6,
+          "wool": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 515,
+        "play_id": 169,
+        "player_id": 1,
+        "data": {
+          "brocade": 10,
+          "buildings": 24,
+          "cheese": 6,
+          "citizen": 24,
+          "coin": 34,
+          "grain": 3,
+          "score": 113,
+          "wine": 0,
+          "wool": 12
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]
