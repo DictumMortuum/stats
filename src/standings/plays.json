@@ -8008,5 +8008,76 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 170,
+      "boardgame_id": 312484,
+      "cr_date": "2021-07-16T01:51:34+03:00",
+      "date": "2021-07-15T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 517,
+        "play_id": 170,
+        "player_id": 2,
+        "data": {
+          "cards": 12,
+          "fear": 0,
+          "guardian": 5,
+          "idols": 12,
+          "research": 33,
+          "score": 79,
+          "tiles": 17
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 518,
+        "play_id": 170,
+        "player_id": 1,
+        "data": {
+          "cards": 12,
+          "fear": -1,
+          "guardian": 15,
+          "idols": 12,
+          "research": 31,
+          "score": 69,
+          "tiles": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 520,
+        "play_id": 170,
+        "player_id": 18,
+        "data": {
+          "cards": 23,
+          "fear": 0,
+          "guardian": 10,
+          "idols": 13,
+          "research": 22,
+          "score": 68,
+          "tiles": 0
+        },
+        "player": "Antonis"
+      },
+      {
+        "id": 519,
+        "play_id": 170,
+        "player_id": 17,
+        "data": {
+          "cards": 8,
+          "fear": 0,
+          "guardian": 20,
+          "idols": 25,
+          "research": 10,
+          "score": 63,
+          "tiles": 0
+        },
+        "player": "Nantia"
+      }
+    ]
   }
 ]
