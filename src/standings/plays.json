@@ -8079,5 +8079,86 @@
         "player": "Nantia"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 171,
+      "boardgame_id": 164928,
+      "cr_date": "2021-07-16T23:24:02+03:00",
+      "date": "2021-07-16T03:00:00+03:00",
+      "boardgame": "Orléans"
+    },
+    "stats": [
+      {
+        "id": 523,
+        "play_id": 171,
+        "player_id": 1,
+        "data": {
+          "brocade": 5,
+          "buildings": 36,
+          "cheese": 4,
+          "citizen": 24,
+          "coin": 57,
+          "grain": 0,
+          "score": 146,
+          "wine": 12,
+          "wool": 8
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 522,
+        "play_id": 171,
+        "player_id": 2,
+        "data": {
+          "brocade": 5,
+          "buildings": 20,
+          "cheese": 0,
+          "citizen": 15,
+          "coin": 47,
+          "grain": 2,
+          "score": 104,
+          "track": 1,
+          "wine": 3,
+          "wool": 12
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 524,
+        "play_id": 171,
+        "player_id": 3,
+        "data": {
+          "brocade": 10,
+          "buildings": 20,
+          "cheese": 0,
+          "citizen": 15,
+          "coin": 51,
+          "grain": 0,
+          "score": 104,
+          "track": 3,
+          "wine": 0,
+          "wool": 8
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 521,
+        "play_id": 171,
+        "player_id": 15,
+        "data": {
+          "brocade": 0,
+          "buildings": 12,
+          "cheese": 0,
+          "citizen": 8,
+          "coin": 49,
+          "grain": 0,
+          "score": 76,
+          "wine": 3,
+          "wool": 4
+        },
+        "player": "Thodoris"
+      }
+    ]
   }
 ]
