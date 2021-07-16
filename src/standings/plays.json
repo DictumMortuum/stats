@@ -8160,5 +8160,50 @@
         "player": "Thodoris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 172,
+      "boardgame_id": 164928,
+      "cr_date": "2021-07-17T00:01:57+03:00",
+      "date": "2021-07-16T03:00:00+03:00",
+      "boardgame": "Orléans"
+    },
+    "stats": [
+      {
+        "id": 525,
+        "play_id": 172,
+        "player_id": 1,
+        "data": {
+          "brocade": 5,
+          "buildings": 40,
+          "cheese": 2,
+          "citizen": 15,
+          "coin": 60,
+          "grain": 0,
+          "score": 132,
+          "wine": 6,
+          "wool": 4
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 526,
+        "play_id": 172,
+        "player_id": 2,
+        "data": {
+          "brocade": 10,
+          "buildings": 6,
+          "cheese": 0,
+          "citizen": 36,
+          "coin": 53,
+          "grain": 0,
+          "score": 113,
+          "wine": 0,
+          "wool": 8
+        },
+        "player": "Theoni"
+      }
+    ]
   }
 ]
