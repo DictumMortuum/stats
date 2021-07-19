@@ -8205,5 +8205,70 @@
         "player": "Theoni"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 173,
+      "boardgame_id": 169786,
+      "cr_date": "2021-07-19T10:23:12+03:00",
+      "date": "2021-07-18T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 527,
+        "play_id": 173,
+        "player_id": 3,
+        "data": {
+          "score": 51
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 529,
+        "play_id": 173,
+        "player_id": 16,
+        "data": {
+          "score": 39
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 530,
+        "play_id": 173,
+        "player_id": 2,
+        "data": {
+          "score": 31
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 528,
+        "play_id": 173,
+        "player_id": 4,
+        "data": {
+          "score": 31
+        },
+        "player": "Elena"
+      },
+      {
+        "id": 531,
+        "play_id": 173,
+        "player_id": 5,
+        "data": {
+          "score": 28
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 532,
+        "play_id": 173,
+        "player_id": 1,
+        "data": {
+          "score": 27
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]

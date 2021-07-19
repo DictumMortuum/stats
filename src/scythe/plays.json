@@ -577,8 +577,11 @@
   "objectives": ["Battle1", "Objective1", "Objective2", "Deploy", "Build", "Worker"]
 },{
   "winner": "Kostas", "board": "Militant", "country": "Albion", "points": 68, "rounds": 16, "players": 4,
-  "objectives": ["Battle1", "Battle2", "Objective", "Deploy", "Enlist", "Worker"]
+  "objectives": ["Battle1", "Battle2", "Objective1", "Deploy", "Enlist", "Worker"]
 },{
   "winner": "Kostas", "board": "Innovative", "country": "Saxony", "points": 72, "rounds": 16, "players": 4,
-  "objectives": ["Battle1", "Battle2", "Objective", "Deploy", "Enlist", "Worker"]
+  "objectives": ["Battle1", "Battle2", "Objective1", "Deploy", "Enlist", "Worker"]
+},{
+  "winner": "Panagiotis", "board": "Militant", "country": "Saxony", "points": 51, "rounds": 15, "players": 6,
+  "objectives": ["Battle1", "Battle2", "Objective1", "Objective2", "Deploy", "Worker"]
 }]
