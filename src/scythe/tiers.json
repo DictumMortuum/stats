@@ -1,0 +1,197 @@
+[{
+  "board": "Patriotic",
+  "country": "Crimea",
+  "tier": 1
+},{
+  "board": "Militant",
+  "country": "Crimea",
+  "tier": 1
+},{
+  "board": "Innovative",
+  "country": "Crimea",
+  "tier": 1
+},{
+  "board": "Militant",
+  "country": "Rusviet",
+  "tier": 1
+},{
+  "board": "Innovative",
+  "country": "Rusviet",
+  "tier": 1
+},{
+  "board": "Industrial",
+  "country": "Rusviet",
+  "tier": 2
+},{
+  "board": "Industrial",
+  "country": "Crimea",
+  "tier": 2
+},{
+  "board": "Engineering",
+  "country": "Rusviet",
+  "tier": 2
+},{
+  "board": "Mechanical",
+  "country": "Rusviet",
+  "tier": 2
+},{
+  "board": "Mechanical",
+  "country": "Crimea",
+  "tier": 2
+},{
+  "board": "Innovative",
+  "country": "Polania",
+  "tier": 2
+},{
+  "board": "Innovative",
+  "country": "Saxony",
+  "tier": 2
+},{
+  "board": "Industrial",
+  "country": "Saxony",
+  "tier": 2
+},{
+  "board": "Industrial",
+  "country": "Nordic",
+  "tier": 2
+},{
+  "board": "Industrial",
+  "country": "Polania",
+  "tier": 2
+},{
+  "board": "Engineering",
+  "country": "Crimea",
+  "tier": 2
+},{
+  "board": "Patriotic",
+  "country": "Rusviet",
+  "tier": 2
+},{
+  "board": "Agricultural",
+  "country": "Rusviet",
+  "tier": 2
+},{
+  "board": "Militant",
+  "country": "Polania",
+  "tier": 2
+},{
+  "board": "Innovative",
+  "country": "Nordic",
+  "tier": 2
+},{
+  "board": "Engineering",
+  "country": "Nordic",
+  "tier": 3
+},{
+  "board": "Industrial",
+  "country": "Togawa",
+  "tier": 5
+},{
+  "board": "Industrial",
+  "country": "Albion",
+  "tier": 6
+},{
+  "board": "Engineering",
+  "country": "Polania",
+  "tier": 4
+},{
+  "board": "Engineering",
+  "country": "Albion",
+  "tier": 5
+},{
+  "board": "Engineering",
+  "country": "Saxony",
+  "tier": 5
+},{
+  "board": "Engineering",
+  "country": "Togawa",
+  "tier": 5
+},{
+  "board": "Patriotic",
+  "country": "Polania",
+  "tier": 3
+},{
+  "board": "Patriotic",
+  "country": "Saxony",
+  "tier": 3
+},{
+  "board": "Patriotic",
+  "country": "Nordic",
+  "tier": 3
+},{
+  "board": "Patriotic",
+  "country": "Albion",
+  "tier": 4
+},{
+  "board": "Patriotic",
+  "country": "Togawa",
+  "tier": 4
+},{
+  "board": "Mechanical",
+  "country": "Polania",
+  "tier": 3
+},{
+  "board": "Mechanical",
+  "country": "Saxony",
+  "tier": 3
+},{
+  "board": "Mechanical",
+  "country": "Nordic",
+  "tier": 4
+},{
+  "board": "Mechanical",
+  "country": "Togawa",
+  "tier": 6
+},{
+  "board": "Mechanical",
+  "country": "Albion",
+  "tier": 6
+},{
+  "board": "Agricultural",
+  "country": "Polania",
+  "tier": 3
+},{
+  "board": "Agricultural",
+  "country": "Crimea",
+  "tier": 3
+},{
+  "board": "Agricultural",
+  "country": "Togawa",
+  "tier": 4
+},{
+  "board": "Agricultural",
+  "country": "Nordic",
+  "tier": 4
+},{
+  "board": "Agricultural",
+  "country": "Saxony",
+  "tier": 5
+},{
+  "board": "Agricultural",
+  "country": "Albion",
+  "tier": 5
+},{
+  "board": "Militant",
+  "country": "Saxony",
+  "tier": 3
+},{
+  "board": "Militant",
+  "country": "Albion",
+  "tier": 3
+},{
+  "board": "Militant",
+  "country": "Nordic",
+  "tier": 4
+},{
+  "board": "Militant",
+  "country": "Togawa",
+  "tier": 4
+},{
+  "board": "Innovative",
+  "country": "Albion",
+  "tier": 3
+},{
+  "board": "Innovative",
+  "country": "Togawa",
+  "tier": 3
+}]

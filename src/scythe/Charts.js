@@ -11,6 +11,7 @@ import WinsByObjectives from './components/winsByObjectives';
 import WinsByRounds from './components/winsByRounds';
 import WinsByPlayer from './components/winsByPlayer';
 import WinsByStars from './components/winsByStars';
+import WinsByRank from './components/winsByRank';
 import CountryFrequency from './components/countryFrequency';
 import BoardFrequency from './components/boardFrequency';
 import Sweetspot from './components/sweetspot';
@@ -43,6 +44,10 @@ const wins = [{
   'text': 'Wins by objectives',
   'path': '/objectives/',
   'component': () => <WinsByObjectives {...common} />
+}, {
+  'text': 'Average tier for wins',
+  'path': '/tier/',
+  'component': () => <WinsByRank {...common} />
 }, {
   'text': 'Wins by rounds',
   'path': '/rounds/',
