@@ -50,7 +50,9 @@ const boardgames = [
   "The Magnificent",
   "Lost ruins of Arnak",
   "Everdell",
-  "Scythe"
+  "Scythe",
+  "Great Western Trail",
+  "Orléans"
 ]
 
 const wins = [{

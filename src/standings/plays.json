@@ -8270,5 +8270,56 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 174,
+      "boardgame_id": 193738,
+      "cr_date": "2021-07-20T23:00:40+03:00",
+      "date": "2021-07-20T03:00:00+03:00",
+      "boardgame": "Great Western Trail"
+    },
+    "stats": [
+      {
+        "id": 533,
+        "play_id": 174,
+        "player_id": 2,
+        "data": {
+          "buildings": 10,
+          "cards": 23,
+          "cities": 24,
+          "disk": 3,
+          "dollars": 3,
+          "hazards": 10,
+          "market": 0,
+          "objectives": 10,
+          "score": 97,
+          "stations": 8,
+          "tasks": 6,
+          "workers": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 534,
+        "play_id": 174,
+        "player_id": 1,
+        "data": {
+          "buildings": 3,
+          "cards": 14,
+          "cities": 5,
+          "disk": 3,
+          "dollars": 5,
+          "hazards": 15,
+          "market": 2,
+          "objectives": 8,
+          "score": 64,
+          "stations": 3,
+          "tasks": 6,
+          "workers": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]
