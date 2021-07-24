@@ -8321,5 +8321,142 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 175,
+      "boardgame_id": 199792,
+      "cr_date": "2021-07-24T11:22:13+03:00",
+      "date": "2021-07-23T03:00:00+03:00",
+      "boardgame": "Everdell"
+    },
+    "stats": [
+      {
+        "id": 537,
+        "play_id": 175,
+        "player_id": 3,
+        "data": {
+          "score": 58
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 538,
+        "play_id": 175,
+        "player_id": 16,
+        "data": {
+          "score": 54
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 536,
+        "play_id": 175,
+        "player_id": 2,
+        "data": {
+          "score": 52
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 535,
+        "play_id": 175,
+        "player_id": 1,
+        "data": {
+          "score": 48
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 176,
+      "boardgame_id": 230802,
+      "cr_date": "2021-07-24T11:23:36+03:00",
+      "date": "2021-07-23T03:00:00+03:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 540,
+        "play_id": 176,
+        "player_id": 3,
+        "data": {
+          "score": 73
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 539,
+        "play_id": 176,
+        "player_id": 1,
+        "data": {
+          "score": 54
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 541,
+        "play_id": 176,
+        "player_id": 2,
+        "data": {
+          "score": 40
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 542,
+        "play_id": 176,
+        "player_id": 16,
+        "data": {
+          "score": 35
+        },
+        "player": "Andreas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 177,
+      "boardgame_id": 266192,
+      "cr_date": "2021-07-24T11:26:39+03:00",
+      "date": "2021-07-24T03:00:00+03:00",
+      "boardgame": "Wingspan"
+    },
+    "stats": [
+      {
+        "id": 543,
+        "play_id": 177,
+        "player_id": 1,
+        "data": {
+          "birds": 49,
+          "bonus": 4,
+          "eggs": 13,
+          "endofround": 19,
+          "food": 1,
+          "nectar": 9,
+          "score": 105,
+          "tucked": 10
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 544,
+        "play_id": 177,
+        "player_id": 2,
+        "data": {
+          "birds": 47,
+          "bonus": 6,
+          "eggs": 0,
+          "endofround": 19,
+          "food": 10,
+          "nectar": 12,
+          "score": 101,
+          "tucked": 7
+        },
+        "player": "Theoni"
+      }
+    ]
   }
 ]
