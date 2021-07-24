@@ -97,8 +97,8 @@ class Element extends React.Component {
       return b[dataKey] - a[dataKey]
     })
 
-    let min = sorted[sorted.length-1][dataKey]
-    let max = sorted[0][dataKey]
+    let min = parseFloat(sorted[sorted.length-1][dataKey])
+    let max = parseFloat(sorted[0][dataKey])
 
     return (
       <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
