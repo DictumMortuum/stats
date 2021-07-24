@@ -70,7 +70,7 @@ const wins = [{
 ...boardgames.map((d, i) => ({
   'text': d,
   'path': '/' + i,
-  'component': () => <Standings boardgame={d} dataKey="mu" />
+  'component': () => <Standings boardgame={d} dataKey="trueskill" />
 }))
 ];
 
