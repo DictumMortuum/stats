@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import StandingsImg from './img.jpg';
 import Standings from './standings';
 import Typography from '@material-ui/core/Typography';
+import Timeline from './timeline';
 
 
 // +--------+--------------------------------+
@@ -66,6 +67,10 @@ const wins = [{
   'text': 'Trueskill',
   'path': '/trueskill',
   'component': () => <Standings dataKey="trueskill" />
+},{
+  'text': 'Timeline',
+  'path': '/timeline',
+  'component': () => <Timeline />
 },
 ...boardgames.map((d, i) => ({
   'text': d,
