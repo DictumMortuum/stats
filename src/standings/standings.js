@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { rate, Rating } from 'ts-trueskill';
+import Slider from '@material-ui/core/Slider';
+import Typography from '@material-ui/core/Typography';
 import {
   ResponsiveContainer,
   BarChart,
@@ -14,9 +16,11 @@ import {
   ErrorBar
 } from 'recharts';
 
-const graph = ({ data, players, boardgame, dataKey }) => {
+const graph = ({ data, players, boardgame, dataKey, range }) => {
   const ratings = {}
   const plays = {}
+
+  data = data.slice(range[0], range[1])
 
   if (boardgame !== undefined) {
     data = data.filter(d => d.play.boardgame === boardgame)
@@ -91,29 +95,64 @@ class Element extends React.Component {
   }
 
   render() {
+    const { data, dispatch, range } = this.props
     const { dataKey, results } = graph(this.props)
+
+    let slider = (
+      <Slider
+        defaultValue={range[1]}
+        aria-labelledby="discrete-slider"
+        valueLabelDisplay="auto"
+        step={1}
+        marks
+        min={1}
+        max={data.length}
+        onChangeCommitted={(event, value) => {
+          dispatch({
+            type: "RANGE",
+            limit: value
+          })
+        }}
+      />
+    )
 
     const sorted = results.sort((a, b) => {
       return b[dataKey] - a[dataKey]
     })
 
-    let min = parseFloat(sorted[sorted.length-1][dataKey])
-    let max = parseFloat(sorted[0][dataKey])
+    let content = (
+      <Typography gutterBottom>
+        There are no data for the current index you have selected.
+      </Typography>
+    )
+
+    if (sorted.length > 0) {
+      let min = parseFloat(sorted[sorted.length-1][dataKey])
+      //let max = parseFloat(sorted[0][dataKey])
+      let max = 36
+
+      content = (
+        <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
+          <BarChart data={sorted} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
+            <XAxis type="number" domain={[dataMin => Math.floor(min < 0 ? -5 : 0), dataMax => Math.ceil(max)]} orientation="top" />
+            <YAxis type="category" dataKey="player" stroke="black" />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <ReferenceLine x={sorted[0][dataKey]} stroke="red" strokeDasharray="3 3" />
+            <Bar dataKey={dataKey} fill="#64b5f6">
+              <LabelList dataKey={dataKey} position="insideLeft" />
+              {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      )
+    }
 
     return (
-      <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
-        <BarChart data={sorted} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
-          <XAxis type="number" domain={[dataMin => Math.floor(min < 0 ? min - 5 : 0), dataMax => Math.ceil(max + 5)]} orientation="top" />
-          <YAxis type="category" dataKey="player" stroke="black" />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Tooltip />
-          <ReferenceLine x={sorted[0][dataKey]} stroke="red" strokeDasharray="3 3" />
-          <Bar dataKey={dataKey} fill="#64b5f6">
-            <LabelList dataKey={dataKey} position="insideLeft" />
-            {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
-          </Bar>
-        </BarChart>
-      </ResponsiveContainer>
+      <div>
+        {content}
+        {slider}
+      </div>
     )
   }
 }

@@ -25,7 +25,13 @@ export const reducer = (state = {}, action) => {
         ...state,
         positions: getPositions(data),
         players: getPlayers(data),
-        data
+        data,
+        range: [0, data.length]
+      }
+    case "RANGE":
+      return {
+        ...state,
+        range: [0, action.limit]
       }
     default:
       return state
