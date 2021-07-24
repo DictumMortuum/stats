@@ -97,14 +97,17 @@ class Element extends React.Component {
       return b[dataKey] - a[dataKey]
     })
 
+    let min = sorted[sorted.length-1][dataKey]
+    let max = sorted[0][dataKey]
+
     return (
       <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
         <BarChart data={sorted} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
-          <XAxis type="number" orientation="top" />
+          <XAxis type="number" domain={[dataMin => Math.floor(min < 0 ? min - 5 : 0), dataMax => Math.ceil(max + 5)]} orientation="top" />
           <YAxis type="category" dataKey="player" stroke="black" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <ReferenceLine x={sorted[0].mu} stroke="red" strokeDasharray="3 3" />
+          <ReferenceLine x={sorted[0][dataKey]} stroke="red" strokeDasharray="3 3" />
           <Bar dataKey={dataKey} fill="#64b5f6">
             <LabelList dataKey={dataKey} position="insideLeft" />
             {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
