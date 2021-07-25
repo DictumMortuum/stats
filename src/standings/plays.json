@@ -8458,5 +8458,140 @@
         "player": "Theoni"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 178,
+      "boardgame_id": 164928,
+      "cr_date": "2021-07-25T10:37:08+03:00",
+      "date": "2021-07-24T03:00:00+03:00",
+      "boardgame": "Orléans"
+    },
+    "stats": [
+      {
+        "id": 545,
+        "play_id": 178,
+        "player_id": 2,
+        "data": {
+          "brocade": 5,
+          "buildings": 30,
+          "cheese": 0,
+          "citizen": 18,
+          "coin": 63,
+          "grain": 0,
+          "score": 120,
+          "wine": 0,
+          "wool": 4
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 547,
+        "play_id": 178,
+        "player_id": 1,
+        "data": {
+          "brocade": 5,
+          "buildings": 30,
+          "cheese": 2,
+          "citizen": 0,
+          "coin": 68,
+          "grain": 0,
+          "score": 113,
+          "wine": 0,
+          "wool": 8
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 546,
+        "play_id": 178,
+        "player_id": 5,
+        "data": {
+          "brocade": 10,
+          "buildings": 30,
+          "cheese": 4,
+          "citizen": 18,
+          "coin": 32,
+          "grain": 0,
+          "score": 97,
+          "wine": 3,
+          "wool": 0
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 548,
+        "play_id": 178,
+        "player_id": 13,
+        "data": {
+          "brocade": 5,
+          "buildings": 25,
+          "cheese": 2,
+          "citizen": 5,
+          "coin": 40,
+          "grain": 1,
+          "score": 84,
+          "wine": 6,
+          "wool": 0
+        },
+        "player": "Manolis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 179,
+      "boardgame_id": 312484,
+      "cr_date": "2021-07-25T10:41:40+03:00",
+      "date": "2021-07-24T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 550,
+        "play_id": 179,
+        "player_id": 1,
+        "data": {
+          "cards": 15,
+          "fear": -1,
+          "guardian": 15,
+          "idols": 16,
+          "research": 24,
+          "score": 69,
+          "tiles": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 549,
+        "play_id": 179,
+        "player_id": 2,
+        "data": {
+          "cards": 7,
+          "fear": -1,
+          "guardian": 15,
+          "idols": 19,
+          "research": 24,
+          "score": 66,
+          "tiles": 2
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 551,
+        "play_id": 179,
+        "player_id": 5,
+        "data": {
+          "cards": 5,
+          "fear": -1,
+          "guardian": 10,
+          "idols": 13,
+          "research": 23,
+          "score": 63,
+          "tiles": 13
+        },
+        "player": "Kostas"
+      }
+    ]
   }
 ]
