@@ -94,7 +94,7 @@ const styles = theme => ({
 
 class PersistentDrawerLeft extends React.Component {
   render() {
-    const { classes, theme, basename, links, content, dispatch, config: { open, msg } } = this.props;
+    const { classes, theme, basename, links, content, dispatch, config: { open, element: RightNav } } = this.props;
 
     return (
       <Router basename={basename}>
@@ -118,9 +118,7 @@ class PersistentDrawerLeft extends React.Component {
               <Typography variant="h6" color="inherit" noWrap className={classes.title}>
                 {basename}
               </Typography>
-              <Typography color="inherit" noWrap className={classes.search}>
-                {msg}
-              </Typography>
+              <RightNav className={classes.search} />
             </Toolbar>
           </AppBar>
           <Drawer

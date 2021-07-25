@@ -31,7 +31,7 @@ export const reducer = (state = {}, action) => {
     case "RANGE":
       return {
         ...state,
-        range: [0, action.limit]
+        range: [...action.limit]
       }
     default:
       return state

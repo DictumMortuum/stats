@@ -84,37 +84,65 @@ const mapStateToProps = (state, props) => ({
   dataKey: props.dataKey
 })
 
+const dataToMarks = data => {
+  let obj = data.map(({ play }) => {
+    let d = new Date(play.date)
+    let y = d.getFullYear()
+    return y
+  }).reduce((rs, cur, i) => {
+    if (rs[cur] === undefined) {
+      rs[cur] = i
+    }
+
+    return rs
+  }, {})
+
+  console.log(obj)
+
+  return Object.keys(obj).map(d => ({
+    value: obj[d],
+    label: d.slice(2),
+  }))
+}
+
+const DateSlider = props => {
+  const { data, dispatch, range } = props
+
+  return (
+    <Slider
+      defaultValue={range}
+      valueLabelDisplay="auto"
+      step={1}
+      marks={dataToMarks(data)}
+      min={1}
+      max={data.length}
+      onChangeCommitted={(event, value) => {
+        dispatch({
+          type: "RANGE",
+          limit: value
+        })
+      }}
+    />
+  )
+}
+
+const SampleSize = props => {
+  const { sample, total } = graph(props)
+  return <Typography color="inherit" noWrap {...props} >{"Sample size: " + sample + " / " + total}</Typography>
+}
+
 class Element extends React.Component {
   componentDidMount() {
     const { dispatch } = this.props
-    const { sample, total } = graph(this.props)
+
     dispatch({
       type: "SET_MSG",
-      msg: "Sample size: " + sample + " / " + total
+      element: () => SampleSize(this.props)
     })
   }
 
   render() {
-    const { data, dispatch, range } = this.props
     const { dataKey, results } = graph(this.props)
-
-    let slider = (
-      <Slider
-        defaultValue={range[1]}
-        aria-labelledby="discrete-slider"
-        valueLabelDisplay="auto"
-        step={1}
-        marks
-        min={1}
-        max={data.length}
-        onChangeCommitted={(event, value) => {
-          dispatch({
-            type: "RANGE",
-            limit: value
-          })
-        }}
-      />
-    )
 
     const sorted = results.sort((a, b) => {
       return b[dataKey] - a[dataKey]
@@ -151,7 +179,7 @@ class Element extends React.Component {
     return (
       <div>
         {content}
-        {slider}
+        <DateSlider {...this.props} />
       </div>
     )
   }

@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
 import { IconContext } from "react-icons";
 import { Avatar, Chip, Divider } from '@material-ui/core';
+import { dateSort } from './common';
 import {
   GiSwapBag,
   GiLibertyWing,
@@ -151,21 +152,14 @@ const generateTimelineItem = classes => boardgame => (
   </TimelineItem>
 )
 
-const dateSort = (a, b) => {
-  let diff = new Date(b.play.date) - new Date(a.play.date)
-  if (diff === 0) {
-    return b.play.id - a.play.id
-  } else {
-    return diff
-  }
-}
-
 const Element = (props) => {
   const classes = useStyles();
   const { data } = props;
   let f = generateTimelineItem(classes)
+  let rs = data.slice().sort(dateSort).map(d => f(d))
+
   return (
-    <Timeline align="alternate">{data.sort(dateSort).map(d => f(d))}</Timeline>
+    <Timeline align="alternate">{rs}</Timeline>
   );
 }
 
