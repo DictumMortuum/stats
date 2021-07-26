@@ -769,5 +769,70 @@
     ]
   }]
 }
-
+,
+{
+  "victory": "8 points",
+  "expansions": ["black"],
+  "rounds": 4,
+  "date": "2021-07-25",
+  "order": [
+    "Panagiotis",
+    "Andreas",
+    "Kostas"
+  ],
+  "setup": [{
+    "player": "Kostas",
+    "vp": {
+      "battle": 2,
+      "pyramid": 3,
+      "tile": 1,
+      "temple_permanent": 2,
+      "temple_temporary": 2
+    },
+    "tiles": [
+      "priest",
+      "red victory point",
+      "phoenix",
+      "charge!",
+      "giant scorpion",
+      "initiative",
+      "white act of god"
+    ]
+  }, {
+    "player": "Panagiotis",
+    "vp": {
+      "battle": 3,
+      "temple_temporary": 1,
+      "pyramid": 2
+    },
+    "tiles": [
+      "priest",
+      "royal scarab",
+      "priestess",
+      "the mummy",
+      "blades of neith",
+      "red act of god",
+      "defense!"
+    ]
+  }, {
+    "player": "Andreas",
+    "vp": {
+      "battle": 2,
+      "temple_temporary": 1,
+      "pyramid": 2,
+      "temple_permanent": 1,
+      "temple_allgods": 2,
+      "tile": 1
+    },
+    "tiles": [
+      "mercenaries",
+      "recruiting scribe",
+      "defense!",
+      "black victory point",
+      "griffin sphinx",
+      "khnum's sphinx",
+      "bestial fury"
+    ]
+  }]
+}
 ]

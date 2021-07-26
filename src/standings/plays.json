@@ -8593,5 +8593,57 @@
         "player": "Kostas"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 180,
+      "boardgame_id": 127023,
+      "cr_date": "2021-07-26T16:03:57+03:00",
+      "date": "2021-07-25T03:00:00+03:00",
+      "boardgame": "Kemet"
+    },
+    "stats": [
+      {
+        "id": 552,
+        "play_id": 180,
+        "player_id": 5,
+        "data": {
+          "battle": 2,
+          "pyramid": 3,
+          "score": 10,
+          "temple_permanent": 2,
+          "temple_temporary": 2,
+          "tile": 1
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 554,
+        "play_id": 180,
+        "player_id": 16,
+        "data": {
+          "battle": 2,
+          "pyramid": 2,
+          "score": 9,
+          "temple_allgods": 2,
+          "temple_permanent": 1,
+          "temple_temporary": 1,
+          "tile": 1
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 553,
+        "play_id": 180,
+        "player_id": 3,
+        "data": {
+          "battle": 3,
+          "pyramid": 2,
+          "score": 6,
+          "temple_temporary": 1
+        },
+        "player": "Panagiotis"
+      }
+    ]
   }
 ]
