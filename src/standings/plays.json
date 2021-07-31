@@ -8696,5 +8696,158 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 182,
+      "boardgame_id": 164928,
+      "cr_date": "2021-08-01T02:30:20+03:00",
+      "date": "2021-08-01T03:00:00+03:00",
+      "boardgame": "Orléans"
+    },
+    "stats": [
+      {
+        "id": 558,
+        "play_id": 182,
+        "player_id": 1,
+        "data": {
+          "brocade": 20,
+          "buildings": 60,
+          "cheese": 2,
+          "citizen": 12,
+          "coin": 37,
+          "grain": 2,
+          "score": 144,
+          "wine": 3,
+          "wool": 8
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 559,
+        "play_id": 182,
+        "player_id": 2,
+        "data": {
+          "brocade": 5,
+          "buildings": 24,
+          "cheese": 2,
+          "citizen": 48,
+          "coin": 58,
+          "grain": 1,
+          "score": 141,
+          "wine": 3,
+          "wool": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 557,
+        "play_id": 182,
+        "player_id": 8,
+        "data": {
+          "brocade": 5,
+          "buildings": 20,
+          "cheese": 2,
+          "citizen": 5,
+          "coin": 46,
+          "grain": 2,
+          "score": 80,
+          "wine": 0,
+          "wool": 0
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 183,
+      "boardgame_id": 236457,
+      "cr_date": "2021-08-01T02:33:41+03:00",
+      "date": "2021-08-01T03:00:00+03:00",
+      "boardgame": "Architects of the west kingdom"
+    },
+    "stats": [
+      {
+        "id": 564,
+        "play_id": 183,
+        "player_id": 19,
+        "data": {
+          "buildings": 45,
+          "cathedral": 0,
+          "debt": -2,
+          "gold-marble": 0,
+          "money": 1,
+          "prison": 0,
+          "score": 44,
+          "virtue": 0
+        },
+        "player": "Anni"
+      },
+      {
+        "id": 562,
+        "play_id": 183,
+        "player_id": 2,
+        "data": {
+          "buildings": 23,
+          "cathedral": 7,
+          "debt": 0,
+          "gold-marble": 2,
+          "money": 0,
+          "prison": 0,
+          "score": 39,
+          "virtue": 7
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 561,
+        "play_id": 183,
+        "player_id": 1,
+        "data": {
+          "buildings": 29,
+          "cathedral": 0,
+          "debt": 0,
+          "gold-marble": 8,
+          "money": 0,
+          "prison": 0,
+          "score": 38,
+          "virtue": 1
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 563,
+        "play_id": 183,
+        "player_id": 3,
+        "data": {
+          "buildings": 37,
+          "cathedral": 0,
+          "debt": 0,
+          "gold-marble": 0,
+          "money": 0,
+          "prison": -1,
+          "score": 36,
+          "virtue": 0
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 560,
+        "play_id": 183,
+        "player_id": 8,
+        "data": {
+          "buildings": 23,
+          "cathedral": 0,
+          "debt": 0,
+          "gold-marble": 0,
+          "money": 0,
+          "prison": 0,
+          "score": 26,
+          "virtue": 3
+        },
+        "player": "Popi"
+      }
+    ]
   }
 ]

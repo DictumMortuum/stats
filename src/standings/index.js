@@ -59,14 +59,14 @@ const boardgames = [
 const wins = [{
   'text': 'Standings',
   'path': '/',
-  'component': () => <Standings dataKey="mu" desc={<Typography variant="body1" gutterBottom>
+  'component': () => <Standings dataKey="trueskill" desc={<Typography variant="body1" gutterBottom>
     For each player, the first column represents μ (mu) and the second σ (sigma), based on the <a href="https://en.wikipedia.org/wiki/TrueSkill">TrueSkill</a> algorithm. <br />
     A player's skill is represented as a normal distribution N characterized by a mean value μ (mu, representing perceived skill) and a variance σ (sigma, representing how "unconfident" test system is in the player's μ value).
   </Typography>}/>
 },{
-  'text': 'Trueskill',
-  'path': '/trueskill',
-  'component': () => <Standings dataKey="trueskill" />
+  'text': 'Mu',
+  'path': '/mu',
+  'component': () => <Standings dataKey="mu" />
 },{
   'text': 'Timeline',
   'path': '/timeline',
