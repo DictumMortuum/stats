@@ -8849,5 +8849,452 @@
         "player": "Popi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 184,
+      "boardgame_id": 216132,
+      "cr_date": "2021-08-18T00:40:06+03:00",
+      "date": "2021-08-02T03:00:00+03:00",
+      "boardgame": "Clans of Caledonia"
+    },
+    "stats": [
+      {
+        "id": 565,
+        "play_id": 184,
+        "player_id": 2,
+        "data": {
+          "bamboo": 20,
+          "bananas": 27,
+          "base": 7,
+          "coin": 6,
+          "cotton": 20,
+          "exports": 8,
+          "grape": 16,
+          "manufactured": 4,
+          "points": 64,
+          "score": 178,
+          "settlement": 6
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 566,
+        "play_id": 184,
+        "player_id": 1,
+        "data": {
+          "bamboo": 20,
+          "bananas": 15,
+          "base": 12,
+          "coin": 5,
+          "cotton": 15,
+          "exports": 0,
+          "grape": 11,
+          "manufactured": 16,
+          "points": 44,
+          "score": 144,
+          "settlement": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 185,
+      "boardgame_id": 216132,
+      "cr_date": "2021-08-18T00:43:13+03:00",
+      "date": "2021-08-04T03:00:00+03:00",
+      "boardgame": "Clans of Caledonia"
+    },
+    "stats": [
+      {
+        "id": 568,
+        "play_id": 185,
+        "player_id": 1,
+        "data": {
+          "bamboo": 24,
+          "bananas": 10,
+          "base": 5,
+          "coin": 4,
+          "cotton": 24,
+          "exports": 8,
+          "grape": 14,
+          "manufactured": 8,
+          "points": 65,
+          "score": 162,
+          "settlement": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 567,
+        "play_id": 185,
+        "player_id": 2,
+        "data": {
+          "bamboo": 24,
+          "bananas": 10,
+          "base": 3,
+          "coin": 4,
+          "cotton": 24,
+          "exports": 0,
+          "grape": 14,
+          "manufactured": 8,
+          "points": 58,
+          "score": 157,
+          "settlement": 12
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 187,
+      "boardgame_id": 301880,
+      "cr_date": "2021-08-18T00:47:36+03:00",
+      "date": "2021-08-07T03:00:00+03:00",
+      "boardgame": "Raiders of Scythia"
+    },
+    "stats": [
+      {
+        "id": 571,
+        "play_id": 187,
+        "player_id": 1,
+        "data": {
+          "score": 87
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 572,
+        "play_id": 187,
+        "player_id": 2,
+        "data": {
+          "score": 73
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 189,
+      "boardgame_id": 198994,
+      "cr_date": "2021-08-18T00:49:37+03:00",
+      "date": "2021-08-08T03:00:00+03:00",
+      "boardgame": "Hero Realms"
+    },
+    "stats": [
+      {
+        "id": 575,
+        "play_id": 189,
+        "player_id": 2,
+        "data": {
+          "health": 55,
+          "score": 55
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 576,
+        "play_id": 189,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 190,
+      "boardgame_id": 198994,
+      "cr_date": "2021-08-18T00:49:54+03:00",
+      "date": "2021-08-08T03:00:00+03:00",
+      "boardgame": "Hero Realms"
+    },
+    "stats": [
+      {
+        "id": 577,
+        "play_id": 190,
+        "player_id": 2,
+        "data": {
+          "health": 44,
+          "score": 44
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 578,
+        "play_id": 190,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 191,
+      "boardgame_id": 198994,
+      "cr_date": "2021-08-18T00:50:01+03:00",
+      "date": "2021-08-08T03:00:00+03:00",
+      "boardgame": "Hero Realms"
+    },
+    "stats": [
+      {
+        "id": 579,
+        "play_id": 191,
+        "player_id": 2,
+        "data": {
+          "health": 13,
+          "score": 13
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 580,
+        "play_id": 191,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 192,
+      "boardgame_id": 198994,
+      "cr_date": "2021-08-18T00:50:12+03:00",
+      "date": "2021-08-10T03:00:00+03:00",
+      "boardgame": "Hero Realms"
+    },
+    "stats": [
+      {
+        "id": 581,
+        "play_id": 192,
+        "player_id": 1,
+        "data": {
+          "health": 14,
+          "score": 14
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 582,
+        "play_id": 192,
+        "player_id": 2,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 193,
+      "boardgame_id": 198994,
+      "cr_date": "2021-08-18T00:50:20+03:00",
+      "date": "2021-08-10T03:00:00+03:00",
+      "boardgame": "Hero Realms"
+    },
+    "stats": [
+      {
+        "id": 584,
+        "play_id": 193,
+        "player_id": 2,
+        "data": {
+          "health": 56,
+          "score": 56
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 583,
+        "play_id": 193,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 188,
+      "boardgame_id": 301880,
+      "cr_date": "2021-08-18T00:48:17+03:00",
+      "date": "2021-08-13T03:00:00+03:00",
+      "boardgame": "Raiders of Scythia"
+    },
+    "stats": [
+      {
+        "id": 574,
+        "play_id": 188,
+        "player_id": 2,
+        "data": {
+          "score": 66
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 573,
+        "play_id": 188,
+        "player_id": 1,
+        "data": {
+          "score": 63
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 186,
+      "boardgame_id": 216132,
+      "cr_date": "2021-08-18T00:45:53+03:00",
+      "date": "2021-08-14T03:00:00+03:00",
+      "boardgame": "Clans of Caledonia"
+    },
+    "stats": [
+      {
+        "id": 570,
+        "play_id": 186,
+        "player_id": 1,
+        "data": {
+          "bamboo": 16,
+          "bananas": 36,
+          "base": 0,
+          "coin": 4,
+          "cotton": 32,
+          "exports": 0,
+          "grape": 16,
+          "manufactured": 8,
+          "points": 77,
+          "score": 189,
+          "settlement": 0
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 569,
+        "play_id": 186,
+        "player_id": 2,
+        "data": {
+          "bamboo": 36,
+          "bananas": 15,
+          "base": 1,
+          "coin": 6,
+          "cotton": 20,
+          "exports": 0,
+          "grape": 12,
+          "manufactured": 14,
+          "points": 67,
+          "score": 183,
+          "settlement": 12
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 194,
+      "boardgame_id": 198994,
+      "cr_date": "2021-08-18T00:50:32+03:00",
+      "date": "2021-08-14T03:00:00+03:00",
+      "boardgame": "Hero Realms"
+    },
+    "stats": [
+      {
+        "id": 586,
+        "play_id": 194,
+        "player_id": 2,
+        "data": {
+          "health": 1,
+          "score": 1
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 585,
+        "play_id": 194,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 195,
+      "boardgame_id": 312484,
+      "cr_date": "2021-08-18T00:55:12+03:00",
+      "date": "2021-08-18T03:00:00+03:00",
+      "boardgame": "Lost ruins of Arnak"
+    },
+    "stats": [
+      {
+        "id": 588,
+        "play_id": 195,
+        "player_id": 1,
+        "data": {
+          "cards": 13,
+          "fear": 0,
+          "guardian": 15,
+          "idols": 13,
+          "research": 30,
+          "score": 73,
+          "tiles": 2
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 589,
+        "play_id": 195,
+        "player_id": 2,
+        "data": {
+          "cards": 7,
+          "fear": 0,
+          "guardian": 10,
+          "idols": 16,
+          "research": 31,
+          "score": 70,
+          "tiles": 6
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 587,
+        "play_id": 195,
+        "player_id": 9,
+        "data": {
+          "cards": 3,
+          "fear": -2,
+          "guardian": 5,
+          "idols": 13,
+          "research": 22,
+          "score": 47,
+          "tiles": 6
+        },
+        "player": "Mairi"
+      }
+    ]
   }
 ]
