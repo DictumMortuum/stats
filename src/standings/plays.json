@@ -9296,5 +9296,134 @@
         "player": "Mairi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 196,
+      "boardgame_id": 276025,
+      "cr_date": "2021-08-31T22:45:24+03:00",
+      "date": "2021-08-22T03:00:00+03:00",
+      "boardgame": "Maracaibo"
+    },
+    "stats": [
+      {
+        "id": 591,
+        "play_id": 196,
+        "player_id": 2,
+        "data": {
+          "score": 137
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 590,
+        "play_id": 196,
+        "player_id": 1,
+        "data": {
+          "score": 130
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 197,
+      "boardgame_id": 173346,
+      "cr_date": "2021-08-31T22:48:09+03:00",
+      "date": "2021-08-29T03:00:00+03:00",
+      "boardgame": "7 Wonders Duel"
+    },
+    "stats": [
+      {
+        "id": 592,
+        "play_id": 197,
+        "player_id": 2,
+        "data": {
+          "battle_points": 10,
+          "battle_victory": false,
+          "blue_points": 38,
+          "coin_points": 0,
+          "expansions": "",
+          "green_points": 5,
+          "marker_points": 0,
+          "pantheon_points": 0,
+          "purple_points": 14,
+          "science_victory": false,
+          "score": 79,
+          "wonder_points": 12,
+          "yellow_points": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 593,
+        "play_id": 197,
+        "player_id": 1,
+        "data": {
+          "battle_points": 0,
+          "battle_victory": false,
+          "blue_points": 20,
+          "coin_points": 2,
+          "expansions": "",
+          "green_points": 12,
+          "marker_points": 4,
+          "pantheon_points": 0,
+          "purple_points": 8,
+          "science_victory": false,
+          "score": 67,
+          "wonder_points": 15,
+          "yellow_points": 6
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 198,
+      "boardgame_id": 271320,
+      "cr_date": "2021-08-31T22:51:43+03:00",
+      "date": "2021-08-29T03:00:00+03:00",
+      "boardgame": "Castles of Burgundy"
+    },
+    "stats": [
+      {
+        "id": 594,
+        "play_id": 198,
+        "player_id": 1,
+        "data": {
+          "score": 212
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 595,
+        "play_id": 198,
+        "player_id": 2,
+        "data": {
+          "score": 195
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 596,
+        "play_id": 198,
+        "player_id": 11,
+        "data": {
+          "score": 181
+        },
+        "player": "Evi"
+      },
+      {
+        "id": 597,
+        "play_id": 198,
+        "player_id": 8,
+        "data": {
+          "score": 163
+        },
+        "player": "Popi"
+      }
+    ]
   }
 ]
