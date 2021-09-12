@@ -9425,5 +9425,197 @@
         "player": "Popi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 199,
+      "boardgame_id": 244521,
+      "cr_date": "2021-09-12T14:21:15+03:00",
+      "date": "2021-09-05T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 601,
+        "play_id": 199,
+        "player_id": 20,
+        "data": {
+          "score": 62
+        },
+        "player": "Liana"
+      },
+      {
+        "id": 600,
+        "play_id": 199,
+        "player_id": 2,
+        "data": {
+          "score": 51
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 599,
+        "play_id": 199,
+        "player_id": 21,
+        "data": {
+          "score": 49
+        },
+        "player": "Theofilos"
+      },
+      {
+        "id": 598,
+        "play_id": 199,
+        "player_id": 1,
+        "data": {
+          "score": 46
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 200,
+      "boardgame_id": 193738,
+      "cr_date": "2021-09-12T14:23:48+03:00",
+      "date": "2021-09-10T03:00:00+03:00",
+      "boardgame": "Great Western Trail"
+    },
+    "stats": [
+      {
+        "id": 603,
+        "play_id": 200,
+        "player_id": 1,
+        "data": {
+          "buildings": 5,
+          "cards": 29,
+          "cities": 42,
+          "disk": 3,
+          "dollars": 6,
+          "hazards": 22,
+          "market": 2,
+          "objectives": 8,
+          "score": 137,
+          "stations": 1,
+          "tasks": 11,
+          "workers": 8
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 602,
+        "play_id": 200,
+        "player_id": 2,
+        "data": {
+          "buildings": 6,
+          "cards": 23,
+          "cities": 24,
+          "disk": 3,
+          "dollars": 4,
+          "hazards": 9,
+          "market": 0,
+          "objectives": 13,
+          "score": 124,
+          "stations": 18,
+          "tasks": 24,
+          "workers": 0
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 201,
+      "boardgame_id": 244521,
+      "cr_date": "2021-09-12T14:31:13+03:00",
+      "date": "2021-09-11T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 604,
+        "play_id": 201,
+        "player_id": 8,
+        "data": {
+          "score": 52
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 605,
+        "play_id": 201,
+        "player_id": 9,
+        "data": {
+          "score": 48
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 606,
+        "play_id": 201,
+        "player_id": 11,
+        "data": {
+          "score": 43
+        },
+        "player": "Evi"
+      },
+      {
+        "id": 607,
+        "play_id": 201,
+        "player_id": 2,
+        "data": {
+          "score": 42
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 202,
+      "boardgame_id": 244521,
+      "cr_date": "2021-09-12T14:32:41+03:00",
+      "date": "2021-09-11T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 608,
+        "play_id": 202,
+        "player_id": 1,
+        "data": {
+          "score": 55
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 609,
+        "play_id": 202,
+        "player_id": 2,
+        "data": {
+          "score": 50
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 610,
+        "play_id": 202,
+        "player_id": 11,
+        "data": {
+          "score": 45
+        },
+        "player": "Evi"
+      },
+      {
+        "id": 611,
+        "play_id": 202,
+        "player_id": 8,
+        "data": {
+          "score": 40
+        },
+        "player": "Popi"
+      }
+    ]
   }
 ]
