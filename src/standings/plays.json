@@ -9617,5 +9617,146 @@
         "player": "Popi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 205,
+      "boardgame_id": 169786,
+      "cr_date": "2021-09-20T20:25:38+03:00",
+      "date": "2021-09-12T03:00:00+03:00",
+      "boardgame": "Scythe"
+    },
+    "stats": [
+      {
+        "id": 620,
+        "play_id": 205,
+        "player_id": 1,
+        "data": {
+          "score": 69
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 622,
+        "play_id": 205,
+        "player_id": 5,
+        "data": {
+          "score": 59
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 621,
+        "play_id": 205,
+        "player_id": 3,
+        "data": {
+          "score": 53
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 623,
+        "play_id": 205,
+        "player_id": 16,
+        "data": {
+          "score": 19
+        },
+        "player": "Andreas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 203,
+      "boardgame_id": 244521,
+      "cr_date": "2021-09-20T20:18:49+03:00",
+      "date": "2021-09-18T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 612,
+        "play_id": 203,
+        "player_id": 1,
+        "data": {
+          "score": 49
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 613,
+        "play_id": 203,
+        "player_id": 2,
+        "data": {
+          "score": 41
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 614,
+        "play_id": 203,
+        "player_id": 8,
+        "data": {
+          "score": 40
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 615,
+        "play_id": 203,
+        "player_id": 9,
+        "data": {
+          "score": 33
+        },
+        "player": "Mairi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 204,
+      "boardgame_id": 244521,
+      "cr_date": "2021-09-20T20:20:09+03:00",
+      "date": "2021-09-18T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 616,
+        "play_id": 204,
+        "player_id": 1,
+        "data": {
+          "score": 46
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 617,
+        "play_id": 204,
+        "player_id": 9,
+        "data": {
+          "score": 45
+        },
+        "player": "Mairi"
+      },
+      {
+        "id": 618,
+        "play_id": 204,
+        "player_id": 10,
+        "data": {
+          "score": 42
+        },
+        "player": "Takis"
+      },
+      {
+        "id": 619,
+        "play_id": 204,
+        "player_id": 8,
+        "data": {
+          "score": 36
+        },
+        "player": "Popi"
+      }
+    ]
   }
 ]
