@@ -31,7 +31,11 @@ import {
   GiElvenCastle,
   GiRiver,
   GiChessRook,
-  GiEgyptianWalk
+  GiEgyptianWalk,
+  GiPotionBall,
+  GiHorseHead,
+  GiCow,
+  GiPirateFlag
 } from 'react-icons/gi';
 import {
   FaChessBoard,
@@ -114,6 +118,14 @@ const getBoardgameIcon = boardgame => {
       return <GiRiver />
     case "Kemet":
       return <GiEgyptianWalk />
+    case "The Quacks of Quedlinburg":
+      return <GiPotionBall />
+    case "Raiders of Scythia":
+      return <GiHorseHead />
+    case "Clans of Caledonia":
+      return <GiCow />
+    case "Maracaibo":
+      return <GiPirateFlag />
     default:
       return <FaChessBoard />
   }

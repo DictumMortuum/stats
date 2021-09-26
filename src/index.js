@@ -26,10 +26,10 @@ store.dispatch({
   type: "INIT"
 });
 
-const Scythe = () => <Game basename="stats/scythe" links={<ScytheLinks />} content={<ScytheContent />} />;
-const Kemet = () => <Game basename="stats/kemet" links={<KemetLinks />} content={<KemetContent />} />;
-const Duel = () => <Game basename="stats/duel" links={<DuelLinks />} content={<DuelContent />} />;
-const Standings = () => <Game basename="stats/standings" links={<StandingsLinks />} content={<StandingsContent />} open={false} />;
+const Scythe = () => <Game basename="stats/scythe" links={ScytheLinks} content={ScytheContent} />;
+const Kemet = () => <Game basename="stats/kemet" links={KemetLinks} content={KemetContent} />;
+const Duel = () => <Game basename="stats/duel" links={DuelLinks} content={DuelContent} />;
+const Standings = () => <Game basename="stats/standings" links={StandingsLinks} content={StandingsContent} open={false} />;
 
 const style = {
   width: '100%',

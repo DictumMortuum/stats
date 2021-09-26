@@ -7,56 +7,7 @@ import Standings from './standings';
 import Typography from '@material-ui/core/Typography';
 import Timeline from './timeline';
 
-
-// +--------+--------------------------------+
-// |     42 | Tigris & Euphrates             |
-// |    822 | Carcassonne                    |
-// |  14996 | Ticket to ride: Europe         |
-// | 110327 | Lords of Waterdeep             |
-// | 127023 | Kemet                          |
-// | 163412 | Patchwork                      |
-// | 170042 | Raiders of the north sea       |
-// | 170216 | Blood rage                     |
-// | 173346 | 7 Wonders Duel                 |
-// | 183394 | Viticulture essential edition  |
-// | 230802 | Azul                           |
-// | 236457 | Architects of the west kingdom |
-// | 237182 | Root                           |
-// | 256916 | Concordia Venus                |
-// | 266192 | Wingspan                       |
-// | 266810 | Paladins of the West Kingdom   |
-// | 271320 | Castles of Burgundy            |
-// | 283863 | The Magnificent                |
-// | 312484 | Lost ruins of Arnak            |
-// +--------+--------------------------------+
-
-const boardgames = [
-  "Tigris & Euphrates",
-  "Ticket to ride: Europe",
-  "Carcassonne",
-  "Lords of Waterdeep",
-  "Kemet",
-  "Patchwork",
-  "Raiders of the north sea",
-  "Blood rage",
-  "7 Wonders Duel",
-  "Viticulture essential edition",
-  "Azul",
-  "Architects of the west kingdom",
-  "Root",
-  "Concordia Venus",
-  "Wingspan",
-  "Paladins of the West Kingdom",
-  "Castles of Burgundy",
-  "The Magnificent",
-  "Lost ruins of Arnak",
-  "Everdell",
-  "Scythe",
-  "Great Western Trail",
-  "Orléans"
-]
-
-const wins = [{
+const createLinksConfig = boardgames => [{
   'text': 'Standings',
   'path': '/',
   'component': () => <Standings dataKey="trueskill" desc={<Typography variant="body1" gutterBottom>
@@ -79,17 +30,29 @@ const wins = [{
 }))
 ];
 
-const StandingsLinks = () => (
-  <div>
-    <Links charts={wins} title={"Standings"} key={"Wins"} open={true} />
-    <Divider />
-  </div>
-);
+const unique = col => [...new Set(col)];
 
-const StandingsContent = () => (
-  wins.map(({path, component}) => (
-    <Route key={path} path={path} exact component={component} />
-  ))
-);
+const StandingsLinks = props => {
+  const data = unique(props.standings.data.map(d => d.play.boardgame)).sort()
+  const boardgames = createLinksConfig(data)
+
+  return (
+    <div>
+      <Links charts={boardgames} title={"Standings"} key={"Wins"} open={true} />
+      <Divider />
+    </div>
+  )
+}
+
+const StandingsContent = props => {
+  const data = unique(props.standings.data.map(d => d.play.boardgame))
+  const boardgames = createLinksConfig(data)
+
+  return (
+    boardgames.map(({path, component}) => (
+      <Route key={path} path={path} exact component={component} />
+    ))
+  );
+}
 
 export {StandingsContent, StandingsLinks, StandingsImg};

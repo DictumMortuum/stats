@@ -94,7 +94,7 @@ const styles = theme => ({
 
 class PersistentDrawerLeft extends React.Component {
   render() {
-    const { classes, theme, basename, links, content, dispatch, config: { open, element: RightNav } } = this.props;
+    const { classes, theme, basename, links: Links, content: Content, dispatch, config: { open, element: RightNav } } = this.props;
 
     return (
       <Router basename={basename}>
@@ -136,7 +136,7 @@ class PersistentDrawerLeft extends React.Component {
               </IconButton>
             </div>
             <Divider />
-            {links}
+            <Links {...this.props} />
           </Drawer>
           <main
             className={classNames(classes.content, {
@@ -144,7 +144,7 @@ class PersistentDrawerLeft extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            {content}
+            <Content {...this.props} />
           </main>
         </div>
       </Router>
@@ -158,6 +158,7 @@ PersistentDrawerLeft.propTypes = {
 };
 
 const mapStateToProps = state => ({
+  standings: state.standingsReducer,
   config: {...state.configReducer},
 })
 

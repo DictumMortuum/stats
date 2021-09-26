@@ -9758,5 +9758,190 @@
         "player": "Popi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 206,
+      "boardgame_id": 244521,
+      "cr_date": "2021-09-26T12:49:47+03:00",
+      "date": "2021-09-25T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 625,
+        "play_id": 206,
+        "player_id": 3,
+        "data": {
+          "score": 59
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 624,
+        "play_id": 206,
+        "player_id": 1,
+        "data": {
+          "score": 54
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 626,
+        "play_id": 206,
+        "player_id": 16,
+        "data": {
+          "score": 49
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 627,
+        "play_id": 206,
+        "player_id": 2,
+        "data": {
+          "score": 43
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 207,
+      "boardgame_id": 244521,
+      "cr_date": "2021-09-26T12:51:19+03:00",
+      "date": "2021-09-25T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 628,
+        "play_id": 207,
+        "player_id": 3,
+        "data": {
+          "score": 80
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 629,
+        "play_id": 207,
+        "player_id": 16,
+        "data": {
+          "score": 70
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 630,
+        "play_id": 207,
+        "player_id": 2,
+        "data": {
+          "score": 69
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 631,
+        "play_id": 207,
+        "player_id": 1,
+        "data": {
+          "score": 68
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 208,
+      "boardgame_id": 193738,
+      "cr_date": "2021-09-26T12:53:48+03:00",
+      "date": "2021-09-25T03:00:00+03:00",
+      "boardgame": "Great Western Trail"
+    },
+    "stats": [
+      {
+        "id": 632,
+        "play_id": 208,
+        "player_id": 1,
+        "data": {
+          "buildings": 2,
+          "cards": 30,
+          "cities": 42,
+          "disk": 3,
+          "dollars": 6,
+          "hazards": 11,
+          "market": 2,
+          "objectives": 13,
+          "score": 148,
+          "stations": 23,
+          "tasks": 0,
+          "workers": 16
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 633,
+        "play_id": 208,
+        "player_id": 2,
+        "data": {
+          "buildings": 3,
+          "cards": 31,
+          "cities": 23,
+          "disk": 3,
+          "dollars": 3,
+          "hazards": 10,
+          "market": 0,
+          "objectives": 3,
+          "score": 109,
+          "stations": 15,
+          "tasks": 18,
+          "workers": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 634,
+        "play_id": 208,
+        "player_id": 16,
+        "data": {
+          "buildings": 21,
+          "cards": 28,
+          "cities": 15,
+          "disk": 0,
+          "dollars": 0,
+          "hazards": 6,
+          "market": 0,
+          "objectives": 8,
+          "score": 86,
+          "stations": 0,
+          "tasks": 0,
+          "workers": 8
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 635,
+        "play_id": 208,
+        "player_id": 3,
+        "data": {
+          "buildings": 23,
+          "cards": 12,
+          "cities": 14,
+          "disk": 0,
+          "dollars": 2,
+          "hazards": 14,
+          "market": 0,
+          "objectives": 11,
+          "score": 84,
+          "stations": 0,
+          "tasks": 0,
+          "workers": 8
+        },
+        "player": "Panagiotis"
+      }
+    ]
   }
 ]

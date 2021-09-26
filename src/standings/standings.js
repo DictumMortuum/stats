@@ -126,23 +126,9 @@ const DateSlider = props => {
   )
 }
 
-const SampleSize = props => {
-  const { sample, total } = graph(props)
-  return <Typography color="inherit" noWrap {...props} >{"Sample size: " + sample + " / " + total}</Typography>
-}
-
 class Element extends React.Component {
-  componentDidMount() {
-    const { dispatch } = this.props
-
-    dispatch({
-      type: "SET_MSG",
-      element: () => SampleSize(this.props)
-    })
-  }
-
   render() {
-    const { dataKey, results } = graph(this.props)
+    const { dataKey, results, sample } = graph(this.props)
 
     const sorted = results.sort((a, b) => {
       return b[dataKey] - a[dataKey]
@@ -160,7 +146,7 @@ class Element extends React.Component {
       let max = 36
 
       content = (
-        <ResponsiveContainer width="95%" height={window.innerHeight - 150} >
+        <ResponsiveContainer width="95%" height={window.innerHeight - 250} >
           <BarChart data={sorted} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
             <XAxis type="number" domain={[dataMin => Math.floor(min < 0 ? -5 : 0), dataMax => Math.ceil(max)]} orientation="top" />
             <YAxis type="category" dataKey="player" stroke="black" />
@@ -178,6 +164,7 @@ class Element extends React.Component {
 
     return (
       <div>
+        <Typography noWrap>{"Sample size: " + sample}</Typography>
         {content}
         <DateSlider {...this.props} />
       </div>
