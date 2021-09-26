@@ -9943,5 +9943,34 @@
         "player": "Panagiotis"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 209,
+      "boardgame_id": 199792,
+      "cr_date": "2021-09-26T20:25:58+03:00",
+      "date": "2021-09-26T03:00:00+03:00",
+      "boardgame": "Everdell"
+    },
+    "stats": [
+      {
+        "id": 637,
+        "play_id": 209,
+        "player_id": 2,
+        "data": {
+          "score": 51
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 636,
+        "play_id": 209,
+        "player_id": 1,
+        "data": {
+          "score": 50
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]
