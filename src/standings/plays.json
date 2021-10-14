@@ -9972,5 +9972,171 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 210,
+      "boardgame_id": 296151,
+      "cr_date": "2021-10-14T09:12:51+03:00",
+      "date": "2021-10-09T03:00:00+03:00",
+      "boardgame": "Viscounts of the West Kingdom"
+    },
+    "stats": [
+      {
+        "id": 639,
+        "play_id": 210,
+        "player_id": 2,
+        "data": {
+          "build": 38,
+          "castle": 21,
+          "castle_leader": 9,
+          "deeds": 8,
+          "dept": 3,
+          "poverty": 9,
+          "score": 128,
+          "transcribe": 40
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 638,
+        "play_id": 210,
+        "player_id": 1,
+        "data": {
+          "build": 45,
+          "castle": 9,
+          "castle_leader": 0,
+          "deeds": 8,
+          "dept": 3,
+          "poverty": 8,
+          "score": 119,
+          "transcribe": 46
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 211,
+      "boardgame_id": 244521,
+      "cr_date": "2021-10-14T09:21:06+03:00",
+      "date": "2021-10-09T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 640,
+        "play_id": 211,
+        "player_id": 1,
+        "data": {
+          "score": 79
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 642,
+        "play_id": 211,
+        "player_id": 8,
+        "data": {
+          "score": 67
+        },
+        "player": "Popi"
+      },
+      {
+        "id": 641,
+        "play_id": 211,
+        "player_id": 2,
+        "data": {
+          "score": 52
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 643,
+        "play_id": 211,
+        "player_id": 11,
+        "data": {
+          "score": 51
+        },
+        "player": "Evi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 212,
+      "boardgame_id": 2651,
+      "cr_date": "2021-10-14T09:23:03+03:00",
+      "date": "2021-10-09T03:00:00+03:00",
+      "boardgame": "Power Grid"
+    },
+    "stats": [
+      {
+        "id": 644,
+        "play_id": 212,
+        "player_id": 2,
+        "data": {
+          "score": 17
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 645,
+        "play_id": 212,
+        "player_id": 1,
+        "data": {
+          "score": 16
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 647,
+        "play_id": 212,
+        "player_id": 11,
+        "data": {
+          "score": 14
+        },
+        "player": "Evi"
+      },
+      {
+        "id": 646,
+        "play_id": 212,
+        "player_id": 8,
+        "data": {
+          "score": 11
+        },
+        "player": "Popi"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 213,
+      "boardgame_id": 2651,
+      "cr_date": "2021-10-14T09:29:24+03:00",
+      "date": "2021-10-15T03:00:00+03:00",
+      "boardgame": "Power Grid"
+    },
+    "stats": [
+      {
+        "id": 649,
+        "play_id": 213,
+        "player_id": 2,
+        "data": {
+          "score": 21
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 648,
+        "play_id": 213,
+        "player_id": 1,
+        "data": {
+          "score": 17
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]
