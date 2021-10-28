@@ -10138,5 +10138,184 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 214,
+      "boardgame_id": 164928,
+      "cr_date": "2021-10-28T18:37:32+03:00",
+      "date": "2021-10-23T03:00:00+03:00",
+      "boardgame": "Orléans"
+    },
+    "stats": [
+      {
+        "id": 651,
+        "play_id": 214,
+        "player_id": 1,
+        "data": {
+          "brocade": 0,
+          "buildings": 21,
+          "cheese": 6,
+          "citizen": 6,
+          "coin": 60,
+          "grain": 2,
+          "score": 114,
+          "wine": 9,
+          "wool": 10
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 650,
+        "play_id": 214,
+        "player_id": 2,
+        "data": {
+          "brocade": 0,
+          "buildings": 18,
+          "cheese": 0,
+          "citizen": 24,
+          "coin": 42,
+          "grain": 0,
+          "score": 103,
+          "wine": 9,
+          "wool": 10
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 215,
+      "boardgame_id": 3076,
+      "cr_date": "2021-10-28T18:49:59+03:00",
+      "date": "2021-10-23T03:00:00+03:00",
+      "boardgame": "Puerto Rico"
+    },
+    "stats": [
+      {
+        "id": 652,
+        "play_id": 215,
+        "player_id": 2,
+        "data": {
+          "score": 52
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 653,
+        "play_id": 215,
+        "player_id": 1,
+        "data": {
+          "score": 49
+        },
+        "player": "Dimitris"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 216,
+      "boardgame_id": 244521,
+      "cr_date": "2021-10-28T18:50:48+03:00",
+      "date": "2021-10-24T03:00:00+03:00",
+      "boardgame": "The Quacks of Quedlinburg"
+    },
+    "stats": [
+      {
+        "id": 654,
+        "play_id": 216,
+        "player_id": 3,
+        "data": {
+          "score": 58
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 655,
+        "play_id": 216,
+        "player_id": 1,
+        "data": {
+          "score": 52
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 656,
+        "play_id": 216,
+        "player_id": 16,
+        "data": {
+          "score": 50
+        },
+        "player": "Andreas"
+      },
+      {
+        "id": 657,
+        "play_id": 216,
+        "player_id": 5,
+        "data": {
+          "score": 41
+        },
+        "player": "Kostas"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 217,
+      "boardgame_id": 275010,
+      "cr_date": "2021-10-28T18:52:09+03:00",
+      "date": "2021-10-28T03:00:00+03:00",
+      "boardgame": "De Vulgari Eloquentia"
+    },
+    "stats": [
+      {
+        "id": 658,
+        "play_id": 217,
+        "player_id": 1,
+        "data": {
+          "score": 60
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 659,
+        "play_id": 217,
+        "player_id": 2,
+        "data": {
+          "score": 58
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 218,
+      "boardgame_id": 275010,
+      "cr_date": "2021-10-28T18:52:19+03:00",
+      "date": "2021-10-28T03:00:00+03:00",
+      "boardgame": "De Vulgari Eloquentia"
+    },
+    "stats": [
+      {
+        "id": 661,
+        "play_id": 218,
+        "player_id": 2,
+        "data": {
+          "score": 64
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 660,
+        "play_id": 218,
+        "player_id": 1,
+        "data": {
+          "score": 48
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]

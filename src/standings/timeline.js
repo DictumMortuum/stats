@@ -35,7 +35,10 @@ import {
   GiPotionBall,
   GiHorseHead,
   GiCow,
-  GiPirateFlag
+  GiPirateFlag,
+  GiShipWheel,
+  GiPowerLightning,
+  GiItalia
 } from 'react-icons/gi';
 import {
   FaChessBoard,
@@ -126,6 +129,12 @@ const getBoardgameIcon = boardgame => {
       return <GiCow />
     case "Maracaibo":
       return <GiPirateFlag />
+    case "Puerto Rico":
+      return <GiShipWheel />
+    case "Power Grid":
+      return <GiPowerLightning />
+    case "De Vulgari Eloquentia":
+      return <GiItalia />
     default:
       return <FaChessBoard />
   }
