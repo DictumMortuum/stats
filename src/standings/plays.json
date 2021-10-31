@@ -10432,5 +10432,104 @@
         "player": "Panagiotis"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 222,
+      "boardgame_id": 266810,
+      "cr_date": "2021-10-31T15:38:28+02:00",
+      "date": "2021-10-30T03:00:00+03:00",
+      "boardgame": "Paladins of the West Kingdom"
+    },
+    "stats": [
+      {
+        "id": 671,
+        "play_id": 222,
+        "player_id": 1,
+        "data": {
+          "absolve": 6,
+          "attack": 0,
+          "black": 16,
+          "blue": 9,
+          "coin": 2,
+          "commission": 9,
+          "convert": 3,
+          "debt": 0,
+          "develop": 6,
+          "fortify": 6,
+          "garrison": 0,
+          "order": 18,
+          "red": 9,
+          "score": 84
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 674,
+        "play_id": 222,
+        "player_id": 2,
+        "data": {
+          "absolve": 0,
+          "attack": 0,
+          "black": 11,
+          "blue": 13,
+          "coin": 7,
+          "commission": 0,
+          "convert": 0,
+          "debt": 0,
+          "develop": 0,
+          "fortify": 10,
+          "garrison": 9,
+          "order": 6,
+          "red": 9,
+          "score": 65
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 672,
+        "play_id": 222,
+        "player_id": 3,
+        "data": {
+          "absolve": 6,
+          "attack": 0,
+          "black": 9,
+          "blue": 9,
+          "coin": 1,
+          "commission": 9,
+          "convert": 7,
+          "debt": 0,
+          "develop": 6,
+          "fortify": 0,
+          "garrison": 0,
+          "order": 12,
+          "red": 1,
+          "score": 60
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 673,
+        "play_id": 222,
+        "player_id": 8,
+        "data": {
+          "absolve": 6,
+          "attack": 0,
+          "black": 6,
+          "blue": 9,
+          "coin": 2,
+          "commission": 9,
+          "convert": 0,
+          "debt": 0,
+          "develop": 0,
+          "fortify": 0,
+          "garrison": 0,
+          "order": 12,
+          "red": 3,
+          "score": 47
+        },
+        "player": "Popi"
+      }
+    ]
   }
 ]
