@@ -10531,5 +10531,54 @@
         "player": "Popi"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 223,
+      "boardgame_id": 164928,
+      "cr_date": "2021-11-08T09:53:34+02:00",
+      "date": "2021-11-07T02:00:00+02:00",
+      "boardgame": "Orléans"
+    },
+    "stats": [
+      {
+        "id": 676,
+        "play_id": 223,
+        "player_id": 2,
+        "data": {
+          "brocade": 4,
+          "buildings": 35,
+          "cheese": 2,
+          "citizen": 25,
+          "coin": 32,
+          "grain": 0,
+          "orders": 60,
+          "score": 172,
+          "tiles": 8,
+          "wine": 6,
+          "wool": 0
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 675,
+        "play_id": 223,
+        "player_id": 1,
+        "data": {
+          "brocade": 0,
+          "buildings": 35,
+          "cheese": 2,
+          "citizen": 10,
+          "coin": 33,
+          "grain": 0,
+          "orders": 20,
+          "score": 113,
+          "tiles": 0,
+          "wine": 3,
+          "wool": 10
+        },
+        "player": "Dimitris"
+      }
+    ]
   }
 ]
