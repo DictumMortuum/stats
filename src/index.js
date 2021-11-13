@@ -26,10 +26,10 @@ store.dispatch({
   type: "INIT"
 });
 
-const Scythe = () => <Game basename="stats/scythe" links={ScytheLinks} content={ScytheContent} />;
-const Kemet = () => <Game basename="stats/kemet" links={KemetLinks} content={KemetContent} />;
-const Duel = () => <Game basename="stats/duel" links={DuelLinks} content={DuelContent} />;
-const Standings = () => <Game basename="stats/standings" links={StandingsLinks} content={StandingsContent} open={false} />;
+const Scythe = () => <Game basename="scythe" links={ScytheLinks} content={ScytheContent} />;
+const Kemet = () => <Game basename="kemet" links={KemetLinks} content={KemetContent} />;
+const Duel = () => <Game basename="duel" links={DuelLinks} content={DuelContent} />;
+const Standings = () => <Game basename="standings" links={StandingsLinks} content={StandingsContent} open={false} />;
 
 const style = {
   width: '100%',
@@ -44,22 +44,22 @@ const Index = () => (
     alignItems="center"
     >
     <Grid item xs={6}>
-      <Link to="/stats/scythe">
+      <Link to="/scythe">
         <img src={ScytheImg} alt="scythe" style={style} />
       </Link>
     </Grid>
     <Grid item xs={6}>
-      <Link to="/stats/kemet">
+      <Link to="/kemet">
         <img src={KemetImg} alt="kemet" style={style} />
       </Link>
     </Grid>
     <Grid item xs={6}>
-      <Link to="/stats/duel">
+      <Link to="/duel">
         <img src={DuelImg} alt="duel" style={style} />
       </Link>
     </Grid>
     <Grid item xs={6}>
-      <Link to="/stats/standings">
+      <Link to="/standings">
         <img src={StandingsImg} alt="duel" style={style} />
       </Link>
     </Grid>
@@ -69,11 +69,11 @@ const Index = () => (
 ReactDOM.render(
   <Router>
     <Provider store={store}>
-      <Route path="/stats/" exact component={Index} />
-      <Route path="/stats/scythe" component={Scythe} />
-      <Route path="/stats/kemet" component={Kemet} />
-      <Route path="/stats/duel" component={Duel} />
-      <Route path="/stats/standings" component={Standings} />
+      <Route path="/" exact component={Index} />
+      <Route path="/scythe" component={Scythe} />
+      <Route path="/kemet" component={Kemet} />
+      <Route path="/duel" component={Duel} />
+      <Route path="/standings" component={Standings} />
     </Provider>
   </Router>
 , document.getElementById('root'));
