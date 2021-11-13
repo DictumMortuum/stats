@@ -21,6 +21,7 @@ import Aggressive from './components/aggressive';
 import Generator from './components/generator';
 import common from './analysis';
 import ScytheImg from './img.jpg';
+import ScytheLogo from './logo.jpg';
 
 const {countries, boards} = common;
 
@@ -134,4 +135,4 @@ const ScytheContent = () => (
   ))
 );
 
-export {ScytheContent, ScytheLinks, ScytheImg};
+export {ScytheContent, ScytheLinks, ScytheImg, ScytheLogo};

@@ -3,6 +3,7 @@ import Divider from '@material-ui/core/Divider';
 import Links from '../Links';
 import { Route } from 'react-router-dom';
 import DuelImg from './img.jpg';
+import DuelLogo from './logo.png';
 import Standings from './components/standings';
 import Stats from './components/stats';
 import Average from './components/average';
@@ -44,4 +45,4 @@ const DuelContent = () => (
   ))
 );
 
-export {DuelContent, DuelLinks, DuelImg};
+export {DuelContent, DuelLinks, DuelImg, DuelLogo};

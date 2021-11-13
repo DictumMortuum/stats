@@ -3,6 +3,7 @@ import Divider from '@material-ui/core/Divider';
 import Links from '../Links';
 import { Route } from 'react-router-dom';
 import KemetImg from './img.jpg';
+import KemetLogo from './logo.jpg';
 import PerPlayer from './components/config';
 import Standings from './components/standings';
 import TilesByPicks from './components/tilesByPicks';
@@ -73,7 +74,7 @@ const wins = [{
   'text': 'Player picks by color',
   'path': '/players/color/picks',
   'component': () => <PlayerPicksByColor desc={<Typography variant="body1" gutterBottom>
-    This chart measures the favorite color of each player. 
+    This chart measures the favorite color of each player.
   </Typography>}/>
 }];
 
@@ -93,4 +94,4 @@ const KemetContent = () => (
   ))
 );
 
-export {KemetContent, KemetLinks, KemetImg};
+export {KemetContent, KemetLinks, KemetImg, KemetLogo};
