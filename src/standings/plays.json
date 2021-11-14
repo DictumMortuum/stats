@@ -10580,5 +10580,123 @@
         "player": "Dimitris"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 224,
+      "boardgame_id": 296151,
+      "cr_date": "2021-11-14T11:21:12+02:00",
+      "date": "2021-11-13T02:00:00+02:00",
+      "boardgame": "Viscounts of the West Kingdom"
+    },
+    "stats": [
+      {
+        "id": 679,
+        "play_id": 224,
+        "player_id": 3,
+        "data": {
+          "build": 11,
+          "castle": 16,
+          "castle_leader": 0,
+          "deeds": 6,
+          "dept": -2,
+          "poverty": 6,
+          "score": 46,
+          "transcribe": 9
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 678,
+        "play_id": 224,
+        "player_id": 1,
+        "data": {
+          "build": 13,
+          "castle": 0,
+          "castle_leader": 0,
+          "deeds": 12,
+          "dept": 0,
+          "poverty": 12,
+          "score": 41,
+          "transcribe": 4
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 677,
+        "play_id": 224,
+        "player_id": 2,
+        "data": {
+          "build": 0,
+          "castle": 11,
+          "castle_leader": 0,
+          "deeds": 7,
+          "dept": -6,
+          "poverty": 6,
+          "score": 37,
+          "transcribe": 19
+        },
+        "player": "Theoni"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 225,
+      "boardgame_id": 296151,
+      "cr_date": "2021-11-14T11:23:07+02:00",
+      "date": "2021-11-13T02:00:00+02:00",
+      "boardgame": "Viscounts of the West Kingdom"
+    },
+    "stats": [
+      {
+        "id": 682,
+        "play_id": 225,
+        "player_id": 3,
+        "data": {
+          "build": 12,
+          "castle": 26,
+          "castle_leader": 0,
+          "deeds": 9,
+          "dept": 0,
+          "poverty": 16,
+          "score": 81,
+          "transcribe": 18
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 681,
+        "play_id": 225,
+        "player_id": 1,
+        "data": {
+          "build": 2,
+          "castle": 17,
+          "castle_leader": 5,
+          "deeds": 6,
+          "dept": -2,
+          "poverty": 16,
+          "score": 77,
+          "transcribe": 33
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 680,
+        "play_id": 225,
+        "player_id": 2,
+        "data": {
+          "build": 9,
+          "castle": 6,
+          "castle_leader": 0,
+          "deeds": 16,
+          "dept": 0,
+          "poverty": 16,
+          "score": 63,
+          "transcribe": 16
+        },
+        "player": "Theoni"
+      }
+    ]
   }
 ]
