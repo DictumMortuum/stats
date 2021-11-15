@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Game from './Game';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import { ScytheLinks, ScytheContent, ScytheLogo } from './scythe/Charts';
 import { KemetLinks, KemetContent, KemetLogo } from './kemet';
 import { DuelLinks, DuelContent, DuelLogo } from './duel';
@@ -51,7 +51,7 @@ const tileData = [
 ];
 
 ReactDOM.render(
-  <Router>
+  <HashRouter>
     <Provider store={store}>
       <Route path="/" exact component={() => <TitlebarGridList tiles={tileData} />} />
       <Route path="/scythe" component={() => <Game basename="scythe" links={ScytheLinks} content={ScytheContent} />} />
@@ -60,5 +60,5 @@ ReactDOM.render(
       <Route path="/standings" component={() => <Game basename="standings" links={StandingsLinks} content={StandingsContent} open={false} />} />
       <Route path="/2021" component={() => <Infographic />} />
     </Provider>
-  </Router>
+  </HashRouter>
 , document.getElementById('root'));
