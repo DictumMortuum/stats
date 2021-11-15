@@ -10698,5 +10698,128 @@
         "player": "Theoni"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 226,
+      "boardgame_id": 230802,
+      "cr_date": "2021-11-14T21:52:04+02:00",
+      "date": "2021-11-14T02:00:00+02:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 683,
+        "play_id": 226,
+        "player_id": 1,
+        "data": {
+          "score": 69
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 684,
+        "play_id": 226,
+        "player_id": 2,
+        "data": {
+          "score": 39
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 685,
+        "play_id": 226,
+        "player_id": 3,
+        "data": {
+          "score": 39
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 227,
+      "boardgame_id": 230802,
+      "cr_date": "2021-11-14T21:53:00+02:00",
+      "date": "2021-11-14T02:00:00+02:00",
+      "boardgame": "Azul"
+    },
+    "stats": [
+      {
+        "id": 686,
+        "play_id": 227,
+        "player_id": 2,
+        "data": {
+          "score": 63
+        },
+        "player": "Theoni"
+      },
+      {
+        "id": 687,
+        "play_id": 227,
+        "player_id": 1,
+        "data": {
+          "score": 58
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 688,
+        "play_id": 227,
+        "player_id": 3,
+        "data": {
+          "score": 55
+        },
+        "player": "Panagiotis"
+      }
+    ]
+  },
+  {
+    "play": {
+      "id": 228,
+      "boardgame_id": 301880,
+      "cr_date": "2021-11-14T21:53:45+02:00",
+      "date": "2021-11-14T02:00:00+02:00",
+      "boardgame": "Raiders of Scythia"
+    },
+    "stats": [
+      {
+        "id": 689,
+        "play_id": 228,
+        "player_id": 1,
+        "data": {
+          "score": 68
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 691,
+        "play_id": 228,
+        "player_id": 3,
+        "data": {
+          "score": 60
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 692,
+        "play_id": 228,
+        "player_id": 22,
+        "data": {
+          "score": 54
+        },
+        "player": "Eleni"
+      },
+      {
+        "id": 690,
+        "play_id": 228,
+        "player_id": 2,
+        "data": {
+          "score": 52
+        },
+        "player": "Theoni"
+      }
+    ]
   }
 ]

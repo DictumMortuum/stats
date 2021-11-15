@@ -16,7 +16,7 @@ import {
   ErrorBar
 } from 'recharts';
 
-const graph = ({ data, players, boardgame, dataKey, range }) => {
+export const graph = ({ data, players, boardgame, dataKey, range }) => {
   const ratings = {}
   const plays = {}
 

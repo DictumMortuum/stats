@@ -13,6 +13,7 @@ import { reducer as kemetReducer } from './reducers/kemet';
 import { reducer as duelReducer } from './reducers/duel';
 import { reducer as standingsReducer } from './reducers/standings';
 import { reducer as configReducer } from './reducers/config';
+import Infographic from './infographic/year2021';
 import TitlebarGridList from './Grid';
 
 const store = createStore(combineReducers({
@@ -57,6 +58,7 @@ ReactDOM.render(
       <Route path="/kemet" component={() => <Game basename="kemet" links={KemetLinks} content={KemetContent} />} />
       <Route path="/duel" component={() => <Game basename="duel" links={DuelLinks} content={DuelContent} />} />
       <Route path="/standings" component={() => <Game basename="standings" links={StandingsLinks} content={StandingsContent} open={false} />} />
+      <Route path="/2021" component={() => <Infographic />} />
     </Provider>
   </Router>
 , document.getElementById('root'));
