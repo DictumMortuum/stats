@@ -50,7 +50,7 @@ const infographic = props => {
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={8}>
-        <Typography variant="body1">Mέσα στο 2021 <b>παίξαμε συνολικά {games.length} παιχνίδια</b>, τα οποία είναι πολύ περισσότερα από αυτά που παίξαμε στο 2020, τα οποία στον αριθμό ήταν {games2020.length}.</Typography>
+        <Typography variant="body1">Mέσα στο 2021 <b>παίξαμε συνολικά {games.length} παιχνίδια</b>, τα οποία είναι πολύ περισσότερα από αυτά που παίξαμε στο 2020, που στον αριθμό ήταν {games2020.length}.</Typography>
       </Grid>
       <Grid item xs={2} />
 
@@ -83,7 +83,7 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Αριθμός διαφορετικών παιχνιδιών</Typography>
-        <Typography variant="body1">Κατά τη διάρκεια του έτους <b>είχαμε την ευκαιρία να παίξουμε {perGame.length} διαφορετικά παιχνίδια</b>. Για αυτό ευθύνεται κυρίων η Θεώνη, η οποία μου πήρε σαν δώρο τα περισσότερα από αυτά. Παρακάτω παραθέτω το top 5 των παιχνιδιών που έβγαλαν τα λεφτά τους και τα παίξαμε παραπάνω από τα υπόλοιπα.</Typography>
+        <Typography variant="body1">Κατά τη διάρκεια του έτους <b>είχαμε την ευκαιρία να παίξουμε {perGame.length} διαφορετικά παιχνίδια</b>. Για αυτό ευθύνεται κυρίως η Θεώνη, η οποία μου έκανε δώρο τα περισσότερα. Παρακάτω παραθέτω το top 5 των παιχνιδιών που έβγαλαν τα λεφτά τους και τα παίξαμε παραπάνω από τα υπόλοιπα.</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
