@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import BarChart from './components/bar';
 import PieChart from './components/pie';
 import { connect } from 'react-redux';
-import { playsPerPlayer, playsPerMonth, playsPerGame, playersPerPlay, sortPlayers, year, up_to_year, sortTag } from './common';
+import { playsPerPlayer, playsPerMonth, playsPerGame, playersPerPlay, year, up_to_year, sortTag, sortTagDesc, sortPlayers } from './common';
 import { graph } from '../standings/standings';
 
 const useStyles = makeStyles((theme) => ({
@@ -42,6 +42,11 @@ const infographic = props => {
   const playerCountPerGame = playersPerPlay(games)
   // const stats2020 = graph({...props, data: upto2020})
   const stats = graph({...props, data: upto2021})
+  const topScores = games.map(d => ({
+    player: d.stats[0].player,
+    boardgame: d.play.boardgame,
+    score: d.stats[0].data.score,
+  }))
 
   return (
     <Grid container className={classes.root} spacing={5} alignContent="center" alignItems="center" style={{ padding: 20 }}>
@@ -63,7 +68,7 @@ const infographic = props => {
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
-        <BarChart data={perMonth} dataKeys={[{dataKey: "παιχνίδια", color: "#d08770"}, {dataKey: "ζευγάρι", color: "#5e81ac"}]} />
+        <BarChart data={perMonth} dataKeys={[{dataKey: "παιχνίδια", color: "#d08770", stack: "a"}, {dataKey: "ζευγάρι", color: "#5e81ac", stack: "a"}]} />
       </Grid>
 
 
@@ -116,6 +121,17 @@ const infographic = props => {
 
       <Grid item xs={2} />
       <Grid item xs={8}>
+        <Typography variant="h4" gutterBottom={true}>Περισσότεροι πόντοι</Typography>
+        <Typography variant="body1">Εδώ παρουσιάζονται τα παιχνίδια στα οποία έχουμε σκοράρει τους περισσότερους πόντους!</Typography>
+      </Grid>
+      <Grid item xs={2} />
+      <Grid item xs={12}>
+        <BarChart layout="vertical" data={topScores.sort(sortTagDesc("score")).slice(0, 11)} name="boardgame" dataKeys={[{dataKey: "score", color: "#a3be8c"}]} />
+      </Grid>
+
+
+      <Grid item xs={2} />
+      <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Πίστη του συστήματος στην απόδοση των παιχτών</Typography>
         <Typography variant="body1">Το οποίο σημαίνει ότι όσο πιο μικρό είναι αυτό το σύνολο, τόσο πιο ακριβές είναι το συνολικό σας score. Συνήθως η πίστη του συστήματος βελτιώνεται όταν κάποιος παίζει πολλά παιχνίδια, και αυτό φαίνεται στα στοιχεία του παρακάτω γραφήματος.</Typography>
       </Grid>
@@ -123,6 +139,13 @@ const infographic = props => {
       <Grid item xs={12}>
         <BarChart data={stats.results.sort(sortTag("sigma")).filter(d => d.sigma < 1.200)} name="player" dataKeys={[{dataKey: "sigma", color: "#5e81ac"}]} />
       </Grid>
+
+
+      <Grid item xs={2} />
+      <Grid item xs={8}>
+      <Typography variant="h4" gutterBottom={true}>Ευχαριστούμε για τα παιχνίδια! Τα λέμε το 2022!</Typography>
+      </Grid>
+      <Grid item xs={2} />
     </Grid>
   )
 }

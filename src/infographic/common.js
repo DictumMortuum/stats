@@ -30,6 +30,10 @@ export const sortTag = tag => (a, b) => {
   return a[tag] > b[tag]
 }
 
+export const sortTagDesc = tag => (a, b) => {
+  return a[tag] < b[tag]
+}
+
 export const playsPerPlayer = json => {
   let data = {};
 
