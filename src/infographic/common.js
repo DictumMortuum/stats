@@ -104,6 +104,51 @@ export const playsPerMonth = json => {
   return rs
 }
 
+export const playsPerDay = json => {
+  let data = {};
+  const options = { weekday: 'short' };
+
+  json.map(d => {
+    let date = new Date(d.play.date)
+    const day = date.toLocaleDateString('el-GR', options)
+
+    if (data[day] === undefined) {
+      data[day] = {
+        pair: 0,
+        total: 0
+      }
+    }
+
+    if (d.stats.length === 2) {
+      const players = d.stats.map(d => d.player)
+
+      if (players.includes("Dimitris") && players.includes("Theoni")) {
+        data[day].pair++;
+      } else {
+        data[day].total++;
+      }
+    } else {
+      data[day].total++;
+    }
+
+    return day
+  })
+
+  let rs = [];
+
+  [ "Δευ", "Τρί", "Τετ", "Πέμ", "Παρ", "Σάβ", "Κυρ"].map(d => {
+    rs.push({
+      name: d,
+      "ζευγάρι": data[d].pair,
+      "παιχνίδια": data[d].total,
+    })
+
+    return d
+  })
+
+  return rs
+}
+
 export const playsPerGame = json => {
   let data = {};
 

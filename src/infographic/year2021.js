@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import BarChart from './components/bar';
 import PieChart from './components/pie';
 import { connect } from 'react-redux';
-import { playsPerPlayer, playsPerMonth, playsPerGame, playersPerPlay, year, up_to_year, sortTag, sortTagDesc, sortPlayers } from './common';
+import { playsPerPlayer, playsPerMonth, playsPerDay, playsPerGame, playersPerPlay, year, up_to_year, sortTag, sortTagDesc, sortPlayers } from './common';
 import { graph } from '../standings/standings';
 
 const useStyles = makeStyles((theme) => ({
@@ -38,6 +38,7 @@ const infographic = props => {
   const games = year(data)(2021)
   const perPlayer = playsPerPlayer(games)
   const perMonth = playsPerMonth(games)
+  const perDay = playsPerDay(games)
   const perGame = playsPerGame(games)
   const playerCountPerGame = playersPerPlay(games)
   // const stats2020 = graph({...props, data: upto2020})
@@ -74,6 +75,17 @@ const infographic = props => {
 
       <Grid item xs={2} />
       <Grid item xs={8}>
+        <Typography variant="h4" gutterBottom={true}>Παιχνίδια ανά ημέρα της βδομάδας</Typography>
+        <Typography variant="body1">Προφανώς παίζουμε την πλειοψηφία των παιχνιδιών το Σαββατοκύριακο. Μου κάνει εντύπωση όμως πως οι Παρασκευές έχουν περίπου όσα και οι Πέμπτες!</Typography>
+      </Grid>
+      <Grid item xs={2} />
+      <Grid item xs={12}>
+        <BarChart data={perDay} dataKeys={[{dataKey: "παιχνίδια", color: "#bf616a", stack: "a"}, {dataKey: "ζευγάρι", color: "#81a1c1", stack: "a"}]} />
+      </Grid>
+
+
+      <Grid item xs={2} />
+      <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Παιχνίδια ανά παίχτη</Typography>
         <Typography variant="body1">Μέσα στο 2021 <b>παίξαμε συνολικά με {perPlayer.length} διαφορετικά άτομα</b>! Στο παρακάτω γράφημα εμφανίζονται ο αριθμός των παιχνιδιών στα οποία έχει συμμετάσχει ο κάθε παίχτης.</Typography>
         <Typography variant="body1">Για να είναι πιο όμορφη η παρουσίαση του γραφήματος, έχω αποκρύψει όλους τους παίχτες οι οποίοι έχουν αριθμό συμμετοχών λιγότερες των τριών.</Typography>
@@ -81,7 +93,7 @@ const infographic = props => {
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
-        <BarChart data={perPlayer.filter(d => d.plays > 3)} dataKeys={[{dataKey: "plays", color: "#bf616a"}]} />
+        <BarChart data={perPlayer.filter(d => d.plays > 3)} dataKeys={[{dataKey: "plays", color: "#4c566a"}]} />
       </Grid>
 
 
