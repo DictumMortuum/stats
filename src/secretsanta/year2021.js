@@ -10,6 +10,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import Background from './background.svg';
 import Jack from './jack.png';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -197,6 +198,24 @@ const Santa2021 = props => {
         </Paper>
       </Grid>
       <Grid item xs={0} md={1}></Grid>
+
+
+      <Grid item xs={1} md={2}></Grid>
+      <Grid item xs={10} md={8}>
+        <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
+          Λίγα λόγια για εμάς
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Είμαστε η Θεώνη και ο Δημήτρης και έχουμε πολύ ενεργή ζωή όσον αφορά τα επιτραπέζια. Εγώ πάντα ασχολιόμουν με το hobby, αλλά τους περισσότερους τίτλους τους είχε άλλος στην παρέα, στο σπίτι του οποίου πηγαίναμε συνέχεια. Με την καραντίνα όμως όλα αυτά άλλαξαν και μετά τον γάμο μας τον Μάρτιο, η Θεώνη, ξέροντας ότι μου αρέσουν τα παιχνίδια άρχισε να μου κάνει πολλά δώρα, σε άσχετες χρονικά στιγμές κιόλας (δεν ήταν μόνο όταν είχα γιορτή ή γενέθλια δηλαδή). Με αυτόν τον τρόπο η συλλογή μας μεγάλωσε σημαντικά τα τελευταία 1-2 χρόνια.
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Παίζουμε πολύ συχνά τόσο με φίλους όσο και μόνοι μας. Για την ακρίβεια σάντα μου είμαι τρελός με τα στατιστικά και κρατάω logs με όλα τα παιχνίδια που έχουμε παίξει, τα οποία τα μοιράζομαι με τους συμπαίχτες μου και μπορείς να τα βρεις <Link to="/standings">εδώ</Link>. Τα στατιστικά χρησιμοποιούν τον αλγόριθμο trueskill της microsoft που είναι στην ουσία κάτι σαν το ELO (αυτό που χρησιμοποιούν στο σκάκι), αλλά για multiplayer παιχνίδια. Επίσης, επειδή μέσα στο 2021 παίξαμε τόσο πολύ, αποφάσισα να φτιάξω μια σελίδα για τον απολογισμό του έτους, την οποία μπορείς να επισκεφτείς <Link to="/2021">εδώ</Link>, όπου έχει γραφήματα για τον αριθμό των ατόμων με τα οποία παίζουμε συνήθως, ποια παιχνίδια έχουμε παίξει περισσότερο, αλλά και άλλα, τα οποία μπορεί να σε ενδιαφέρουν.
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Τέλος να σου πω ότι δεν έχουμε κάποιο στέκι, όχι, αλλά σκεφτόμασταν να αρχίσουμε να πηγαίνουμε κάπου. Δυστυχώς η πανδημία δεν βοηθάει ιδιαίτερα, αλλά η Θεώνη το παρακολουθεί - έχει κάνει join σε μερικά groups στο facebook και ποστάρει συχνά φωτογραφίες με τις επιτραπέζιές μας περιπέτειες.
+        </Typography>
+      </Grid>
+      <Grid item xs={1} md={2}></Grid>
 
       <Grid item xs={0} md={2}></Grid>
       <Grid item xs={12} md={8}>
