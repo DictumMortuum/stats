@@ -9,6 +9,7 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import Background from './background.svg';
+import Jack from './jack.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -151,12 +152,15 @@ const Santa2021 = props => {
   return (
     <Grid container className={classes.root} alignContent="center" alignItems="center" >
       <Grid container>
-      <Grid className={classes.heading} style={{ textAlign: "right" }} item xs={6}>
-        <Typography variant="h5">Secret Santa <span className={classes.color}>2021</span></Typography>
-      </Grid>
-      <Grid className={classes.heading} item xs={6}>
-        <Typography variant="h5">Αποστολή 1</Typography>
-      </Grid>
+        <Grid className={classes.heading} item xs={1}>
+          <img style={{ height: 30 }} alt="" src={Jack} />
+        </Grid>
+        <Grid className={classes.heading} style={{ textAlign: "right" }} item xs={5}>
+          <Typography variant="h5">Secret Santa <span className={classes.color}>2021</span></Typography>
+        </Grid>
+        <Grid className={classes.heading} item xs={6}>
+          <Typography variant="h5">Αποστολή 1</Typography>
+        </Grid>
       </Grid>
 
       <Grid item xs={0} md={1}></Grid>
