@@ -40,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
     height: 100,
     width: 100,
     objectFit: "scale-down",
+    backgroundColor: "#fff",
+    borderColor: "#5e81ac",
+    borderWidth: 1,
+    borderStyle: "solid",
     marginLeft: 10,
   },
   padding: {
@@ -153,8 +157,8 @@ const Santa2021 = props => {
       </Grid>
       </Grid>
 
-      <Grid item xs={1}></Grid>
-      <Grid item xs={5} style={{ paddingRight: 10 }} className={classes.right}>
+      <Grid item xs={0} md={1}></Grid>
+      <Grid item xs={12} md={5} style={{ padding: 10 }} className={classes.right}>
         <Paper style={{ padding: 20 }}>
           <Typography variant="body2" component="p" gutterBottom>
             Αγαπητέ Άγιε Βασίλη <span role="img" aria-label="santa">🎅</span>,
@@ -170,7 +174,7 @@ const Santa2021 = props => {
           </Typography>
         </Paper>
       </Grid>
-      <Grid item xs={5} style={{ paddingLeft: 10 }}>
+      <Grid item xs={12} md={5} style={{ padding: 10 }}>
         <Paper style={{ padding: 20 }}>
           <Typography variant="body2" component="p" gutterBottom>
             Αγαπητέ Άγιε Βασίλη <span role="img" aria-label="santa">🎅</span>,
@@ -186,7 +190,7 @@ const Santa2021 = props => {
           </Typography>
         </Paper>
       </Grid>
-      <Grid item xs={1}></Grid>
+      <Grid item xs={0} md={1}></Grid>
 
       <Grid item xs={0} md={2}></Grid>
       <Grid item xs={12} md={8}>
