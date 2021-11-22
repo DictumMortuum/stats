@@ -8,11 +8,13 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
+import Background from './background.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     background: '#d8dee9',
     fontFamily: "sans",
+    backgroundImage: `url(${Background})`,
   },
   right: {
     textAlign: "right",
@@ -159,7 +161,7 @@ const Santa2021 = props => {
 
       <Grid item xs={0} md={1}></Grid>
       <Grid item xs={12} md={5} style={{ padding: 10 }} className={classes.right}>
-        <Paper style={{ padding: 20 }}>
+        <Paper style={{ padding: 20 }} elevation={4} square>
           <Typography variant="body2" component="p" gutterBottom>
             Αγαπητέ Άγιε Βασίλη <span role="img" aria-label="santa">🎅</span>,
           </Typography>
@@ -175,7 +177,7 @@ const Santa2021 = props => {
         </Paper>
       </Grid>
       <Grid item xs={12} md={5} style={{ padding: 10 }}>
-        <Paper style={{ padding: 20 }}>
+        <Paper style={{ padding: 20 }} elevation={4} square>
           <Typography variant="body2" component="p" gutterBottom>
             Αγαπητέ Άγιε Βασίλη <span role="img" aria-label="santa">🎅</span>,
           </Typography>
