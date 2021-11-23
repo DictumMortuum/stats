@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { rate, Rating } from 'ts-trueskill';
 import Slider from '@material-ui/core/Slider';
 import Typography from '@material-ui/core/Typography';
+import { Grid } from '@material-ui/core';
 import {
   ResponsiveContainer,
   BarChart,
@@ -163,11 +164,15 @@ class Element extends React.Component {
     }
 
     return (
-      <div>
-        <Typography noWrap>{"Sample size: " + sample}</Typography>
-        {content}
-        <DateSlider {...this.props} />
-      </div>
+      <Grid container alignContent="center" alignItems="center" >
+        <Grid item xs={0} md={2}></Grid>
+        <Grid item xs={12} md={8}>
+          <Typography noWrap>{"Sample size: " + sample}</Typography>
+          {content}
+          <DateSlider {...this.props} />
+        </Grid>
+        <Grid item xs={0} md={2}></Grid>
+      </Grid>
     )
   }
 }

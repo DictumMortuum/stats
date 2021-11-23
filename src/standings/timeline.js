@@ -11,7 +11,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
 import { IconContext } from "react-icons";
-import { Avatar, Chip, Divider } from '@material-ui/core';
+import { Avatar, Chip, Divider, Grid } from '@material-ui/core';
 import { dateSort } from './common';
 import {
   GiSwapBag,
@@ -180,7 +180,13 @@ const Element = (props) => {
   let rs = data.slice().sort(dateSort).map(d => f(d))
 
   return (
-    <Timeline align="alternate">{rs}</Timeline>
+    <Grid container className={classes.root} alignContent="center" alignItems="center" >
+      <Grid item xs={0} md={2}></Grid>
+      <Grid item xs={12} md={8}>
+        <Timeline align="alternate">{rs}</Timeline>
+      </Grid>
+      <Grid item xs={0} md={2}></Grid>
+    </Grid>
   );
 }
 

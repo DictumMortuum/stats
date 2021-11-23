@@ -1,6 +1,9 @@
 import React from 'react';
 import { Grid, Typography, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
@@ -31,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   color: {
-    color: "#88c0d0"
+    color: "#a3be8c"
   },
   imageContainer: {
     display: "block",
@@ -152,20 +155,18 @@ const Santa2021 = props => {
 
   return (
     <Grid container className={classes.root} alignContent="center" alignItems="center" >
-      <Grid container>
-        <Grid className={classes.heading} item xs={1}>
-          <img style={{ height: 30 }} alt="" src={Jack} />
-        </Grid>
-        <Grid className={classes.heading} style={{ textAlign: "right" }} item xs={5}>
-          <Typography variant="h5">Secret Santa <span className={classes.color}>2021</span></Typography>
-        </Grid>
-        <Grid className={classes.heading} item xs={6}>
+      <AppBar position="static" style={{ marginBottom: 20 }}>
+        <Toolbar>
+          <IconButton edge="start" color="inherit" aria-label="menu">
+            <img style={{ height: 30 }} alt="" src={Jack} />
+          </IconButton>
+          <Typography variant="h5" style={{ flexGrow: 1}}>Secret Santa <span className={classes.color}>2021</span></Typography>
           <Typography variant="h5">Αποστολή 1</Typography>
-        </Grid>
-      </Grid>
+        </Toolbar>
+      </AppBar>
 
       <Grid item xs={0} md={1}></Grid>
-      <Grid item xs={12} md={5} style={{ padding: 10 }} className={classes.right}>
+      <Grid item xs={12} md={5} style={{ padding: 10, marginBottom: 20 }} className={classes.right}>
         <Paper style={{ padding: 20 }} elevation={4} square>
           <Typography variant="body2" component="p" gutterBottom>
             Αγαπητέ Άγιε Βασίλη <span role="img" aria-label="santa">🎅</span>,
@@ -181,7 +182,7 @@ const Santa2021 = props => {
           </Typography>
         </Paper>
       </Grid>
-      <Grid item xs={12} md={5} style={{ padding: 10 }}>
+      <Grid item xs={12} md={5} style={{ padding: 10, marginBottom: 20 }}>
         <Paper style={{ padding: 20 }} elevation={4} square>
           <Typography variant="body2" component="p" gutterBottom>
             Αγαπητέ Άγιε Βασίλη <span role="img" aria-label="santa">🎅</span>,
@@ -198,7 +199,6 @@ const Santa2021 = props => {
         </Paper>
       </Grid>
       <Grid item xs={0} md={1}></Grid>
-
 
       <Grid item xs={1} md={2}></Grid>
       <Grid item xs={10} md={8}>
