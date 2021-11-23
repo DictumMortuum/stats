@@ -11036,5 +11036,81 @@
         "player": "Panagiotis"
       }
     ]
+  },
+  {
+    "play": {
+      "id": 233,
+      "boardgame_id": 256916,
+      "cr_date": "2021-11-23T08:57:29+02:00",
+      "date": "2021-11-21T02:00:00+02:00",
+      "boardgame": "Concordia Venus"
+    },
+    "stats": [
+      {
+        "id": 707,
+        "play_id": 233,
+        "player_id": 5,
+        "data": {
+          "concordia": 7,
+          "jupiter": 14,
+          "mars": 24,
+          "mercurius": 40,
+          "minerva": 21,
+          "saturnus": 20,
+          "score": 146,
+          "venus": 16,
+          "vesta": 4
+        },
+        "player": "Kostas"
+      },
+      {
+        "id": 709,
+        "play_id": 233,
+        "player_id": 1,
+        "data": {
+          "jupiter": 49,
+          "mars": 10,
+          "mercurius": 8,
+          "minerva": 20,
+          "saturnus": 24,
+          "score": 133,
+          "venus": 18,
+          "vesta": 4
+        },
+        "player": "Dimitris"
+      },
+      {
+        "id": 710,
+        "play_id": 233,
+        "player_id": 3,
+        "data": {
+          "jupiter": 16,
+          "mars": 24,
+          "mercurius": 20,
+          "minerva": 16,
+          "saturnus": 36,
+          "score": 120,
+          "venus": 6,
+          "vesta": 2
+        },
+        "player": "Panagiotis"
+      },
+      {
+        "id": 708,
+        "play_id": 233,
+        "player_id": 4,
+        "data": {
+          "jupiter": 42,
+          "mars": 12,
+          "mercurius": 10,
+          "minerva": 9,
+          "saturnus": 14,
+          "score": 102,
+          "venus": 12,
+          "vesta": 3
+        },
+        "player": "Elena"
+      }
+    ]
   }
 ]
