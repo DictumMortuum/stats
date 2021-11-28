@@ -24,7 +24,7 @@ export const graph = ({ data, players, boardgame, dataKey, range }) => {
   data = data.slice(range[0], range[1])
 
   if (boardgame !== undefined) {
-    data = data.filter(d => d.play.boardgame === boardgame)
+    data = data.filter(d => d.boardgame === boardgame)
   }
 
   players.map(player => {
@@ -35,11 +35,11 @@ export const graph = ({ data, players, boardgame, dataKey, range }) => {
 
   console.groupCollapsed("Games")
 
-  data.map(({ play, stats }) => {
+  data.map(({ boardgame, stats }) => {
     let game_participants = stats.map(stat => [ratings[stat.player]])
     let rated = rate(game_participants)
 
-    console.groupCollapsed(play.boardgame)
+    console.groupCollapsed(boardgame)
 
     stats.map((stat, i) => {
       let new_rating = rated[i]
@@ -86,8 +86,8 @@ const mapStateToProps = (state, props) => ({
 })
 
 const dataToMarks = data => {
-  let obj = data.map(({ play }) => {
-    let d = new Date(play.date)
+  let obj = data.map(({ date }) => {
+    let d = new Date(date)
     let y = d.getFullYear()
     return y
   }).reduce((rs, cur, i) => {

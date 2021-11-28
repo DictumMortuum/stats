@@ -1,12 +1,12 @@
 import json from '../standings/plays.json';
 
 export const year = data => y => json.filter(d => {
-  let date = new Date(d.play.date)
+  let date = new Date(d.date)
   return date.getYear() + 1900 === y
 })
 
 export const up_to_year = data => y => json.filter(d => {
-  let date = new Date(d.play.date)
+  let date = new Date(d.date)
   return date.getYear() + 1900 <= y
 })
 
@@ -64,7 +64,7 @@ export const playsPerMonth = json => {
   const options = { month: 'short' };
 
   json.map(d => {
-    let date = new Date(d.play.date)
+    let date = new Date(d.date)
     const month = date.toLocaleDateString('el-GR', options)
 
     if (data[month] === undefined) {
@@ -109,7 +109,7 @@ export const playsPerDay = json => {
   const options = { weekday: 'short' };
 
   json.map(d => {
-    let date = new Date(d.play.date)
+    let date = new Date(d.date)
     const day = date.toLocaleDateString('el-GR', options)
 
     if (data[day] === undefined) {
@@ -153,7 +153,7 @@ export const playsPerGame = json => {
   let data = {};
 
   json.map(d => {
-    let boardgame = d.play.boardgame
+    let boardgame = d.boardgame
 
     if (data[boardgame] === undefined) {
       data[boardgame] = {

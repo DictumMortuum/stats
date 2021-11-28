@@ -7,11 +7,11 @@ import StandingsLogo from './logo.png';
 import Standings from './standings';
 import Typography from '@material-ui/core/Typography';
 import Timeline from './timeline';
-
+import Trueskill from './trueskill';
 const unique = col => [...new Set(col)];
 
 const createLinksConfig = ({ standings: { data }}) => {
-  const boardgames = unique(data.map(d => d.play.boardgame)).sort()
+  const boardgames = unique(data.map(d => d.boardgame)).sort()
 
   return [{
     'text': 'Standings',
@@ -24,6 +24,10 @@ const createLinksConfig = ({ standings: { data }}) => {
     'text': 'Mu',
     'path': '/mu',
     'component': () => <Standings dataKey="mu" />
+  },{
+    'text': 'Trueskill by time',
+    'path': '/trueskill',
+    'component': () => <Trueskill />
   },{
     'text': 'Timeline',
     'path': '/timeline',

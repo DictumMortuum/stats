@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const getBoardgameIcon = boardgame => {
-  switch(boardgame.play.boardgame) {
+  switch(boardgame.boardgame) {
     case "Great Western Trail":
       return <FaHatCowboy />
     case "Azul":
@@ -141,14 +141,14 @@ const getBoardgameIcon = boardgame => {
 }
 
 const generateStanding = (stats, winner) => (
-  <Chip key={stats.id} avatar={<Avatar>{stats.data.score}</Avatar>} label={stats.player} color={winner ? "primary" : "default"} />
+  <Chip key={stats.id} avatar={<Avatar>{stats.data.score.toFixed(0)}</Avatar>} label={stats.player} color={winner ? "primary" : "default"} />
 )
 
 const generateTimelineItem = classes => boardgame => (
-  <TimelineItem key={boardgame.play.id}>
+  <TimelineItem key={boardgame.id}>
     <TimelineOppositeContent>
       <Typography variant="body2" color="textSecondary" className={classes.date}>
-        {new Date(boardgame.play.date).toLocaleDateString('el-GR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+        {new Date(boardgame.date).toLocaleDateString('el-GR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
       </Typography>
     </TimelineOppositeContent>
     <TimelineSeparator>
@@ -162,12 +162,16 @@ const generateTimelineItem = classes => boardgame => (
     <TimelineContent>
       <Paper elevation={3} className={classes.paper}>
         <Typography variant="h6" component="h1">
-          {boardgame.play.boardgame}
+          {boardgame.boardgame}
         </Typography>
         <Divider />
         <div className={classes.chips}>
           {boardgame.stats.map((stat, i) => generateStanding(stat, i === 0))}
         </div>
+        <Divider />
+        <Typography variant="p" component="p">
+          Outcome probability: {boardgame.probability.toFixed(2)}%
+        </Typography>
       </Paper>
     </TimelineContent>
   </TimelineItem>

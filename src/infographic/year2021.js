@@ -45,7 +45,7 @@ const infographic = props => {
   const stats = graph({...props, data: upto2021})
   const topScores = games.map(d => ({
     player: d.stats[0].player,
-    boardgame: d.play.boardgame,
+    boardgame: d.boardgame,
     score: d.stats[0].data.score,
   }))
 
