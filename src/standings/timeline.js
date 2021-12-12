@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
@@ -12,6 +12,12 @@ import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
 import { IconContext } from "react-icons";
 import { Avatar, Chip, Divider, Grid } from '@material-ui/core';
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+import MenuItem from '@material-ui/core/MenuItem';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import Badge from '@material-ui/core/Badge';
 import { dateSort } from './common';
 import {
   GiSwapBag,
@@ -50,6 +56,7 @@ import {
   FaChessBishop,
 } from 'react-icons/fa';
 import { WiTrain } from 'react-icons/wi';
+// import { TrueSkill } from 'ts-trueskill';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -66,7 +73,11 @@ const useStyles = makeStyles((theme) => ({
   },
   date: {
     margin: theme.spacing(1.5, 0, 1.5, 0),
-  }
+  },
+  formControl: {
+    margin: theme.spacing(1),
+    width: "90%",
+  },
 }));
 
 const getBoardgameIcon = boardgame => {
@@ -169,7 +180,7 @@ const generateTimelineItem = classes => boardgame => (
           {boardgame.stats.map((stat, i) => generateStanding(stat, i === 0))}
         </div>
         <Divider />
-        <Typography variant="p" component="p">
+        <Typography variant="body2" component="p">
           Outcome probability: {boardgame.probability.toFixed(2)}%
         </Typography>
       </Paper>
@@ -179,17 +190,49 @@ const generateTimelineItem = classes => boardgame => (
 
 const Element = (props) => {
   const classes = useStyles();
-  const { data } = props;
+  const [player, setPlayer] = useState("");
+  const { data, players } = props;
   let f = generateTimelineItem(classes)
-  let rs = data.slice().sort(dateSort).map(d => f(d))
+  let rs = data.slice().sort(dateSort).filter(d => {
+    if(player === "") {
+      return true
+    }
+
+    let players = d.stats.map(s => s.player).filter(s => s === player)
+
+    return players.length > 0
+  }).map(d => f(d))
+
+  const handleChange = (event) => {
+    setPlayer(event.target.value);
+  };
 
   return (
     <Grid container className={classes.root} alignContent="center" alignItems="center" >
-      <Grid item xs={0} md={2}></Grid>
+      <Grid item md={2} xs={6}>
+        <FormControl variant="outlined" className={classes.formControl}>
+          <InputLabel id="player-select-label">Player</InputLabel>
+          <Select
+            labelId="player-select-label"
+            id="player-select"
+            value={player}
+            onChange={handleChange}
+          >
+            <MenuItem key={-1} value="">None</MenuItem>
+            {players.map(d => <MenuItem key={d.id} value={d.name}>{d.name}</MenuItem>)}
+          </Select>
+        </FormControl>
+      </Grid>
+      <Grid item md={10} xs={6}>
+        <Badge badgeContent={rs.length} max={999} color="primary">
+          <PlayArrowIcon />
+        </Badge>
+      </Grid>
+      <Grid item xs={false} md={2}></Grid>
       <Grid item xs={12} md={8}>
         <Timeline align="alternate">{rs}</Timeline>
       </Grid>
-      <Grid item xs={0} md={2}></Grid>
+      <Grid item xs={false} md={2}></Grid>
     </Grid>
   );
 }

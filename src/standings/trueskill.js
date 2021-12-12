@@ -57,7 +57,7 @@ const transform = data => {
     })
   }
 
-  const keys = [...new Set(players)].filter(d => freq[d] > 25).map((d, i) => ({dataKey: d, color: nord[i%nord.length]}));
+  const keys = [...new Set(players)].filter(d => freq[d] > 20).map((d, i) => ({dataKey: d, color: nord[i%nord.length]}));
 
   return {
     data: tmp,

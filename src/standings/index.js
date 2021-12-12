@@ -13,49 +13,57 @@ const unique = col => [...new Set(col)];
 const createLinksConfig = ({ standings: { data }}) => {
   const boardgames = unique(data.map(d => d.boardgame)).sort()
 
-  return [{
-    'text': 'Standings',
-    'path': '/',
-    'component': () => <Standings dataKey="trueskill" desc={<Typography variant="body1" gutterBottom>
-      For each player, the first column represents μ (mu) and the second σ (sigma), based on the <a href="https://en.wikipedia.org/wiki/TrueSkill">TrueSkill</a> algorithm. <br />
-      A player's skill is represented as a normal distribution N characterized by a mean value μ (mu, representing perceived skill) and a variance σ (sigma, representing how "unconfident" test system is in the player's μ value).
-    </Typography>}/>
-  },{
-    'text': 'Mu',
-    'path': '/mu',
-    'component': () => <Standings dataKey="mu" />
-  },{
-    'text': 'Trueskill by time',
-    'path': '/trueskill',
-    'component': () => <Trueskill />
-  },{
-    'text': 'Timeline',
-    'path': '/timeline',
-    'component': () => <Timeline />
-  },
-  ...boardgames.map((d, i) => ({
-    'text': d,
-    'path': '/' + i,
-    'component': () => <Standings boardgame={d} dataKey="trueskill" />
-  }))]
+  return {
+    "general": [{
+        'text': 'Standings',
+        'path': '/',
+        'component': () => <Standings dataKey="trueskill" desc={<Typography variant="body1" gutterBottom>
+          For each player, the first column represents μ (mu) and the second σ (sigma), based on the <a href="https://en.wikipedia.org/wiki/TrueSkill">TrueSkill</a> algorithm. <br />
+          A player's skill is represented as a normal distribution N characterized by a mean value μ (mu, representing perceived skill) and a variance σ (sigma, representing how "unconfident" test system is in the player's μ value).
+        </Typography>}/>
+      },
+      // {
+      //   'text': 'Mu',
+      //   'path': '/mu',
+      //   'component': () => <Standings dataKey="mu" />
+      // },
+      {
+        'text': 'Trueskill by time',
+        'path': '/trueskill',
+        'component': () => <Trueskill />
+      },{
+        'text': 'Timeline',
+        'path': '/timeline',
+        'component': () => <Timeline />
+      }
+    ],
+    "games": [
+      ...boardgames.map((d, i) => ({
+        'text': d,
+        'path': '/' + i,
+        'component': () => <Standings boardgame={d} dataKey="trueskill" />
+      }))
+    ]
+  }
 }
 
 const StandingsLinks = props => {
-  const boardgames = createLinksConfig(props)
+  const {general, games} = createLinksConfig(props)
 
   return (
     <div>
-      <Links charts={boardgames} title={"Standings"} key={"Wins"} open={true} />
+      <Links charts={general} title={"Standings"} key={"Wins"} open={true} />
       <Divider />
+      <Links charts={games} title={"Games"} key={"Games"} open={false} />
     </div>
   )
 }
 
 const StandingsContent = props => {
-  const boardgames = createLinksConfig(props)
+  const {general, games} = createLinksConfig(props)
 
   return (
-    boardgames.map(({path, component}) => (
+    [...general, ...games].map(({path, component}) => (
       <Route key={path} path={path} exact component={component} />
     ))
   );

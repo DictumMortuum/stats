@@ -98,8 +98,6 @@ const dataToMarks = data => {
     return rs
   }, {})
 
-  console.log(obj)
-
   return Object.keys(obj).map(d => ({
     value: obj[d],
     label: d.slice(2),
@@ -165,13 +163,13 @@ class Element extends React.Component {
 
     return (
       <Grid container alignContent="center" alignItems="center" >
-        <Grid item xs={0} md={2}></Grid>
+        <Grid item xs={false} md={2}></Grid>
         <Grid item xs={12} md={8}>
           <Typography noWrap>{"Sample size: " + sample}</Typography>
           {content}
           <DateSlider {...this.props} />
         </Grid>
-        <Grid item xs={0} md={2}></Grid>
+        <Grid item xs={false} md={2}></Grid>
       </Grid>
     )
   }
