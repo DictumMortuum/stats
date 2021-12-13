@@ -16,8 +16,6 @@ import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import MenuItem from '@material-ui/core/MenuItem';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import Badge from '@material-ui/core/Badge';
 import { dateSort } from './common';
 import {
   GiSwapBag,
@@ -188,10 +186,20 @@ const generateTimelineItem = classes => boardgame => (
   </TimelineItem>
 )
 
+const getWinsNumber = data => player => {
+  if (player === "") {
+    return -1
+  }
+
+  let rs = data.map(d => d.stats[0].player).filter(d => d === player)
+  return rs.length
+}
+
 const Element = (props) => {
   const classes = useStyles();
   const [player, setPlayer] = useState("");
   const { data, players } = props;
+  let wins = getWinsNumber(data)(player)
   let f = generateTimelineItem(classes)
   let rs = data.slice().sort(dateSort).filter(d => {
     if(player === "") {
@@ -224,9 +232,8 @@ const Element = (props) => {
         </FormControl>
       </Grid>
       <Grid item md={10} xs={6}>
-        <Badge badgeContent={rs.length} max={999} color="primary">
-          <PlayArrowIcon />
-        </Badge>
+        <Chip avatar={<Avatar>{rs.length.toFixed(0)}</Avatar>} label="Games" color="primary" />
+        {wins > 0 && <Chip avatar={<Avatar>{wins.toFixed(0)}</Avatar>} label="Wins" />}
       </Grid>
       <Grid item xs={false} md={2}></Grid>
       <Grid item xs={12} md={8}>
