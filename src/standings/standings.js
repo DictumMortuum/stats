@@ -21,7 +21,7 @@ export const graph = ({ data, players, boardgame, dataKey, range }) => {
   const ratings = {}
   const plays = {}
 
-  data = data.slice(range[0], range[1])
+  data = data.filter(d => d.boardgame_data.cooperative !== true).slice(range[0], range[1])
 
   if (boardgame !== undefined) {
     data = data.filter(d => d.boardgame === boardgame)

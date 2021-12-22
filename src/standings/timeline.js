@@ -153,6 +153,10 @@ const generateStanding = (stats, winner) => (
   <Chip key={stats.id} avatar={<Avatar>{stats.data.score.toFixed(0)}</Avatar>} label={stats.player} color={winner ? "primary" : "default"} />
 )
 
+const generateCooperative = (stats) => (
+  <Chip key={stats.id} label={stats.player} color={stats.data.won ? "primary" : "default"} />
+)
+
 const generateTimelineItem = classes => boardgame => (
   <TimelineItem key={boardgame.id}>
     <TimelineOppositeContent>
@@ -169,6 +173,7 @@ const generateTimelineItem = classes => boardgame => (
       <TimelineConnector />
     </TimelineSeparator>
     <TimelineContent>
+    {boardgame.boardgame_data.cooperative !== true ?
       <Paper elevation={3} className={classes.paper}>
         <Typography variant="h6" component="h1">
           {boardgame.boardgame}
@@ -181,7 +186,21 @@ const generateTimelineItem = classes => boardgame => (
         <Typography variant="body2" component="p">
           Outcome probability: {boardgame.probability.toFixed(2)}%
         </Typography>
-      </Paper>
+      </Paper> :
+      <Paper elevation={3} className={classes.paper}>
+      <Typography variant="h6" component="h1">
+        {boardgame.boardgame}
+      </Typography>
+      <Divider />
+      <div className={classes.chips}>
+        {boardgame.stats.map((stat, i) => generateCooperative(stat))}
+      </div>
+      <Divider />
+      <Typography variant="body2" component="p">
+        Cooperative game
+      </Typography>
+    </Paper>
+    }
     </TimelineContent>
   </TimelineItem>
 )

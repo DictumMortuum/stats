@@ -15043,5 +15043,142 @@
       }
     ],
     "probability": 38.96898421709798
+  },
+  {
+    "id": 247,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2021-12-21T23:09:37+02:00",
+    "date": "2021-12-20T02:00:00+02:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 751,
+        "play_id": 247,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 752,
+        "play_id": 247,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 248,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2021-12-21T23:40:18+02:00",
+    "date": "2021-12-21T02:00:00+02:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 753,
+        "play_id": 248,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 754,
+        "play_id": 248,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 250,
+    "boardgame_id": 193738,
+    "boardgame_data": {},
+    "cr_date": "2021-12-22T23:17:42+02:00",
+    "date": "2021-12-22T02:00:00+02:00",
+    "boardgame": "Great Western Trail",
+    "stats": [
+      {
+        "id": 760,
+        "play_id": 250,
+        "player_id": 2,
+        "data": {
+          "buildings": 2,
+          "cards": 15,
+          "cities": 5,
+          "disk": 3,
+          "dollars": 5,
+          "hazards": 16,
+          "market": 0,
+          "objectives": 3,
+          "score": 93,
+          "stations": 9,
+          "tasks": 27,
+          "workers": 8
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.121491424752637,
+        "sigma": 0.7364380174745594,
+        "trueskill": 28.91217737232896
+      },
+      {
+        "id": 759,
+        "play_id": 250,
+        "player_id": 1,
+        "data": {
+          "buildings": 8,
+          "cards": 27,
+          "cities": 17,
+          "disk": 3,
+          "dollars": 2,
+          "hazards": 5,
+          "market": 2,
+          "objectives": 8,
+          "score": 76,
+          "stations": 0,
+          "tasks": 0,
+          "workers": 4
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.703987699212345,
+        "sigma": 0.7298693845827656,
+        "trueskill": 29.51437954546405
+      }
+    ],
+    "probability": 40.11692197782018
   }
 ]
