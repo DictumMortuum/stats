@@ -33,7 +33,7 @@ const mapStateToProps = (state, props) => ({
 
 const infographic = props => {
   const { data } = props;
-  const current_year = 2021;
+  const current_year = 2022;
   const previous_year = current_year - 1;
   const next_year = current_year + 1;
   const classes = useStyles();
@@ -62,7 +62,7 @@ const infographic = props => {
 
       <Grid item xs={2} />
       <Grid item xs={8}>
-        <Typography variant="body1">Mέσα στο {current_year} <b>παίξαμε συνολικά {games.length} παιχνίδια</b>, τα οποία είναι πολύ περισσότερα από αυτά που παίξαμε στο 2020, που στον αριθμό ήταν {games_previous_year.length}.</Typography>
+        <Typography variant="body1">Mέσα στο {current_year} <b>παίξαμε συνολικά {games.length} παιχνίδια</b>, ενώ το {previous_year} παίξαμε {games_previous_year.length}.</Typography>
       </Grid>
       <Grid item xs={2} />
 
@@ -70,8 +70,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Παιχνίδια ανά μήνα</Typography>
-        <Typography variant="body1">Εδώ παρουσιάζονται τα παιχνίδια που έχουμε παίξει σαν γκρουπ στα αριστερά και τα παιχνίδια που έχουμε παίξει με τη Θεώνη μόνοι μας. Πριν τον Μάρτιο δυστυχώς δεν κρατούσα στατιστικά για όλα τα παιχνίδια και για αυτό δεν εμφανίζονται στο διάγραμμα, αλλά έχω την εντύπωση ότι δεν παίζαμε και πάρα πολλά λόγω της καραντίνας.</Typography>
-        <Typography variant="body1">Φαίνεται ότι τα περισσότερα παιχνίδια έχουν παιχτεί πριν το καλοκαίρι, από τον Απρίλιο μέχρι τον Ιούλιο.</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
@@ -82,7 +80,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Παιχνίδια ανά ημέρα της βδομάδας</Typography>
-        <Typography variant="body1">Προφανώς παίζουμε την πλειοψηφία των παιχνιδιών το Σαββατοκύριακο. Μου κάνει εντύπωση όμως πως οι Παρασκευές έχουν περίπου όσα και οι Πέμπτες!</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
@@ -93,9 +90,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Παιχνίδια ανά παίχτη</Typography>
-        <Typography variant="body1">Μέσα στο 2021 <b>παίξαμε συνολικά με {perPlayer.length} διαφορετικά άτομα</b>! Στο παρακάτω γράφημα εμφανίζονται ο αριθμός των παιχνιδιών στα οποία έχει συμμετάσχει ο κάθε παίχτης.</Typography>
-        <Typography variant="body1">Για να είναι πιο όμορφη η παρουσίαση του γραφήματος, έχω αποκρύψει όλους τους παίχτες οι οποίοι έχουν αριθμό συμμετοχών λιγότερες των τριών.</Typography>
-        <Typography variant="body1">Επίσης, εξαιρώ τα παιχνίδια στα οποία έχω παίξει μόνο με τη Θεώνη, αφενώς γιατί έχουμε πάρα πολλά συγκριτικά, όπως φαίνεται στο προηγούμενο γράφημα.</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
@@ -106,7 +100,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Αριθμός διαφορετικών παιχνιδιών</Typography>
-        <Typography variant="body1">Κατά τη διάρκεια του έτους <b>είχαμε την ευκαιρία να παίξουμε {perGame.length} διαφορετικά παιχνίδια</b>. Για αυτό ευθύνεται κυρίως η Θεώνη, η οποία μου έκανε δώρο τα περισσότερα. Παρακάτω παραθέτω το top 5 των παιχνιδιών που έβγαλαν τα λεφτά τους και τα παίξαμε παραπάνω από τα υπόλοιπα.</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
@@ -117,7 +110,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Αριθμός παιχτών ανά παιχνίδι</Typography>
-        <Typography variant="body1">Εδώ φαίνονται ο αριθμός των παιχτών που έχουμε παίξει ανά παιχνίδι. Περίμενα πως τα περισσότερα παιχνίδια θα ήταν ανάμεσα σε εμένα και στη Θεώνη, αλλά το γεγονός ότι <b>έχουμε {playerCountPerGame[1].size + playerCountPerGame[2].size} παιχνίδια με 3 ή 4 παίχτες</b> (σχεδόν τα μισά!) είναι εντυπωσιακό.</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
@@ -128,8 +120,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Δημοφιλή παιχνίδια</Typography>
-        <Typography variant="body1">Στο παρακάτω γράφημα φαίνονται τα παιχνίδια τα οποία είναι τα πιο δημοφιλή, τα οποία δηλαδή έχουν παιχτεί από τους περισσότερους ανθρώπους.</Typography>
-        <Typography variant="body1">Ενδιαφέρον είναι το γεγονός πως πρώτο είναι το Quacks, το hit του φθινοπώρου, το οποίο όμως παίζεται μόνο από 4 παίχτες. Τώρα που έχουμε και το expansion θα γίνει χαμός. Το ίδιο συμβαίνει και με το Arnak, το οποίο βρίσκεται δεύτερο, παρά το γεγονός πως παίζεται μόνο από 4 παίχτες. Επίσης ενδιαφέρον είναι πως στη λίστα βρίσκεται το Orleans, άλλο ένα bag building παιχνίδι. Τέλος το Waterdeep, το Viticulture, to Architects και το Concordia μπορούν να παιχτούν από 6-7 άτομα, επομένως δεν είναι πολύ παράξενο που βρίσκονται σε αυτή τη λίστα.</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
@@ -140,7 +130,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Περισσότεροι πόντοι</Typography>
-        <Typography variant="body1">Εδώ παρουσιάζονται τα παιχνίδια στα οποία έχουμε σκοράρει τους περισσότερους πόντους!</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>
@@ -151,7 +140,6 @@ const infographic = props => {
       <Grid item xs={2} />
       <Grid item xs={8}>
         <Typography variant="h4" gutterBottom={true}>Πίστη του συστήματος στην απόδοση των παιχτών</Typography>
-        <Typography variant="body1">Το οποίο σημαίνει ότι όσο πιο μικρό είναι αυτό το σύνολο, τόσο πιο ακριβές είναι το συνολικό σας score. Συνήθως η πίστη του συστήματος βελτιώνεται όταν κάποιος παίζει πολλά παιχνίδια, και αυτό φαίνεται στα στοιχεία του παρακάτω γραφήματος.</Typography>
       </Grid>
       <Grid item xs={2} />
       <Grid item xs={12}>

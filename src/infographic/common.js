@@ -134,13 +134,15 @@ export const playsPerDay = json => {
     return day
   })
 
+  console.log(data)
+
   let rs = [];
 
   [ "Δευ", "Τρί", "Τετ", "Πέμ", "Παρ", "Σάβ", "Κυρ"].map(d => {
     rs.push({
       name: d,
-      "ζευγάρι": data[d].pair,
-      "παιχνίδια": data[d].total,
+      "ζευγάρι": data[d] ? data[d].pair : 0,
+      "παιχνίδια": data[d] ? data[d].total : 0,
     })
 
     return d
