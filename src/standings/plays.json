@@ -8329,6 +8329,240 @@
     "probability": 34.83376303185208
   },
   {
+    "id": 263,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:51:20+02:00",
+    "date": "2020-03-25T02:00:00+02:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 793,
+        "play_id": 263,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 794,
+        "play_id": 263,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 264,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:52:41+02:00",
+    "date": "2020-03-25T02:00:00+02:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 795,
+        "play_id": 264,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 796,
+        "play_id": 264,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 265,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:53:47+02:00",
+    "date": "2020-03-25T02:00:00+02:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 797,
+        "play_id": 265,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 798,
+        "play_id": 265,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 266,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:54:14+02:00",
+    "date": "2020-03-25T02:00:00+02:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 799,
+        "play_id": 266,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 800,
+        "play_id": 266,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 267,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:54:40+02:00",
+    "date": "2020-03-25T02:00:00+02:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 801,
+        "play_id": 267,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 802,
+        "play_id": 267,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 268,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:55:06+02:00",
+    "date": "2020-03-25T02:00:00+02:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 803,
+        "play_id": 268,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 804,
+        "play_id": 268,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
     "id": 30,
     "boardgame_id": 173346,
     "boardgame_data": {
@@ -8553,6 +8787,279 @@
       }
     ],
     "probability": 54.93937914293501
+  },
+  {
+    "id": 269,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:55:36+02:00",
+    "date": "2020-05-25T03:00:00+03:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 805,
+        "play_id": 269,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 806,
+        "play_id": 269,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 270,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:56:26+02:00",
+    "date": "2020-05-25T03:00:00+03:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 807,
+        "play_id": 270,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 808,
+        "play_id": 270,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 271,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:56:50+02:00",
+    "date": "2020-05-25T03:00:00+03:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 809,
+        "play_id": 271,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 810,
+        "play_id": 271,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 272,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:57:25+02:00",
+    "date": "2020-05-25T03:00:00+03:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 811,
+        "play_id": 272,
+        "player_id": 1,
+        "data": {
+          "won": false
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 812,
+        "play_id": 272,
+        "player_id": 2,
+        "data": {
+          "won": false
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 273,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:58:34+02:00",
+    "date": "2020-05-25T03:00:00+03:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 813,
+        "play_id": 273,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 814,
+        "play_id": 273,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 274,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:58:44+02:00",
+    "date": "2020-05-25T03:00:00+03:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 815,
+        "play_id": 274,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 816,
+        "play_id": 274,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 275,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-03T12:58:54+02:00",
+    "date": "2020-05-25T03:00:00+03:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 817,
+        "play_id": 275,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 818,
+        "play_id": 275,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
   },
   {
     "id": 249,
@@ -20966,5 +21473,366 @@
       }
     ],
     "probability": 8.80805765224684
+  },
+  {
+    "id": 257,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2021-12-30T21:25:46+02:00",
+    "date": "2021-12-28T02:00:00+02:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 775,
+        "play_id": 257,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 776,
+        "play_id": 257,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 777,
+        "play_id": 257,
+        "player_id": 3,
+        "data": {
+          "won": true
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 778,
+        "play_id": 257,
+        "player_id": 16,
+        "data": {
+          "won": true
+        },
+        "player": "Andreas",
+        "player_surname": "",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 258,
+    "boardgame_id": 226643,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-02T22:16:32+02:00",
+    "date": "2022-01-01T02:00:00+02:00",
+    "boardgame": "Christmas Lights",
+    "stats": [
+      {
+        "id": 779,
+        "play_id": 258,
+        "player_id": 1,
+        "data": {
+          "score": 2
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.60144241052703,
+        "sigma": 0.733556431328036,
+        "trueskill": 29.400773116542926
+      },
+      {
+        "id": 784,
+        "play_id": 258,
+        "player_id": 25,
+        "data": {
+          "score": 1
+        },
+        "player": "Maria",
+        "player_surname": "Karanikola",
+        "mu": 25.96935912680957,
+        "sigma": 4.156098281222982,
+        "trueskill": 13.501064283140625
+      },
+      {
+        "id": 783,
+        "play_id": 258,
+        "player_id": 24,
+        "data": {
+          "score": 1
+        },
+        "player": "Maria",
+        "player_surname": "Poutachidou",
+        "mu": 25.981684380754157,
+        "sigma": 4.146507555043926,
+        "trueskill": 13.542161715622377
+      },
+      {
+        "id": 782,
+        "play_id": 258,
+        "player_id": 4,
+        "data": {
+          "score": 1
+        },
+        "player": "Elena",
+        "player_surname": "Panagiotopoulou",
+        "mu": 26.098282115014356,
+        "sigma": 0.9470924293311876,
+        "trueskill": 23.257004827020797
+      },
+      {
+        "id": 781,
+        "play_id": 258,
+        "player_id": 13,
+        "data": {
+          "score": 1
+        },
+        "player": "Manolis",
+        "player_surname": "Argyriou",
+        "mu": 23.579013324510665,
+        "sigma": 1.7528844344057017,
+        "trueskill": 18.32036002129356
+      },
+      {
+        "id": 780,
+        "play_id": 258,
+        "player_id": 2,
+        "data": {
+          "score": 1
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.850120457150975,
+        "sigma": 0.7331114924352483,
+        "trueskill": 28.65078597984523
+      }
+    ],
+    "probability": 0.0013250677480469886
+  },
+  {
+    "id": 259,
+    "boardgame_id": 244521,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-02T22:19:21+02:00",
+    "date": "2022-01-01T02:00:00+02:00",
+    "boardgame": "The Quacks of Quedlinburg",
+    "stats": [
+      {
+        "id": 785,
+        "play_id": 259,
+        "player_id": 1,
+        "data": {
+          "score": 69
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.694026490571513,
+        "sigma": 0.7337535516420178,
+        "trueskill": 29.49276583564546
+      },
+      {
+        "id": 786,
+        "play_id": 259,
+        "player_id": 2,
+        "data": {
+          "score": 65
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.821263499276522,
+        "sigma": 0.7322145492686757,
+        "trueskill": 28.6246198514705
+      },
+      {
+        "id": 787,
+        "play_id": 259,
+        "player_id": 8,
+        "data": {
+          "score": 55
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 26.25518601213176,
+        "sigma": 1.0995237329454204,
+        "trueskill": 22.9566148132955
+      }
+    ],
+    "probability": 29.90629638729984
+  },
+  {
+    "id": 260,
+    "boardgame_id": 230802,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        },
+        {
+          "exclude": true,
+          "factor": 0.1,
+          "name": "rows",
+          "tiebreak": "asc",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-02T22:20:26+02:00",
+    "date": "2022-01-01T02:00:00+02:00",
+    "boardgame": "Azul",
+    "stats": [
+      {
+        "id": 788,
+        "play_id": 260,
+        "player_id": 2,
+        "data": {
+          "rows": 1,
+          "score": 120.01
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.930139249158767,
+        "sigma": 0.7321748091004386,
+        "trueskill": 28.73361482185745
+      },
+      {
+        "id": 789,
+        "play_id": 260,
+        "player_id": 1,
+        "data": {
+          "score": 62
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.644262089648173,
+        "sigma": 0.732743600519451,
+        "trueskill": 29.44603128808982
+      },
+      {
+        "id": 790,
+        "play_id": 260,
+        "player_id": 8,
+        "data": {
+          "rows": 1,
+          "score": 61.01
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 26.122381837775187,
+        "sigma": 1.090058835260841,
+        "trueskill": 22.852205331992664
+      }
+    ],
+    "probability": 24.762582452346198
+  },
+  {
+    "id": 262,
+    "boardgame_id": 312484,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "cards",
+          "type": "int"
+        },
+        {
+          "name": "fear",
+          "type": "int"
+        },
+        {
+          "name": "guardian",
+          "type": "int"
+        },
+        {
+          "name": "idols",
+          "type": "int"
+        },
+        {
+          "name": "research",
+          "tiebreak": "asc",
+          "type": "int"
+        },
+        {
+          "name": "tiles",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-02T22:22:29+02:00",
+    "date": "2022-01-02T02:00:00+02:00",
+    "boardgame": "Lost ruins of Arnak",
+    "stats": [
+      {
+        "id": 792,
+        "play_id": 262,
+        "player_id": 2,
+        "data": {
+          "cards": 33,
+          "fear": -2,
+          "guardian": 15,
+          "idols": 21,
+          "research": 33,
+          "score": 111.33,
+          "tiles": 11
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.01714540672369,
+        "sigma": 0.7330576421269954,
+        "trueskill": 28.817972480342704
+      },
+      {
+        "id": 791,
+        "play_id": 262,
+        "player_id": 1,
+        "data": {
+          "cards": 29,
+          "fear": -2,
+          "guardian": 20,
+          "idols": 18,
+          "research": 29,
+          "score": 100.29,
+          "tiles": 6
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.557122427209244,
+        "sigma": 0.7336139206749547,
+        "trueskill": 29.35628066518438
+      }
+    ],
+    "probability": 40.39729109273044
   }
 ]
