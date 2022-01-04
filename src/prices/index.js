@@ -9,7 +9,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 import { Link, Route, Switch } from "react-router-dom";
+import Badge from '@material-ui/core/Badge';
+import PriceIcon from '@material-ui/icons/LocalOffer';
+import Price from './Price';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,11 +68,13 @@ const pricesToGroups = data => {
   return rs
 }
 
+const pricesDate = data => new Date(data[0].cr_date).toLocaleDateString('el-GR');
+
 const BoardgameCard = props => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card_root}>
+    <Card key={props.id} className={classes.card_root}>
       <CardMedia
         className={classes.cover}
         image={props.thumb}
@@ -92,48 +99,31 @@ const BoardgameCard = props => {
   )
 }
 
-const BoardgamePrice = props => {
-  const classes = useStyles();
-
-  return (
-    <Card className={classes.card_root}>
-      <CardMedia
-        className={classes.cover}
-        image={props.thumb}
-      />
-      <div className={classes.card_details}>
-        <CardContent className={classes.card_content}>
-          <Typography component="h5" variant="h5">
-            {props.boardgame_name}
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            {props.store_name} - €{props.price}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small" href={props.url} >Store Page</Button>
-        </CardActions>
-      </div>
-    </Card>
-  )
-}
-
 const BoardgamePage = props => {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.root} spacing={5} alignContent="center" alignItems="center" style={{ padding: 20 }}>
+    <Grid container className={classes.root} spacing={2} alignContent="center" alignItems="center" style={{ padding: 5 }}>
       <AppBar position="static" style={{ marginBottom: 20 }}>
         <Toolbar>
-          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές επιτραπεζίων <span className={classes.color}>2022</span></Typography>
+          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές <span className={classes.color}>{pricesDate(json)}</span></Typography>
+          <Badge badgeContent={props.items.length} color="secondary" max={999}>
+            <PriceIcon />
+          </Badge>
         </Toolbar>
       </AppBar>
 
-      {props.items.sort((a, b) => a.price > b.price).map((tile) => (
-        <Grid item xs={12} >
-          <BoardgamePrice {...tile} />
+      <Grid item xs={1} />
+      <Grid item xs={10}>
+        <Grid container spacing={2}>
+          {props.items.sort((a, b) => a.price > b.price).map((tile) => (
+            <Grid key={tile.id} item xs={12} md={6} lg={4}>
+              <Price {...tile} />
+            </Grid>
+          ))}
         </Grid>
-      ))}
+      </Grid>
+      <Grid item xs={1} />
     </Grid>
   )
 }
@@ -143,15 +133,18 @@ const TopBoardgames = props => {
   const { data } = props;
 
   return (
-    <Grid container className={classes.root} spacing={5} alignContent="center" alignItems="center" style={{ padding: 20 }}>
+    <Grid container className={classes.root} spacing={2} alignContent="center" alignItems="center" style={{ padding: 5 }}>
       <AppBar position="static" style={{ marginBottom: 20 }}>
         <Toolbar>
-          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές επιτραπεζίων <span className={classes.color}>2022</span></Typography>
+          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές <span className={classes.color}>{pricesDate(json)}</span></Typography>
+          <Badge badgeContent={json.filter(d => d.stock === true).length} color="secondary" max={999}>
+            <PriceIcon />
+          </Badge>
         </Toolbar>
       </AppBar>
 
       {data.map((tile) => (
-        <Grid item xs={12} md={6} lg={6}>
+        <Grid key={tile.id} item xs={12} md={6} lg={4}>
           <BoardgameCard {...tile} />
         </Grid>
       ))}
