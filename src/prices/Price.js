@@ -26,7 +26,7 @@ const BoardgameCard = props => {
 
   return (
     <Card className={classes.root}>
-      <a href={props.url} target="_blank">
+      <a href={props.url} target="_blank" rel="noopener noreferrer">
         <CardMedia
           className={classes.media}
           image={props.store_thumb === "" ? props.thumb : props.store_thumb}
@@ -43,7 +43,7 @@ const BoardgameCard = props => {
             <ShareIcon />
           </IconButton>
         }
-        title={props.boardgame_name}
+        title={props.name}
         subheader={props.store_name + " - € " + props.price}
       />
     </Card>

@@ -9,12 +9,11 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
 import { Link, Route, Switch } from "react-router-dom";
 import Badge from '@material-ui/core/Badge';
 import PriceIcon from '@material-ui/icons/LocalOffer';
 import Price from './Price';
-
+import Toggle from './Toggle';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,10 +64,32 @@ const pricesToGroups = data => {
     return d
   })
 
-  return rs
+  return rs.filter(d => d.items.length > 0)
 }
 
-const pricesDate = data => new Date(data[0].cr_date).toLocaleDateString('el-GR');
+const stockFilter = state => d => {
+  if(state.checked) {
+    return d.stock === true
+  } else {
+    return true
+  }
+}
+
+const boardgameFilter = state => d => {
+  if(state.checked) {
+    return d.items.filter(stockFilter(state)).length > 0
+  } else {
+    return true
+  }
+}
+
+const pricesDate = data => {
+  if(data.length > 0) {
+    return new Date(data[0].cr_date).toLocaleDateString('el-GR')
+  } else {
+    return ""
+  }
+}
 
 const BoardgameCard = props => {
   const classes = useStyles();
@@ -92,7 +113,7 @@ const BoardgameCard = props => {
           <Link to={"/prices/" + props.boardgame_id}>
             <Button size="small">Prices</Button>
           </Link>
-          <Button size="small" href={"https://boardgamegeek.com/boardgame/" + props.boardgame_id} >BGG Link</Button>
+          <Button size="small" href={"https://boardgamegeek.com/boardgame/" + props.boardgame_id}>BGG Link</Button>
         </CardActions>
       </div>
     </Card>
@@ -101,13 +122,23 @@ const BoardgameCard = props => {
 
 const BoardgamePage = props => {
   const classes = useStyles();
+  const [state, setState] = React.useState({
+    checked: true
+  });
+
+  const handleChange = (event) => {
+    setState({...state, [event.target.name]: event.target.checked});
+  };
+
+  const data = props.items.filter(stockFilter(state))
 
   return (
     <Grid container className={classes.root} spacing={2} alignContent="center" alignItems="center" style={{ padding: 5 }}>
       <AppBar position="static" style={{ marginBottom: 20 }}>
         <Toolbar>
-          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές <span className={classes.color}>{pricesDate(json)}</span></Typography>
-          <Badge badgeContent={props.items.length} color="secondary" max={999}>
+          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές <span className={classes.color}>{pricesDate(data)}</span></Typography>
+          <Toggle handleChange={handleChange} checked={state.checked} />
+          <Badge badgeContent={data.length} color="secondary" max={999}>
             <PriceIcon />
           </Badge>
         </Toolbar>
@@ -116,7 +147,7 @@ const BoardgamePage = props => {
       <Grid item xs={1} />
       <Grid item xs={10}>
         <Grid container spacing={2}>
-          {props.items.sort((a, b) => a.price > b.price).map((tile) => (
+          {data.sort((a, b) => a.price > b.price).map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={4}>
               <Price {...tile} />
             </Grid>
@@ -130,20 +161,27 @@ const BoardgamePage = props => {
 
 const TopBoardgames = props => {
   const classes = useStyles();
-  const { data } = props;
+  const [state, setState] = React.useState({
+    checked: true
+  });
+
+  const handleChange = (event) => {
+    setState({...state, [event.target.name]: event.target.checked});
+  };
 
   return (
     <Grid container className={classes.root} spacing={2} alignContent="center" alignItems="center" style={{ padding: 5 }}>
       <AppBar position="static" style={{ marginBottom: 20 }}>
         <Toolbar>
-          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές <span className={classes.color}>{pricesDate(json)}</span></Typography>
-          <Badge badgeContent={json.filter(d => d.stock === true).length} color="secondary" max={999}>
+          <Typography variant="h5" style={{ flexGrow: 1}}>Τιμές <span className={classes.color}>{pricesDate(props.data)}</span></Typography>
+          <Toggle handleChange={handleChange} checked={state.checked} />
+          <Badge badgeContent={props.json.filter(stockFilter(state)).length} color="secondary" max={9999}>
             <PriceIcon />
           </Badge>
         </Toolbar>
       </AppBar>
 
-      {data.map((tile) => (
+      {props.data.filter(boardgameFilter(state)).map((tile) => (
         <Grid key={tile.id} item xs={12} md={6} lg={4}>
           <BoardgameCard {...tile} />
         </Grid>
@@ -153,12 +191,14 @@ const TopBoardgames = props => {
 }
 
 export default () => {
-  const data = pricesToGroups(json.filter(d => d.stock === true))
+  const data = json.filter(d => d.levenshtein < 10).filter(d => d.levenshtein < d.boardgame_name.length/2.5).filter(d => d.hamming < 4 || d.levenshtein < 2)
+
+  const grouped = pricesToGroups(data)
 
   return (
     <Switch>
-      <Route key={0} path="/prices" exact component={() => <TopBoardgames data={data} />} />
-      {data.map((tile => (
+      <Route key={0} path="/prices" exact component={() => <TopBoardgames data={grouped} json={data} />} />
+      {grouped.map((tile => (
         <Route key={tile.id} path={"/prices/" + tile.boardgame_id} exact component={() => <BoardgamePage {...tile} />} />
       )))}
     </Switch>
