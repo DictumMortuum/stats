@@ -1,10 +1,14 @@
 import React from 'react';
+import { useDispatch, useSelector } from "react-redux";
 import Switch from '@material-ui/core/Switch';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 
-export default props => {
+export default () => {
+  const toggle = useSelector(state => state.pricesReducer.instock)
+  const dispatch = useDispatch();
+
   return (
     <FormControl style={{marginRight: 20}} component="fieldset">
       <FormGroup aria-label="position" row>
@@ -12,14 +16,14 @@ export default props => {
           value="top"
           control={
             <Switch
-              checked={props.checked}
-              onChange={props.handleChange}
-              color="default"
+              checked={toggle}
+              onChange={() => dispatch({ type: "TOGGLE_STOCK" })}
+              color="primary"
               name="checked"
             />
           }
-          label="in stock?"
-          labelPlacement="start"
+          label={toggle ? "show only items in stock" : "include out-of-stock items"}
+          labelPlacement="bottom"
         />
       </FormGroup>
     </FormControl>

@@ -14,6 +14,7 @@ import { reducer as kemetReducer } from './reducers/kemet';
 import { reducer as duelReducer } from './reducers/duel';
 import { reducer as standingsReducer } from './reducers/standings';
 import { reducer as configReducer } from './reducers/config';
+import { reducer as pricesReducer } from './reducers/prices';
 import Infographic2021 from './infographic/year2021';
 import Infographic2022 from './infographic/year2022';
 import Prices from './prices';
@@ -25,6 +26,7 @@ const store = createStore(combineReducers({
   duelReducer,
   standingsReducer,
   configReducer,
+  pricesReducer,
 }));
 
 store.dispatch({

@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const BoardgameCard = props => {
+export default props => {
   const classes = useStyles();
 
   return (
@@ -49,5 +49,3 @@ const BoardgameCard = props => {
     </Card>
   )
 }
-
-export default BoardgameCard;

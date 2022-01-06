@@ -1,4 +1,5 @@
 import React from 'react';
+import { useDispatch, useSelector } from "react-redux";
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
@@ -12,9 +13,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default props => {
+export default () => {
   const classes = useStyles();
-  const stores = [...new Set(props.data.map(d => d.store_name))]
+  const {store, stores} = useSelector(state => state.pricesReducer)
+  const dispatch = useDispatch();
 
   return (
     <FormControl variant="outlined" className={classes.formControl}>
@@ -22,8 +24,10 @@ export default props => {
       <Select
         labelId="store-select-label"
         id="store-select"
-        value={props.state}
-        onChange={props.handleChange}
+        value={store}
+        onChange={(event) => {
+          dispatch({type: "SET_STORE", store: event.target.value})
+        }}
       >
         <MenuItem key={-1} value="">None</MenuItem>
         {stores.map(d => <MenuItem key={d} value={d}>{d}</MenuItem>)}
