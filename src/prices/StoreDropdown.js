@@ -26,7 +26,10 @@ export default () => {
         id="store-select"
         value={store}
         onChange={(event) => {
-          dispatch({type: "SET_STORE", store: event.target.value})
+          dispatch({
+            type: "SET_STORE",
+            store: event.target.value
+          })
         }}
       >
         <MenuItem key={-1} value="">None</MenuItem>

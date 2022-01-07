@@ -2,24 +2,7 @@ import json from '../prices/prices.json';
 
 export const TOGGLE_STOCK = 'TOGGLE_STOCK';
 export const SET_STORE = 'SET_STORE';
-
-const pricesToGroups = data => {
-  const rs = [];
-
-  data.map(d => {
-    if (rs[d.rank-1] === undefined) {
-      rs[d.rank-1] = {
-        ...d,
-        items: []
-      }
-    }
-
-    rs[d.rank-1].items.push(d)
-    return d
-  })
-
-  return rs.filter(d => d.items.length > 0)
-}
+export const ADD_TO_CART = 'ADD_TO_CART';
 
 const stockFilter = toggle => d => {
   if(toggle) {
@@ -29,19 +12,12 @@ const stockFilter = toggle => d => {
   }
 }
 
-const calculateNewData = (instock, store, boardgame_id) => {
-  const data = json
+const calculateNewData = col => (instock, store) => col
   .filter(stockFilter(instock))
   .filter(d => d.store_name === store || store === "")
   .filter(d => d.levenshtein < 10)
   .filter(d => d.levenshtein < d.boardgame_name.length/2.5)
   .filter(d => d.hamming < 4 || d.levenshtein < 2)
-
-  return {
-    data,
-    grouped: pricesToGroups(data)
-  }
-}
 
 const extractBoardgames = () => {
   const hm = {};
@@ -63,9 +39,11 @@ const extractBoardgames = () => {
 const init = {
   instock: true,
   store: "",
+  cart: [],
+  cart_show: [],
   stores: [...new Set(json.map(d => d.store_name))].sort(),
   boardgames: extractBoardgames(),
-  ...calculateNewData(true, ""),
+  data: calculateNewData(json)(true, ""),
 }
 
 export const reducer = (state = init, action) => {
@@ -76,7 +54,8 @@ export const reducer = (state = init, action) => {
       return {
         ...state,
         instock,
-        ...calculateNewData(instock, state.store),
+        data: calculateNewData(json)(instock, state.store),
+        cart_show: calculateNewData(state.cart)(instock, state.store)
       };
     case SET_STORE:
       const store = action.store
@@ -84,7 +63,16 @@ export const reducer = (state = init, action) => {
       return {
         ...state,
         store,
-        ...calculateNewData(state.instock, store),
+        data: calculateNewData(json)(state.instock, store),
+        cart_show: calculateNewData(state.cart)(state.instock, store)
+      }
+    case ADD_TO_CART:
+      const cart = [...state.cart.filter(d => d.id !== action.cart.id), action.cart]
+
+      return {
+        ...state,
+        cart,
+        cart_show: calculateNewData(cart)(state.instock, state.store)
       }
     default:
       return state;

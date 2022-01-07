@@ -10,7 +10,7 @@ export default () => {
   const dispatch = useDispatch();
 
   return (
-    <FormControl style={{marginRight: 20}} component="fieldset">
+    <FormControl component="fieldset">
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"

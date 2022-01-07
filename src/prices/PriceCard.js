@@ -7,6 +7,8 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import { red } from '@material-ui/core/colors';
 import ShareIcon from '@material-ui/icons/Share';
+import { useDispatch } from "react-redux";
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,28 +25,38 @@ const useStyles = makeStyles((theme) => ({
 
 export default props => {
   const classes = useStyles();
+  const dispatch = useDispatch();
+  const { store_thumb, url, thumb, boardgame_name, name, store_name, price } = props.boardgame;
 
   return (
     <Card className={classes.root}>
-      <a href={props.url} target="_blank" rel="noopener noreferrer">
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <CardMedia
           className={classes.media}
-          image={props.store_thumb === "" ? props.thumb : props.store_thumb}
+          image={store_thumb === "" ? thumb : store_thumb}
         />
       </a>
       <CardHeader
         avatar={
           <Avatar className={classes.avatar}>
-            {props.boardgame_name[0]}
+            {boardgame_name[0]}
           </Avatar>
         }
         action={
-          <IconButton href={props.url}>
-            <ShareIcon />
-          </IconButton>
+          <div>
+            <IconButton href={url}>
+              <ShareIcon />
+            </IconButton>
+            <IconButton onClick={() => dispatch({
+              type: "ADD_TO_CART",
+              cart: props.boardgame,
+            })}>
+              <AddShoppingCartIcon />
+            </IconButton>
+          </div>
         }
-        title={props.name}
-        subheader={props.store_name + " - € " + props.price}
+        title={name}
+        subheader={store_name + " - € " + price}
       />
     </Card>
   )
