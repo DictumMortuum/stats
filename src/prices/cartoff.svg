@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="mdi-cart-off"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   sodipodi:docname="cartoff.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.4895833"
+     inkscape:cx="-48.333797"
+     inkscape:cy="27.371349"
+     inkscape:window-width="2560"
+     inkscape:window-height="1440"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="mdi-cart-off" />
+  <path
+     d="m 23.365,22.095 -21.46,-21.46 -1.27,1.27 4.39,4.39 2.21,4.66 -1.35,2.45 c -0.16,0.28 -0.25,0.61 -0.25,0.96 a 2,2 0 0 0 2,2 h 7.46 l 1.38,1.38 c -0.5,0.36 -0.84,0.95 -0.84,1.62 a 2,2 0 0 0 2,2 c 0.67,0 1.26,-0.33 1.62,-0.84 l 2.84,2.84 1.27,-1.27 m -15.31,-7.73 a 0.25,0.25 0 0 1 -0.25,-0.25 l 0.03,-0.12 0.9,-1.63 h 2.36 l 2,2 h -5.04 m 8.13,-2 c 0.75,0 1.41,-0.41 1.75,-1.03 l 3.58,-6.47 c 0.08,-0.16 0.12,-0.33 0.12,-0.5 a 1,1 0 0 0 -1,-1 H 7.175 l 9.01,9 m -8.55,5 a 2,2 0 0 0 -2,2 2,2 0 0 0 2,2 2,2 0 0 0 2,-2 2,2 0 0 0 -2,-2 z"
+     id="path2"
+     style="opacity:0.2" />
+</svg>

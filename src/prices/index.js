@@ -17,7 +17,7 @@ export default () => {
       <Route key={-2} path="/prices/cart" exact component={
         () => <CartPage />
       } />
-      <Route key={-2} path="/prices/all" exact component={
+      <Route key={-3} path="/prices/all" exact component={
         () => <PricesPage />
       } />
       {boardgames.map((tile => (

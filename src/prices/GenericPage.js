@@ -11,6 +11,8 @@ import PriceIcon from '@material-ui/icons/LocalOffer';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
+import EmptyImg from './cartoff.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,13 +23,25 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 5
   },
   content: {
-    minHeight: '100vh',
+    minHeight: '90vh',
     padding: 10
   },
   margin: {
     marginRight: 20
   }
 }));
+
+const toDate = data => data.length > 0 ? new Date(data[0].cr_date).toLocaleDateString('el-GR') : ""
+
+const Nothing = () => (
+  <Grid container alignContent="center" alignItems="center" direction="column">
+    <Grid item xs={12}>
+      <Typography variant="body1" color="inherit">
+        <img style={{ height: 300 }} alt="" src={EmptyImg} />
+      </Typography>
+    </Grid>
+  </Grid>
+)
 
 export default props => {
   const classes = useStyles();
@@ -61,10 +75,16 @@ export default props => {
             <StockToggle />
           </Grid>
           <Grid item xs={12}>
-            {component}
+            {data.length > 0 ? component : <Nothing />}
           </Grid>
         </Grid>
       </Grid>
+
+      <Toolbar>
+        <Typography variant="body1" color="inherit">
+          © 2022 Dimitris Raviolos - Last update: {toDate(data)}
+        </Typography>
+      </Toolbar>
     </Grid>
   )
 }

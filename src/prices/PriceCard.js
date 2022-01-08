@@ -12,7 +12,7 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-
+    minHeight: 350
   },
   media: {
     height: 0,
