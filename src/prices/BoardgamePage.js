@@ -6,7 +6,7 @@ import GenericPage from './GenericPage';
 
 export default props => {
   const { pathname } = useLocation();
-  const id = parseInt(pathname.split("/")[2])
+  const id = parseInt(pathname.split("/")[3])
   const { data } = props;
   const items = data.filter(d => d.boardgame_id === id)
 

@@ -21,7 +21,7 @@ export default () => {
         () => <PricesPage />
       } />
       {boardgames.map((tile => (
-        <Route key={tile.id} path={"/prices/" + tile.boardgame_id} exact component={() => <BoardgamePage data={data} />} />
+        <Route key={tile.id} path={"/prices/item/" + tile.boardgame_id} exact component={() => <BoardgamePage data={data} />} />
       )))}
     </Switch>
   )

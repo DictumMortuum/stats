@@ -3,6 +3,7 @@ import json from '../prices/prices.json';
 export const TOGGLE_STOCK = 'TOGGLE_STOCK';
 export const SET_STORE = 'SET_STORE';
 export const ADD_TO_CART = 'ADD_TO_CART';
+export const SET_PAGE = 'SET_PAGE';
 
 const stockFilter = toggle => d => {
   if(toggle) {
@@ -15,9 +16,9 @@ const stockFilter = toggle => d => {
 const calculateNewData = col => (instock, store) => col
   .filter(stockFilter(instock))
   .filter(d => d.store_name === store || store === "")
-  .filter(d => d.levenshtein < 10)
-  .filter(d => d.levenshtein < d.boardgame_name.length/2.5)
-  .filter(d => d.hamming < 4 || d.levenshtein < 2)
+  // .filter(d => d.levenshtein < 10)
+  // .filter(d => d.levenshtein < d.boardgame_name.length/2.5)
+  // .filter(d => d.hamming < 4 || d.levenshtein < 2)
 
 const extractBoardgames = () => {
   const hm = {};
@@ -44,6 +45,7 @@ const init = {
   stores: [...new Set(json.map(d => d.store_name))].sort(),
   boardgames: extractBoardgames(),
   data: calculateNewData(json)(true, ""),
+  page: 1,
 }
 
 export const reducer = (state = init, action) => {
@@ -73,6 +75,11 @@ export const reducer = (state = init, action) => {
         ...state,
         cart,
         cart_show: calculateNewData(cart)(state.instock, state.store)
+      }
+    case SET_PAGE:
+      return {
+        ...state,
+        page: action.page,
       }
     default:
       return state;

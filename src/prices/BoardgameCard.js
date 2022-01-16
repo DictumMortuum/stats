@@ -43,7 +43,7 @@ export default props => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Link to={"/prices/" + props.boardgame_id}>
+          <Link to={"/prices/item/" + props.boardgame_id}>
             <Button size="small">Prices</Button>
           </Link>
           <Button size="small" href={"https://boardgamegeek.com/boardgame/" + props.boardgame_id}>BGG Link</Button>
