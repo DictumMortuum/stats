@@ -21977,5 +21977,469 @@
       }
     ],
     "probability": 41.52861368053314
+  },
+  {
+    "id": 279,
+    "boardgame_id": 161936,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-01-18T01:00:22+02:00",
+    "date": "2022-01-14T02:00:00+02:00",
+    "boardgame": "Pandemic Legacy: Season 1",
+    "stats": [
+      {
+        "id": 825,
+        "play_id": 279,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      },
+      {
+        "id": 826,
+        "play_id": 279,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0
+      }
+    ],
+    "probability": 0
+  },
+  {
+    "id": 280,
+    "boardgame_id": 283863,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-18T01:01:02+02:00",
+    "date": "2022-01-14T02:00:00+02:00",
+    "boardgame": "The Magnificent",
+    "stats": [
+      {
+        "id": 827,
+        "play_id": 280,
+        "player_id": 1,
+        "data": {
+          "score": 170
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.58439889360267,
+        "sigma": 0.7337601939985915,
+        "trueskill": 29.383118311606896
+      },
+      {
+        "id": 829,
+        "play_id": 280,
+        "player_id": 3,
+        "data": {
+          "score": 131
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.587261668497174,
+        "sigma": 0.7144147609857162,
+        "trueskill": 26.444017385540025
+      },
+      {
+        "id": 828,
+        "play_id": 280,
+        "player_id": 2,
+        "data": {
+          "score": 116
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.003679114797944,
+        "sigma": 0.7316182457434189,
+        "trueskill": 28.80882437756769
+      },
+      {
+        "id": 830,
+        "play_id": 280,
+        "player_id": 8,
+        "data": {
+          "score": 75
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.92805122618448,
+        "sigma": 1.0773578595373894,
+        "trueskill": 22.69597764757231
+      }
+    ],
+    "probability": 5.445816469317593
+  },
+  {
+    "id": 281,
+    "boardgame_id": 296151,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "build",
+          "type": "int"
+        },
+        {
+          "name": "castle",
+          "type": "int"
+        },
+        {
+          "name": "castle_leader",
+          "type": "int"
+        },
+        {
+          "name": "deeds",
+          "type": "int"
+        },
+        {
+          "name": "dept",
+          "type": "int"
+        },
+        {
+          "name": "poverty",
+          "type": "int"
+        },
+        {
+          "name": "transcribe",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-18T01:02:05+02:00",
+    "date": "2022-01-16T02:00:00+02:00",
+    "boardgame": "Viscounts of the West Kingdom",
+    "stats": [
+      {
+        "id": 832,
+        "play_id": 281,
+        "player_id": 1,
+        "data": {
+          "build": 9,
+          "castle": 39,
+          "castle_leader": 5,
+          "deeds": 12,
+          "dept": -4,
+          "poverty": 18,
+          "score": 80,
+          "transcribe": 1
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.658667913917448,
+        "sigma": 0.7348559452681,
+        "trueskill": 29.454100078113147
+      },
+      {
+        "id": 831,
+        "play_id": 281,
+        "player_id": 2,
+        "data": {
+          "build": 9,
+          "castle": 0,
+          "castle_leader": 6,
+          "deeds": 14,
+          "dept": -6,
+          "poverty": 22,
+          "score": 73,
+          "transcribe": 28
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.92983755142185,
+        "sigma": 0.7327589866795668,
+        "trueskill": 28.73156059138315
+      }
+    ],
+    "probability": 48.9351465347742
+  },
+  {
+    "id": 282,
+    "boardgame_id": 110327,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "quests",
+          "type": "int"
+        },
+        {
+          "name": "diamonds",
+          "type": "int"
+        },
+        {
+          "name": "cubes",
+          "type": "int"
+        },
+        {
+          "name": "money",
+          "tiebreak": "asc",
+          "type": "int"
+        },
+        {
+          "name": "character",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-18T01:04:06+02:00",
+    "date": "2022-01-16T02:00:00+02:00",
+    "boardgame": "Lords of Waterdeep",
+    "stats": [
+      {
+        "id": 838,
+        "play_id": 282,
+        "player_id": 9,
+        "data": {
+          "character": 21,
+          "cubes": 2,
+          "diamonds": 4,
+          "money": 0,
+          "quests": 96,
+          "score": 123
+        },
+        "player": "Mairi",
+        "player_surname": "Papadogamvrou",
+        "mu": 28.00197176462115,
+        "sigma": 1.3078189080186406,
+        "trueskill": 24.07851504056523
+      },
+      {
+        "id": 836,
+        "play_id": 282,
+        "player_id": 2,
+        "data": {
+          "character": 12,
+          "cubes": 7,
+          "diamonds": 9,
+          "money": 3,
+          "quests": 88,
+          "score": 119.03
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.97556791960448,
+        "sigma": 0.7293985306092213,
+        "trueskill": 28.787372327776815
+      },
+      {
+        "id": 837,
+        "play_id": 282,
+        "player_id": 1,
+        "data": {
+          "character": 24,
+          "cubes": 1,
+          "diamonds": 0,
+          "money": 3,
+          "quests": 87,
+          "score": 115.03
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.607109715810306,
+        "sigma": 0.7311808952026194,
+        "trueskill": 29.41356703020245
+      },
+      {
+        "id": 833,
+        "play_id": 282,
+        "player_id": 10,
+        "data": {
+          "character": 12,
+          "cubes": 4,
+          "diamonds": 6,
+          "money": 1,
+          "quests": 84,
+          "score": 107.01
+        },
+        "player": "Takis",
+        "player_surname": "Stefos",
+        "mu": 28.226439820538985,
+        "sigma": 1.5693710329692676,
+        "trueskill": 23.518326721631183
+      },
+      {
+        "id": 834,
+        "play_id": 282,
+        "player_id": 11,
+        "data": {
+          "character": 8,
+          "cubes": 5,
+          "diamonds": 1,
+          "money": 2,
+          "quests": 58,
+          "score": 74.02
+        },
+        "player": "Evi",
+        "player_surname": "Papadogamvrou",
+        "mu": 25.344372959503207,
+        "sigma": 1.6768492737316187,
+        "trueskill": 20.313825138308353
+      },
+      {
+        "id": 835,
+        "play_id": 282,
+        "player_id": 8,
+        "data": {
+          "character": 16,
+          "cubes": 6,
+          "diamonds": 0,
+          "money": 1,
+          "quests": 51,
+          "score": 74.00999999999999
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.59702499708496,
+        "sigma": 1.061291939474608,
+        "trueskill": 22.413149178661136
+      }
+    ],
+    "probability": 0.07420117695011764
+  },
+  {
+    "id": 284,
+    "boardgame_id": 312484,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "cards",
+          "type": "int"
+        },
+        {
+          "name": "fear",
+          "type": "int"
+        },
+        {
+          "name": "guardian",
+          "type": "int"
+        },
+        {
+          "name": "idols",
+          "type": "int"
+        },
+        {
+          "name": "research",
+          "tiebreak": "asc",
+          "type": "int"
+        },
+        {
+          "name": "tiles",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-18T01:07:47+02:00",
+    "date": "2022-01-17T02:00:00+02:00",
+    "boardgame": "Lost ruins of Arnak",
+    "stats": [
+      {
+        "id": 840,
+        "play_id": 284,
+        "player_id": 2,
+        "data": {
+          "cards": 12,
+          "fear": 0,
+          "guardian": 15,
+          "idols": 22,
+          "research": 31,
+          "score": 80.31,
+          "tiles": 0
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.06108144679361,
+        "sigma": 0.7303562732175507,
+        "trueskill": 28.870012627140955
+      },
+      {
+        "id": 839,
+        "play_id": 284,
+        "player_id": 1,
+        "data": {
+          "cards": 6,
+          "fear": -3,
+          "guardian": 20,
+          "idols": 24,
+          "research": 16,
+          "score": 63.16,
+          "tiles": 0
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.521183146213495,
+        "sigma": 0.7320996256898197,
+        "trueskill": 29.32488426914404
+      }
+    ],
+    "probability": 40.931901257768885
+  },
+  {
+    "id": 285,
+    "boardgame_id": 230802,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        },
+        {
+          "exclude": true,
+          "factor": 0.1,
+          "name": "rows",
+          "tiebreak": "asc",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-01-18T01:08:59+02:00",
+    "date": "2022-01-17T02:00:00+02:00",
+    "boardgame": "Azul",
+    "stats": [
+      {
+        "id": 842,
+        "play_id": 285,
+        "player_id": 2,
+        "data": {
+          "rows": 1,
+          "score": 90.01
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.145051434882543,
+        "sigma": 0.7313242701640943,
+        "trueskill": 28.95107862439026
+      },
+      {
+        "id": 841,
+        "play_id": 285,
+        "player_id": 1,
+        "data": {
+          "rows": 2,
+          "score": 81.02
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.436816966694337,
+        "sigma": 0.7330296457927606,
+        "trueskill": 29.237728029316056
+      }
+    ],
+    "probability": 42.049103834035606
   }
 ]
