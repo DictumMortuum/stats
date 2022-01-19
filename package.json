@@ -1,6 +1,6 @@
 {
   "name": "scythe-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://stats.dictummortuum.com",
   "dependencies": {
@@ -9,6 +9,7 @@
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
+    "@reduxjs/toolkit": "^1.7.1",
     "ansi-regex": "^5.0.1",
     "braces": "^2.3.1",
     "browserslist": "^4.16.5",
@@ -35,6 +36,7 @@
     "react-scripts": "^2.0.0",
     "recharts": "^2.0.9",
     "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
     "reselect": "^4.0.0",
     "serialize-javascript": "^3.1.0",
     "sockjs": "^0.3.20",

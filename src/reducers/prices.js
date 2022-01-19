@@ -1,5 +1,3 @@
-import json from '../prices/prices.json';
-
 export const TOGGLE_STOCK = 'TOGGLE_STOCK';
 export const SET_STORE = 'SET_STORE';
 export const ADD_TO_CART = 'ADD_TO_CART';
@@ -20,7 +18,7 @@ const calculateNewData = col => (instock, store) => col
   // .filter(d => d.levenshtein < d.boardgame_name.length/2.5)
   // .filter(d => d.hamming < 4 || d.levenshtein < 2)
 
-const extractBoardgames = () => {
+const extractBoardgames = json => {
   const hm = {};
 
   json.map(d => {
@@ -37,26 +35,29 @@ const extractBoardgames = () => {
   return rs
 }
 
-const init = {
+const init = json => ({
   instock: true,
   store: "",
   cart: [],
   cart_show: [],
   stores: [...new Set(json.map(d => d.store_name))].sort(),
-  boardgames: extractBoardgames(),
+  boardgames: extractBoardgames(json),
   data: calculateNewData(json)(true, ""),
   page: 1,
-}
+  json
+})
 
-export const reducer = (state = init, action) => {
+export const reducer = (state = init([]), action) => {
   switch (action.type) {
+    case "posts/fetchPrices/fulfilled":
+      return init(action.payload)
     case TOGGLE_STOCK:
       const instock = !state.instock;
 
       return {
         ...state,
         instock,
-        data: calculateNewData(json)(instock, state.store),
+        data: calculateNewData(state.json)(instock, state.store),
         cart_show: calculateNewData(state.cart)(instock, state.store)
       };
     case SET_STORE:
@@ -65,7 +66,7 @@ export const reducer = (state = init, action) => {
       return {
         ...state,
         store,
-        data: calculateNewData(json)(state.instock, store),
+        data: calculateNewData(state.json)(state.instock, store),
         cart_show: calculateNewData(state.cart)(state.instock, store)
       }
     case ADD_TO_CART:

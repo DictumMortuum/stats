@@ -1,13 +1,23 @@
-import React from 'react';
-import { useSelector } from "react-redux";
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from './LandingPage';
 import BoardgamePage from './BoardgamePage';
 import CartPage from './CartPage';
 import PricesPage from './PricesPage';
+import { createAsyncThunk } from '@reduxjs/toolkit'
+
+const fetchPosts = createAsyncThunk('posts/fetchPrices', async () => {
+  return await fetch('https://raw.githubusercontent.com/DictumMortuum/json-api/master/prices.json').then(res => res.json())
+})
 
 export default () => {
   const {data, boardgames} = useSelector(state => state.pricesReducer)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(fetchPosts())
+  }, [])
 
   return (
     <Switch >

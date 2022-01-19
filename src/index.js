@@ -8,7 +8,7 @@ import { ScytheLinks, ScytheContent, ScytheLogo } from './scythe/Charts';
 import { KemetLinks, KemetContent, KemetLogo } from './kemet';
 import { DuelLinks, DuelContent, DuelLogo } from './duel';
 import { StandingsLinks, StandingsContent, StandingsLogo } from './standings';
-import { combineReducers, createStore } from 'redux';
+import { combineReducers, createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { reducer as kemetReducer } from './reducers/kemet';
 import { reducer as duelReducer } from './reducers/duel';
@@ -20,14 +20,20 @@ import Infographic2022 from './infographic/year2022';
 import Prices from './prices';
 import SecretSanta from './secretsanta';
 import TitlebarGridList from './Grid';
+import thunkMiddleware from 'redux-thunk'
+import { composeWithDevTools } from 'redux-devtools-extension'
 
-const store = createStore(combineReducers({
+const rootReducer = combineReducers({
   kemetReducer,
   duelReducer,
   standingsReducer,
   configReducer,
   pricesReducer,
-}));
+})
+
+const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware))
+
+const store = createStore(rootReducer, composedEnhancer)
 
 store.dispatch({
   type: "INIT"
