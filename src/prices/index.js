@@ -5,10 +5,18 @@ import LandingPage from './LandingPage';
 import BoardgamePage from './BoardgamePage';
 import CartPage from './CartPage';
 import PricesPage from './PricesPage';
+import SearchPage from './SearchPage';
 import { createAsyncThunk } from '@reduxjs/toolkit'
+import * as fflate from 'fflate';
 
 const fetchPosts = createAsyncThunk('posts/fetchPrices', async () => {
-  return await fetch('https://raw.githubusercontent.com/DictumMortuum/json-api/master/prices.json').then(res => res.json())
+  const compressed = new Uint8Array(
+    await fetch('https://raw.githubusercontent.com/DictumMortuum/json-api/master/prices.json.gz').then(res => res.arrayBuffer())
+  );
+
+  const decompressed = fflate.decompressSync(compressed);
+  const origText = fflate.strFromU8(decompressed);
+  return JSON.parse(origText);
 })
 
 export default () => {
@@ -29,6 +37,9 @@ export default () => {
       } />
       <Route key={-3} path="/prices/all" exact component={
         () => <PricesPage />
+      } />
+      <Route key={-4} path="/prices/search" exact component={
+        () => <SearchPage />
       } />
       {boardgames.map((tile => (
         <Route key={tile.id} path={"/prices/item/" + tile.boardgame_id} exact component={() => <BoardgamePage data={data} />} />

@@ -26,7 +26,7 @@ export default () => {
         <Typography variant="h5">Prices</Typography>
       </Link>
       {args.map(d => (
-        <Link key={d} className={classes.color} to={"/prices/" + d}>
+        <Link key={d} className={classes.color} to={"/prices/item/" + d}>
           <Typography variant="h5" >{d}</Typography>
         </Link>
       ))}

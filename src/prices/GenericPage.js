@@ -13,6 +13,9 @@ import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import EmptyImg from './cartoff.svg';
+import SearchInput from './SearchInput';
+import SearchIcon from '@material-ui/icons/Search';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,19 +36,17 @@ const useStyles = makeStyles((theme) => ({
 
 const toDate = data => data.length > 0 ? new Date(data[0].cr_date).toLocaleDateString('el-GR') : ""
 
-const Nothing = () => (
+const Nothing = props => (
   <Grid container alignContent="center" alignItems="center" direction="column">
     <Grid item xs={12}>
-      <Typography variant="body1" color="inherit">
-        <img style={{ height: 300 }} alt="" src={EmptyImg} />
-      </Typography>
+      {props.spinner ? <CircularProgress /> : <Typography variant="body1" color="inherit"><img style={{ height: 300 }} alt="" src={EmptyImg} /></Typography>}
     </Grid>
   </Grid>
 )
 
 export default props => {
   const classes = useStyles();
-  const { cart_show } = useSelector(state => state.pricesReducer)
+  const { data : json, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
   const { component, data } = props;
 
     return (
@@ -53,7 +54,13 @@ export default props => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Breadcrumbs className={classes.title} />
-          <Badge className={classes.margin} badgeContent={data.length} color="secondary" max={9999}>
+          <SearchInput />
+          <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={9999}>
+            <Link to={"/prices/search"} style={{ color: "white" }}>
+              <SearchIcon />
+            </Link>
+          </Badge>
+          <Badge className={classes.margin} badgeContent={json.length} color="secondary" max={9999}>
             <Link to={"/prices/all"} style={{ color: "white" }}>
               <PriceIcon />
             </Link>
@@ -75,7 +82,7 @@ export default props => {
             <StockToggle />
           </Grid>
           <Grid item xs={12}>
-            {data.length > 0 ? component : <Nothing />}
+            {data.length > 0 ? component : <Nothing spinner={spinner} />}
           </Grid>
         </Grid>
       </Grid>
