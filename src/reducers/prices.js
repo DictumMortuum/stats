@@ -1,11 +1,5 @@
 import fuse from 'fuse.js';
 
-export const TOGGLE_STOCK = 'TOGGLE_STOCK';
-export const SET_STORE = 'SET_STORE';
-export const ADD_TO_CART = 'ADD_TO_CART';
-export const SET_PAGE = 'SET_PAGE';
-export const SEARCH = 'SEARCH';
-
 const stockFilter = toggle => d => {
   if(toggle) {
     return d.stock === true
@@ -77,7 +71,7 @@ export const reducer = (state = init([]), action) => {
       }
     case "posts/fetchPrices/fulfilled":
       return init(action.payload)
-    case TOGGLE_STOCK:
+    case "TOGGLE_STOCK":
       const instock = !state.instock;
 
       return {
@@ -87,7 +81,7 @@ export const reducer = (state = init([]), action) => {
         cart_show: calculateNewData(state.cart)(instock, state.store, ""),
         search_results: state.search_term === "" ? [] : calculateNewData(state.json)(instock, state.store, state.search_term),
       };
-    case SET_STORE:
+    case "SET_STORE":
       const store = action.store
 
       return {
@@ -97,7 +91,7 @@ export const reducer = (state = init([]), action) => {
         cart_show: calculateNewData(state.cart)(state.instock, store, ""),
         search_results: state.search_term === "" ? [] : calculateNewData(state.json)(state.instock, store, state.search_term),
       }
-    case ADD_TO_CART:
+    case "ADD_TO_CART":
       const cart = [...state.cart.filter(d => d.id !== action.cart.id), action.cart]
 
       return {
@@ -105,12 +99,12 @@ export const reducer = (state = init([]), action) => {
         cart,
         cart_show: calculateNewData(cart)(state.instock, state.store, "")
       }
-    case SET_PAGE:
+    case "SET_PAGE":
       return {
         ...state,
         page: action.page,
       }
-    case SEARCH:
+    case "SEARCH":
       const search_term = action.payload;
 
       return {
