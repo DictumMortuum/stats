@@ -7,6 +7,12 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
@@ -42,7 +48,16 @@ import {
   GiPirateFlag,
   GiShipWheel,
   GiPowerLightning,
-  GiItalia
+  GiItalia,
+  GiGroundbreaker,
+  GiMarsPathfinder,
+  GiRaiseZombie,
+  GiSpikedDragonHead,
+  GiAxeSword,
+  GiIsland,
+  GiSherlockHolmes,
+  GiColtM1911,
+  GiCloakDagger
 } from 'react-icons/gi';
 import {
   FaChessBoard,
@@ -52,13 +67,13 @@ import {
   FaChessKing,
   FaChessKnight,
   FaChessBishop,
+  FaVirus
 } from 'react-icons/fa';
 import { WiTrain } from 'react-icons/wi';
-// import { TrueSkill } from 'ts-trueskill';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    padding: '6px 16px',
+    padding: '16px',
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -80,6 +95,26 @@ const useStyles = makeStyles((theme) => ({
 
 const getBoardgameIcon = boardgame => {
   switch(boardgame.boardgame) {
+    case "A War of Whispers":
+      return <GiCloakDagger />
+    case "Colt Express":
+      return <GiColtM1911 />
+    case "Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases":
+      return <GiSherlockHolmes />
+    case "Spirit Island":
+      return <GiIsland />
+    case "Heroes of Terrinoth":
+      return <GiAxeSword />
+    case "Clank!: A Deck-Building Adventure":
+      return <GiSpikedDragonHead />
+    case "Pandemic Legacy: Season 1":
+      return <FaVirus />
+    case "Dead of Winter":
+      return <GiRaiseZombie />
+    case "Smash Up":
+      return <GiGroundbreaker />
+    case "Terraforming Mars":
+      return <GiMarsPathfinder />
     case "Great Western Trail":
       return <FaHatCowboy />
     case "Azul":
@@ -149,12 +184,31 @@ const getBoardgameIcon = boardgame => {
   }
 }
 
-const generateStanding = (stats, winner) => (
-  <Chip key={stats.id} avatar={<Avatar>{stats.data.score.toFixed(0)}</Avatar>} label={stats.player} color={winner ? "primary" : "default"} />
-)
-
 const generateCooperative = (stats) => (
   <Chip key={stats.id} label={stats.player} color={stats.data.won ? "primary" : "default"} />
+)
+
+const deltaTable = stats => (
+  <TableContainer component={Paper}>
+    <Table aria-label="simple table">
+      <TableHead>
+        <TableRow>
+          <TableCell>Name</TableCell>
+          <TableCell>Score</TableCell>
+          <TableCell>Delta</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {stats.map((row) => (
+          <TableRow key={row.id}>
+            <TableCell component="th" scope="row">{row.player}</TableCell>
+            <TableCell component="th" scope="row">{row.data.score}</TableCell>
+            <TableCell component="th" scope="row">{row.delta.toFixed(2)}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  </TableContainer>
 )
 
 const generateTimelineItem = classes => boardgame => (
@@ -179,13 +233,11 @@ const generateTimelineItem = classes => boardgame => (
           {boardgame.boardgame}
         </Typography>
         <Divider />
-        <div className={classes.chips}>
-          {boardgame.stats.map((stat, i) => generateStanding(stat, i === 0))}
-        </div>
-        <Divider />
         <Typography variant="body2" component="p">
           Outcome probability: {boardgame.probability.toFixed(2)}%
         </Typography>
+        <Divider />
+        {deltaTable(boardgame.stats)}
       </Paper> :
       <Paper elevation={3} className={classes.paper}>
       <Typography variant="h6" component="h1">

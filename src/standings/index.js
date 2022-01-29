@@ -2,7 +2,6 @@ import React from 'react';
 import Divider from '@material-ui/core/Divider';
 import Links from '../Links';
 import { Route } from 'react-router-dom';
-import StandingsImg from './img.jpg';
 import StandingsLogo from './logo.png';
 import Standings from './standings';
 import Typography from '@material-ui/core/Typography';
@@ -69,4 +68,4 @@ const StandingsContent = props => {
   );
 }
 
-export {StandingsContent, StandingsLinks, StandingsImg, StandingsLogo};
+export {StandingsContent, StandingsLinks, StandingsLogo};
