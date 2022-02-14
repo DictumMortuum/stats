@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { rate, Rating } from 'ts-trueskill';
 import Slider from '@material-ui/core/Slider';
 import Typography from '@material-ui/core/Typography';
@@ -17,7 +17,7 @@ import {
   ErrorBar
 } from 'recharts';
 
-export const graph = ({ data, players, boardgame, dataKey, range }) => {
+export const graph = ({ data, players, boardgame, range }) => {
   const ratings = {}
   const plays = {}
 
@@ -73,17 +73,10 @@ export const graph = ({ data, players, boardgame, dataKey, range }) => {
 
   return {
     results,
-    dataKey,
     'total': data.length,
     'sample': data.length
   };
 };
-
-const mapStateToProps = (state, props) => ({
-  ...state.standingsReducer,
-  open: state.configReducer.open,
-  dataKey: props.dataKey
-})
 
 const dataToMarks = data => {
   let obj = data.map(({ date }) => {
@@ -104,8 +97,23 @@ const dataToMarks = data => {
   }))
 }
 
-const DateSlider = props => {
-  const { data, dispatch, range } = props
+// const extractStats = data => {
+//   const retval = [];
+//   // const rs = flatten(data.map(d => d.stats)).map(d => {
+//   //   retval[d.player_id] = {
+//   //     trueskill: d.trueskill,
+//   //     player: d.player,
+//   //     surname: d.player_surname,
+//   //   }
+//   //   return d
+//   // })
+//   console.log(retval)
+//   return retval.splice(1).sort((a, b) => a.trueskill < b.trueskill)
+// }
+
+const DateSlider = () => {
+  const { range, data } = useSelector(state => state.standingsReducer)
+  const dispatch = useDispatch()
 
   return (
     <Slider
@@ -125,82 +133,60 @@ const DateSlider = props => {
   )
 }
 
-class Element extends React.Component {
-  render() {
-    const { dataKey, results, sample } = graph(this.props)
+export default props => {
+  const data = useSelector(state => ({
+    ...state.standingsReducer,
+    open: state.configReducer.open,
+    boardgame: props.boardgame,
+  }))
 
-    const sorted = results.sort((a, b) => {
-      return b[dataKey] - a[dataKey]
-    })
+  // const newdata = extractStats(data.data)
 
-    let content = (
-      <Typography gutterBottom>
-        There are no data for the current index you have selected.
-      </Typography>
-    )
+  const { dataKey } = props;
+  const { results, sample } = graph(data)
 
-    if (sorted.length > 0) {
-      let min = parseFloat(sorted[sorted.length-1][dataKey])
-      //let max = parseFloat(sorted[0][dataKey])
-      let max = 36
+  const sorted = results.sort((a, b) => {
+    return b[dataKey] - a[dataKey]
+  })
 
-      content = (
-        <ResponsiveContainer width="95%" height={window.innerHeight - 250} >
-          <BarChart data={sorted} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
-            <XAxis type="number" domain={[dataMin => Math.floor(min < 0 ? -5 : 0), dataMax => Math.ceil(max)]} orientation="top" />
-            <YAxis type="category" dataKey="player" stroke="black" />
-            <CartesianGrid strokeDasharray="3 3" />
-            <Tooltip />
-            <ReferenceLine x={sorted[0][dataKey]} stroke="red" strokeDasharray="3 3" />
-            <Bar dataKey={dataKey} fill="#64b5f6">
-              <LabelList dataKey={dataKey} position="insideLeft" />
-              {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      )
-    }
+  console.log(sorted)
 
-    return (
-      <Grid container alignContent="center" alignItems="center" >
-        <Grid item xs={false} md={2}></Grid>
-        <Grid item xs={12} md={8}>
-          <Typography noWrap>{"Sample size: " + sample}</Typography>
-          {content}
-          <DateSlider {...this.props} />
-        </Grid>
-        <Grid item xs={false} md={2}></Grid>
-      </Grid>
+  let content = (
+    <Typography gutterBottom>
+      There are no data for the current index you have selected.
+    </Typography>
+  )
+
+  if (sorted.length > 0) {
+    let min = parseFloat(sorted[sorted.length-1][dataKey])
+    let max = 36
+
+    content = (
+      <ResponsiveContainer width="95%" height={window.innerHeight - 250} >
+        <BarChart data={sorted} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
+          <XAxis type="number" domain={[dataMin => Math.floor(min < 0 ? -5 : 0), dataMax => Math.ceil(max)]} orientation="top" />
+          <YAxis type="category" dataKey="player" stroke="black" />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Tooltip />
+          <ReferenceLine x={sorted[0][dataKey]} stroke="red" strokeDasharray="3 3" />
+          <Bar dataKey={dataKey} fill="#64b5f6">
+            <LabelList dataKey={dataKey} position="insideLeft" />
+            {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
     )
   }
+
+  return (
+    <Grid container alignContent="center" alignItems="center" >
+      <Grid item xs={false} md={2}></Grid>
+      <Grid item xs={12} md={8}>
+        <Typography noWrap>{"Sample size: " + sample}</Typography>
+        {content}
+        <DateSlider />
+      </Grid>
+      <Grid item xs={false} md={2}></Grid>
+    </Grid>
+  )
 }
-
-export default connect(mapStateToProps)(Element);
-
-// return (
-//   <div style={{position: 'relative', width: '100%', paddingBottom: '1000px'}}>
-//     <div
-//       style={{
-//         position: 'absolute',
-//         left: 0,
-//         right: 0,
-//         bottom: 0,
-//         top: 0,
-//       }}
-//     >
-//         <ResponsiveContainer height="95%">
-//           <BarChart data={results} layout="vertical" margin={{ top: 0, right: 0, left: 15, bottom: 0 }}>
-//             <XAxis type="number" orientation="top" />
-//             <YAxis type="category" dataKey="player" stroke="black" />
-//             <CartesianGrid strokeDasharray="3 3" />
-//             <Tooltip />
-//             <ReferenceLine x={results[0].mu} stroke="red" strokeDasharray="3 3" />
-//             <Bar dataKey={dataKey} fill="#64b5f6">
-//               <LabelList dataKey={dataKey} position="insideLeft" />
-//               {dataKey==="mu" ? <ErrorBar dataKey="error" width={4} strokeWidth={2} /> : <div></div>}
-//             </Bar>
-//           </BarChart>
-//         </ResponsiveContainer>
-//   </div></div>
-
-//       )

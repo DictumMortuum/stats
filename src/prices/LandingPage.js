@@ -4,7 +4,7 @@ import Pagination from '@material-ui/lab/Pagination';
 import BoardgameCard from './BoardgameCard';
 import GenericPage from './GenericPage';
 import { useDispatch, useSelector } from "react-redux";
-import { paginate } from './common';
+import { paginate } from '../common';
 
 const pricesToGroups = data => {
   const rs = [];

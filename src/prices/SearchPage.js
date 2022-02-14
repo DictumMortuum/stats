@@ -4,7 +4,7 @@ import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import { useSelector } from "react-redux";
 import Pagination from '@material-ui/lab/Pagination';
-import { paginate } from './common';
+import { paginate } from '../common';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { useDispatch } from "react-redux";

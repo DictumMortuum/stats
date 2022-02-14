@@ -2,7 +2,7 @@ import React from 'react';
 import Chartist from '../../Bar';
 import common from '../../Template';
 
-const graph = base => ({data, players, countries}) => {
+const graph = ({base, data, players, countries}) => {
   const combinations = countries.map(d => d + ' ' + base);
 
   const Filter = ({winner, country, board}) => winner !== undefined && country !== undefined && board === base;
@@ -26,4 +26,4 @@ const graph = base => ({data, players, countries}) => {
   });
 };
 
-export default base => props => (<Chartist data={graph(base)(props)} className={"ct-octave players"} />);
+export default props => (<Chartist data={graph(props)} className={"ct-octave players"} />);

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useRouteMatch } from "react-router-dom";
 import LandingPage from './LandingPage';
 import BoardgamePage from './BoardgamePage';
 import CartPage from './CartPage';
@@ -20,7 +20,8 @@ const fetchPosts = createAsyncThunk('posts/fetchPrices', async () => {
 })
 
 export default () => {
-  const {data, boardgames} = useSelector(state => state.pricesReducer)
+  const { url } = useRouteMatch();
+  const { data } = useSelector(state => state.pricesReducer)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -29,21 +30,21 @@ export default () => {
 
   return (
     <Switch >
-      <Route key={-1} path="/prices" exact component={
-        () => <LandingPage data={data} />
-      } />
-      <Route key={-2} path="/prices/cart" exact component={
-        () => <CartPage />
-      } />
-      <Route key={-3} path="/prices/all" exact component={
-        () => <PricesPage />
-      } />
-      <Route key={-4} path="/prices/search" exact component={
-        () => <SearchPage />
-      } />
-      {boardgames.map((tile => (
-        <Route key={tile.id} path={"/prices/item/" + tile.boardgame_id} exact component={() => <BoardgamePage data={data} />} />
-      )))}
+      <Route path={`${url}/`} exact>
+        <LandingPage data={data} />
+      </Route>
+      <Route path={`${url}/cart`} exact>
+        <CartPage />
+      </Route>
+      <Route path={`${url}/all`} exact>
+        <PricesPage />
+      </Route>
+      <Route path={`${url}/search`} exact>
+        <SearchPage />
+      </Route>
+      <Route path={`${url}/item/:boardgame_id`}>
+        <BoardgamePage data={data} />
+      </Route>
     </Switch>
   )
 }

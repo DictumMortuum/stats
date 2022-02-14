@@ -1,8 +1,7 @@
 import React from 'react';
-import json from './plays.json';
 import LineChart from '../infographic/components/line';
 import { Grid } from '@material-ui/core';
-
+import { useSelector } from 'react-redux';
 // const nord = ["#2E3440", "#3B4252", "#88C0D0", "#2E3440", "#3B4252", "#D8DEE9", "#A3BE8C", "#81A1C1", "#2E3440", "#D8DEE9"];
 
 const nord = ["#2e3440", "#bf616a", "#5e81ac", "#ebcb8b", "#a3be8c", "#b48ead", "#8fbcbb"]
@@ -12,7 +11,7 @@ const dateFormat = date => {
   return d.getFullYear() + "/" + (d.getMonth() + 1)
 }
 
-const transform = data => {
+const transform = (data, player) => {
   const players = [];
   const rs = {};
   const cur_date = new Date();
@@ -57,22 +56,28 @@ const transform = data => {
     })
   }
 
-  const keys = [...new Set(players)].filter(d => freq[d] > 20).map((d, i) => ({dataKey: d, color: nord[i%nord.length]}));
+  let keys;
+  if (player === "") {
+    keys = [...new Set(players)].filter(d => freq[d] > 20)
+  } else {
+    keys = [player]
+  }
 
   return {
     data: tmp,
-    keys
+    keys: keys.map((d, i) => ({dataKey: d, color: nord[i%nord.length]}))
   }
 }
 
-const TrueskillByTime = props => {
-  const {data, keys} = transform(json)
+const TrueskillByTime = () => {
+  const { data: json, player } = useSelector(state => state.standingsReducer)
+  const { data, keys } = transform(json, player)
 
   return (
     <Grid container alignContent="center" alignItems="center" >
       <Grid item xs={false} md={2}></Grid>
       <Grid item xs={12} md={8}>
-        <LineChart data={data} dataKeys={keys} domain={['dataMin', 'dataMax']} itemSorter={item => parseFloat(item.value) * -1} />
+        <LineChart data={data} dataKeys={keys} domain={[0, 30]} itemSorter={item => parseFloat(item.value) * -1} />
       </Grid>
       <Grid item xs={false} md={2}></Grid>
     </Grid>

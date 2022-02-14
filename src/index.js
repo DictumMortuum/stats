@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from './Game';
+import Game from './components/game';
 import { HashRouter, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-import { ScytheLinks, ScytheContent, ScytheLogo } from './scythe/Charts';
-import { KemetLinks, KemetContent, KemetLogo } from './kemet';
-import { DuelLinks, DuelContent, DuelLogo } from './duel';
-import { StandingsLinks, StandingsContent, StandingsLogo } from './standings';
+import ScytheContent, { links as scytheLinks, ScytheLogo } from './scythe';
+import KemetContent, { links as KemetLinks, KemetLogo } from './kemet';
+import DuelContent, { links as duelLinks, DuelLogo } from './duel';
+import StandingsContent, { links as StandingsLinks, right as StandingsRight, StandingsLogo } from './standings';
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { reducer as kemetReducer } from './reducers/kemet';
@@ -48,7 +48,7 @@ const theme = createTheme({
       main: "#bf616a",
     },
     text: {
-      primary: "#2e3440"
+      primary: "#2e3440",
     }
   },
 });
@@ -80,14 +80,38 @@ ReactDOM.render(
   <ThemeProvider theme={theme}>
     <HashRouter>
       <Provider store={store}>
-        <Route path="/" exact component={() => <TitlebarGridList tiles={tileData} />} />
-        <Route path="/scythe" component={() => <Game basename="scythe" links={ScytheLinks} content={ScytheContent} />} />
-        <Route path="/kemet" component={() => <Game basename="kemet" links={KemetLinks} content={KemetContent} />} />
-        <Route path="/duel" component={() => <Game basename="duel" links={DuelLinks} content={DuelContent} />} />
-        <Route path="/standings" component={() => <Game basename="standings" links={StandingsLinks} content={StandingsContent} open={false} />} />
-        <Route path="/2021" component={Infographic2021} />
-        <Route path="/2022" component={Infographic2022} />
-        <Prices />
+        <Route path="/" exact>
+          <TitlebarGridList tiles={tileData} />
+        </Route>
+        <Route path="/scythe">
+          <Game basename="scythe" links={scytheLinks}>
+            <ScytheContent />
+          </Game>
+        </Route>
+        <Route path="/kemet">
+          <Game basename="kemet" links={KemetLinks}>
+            <KemetContent />
+          </Game>
+        </Route>
+        <Route path="/duel">
+          <Game basename="duel" links={duelLinks}>
+            <DuelContent />
+          </Game>
+        </Route>
+        <Route path="/standings">
+          <Game basename="standings" linkObj={<StandingsLinks />} rightNav={StandingsRight}>
+            <StandingsContent />
+          </Game>
+        </Route>
+        <Route path="/2021">
+          <Infographic2021 />
+        </Route>
+        <Route path="/2022">
+          <Infographic2022 />
+        </Route>
+        <Route path="/prices">
+          <Prices />
+        </Route>
         <SecretSanta />
       </Provider>
     </HashRouter>

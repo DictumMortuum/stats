@@ -1,71 +1,68 @@
 import React from 'react';
-import Divider from '@material-ui/core/Divider';
-import Links from '../Links';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { useSelector } from "react-redux";
 import StandingsLogo from './logo.png';
-import Standings from './standings';
-import Typography from '@material-ui/core/Typography';
+import Standings from './standings2';
 import Timeline from './timeline';
 import Trueskill from './trueskill';
-const unique = col => [...new Set(col)];
+import Links from '../components/game/Links';
+import PlayerSelect from './components/PlayerSelect';
 
-const createLinksConfig = ({ standings: { data }}) => {
-  const boardgames = unique(data.map(d => d.boardgame)).sort()
-
-  return {
-    "general": [{
-        'text': 'Standings',
-        'path': '/',
-        'component': () => <Standings dataKey="trueskill" desc={<Typography variant="body1" gutterBottom>
-          For each player, the first column represents μ (mu) and the second σ (sigma), based on the <a href="https://en.wikipedia.org/wiki/TrueSkill">TrueSkill</a> algorithm. <br />
-          A player's skill is represented as a normal distribution N characterized by a mean value μ (mu, representing perceived skill) and a variance σ (sigma, representing how "unconfident" test system is in the player's μ value).
-        </Typography>}/>
-      },
-      // {
-      //   'text': 'Mu',
-      //   'path': '/mu',
-      //   'component': () => <Standings dataKey="mu" />
-      // },
-      {
-        'text': 'Trueskill by time',
-        'path': '/trueskill',
-        'component': () => <Trueskill />
-      },{
-        'text': 'Timeline',
-        'path': '/timeline',
-        'component': () => <Timeline />
-      }
-    ],
-    "games": [
-      ...boardgames.map((d, i) => ({
-        'text': d,
-        'path': '/' + i,
-        'component': () => <Standings boardgame={d} dataKey="trueskill" />
-      }))
-    ]
-  }
-}
-
-const StandingsLinks = props => {
-  const {general, games} = createLinksConfig(props)
+export default () => {
+  const { ratings, overall } = useSelector(state => state.standingsReducer)
 
   return (
-    <div>
-      <Links charts={general} title={"Standings"} key={"Wins"} open={true} />
-      <Divider />
-      <Links charts={games} title={"Games"} key={"Games"} open={false} />
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Standings dataKey="trueskill" {...overall[0]} />
+      </Route>
+      <Route exact path="/trueskill">
+        <Trueskill />
+      </Route>
+      <Route exact path="/timeline">
+        <Timeline />
+      </Route>
+      {ratings.map(d => (
+        <Route key={d.id} exact path={`/${d.id}`}>
+          <Standings dataKey="trueskill" {...d} />
+        </Route>
+      ))}
+    </Switch>
   )
 }
 
-const StandingsContent = props => {
-  const {general, games} = createLinksConfig(props)
+export const links = () => {
+  const { ratings } = useSelector(state => state.standingsReducer)
 
-  return (
-    [...general, ...games].map(({path, component}) => (
-      <Route key={path} path={path} exact component={component} />
-    ))
-  );
+  const links = [{
+    "section": "Standings",
+    "open": true,
+    "items": [{
+      'text': 'Standings',
+      'path': '/',
+    },
+    {
+      'text': 'Trueskill by time',
+      'path': '/trueskill',
+    },{
+      'text': 'Timeline',
+      'path': '/timeline',
+    }]
+  }, {
+    "section": "Games",
+    "items": [
+      ...ratings.map(d => ({
+        'text': d.name,
+        'path': '/' + d.id,
+      }))
+    ]
+  }]
+
+  return links.map(d => (
+    <Links key={d.section} title={d.section} charts={d.items} open={d.open} />
+  ))
 }
 
-export {StandingsContent, StandingsLinks, StandingsLogo};
+export const right = () => <PlayerSelect />
+
+export {StandingsLogo};

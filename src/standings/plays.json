@@ -25195,5 +25195,751 @@
       false,
       false
     ]
+  },
+  {
+    "id": 296,
+    "boardgame_id": 198994,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "health",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-12T20:19:44+02:00",
+    "date": "2022-01-30T02:00:00+02:00",
+    "boardgame": "Hero Realms",
+    "stats": [
+      {
+        "id": 873,
+        "play_id": 296,
+        "player_id": 2,
+        "data": {
+          "health": 23,
+          "score": 23
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.366513083652645,
+        "sigma": 0.7238748113504997,
+        "trueskill": 29.194888649601147,
+        "delta": 0.07194594462847093
+      },
+      {
+        "id": 872,
+        "play_id": 296,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.011240355877042,
+        "sigma": 0.7267903184761164,
+        "trueskill": 28.83086940044869,
+        "delta": -0.07989914130220299
+      }
+    ],
+    "probability": 46.42203756928392,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 297,
+    "boardgame_id": 198994,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "health",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-12T20:20:20+02:00",
+    "date": "2022-01-30T02:00:00+02:00",
+    "boardgame": "Hero Realms",
+    "stats": [
+      {
+        "id": 875,
+        "play_id": 297,
+        "player_id": 2,
+        "data": {
+          "health": 33,
+          "score": 33
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.441003925173913,
+        "sigma": 0.7251317009842165,
+        "trueskill": 29.265608822221264,
+        "delta": 0.07072017262011698
+      },
+      {
+        "id": 874,
+        "play_id": 297,
+        "player_id": 1,
+        "data": {
+          "health": 0,
+          "score": 0
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 30.936156125508983,
+        "sigma": 0.7279858934338729,
+        "trueskill": 28.752198445207366,
+        "delta": -0.07867095524132495
+      }
+    ],
+    "probability": 47.43304238188342,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 298,
+    "boardgame_id": 120677,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "town",
+          "type": "int"
+        },
+        {
+          "name": "fire_cult",
+          "type": "int"
+        },
+        {
+          "name": "water_cult",
+          "type": "int"
+        },
+        {
+          "name": "earth_cult",
+          "type": "int"
+        },
+        {
+          "name": "air_cult",
+          "type": "int"
+        },
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-12T20:25:07+02:00",
+    "date": "2022-02-05T02:00:00+02:00",
+    "boardgame": "Terra Mystica",
+    "stats": [
+      {
+        "id": 877,
+        "play_id": 298,
+        "player_id": 16,
+        "data": {
+          "air_cult": 0,
+          "coin": 1,
+          "earth_cult": 2,
+          "fire_cult": 1,
+          "score": 112,
+          "town": 12,
+          "water_cult": 0
+        },
+        "player": "Andreas",
+        "player_surname": "",
+        "mu": 28.245425705810927,
+        "sigma": 1.1862887538052411,
+        "trueskill": 24.686559444395204,
+        "delta": 0.6336147077324945
+      },
+      {
+        "id": 876,
+        "play_id": 298,
+        "player_id": 1,
+        "data": {
+          "air_cult": 2,
+          "coin": 0,
+          "earth_cult": 8,
+          "fire_cult": 8,
+          "score": 103,
+          "town": 6,
+          "water_cult": 2
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 30.95972282624101,
+        "sigma": 0.7249785669064759,
+        "trueskill": 28.784787125521586,
+        "delta": 0.03258868031421969
+      },
+      {
+        "id": 878,
+        "play_id": 298,
+        "player_id": 3,
+        "data": {
+          "air_cult": 8,
+          "coin": 0,
+          "earth_cult": 0,
+          "fire_cult": 4,
+          "score": 89,
+          "town": 18,
+          "water_cult": 8
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.53266198546643,
+        "sigma": 0.7042893901639813,
+        "trueskill": 26.419793814974483,
+        "delta": 0.02072651376956003
+      },
+      {
+        "id": 880,
+        "play_id": 298,
+        "player_id": 4,
+        "data": {
+          "air_cult": 0,
+          "coin": 1,
+          "earth_cult": 4,
+          "fire_cult": 1,
+          "score": 67,
+          "town": 0,
+          "water_cult": 4
+        },
+        "player": "Elena",
+        "player_surname": "Panagiotopoulou",
+        "mu": 26.457531204506502,
+        "sigma": 0.9236481950855794,
+        "trueskill": 23.686586619249763,
+        "delta": 0.03254430651054818
+      },
+      {
+        "id": 879,
+        "play_id": 298,
+        "player_id": 2,
+        "data": {
+          "air_cult": 4,
+          "coin": 0,
+          "earth_cult": 0,
+          "fire_cult": 0,
+          "score": 65,
+          "town": 0,
+          "water_cult": 0
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.2080158401496,
+        "sigma": 0.7230352018594657,
+        "trueskill": 29.0389102345712,
+        "delta": -0.22669858765006268
+      }
+    ],
+    "probability": 0.10605660661098142,
+    "draws": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 299,
+    "boardgame_id": 265188,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-13T17:25:00+02:00",
+    "date": "2022-02-08T02:00:00+02:00",
+    "boardgame": "Glen More II: Chronicles",
+    "stats": [
+      {
+        "id": 882,
+        "play_id": 299,
+        "player_id": 2,
+        "data": {
+          "score": 27
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.28337343596749,
+        "sigma": 0.724289041685187,
+        "trueskill": 29.11050631091193,
+        "delta": 0.07159607634072884
+      },
+      {
+        "id": 881,
+        "play_id": 299,
+        "player_id": 1,
+        "data": {
+          "score": 23
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 30.88396491328939,
+        "sigma": 0.7261914278120138,
+        "trueskill": 28.70539062985335,
+        "delta": -0.07939649566823448
+      }
+    ],
+    "probability": 46.72137899607916,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 300,
+    "boardgame_id": 282414,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "gods",
+          "type": "int"
+        },
+        {
+          "name": "noble",
+          "type": "int"
+        },
+        {
+          "name": "artisan",
+          "type": "int"
+        },
+        {
+          "name": "pyramids",
+          "type": "int"
+        },
+        {
+          "name": "nile",
+          "type": "int"
+        },
+        {
+          "name": "tokens",
+          "type": "int"
+        },
+        {
+          "name": "firstplayer",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-13T17:27:43+02:00",
+    "date": "2022-02-09T02:00:00+02:00",
+    "boardgame": "Pharaon",
+    "stats": [
+      {
+        "id": 883,
+        "play_id": 300,
+        "player_id": 1,
+        "data": {
+          "artisan": 22,
+          "firstplayer": 7,
+          "gods": 20,
+          "nile": 6,
+          "noble": 32,
+          "pyramids": 16,
+          "score": 106,
+          "tokens": 3
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 30.96640190984457,
+        "sigma": 0.7272588747552048,
+        "trueskill": 28.784625285578954,
+        "delta": 0.07923465572560318
+      },
+      {
+        "id": 884,
+        "play_id": 300,
+        "player_id": 2,
+        "data": {
+          "artisan": 8,
+          "firstplayer": 3,
+          "gods": 8,
+          "nile": 14,
+          "noble": 20,
+          "pyramids": 33,
+          "score": 86,
+          "tokens": 0
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.201362183685454,
+        "sigma": 0.725397585367665,
+        "trueskill": 29.02516942758246,
+        "delta": -0.08533688332947165
+      }
+    ],
+    "probability": 42.44426514483974,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 301,
+    "boardgame_id": 164928,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "buildings",
+          "type": "int"
+        },
+        {
+          "name": "citizen",
+          "type": "int"
+        },
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "grain",
+          "type": "int"
+        },
+        {
+          "name": "cheese",
+          "type": "int"
+        },
+        {
+          "name": "wine",
+          "type": "int"
+        },
+        {
+          "name": "brocade",
+          "type": "int"
+        },
+        {
+          "name": "wool",
+          "type": "int"
+        },
+        {
+          "name": "orders",
+          "type": "int"
+        },
+        {
+          "name": "tiles",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-13T17:28:44+02:00",
+    "date": "2022-02-11T02:00:00+02:00",
+    "boardgame": "Orléans",
+    "stats": [
+      {
+        "id": 887,
+        "play_id": 301,
+        "player_id": 1,
+        "data": {
+          "brocade": 0,
+          "buildings": 54,
+          "cheese": 6,
+          "citizen": 12,
+          "coin": 43,
+          "grain": 1,
+          "orders": 0,
+          "score": 160,
+          "tiles": 12,
+          "wine": 12,
+          "wool": 20
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.109571768391955,
+        "sigma": 0.7260953603788222,
+        "trueskill": 28.93128568725549,
+        "delta": 0.1466604016765345
+      },
+      {
+        "id": 886,
+        "play_id": 301,
+        "player_id": 2,
+        "data": {
+          "brocade": 8,
+          "buildings": 24,
+          "cheese": 0,
+          "citizen": 30,
+          "coin": 49,
+          "grain": 1,
+          "orders": 0,
+          "score": 122,
+          "tiles": 0,
+          "wine": 0,
+          "wool": 10
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.228485714981346,
+        "sigma": 0.7228940162672196,
+        "trueskill": 29.059803666179686,
+        "delta": 0.03463423859722781
+      },
+      {
+        "id": 888,
+        "play_id": 301,
+        "player_id": 3,
+        "data": {
+          "brocade": 4,
+          "buildings": 30,
+          "cheese": 0,
+          "citizen": 5,
+          "coin": 55,
+          "grain": 1,
+          "orders": 0,
+          "score": 111,
+          "tiles": 0,
+          "wine": 6,
+          "wool": 10
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.543595220876465,
+        "sigma": 0.7022879911226516,
+        "trueskill": 26.43673124750851,
+        "delta": 0.016937432534028574
+      },
+      {
+        "id": 889,
+        "play_id": 301,
+        "player_id": 16,
+        "data": {
+          "brocade": 12,
+          "buildings": 20,
+          "cheese": 0,
+          "citizen": 10,
+          "coin": 55,
+          "grain": 0,
+          "orders": 0,
+          "score": 97,
+          "tiles": 0,
+          "wine": 0,
+          "wool": 0
+        },
+        "player": "Andreas",
+        "player_surname": "",
+        "mu": 28.06346056830606,
+        "sigma": 1.1586947792352271,
+        "trueskill": 24.587376230600377,
+        "delta": -0.0991832137948272
+      },
+      {
+        "id": 885,
+        "play_id": 301,
+        "player_id": 8,
+        "data": {
+          "brocade": 4,
+          "buildings": 12,
+          "cheese": 0,
+          "citizen": 6,
+          "coin": 45,
+          "grain": 0,
+          "orders": 0,
+          "score": 77,
+          "tiles": 0,
+          "wine": 0,
+          "wool": 10
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.354011197788015,
+        "sigma": 1.0301322489575253,
+        "trueskill": 22.26361445091544,
+        "delta": -0.19366695861961958
+      }
+    ],
+    "probability": 1.7119203692559204,
+    "draws": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 302,
+    "boardgame_id": 282414,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "gods",
+          "type": "int"
+        },
+        {
+          "name": "noble",
+          "type": "int"
+        },
+        {
+          "name": "artisan",
+          "type": "int"
+        },
+        {
+          "name": "pyramids",
+          "type": "int"
+        },
+        {
+          "name": "nile",
+          "type": "int"
+        },
+        {
+          "name": "tokens",
+          "type": "int"
+        },
+        {
+          "name": "firstplayer",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-13T17:32:44+02:00",
+    "date": "2022-02-11T02:00:00+02:00",
+    "boardgame": "Pharaon",
+    "stats": [
+      {
+        "id": 890,
+        "play_id": 302,
+        "player_id": 1,
+        "data": {
+          "artisan": 19,
+          "firstplayer": 0,
+          "gods": 22,
+          "nile": 35,
+          "noble": 59,
+          "pyramids": 10,
+          "score": 145,
+          "tokens": 0
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.20487500723409,
+        "sigma": 0.7259387631908739,
+        "trueskill": 29.02705871766147,
+        "delta": 0.0957730304059794
+      },
+      {
+        "id": 892,
+        "play_id": 302,
+        "player_id": 16,
+        "data": {
+          "artisan": 7,
+          "firstplayer": 7,
+          "gods": 14,
+          "nile": 3,
+          "noble": 37,
+          "pyramids": 33,
+          "score": 116,
+          "tokens": 15
+        },
+        "player": "Andreas",
+        "player_surname": "",
+        "mu": 28.186397812860058,
+        "sigma": 1.135125916878143,
+        "trueskill": 24.78102006222563,
+        "delta": 0.193643831625252
+      },
+      {
+        "id": 893,
+        "play_id": 302,
+        "player_id": 8,
+        "data": {
+          "artisan": 19,
+          "firstplayer": 3,
+          "gods": 15,
+          "nile": 10,
+          "noble": 12,
+          "pyramids": 24,
+          "score": 107,
+          "tokens": 24
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.404076301729855,
+        "sigma": 1.0142334764794216,
+        "trueskill": 22.36137587229159,
+        "delta": 0.0977614213761484
+      },
+      {
+        "id": 891,
+        "play_id": 302,
+        "player_id": 3,
+        "data": {
+          "artisan": 18,
+          "firstplayer": 0,
+          "gods": 15,
+          "nile": 21,
+          "noble": 24,
+          "pyramids": 24,
+          "score": 106,
+          "tokens": 4
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.385353433620985,
+        "sigma": 0.7018658882437935,
+        "trueskill": 26.2797557688896,
+        "delta": -0.1569754786189108
+      }
+    ],
+    "probability": 3.918142042331283,
+    "draws": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 303,
+    "boardgame_id": 265188,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-13T17:34:44+02:00",
+    "date": "2022-02-13T02:00:00+02:00",
+    "boardgame": "Glen More II: Chronicles",
+    "stats": [
+      {
+        "id": 895,
+        "play_id": 303,
+        "player_id": 2,
+        "data": {
+          "score": 99
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.30600073275185,
+        "sigma": 0.724109004846169,
+        "trueskill": 29.133673718213345,
+        "delta": 0.0738700520336586
+      },
+      {
+        "id": 894,
+        "play_id": 303,
+        "player_id": 1,
+        "data": {
+          "score": 70
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.126714227025726,
+        "sigma": 0.7270889953309231,
+        "trueskill": 28.94544724103295,
+        "delta": -0.08161147662851675
+      }
+    ],
+    "probability": 45.230763048690434,
+    "draws": [
+      false
+    ]
   }
 ]

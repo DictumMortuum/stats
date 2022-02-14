@@ -4,7 +4,7 @@ import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import { useSelector } from "react-redux";
 import Pagination from '@material-ui/lab/Pagination';
-import { paginate } from './common';
+import { paginate } from '../common';
 
 export default props => {
   const page_size = 20
