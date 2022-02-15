@@ -5,6 +5,7 @@ import StandingsLogo from './logo.png';
 import Standings from './standings2';
 import Timeline from './timeline';
 import Trueskill from './trueskill';
+import LatestTrueskill from './latest_trueskill';
 import Links from '../components/game/Links';
 import PlayerSelect from './components/PlayerSelect';
 
@@ -21,6 +22,9 @@ export default () => {
       </Route>
       <Route exact path="/timeline">
         <Timeline />
+      </Route>
+      <Route exact path="/trueskill_latest">
+        <LatestTrueskill />
       </Route>
       {ratings.map(d => (
         <Route key={d.id} exact path={`/${d.id}`}>
@@ -40,10 +44,12 @@ export const links = () => {
     "items": [{
       'text': 'Standings',
       'path': '/',
-    },
-    {
+    },{
       'text': 'Trueskill by time',
       'path': '/trueskill',
+    },{
+      'text': 'Latest trueskill',
+      'path': '/trueskill_latest',
     },{
       'text': 'Timeline',
       'path': '/timeline',
