@@ -21,7 +21,8 @@ const transform = (data, player) => {
     d.setMonth(d.getMonth() + i - c)
     const year = d.getFullYear()
     const month = d.getMonth()+1
-    const daysInMonth = new Date(year, month, 0).getDate()
+    const date = new Date(year, month, 0)
+    const daysInMonth = date.getDate()
 
     for(let j = 0; j <= daysInMonth; j++) {
       rs[year + "/" + month + "/" + j] = {}

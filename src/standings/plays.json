@@ -25941,5 +25941,348 @@
     "draws": [
       false
     ]
+  },
+  {
+    "id": 304,
+    "boardgame_id": 244521,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-19T19:52:25+02:00",
+    "date": "2022-02-18T02:00:00+02:00",
+    "boardgame": "The Quacks of Quedlinburg",
+    "stats": [
+      {
+        "id": 897,
+        "play_id": 304,
+        "player_id": 2,
+        "data": {
+          "score": 62
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.428370988348245,
+        "sigma": 0.723682052539201,
+        "trueskill": 29.257324830730642,
+        "delta": 0.12365111251729743
+      },
+      {
+        "id": 896,
+        "play_id": 304,
+        "player_id": 1,
+        "data": {
+          "score": 51
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.136117589908448,
+        "sigma": 0.7253514826180539,
+        "trueskill": 28.960063142054288,
+        "delta": 0.014615901021336697
+      },
+      {
+        "id": 898,
+        "play_id": 304,
+        "player_id": 26,
+        "data": {
+          "score": 44
+        },
+        "player": "Giorgos",
+        "player_surname": "Kavadias",
+        "mu": 29.362341430454418,
+        "sigma": 2.430207806726377,
+        "trueskill": 22.071718010275287,
+        "delta": 0.1289779415669301
+      },
+      {
+        "id": 899,
+        "play_id": 304,
+        "player_id": 8,
+        "data": {
+          "score": 37
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.248854793382726,
+        "sigma": 1.0060120779190256,
+        "trueskill": 22.230818559625654,
+        "delta": -0.1305573126659354
+      }
+    ],
+    "probability": 7.910631880306348,
+    "draws": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 305,
+    "boardgame_id": 68448,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "battle",
+          "type": "int"
+        },
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "pyramid",
+          "type": "int"
+        },
+        {
+          "name": "blue",
+          "type": "int"
+        },
+        {
+          "name": "yellow",
+          "type": "int"
+        },
+        {
+          "name": "green",
+          "type": "int"
+        },
+        {
+          "name": "purple",
+          "type": "int"
+        },
+        {
+          "name": "leader",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-19T20:03:19+02:00",
+    "date": "2022-02-18T02:00:00+02:00",
+    "boardgame": "7 Wonders",
+    "stats": [
+      {
+        "id": 905,
+        "play_id": 305,
+        "player_id": 2,
+        "data": {
+          "battle": 4,
+          "blue": 18,
+          "coin": 4,
+          "green": 7,
+          "leader": 17,
+          "purple": 4,
+          "pyramid": 10,
+          "score": 67,
+          "yellow": 3
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.56730336514421,
+        "sigma": 0.7222582001411257,
+        "trueskill": 29.400528764720832,
+        "delta": 0.14320393399018982
+      },
+      {
+        "id": 901,
+        "play_id": 305,
+        "player_id": 3,
+        "data": {
+          "battle": 10,
+          "blue": 5,
+          "coin": 10,
+          "green": 14,
+          "leader": 10,
+          "purple": 0,
+          "pyramid": 10,
+          "score": 62,
+          "yellow": 3
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.499658480890094,
+        "sigma": 0.6995078610952321,
+        "trueskill": 26.401134897604393,
+        "delta": 0.12137912871479273
+      },
+      {
+        "id": 902,
+        "play_id": 305,
+        "player_id": 4,
+        "data": {
+          "battle": -4,
+          "blue": 17,
+          "coin": 2,
+          "green": 6,
+          "leader": 6,
+          "purple": 13,
+          "pyramid": 10,
+          "score": 58,
+          "yellow": 8
+        },
+        "player": "Elena",
+        "player_surname": "Panagiotopoulou",
+        "mu": 26.624200356020584,
+        "sigma": 0.9102791933541666,
+        "trueskill": 23.893362775958085,
+        "delta": 0.2067761567083224
+      },
+      {
+        "id": 903,
+        "play_id": 305,
+        "player_id": 16,
+        "data": {
+          "battle": 15,
+          "blue": 17,
+          "coin": 4,
+          "green": 4,
+          "leader": 6,
+          "purple": 0,
+          "pyramid": 10,
+          "score": 56,
+          "yellow": 0
+        },
+        "player": "Andreas",
+        "player_surname": "",
+        "mu": 28.168635476281644,
+        "sigma": 1.1068119627521775,
+        "trueskill": 24.84819958802511,
+        "delta": 0.06717952579948161
+      },
+      {
+        "id": 904,
+        "play_id": 305,
+        "player_id": 1,
+        "data": {
+          "battle": -1,
+          "blue": 10,
+          "coin": 0,
+          "green": 13,
+          "leader": 4,
+          "purple": 13,
+          "pyramid": 10,
+          "score": 53,
+          "yellow": 4
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 30.97837448599462,
+        "sigma": 0.7218800036519867,
+        "trueskill": 28.81273447503866,
+        "delta": -0.1473286670156284
+      },
+      {
+        "id": 900,
+        "play_id": 305,
+        "player_id": 5,
+        "data": {
+          "battle": 6,
+          "blue": 19,
+          "coin": 5,
+          "green": 0,
+          "leader": 0,
+          "purple": 18,
+          "pyramid": 3,
+          "score": 51,
+          "yellow": 0
+        },
+        "player": "Kostas",
+        "player_surname": "Aggelidis",
+        "mu": 29.372689417875886,
+        "sigma": 0.7508177726068616,
+        "trueskill": 27.1202361000553,
+        "delta": -0.20594484869396723
+      }
+    ],
+    "probability": 0.01767090823036954,
+    "draws": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 306,
+    "boardgame_id": 265188,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-02-20T19:20:19+02:00",
+    "date": "2022-02-19T02:00:00+02:00",
+    "boardgame": "Glen More II: Chronicles",
+    "stats": [
+      {
+        "id": 906,
+        "play_id": 306,
+        "player_id": 1,
+        "data": {
+          "score": 69
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.11410880739858,
+        "sigma": 0.7211289284331203,
+        "trueskill": 28.95072202209922,
+        "delta": 0.13798754706056116
+      },
+      {
+        "id": 908,
+        "play_id": 306,
+        "player_id": 2,
+        "data": {
+          "score": 46
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.57549462346055,
+        "sigma": 0.7202274629775275,
+        "trueskill": 29.414812234527965,
+        "delta": 0.014283469807132576
+      },
+      {
+        "id": 907,
+        "play_id": 306,
+        "player_id": 3,
+        "data": {
+          "score": 41
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.495074715681028,
+        "sigma": 0.6982392059898944,
+        "trueskill": 26.400357097711346,
+        "delta": -0.0007777998930471597
+      },
+      {
+        "id": 909,
+        "play_id": 306,
+        "player_id": 5,
+        "data": {
+          "score": 37
+        },
+        "player": "Kostas",
+        "player_surname": "Aggelidis",
+        "mu": 29.222428623808128,
+        "sigma": 0.7491592913296478,
+        "trueskill": 26.974950749819186,
+        "delta": -0.1452853502361151
+      }
+    ],
+    "probability": 3.936454793589339,
+    "draws": [
+      false,
+      false,
+      false
+    ]
   }
 ]

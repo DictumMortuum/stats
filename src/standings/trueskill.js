@@ -18,10 +18,10 @@ const transform = (data, player) => {
 
   for(let i = 2017; i <= cur_date.getFullYear(); i++) {
     for(let j = 1; j <= 12; j++) {
-      // let daysInMonth = new Date(i, j, 0).getDate()
-      // for(let k = 1; k <= daysInMonth; k++) {
+      const d = new Date(i, j, 0)
+      if(d <= cur_date) {
         rs[i + "/" + j] = {}
-      // }
+      }
     }
   }
 
