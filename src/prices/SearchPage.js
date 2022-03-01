@@ -41,7 +41,7 @@ export default props => {
           </Grid>
           {page_data.map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>
-              <PriceCard boardgame={tile} />
+              <PriceCard boardgame={tile} self_ref={true} />
             </Grid>
           ))}
         </Grid>

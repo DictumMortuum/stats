@@ -9,6 +9,7 @@ import { red } from '@material-ui/core/colors';
 import ShareIcon from '@material-ui/icons/Share';
 import { useDispatch } from "react-redux";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,19 +24,40 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default props => {
+const Media = props => {
+  const { store_thumb, url, thumb, boardgame_id } = props.boardgame;
+  const { self_ref } = props;
   const classes = useStyles();
-  const dispatch = useDispatch();
-  const { store_thumb, url, thumb, boardgame_name, name, store_name, price } = props.boardgame;
 
-  return (
-    <Card className={classes.root}>
+  if(self_ref) {
+    return (
+      <Link to={"/prices/item/" + boardgame_id}>
+        <CardMedia
+          className={classes.media}
+          image={store_thumb === "" ? thumb : store_thumb}
+        />
+      </Link>
+    )
+  } else {
+    return (
       <a href={url} target="_blank" rel="noopener noreferrer">
         <CardMedia
           className={classes.media}
           image={store_thumb === "" ? thumb : store_thumb}
         />
       </a>
+    )
+  }
+}
+
+export default props => {
+  const classes = useStyles();
+  const dispatch = useDispatch();
+  const { url, boardgame_name, name, store_name, price } = props.boardgame;
+
+  return (
+    <Card className={classes.root}>
+      <Media {...props} />
       <CardHeader
         avatar={
           <Avatar className={classes.avatar}>
