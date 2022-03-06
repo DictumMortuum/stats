@@ -55,7 +55,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "stats": "curl 'localhost:1234/rest/v1/play?_resource=stats' | jq  > ./src/standings/plays.json; curl 'localhost:1234/rest/v1/trueskill' > ./src/standings/ratings.json; curl 'localhost:1234/rest/v1/trueskill/overall' > ./src/standings/overall.json"
   },
   "eslintConfig": {
     "extends": "react-app"

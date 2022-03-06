@@ -26284,5 +26284,236 @@
       false,
       false
     ]
+  },
+  {
+    "id": 308,
+    "boardgame_id": 230802,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        },
+        {
+          "exclude": true,
+          "factor": 0.1,
+          "name": "rows",
+          "tiebreak": "asc",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-06T17:37:01+02:00",
+    "date": "2022-02-28T02:00:00+02:00",
+    "boardgame": "Azul",
+    "stats": [
+      {
+        "id": 911,
+        "play_id": 308,
+        "player_id": 1,
+        "data": {
+          "rows": 1,
+          "score": 88.01
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.19605054728055,
+        "sigma": 0.7222932826189077,
+        "trueskill": 29.02917069942383,
+        "delta": 0.0784486773246087
+      },
+      {
+        "id": 910,
+        "play_id": 308,
+        "player_id": 2,
+        "data": {
+          "rows": 1,
+          "score": 75.01
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.49375492416609,
+        "sigma": 0.7214112409478608,
+        "trueskill": 29.329521201322507,
+        "delta": -0.08529103320545772
+      }
+    ],
+    "probability": 42.03735169555683,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 309,
+    "boardgame_id": 265188,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-06T17:38:03+02:00",
+    "date": "2022-03-04T02:00:00+02:00",
+    "boardgame": "Glen More II: Chronicles",
+    "stats": [
+      {
+        "id": 912,
+        "play_id": 309,
+        "player_id": 2,
+        "data": {
+          "score": 57
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.599159810423046,
+        "sigma": 0.7211406738587328,
+        "trueskill": 29.435737788846847,
+        "delta": 0.10621658752434016
+      },
+      {
+        "id": 914,
+        "play_id": 309,
+        "player_id": 16,
+        "data": {
+          "score": 55
+        },
+        "player": "Andreas",
+        "player_surname": "",
+        "mu": 28.342669392841422,
+        "sigma": 1.0863826735312436,
+        "trueskill": 25.08352137224769,
+        "delta": 0.235321784222581
+      },
+      {
+        "id": 913,
+        "play_id": 309,
+        "player_id": 1,
+        "data": {
+          "score": 54
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.091546603919884,
+        "sigma": 0.7204548022035294,
+        "trueskill": 28.9301821973093,
+        "delta": -0.09898850211452981
+      },
+      {
+        "id": 915,
+        "play_id": 309,
+        "player_id": 8,
+        "data": {
+          "score": 41
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.1026789970294,
+        "sigma": 0.9976061724575979,
+        "trueskill": 22.109860479656607,
+        "delta": -0.1209580799690464
+      }
+    ],
+    "probability": 5.820051708899506,
+    "draws": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 310,
+    "boardgame_id": 244521,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-06T17:39:26+02:00",
+    "date": "2022-03-05T02:00:00+02:00",
+    "boardgame": "The Quacks of Quedlinburg",
+    "stats": [
+      {
+        "id": 916,
+        "play_id": 310,
+        "player_id": 5,
+        "data": {
+          "score": 62
+        },
+        "player": "Kostas",
+        "player_surname": "Aggelidis",
+        "mu": 29.413838986323736,
+        "sigma": 0.7466885159569774,
+        "trueskill": 27.173773438452805,
+        "delta": 0.1988226886336193
+      },
+      {
+        "id": 917,
+        "play_id": 310,
+        "player_id": 1,
+        "data": {
+          "score": 60
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.120658941151607,
+        "sigma": 0.7177710795608243,
+        "trueskill": 28.967345702469135,
+        "delta": 0.03716350515983535
+      },
+      {
+        "id": 918,
+        "play_id": 310,
+        "player_id": 4,
+        "data": {
+          "score": 50
+        },
+        "player": "Elena",
+        "player_surname": "Panagiotopoulou",
+        "mu": 26.745002752405753,
+        "sigma": 0.8986603222195759,
+        "trueskill": 24.049021785747026,
+        "delta": 0.1556590097889412
+      },
+      {
+        "id": 919,
+        "play_id": 310,
+        "player_id": 2,
+        "data": {
+          "score": 49
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.45992123066616,
+        "sigma": 0.7183434624432153,
+        "trueskill": 29.304890843336516,
+        "delta": -0.13084694551033138
+      },
+      {
+        "id": 920,
+        "play_id": 310,
+        "player_id": 16,
+        "data": {
+          "score": 47
+        },
+        "player": "Andreas",
+        "player_surname": "",
+        "mu": 28.019058554556175,
+        "sigma": 1.069426849330098,
+        "trueskill": 24.81077800656588,
+        "delta": -0.2727433656818121
+      }
+    ],
+    "probability": 0.2298043265301558,
+    "draws": [
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
