@@ -49,9 +49,11 @@ const extractBoardgames = json => {
 const init = json => ({
   instock: true,
   store: "",
+  stores: [...new Set(json.map(d => d.store_name))].sort(),
+  stock: "In stock",
+  stocks: ["In stock", "Out of stock"],
   cart: [],
   cart_show: [],
-  stores: [...new Set(json.map(d => d.store_name))].sort(),
   boardgames: extractBoardgames(json),
   data: calculateNewData(json)(true, "", ""),
   page: 1,
@@ -62,7 +64,6 @@ const init = json => ({
 })
 
 export const reducer = (state = init([]), action) => {
-  console.log(action.type)
   switch (action.type) {
     case "INIT":
       return {
@@ -71,16 +72,22 @@ export const reducer = (state = init([]), action) => {
       }
     case "posts/fetchPrices/fulfilled":
       return init(action.payload)
-    case "TOGGLE_STOCK":
-      const instock = !state.instock;
+    case "SET_STOCK":
+      const stock = action.stock;
+      let instock = false;
+
+      if(stock === "In stock") {
+        instock = true
+      }
 
       return {
         ...state,
         instock,
+        stock,
         data: calculateNewData(state.json)(instock, state.store, ""),
         cart_show: calculateNewData(state.cart)(instock, state.store, ""),
         search_results: state.search_term === "" ? [] : calculateNewData(state.json)(instock, state.store, state.search_term),
-      };
+      }
     case "SET_STORE":
       const store = action.store
 

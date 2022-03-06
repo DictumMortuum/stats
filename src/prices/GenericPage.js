@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Badge from '@material-ui/core/Badge';
-import StockToggle from './StockToggle';
+import StockDropdown from './StockDropdown';
 import StoreDropdown from './StoreDropdown';
 import Breadcrumbs from './Breadcrumbs';
 import PriceIcon from '@material-ui/icons/LocalOffer';
@@ -16,6 +16,7 @@ import EmptyImg from './cartoff.svg';
 import SearchInput from './SearchInput';
 import SearchIcon from '@material-ui/icons/Search';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,25 +74,29 @@ export default props => {
         </Toolbar>
       </AppBar>
 
-      <Grid item xs={12} className={classes.content}>
-        <Grid container spacing={2} alignContent="center" alignItems="center">
-          <Grid item md={2} xs={6}>
-            <StoreDropdown />
-          </Grid>
-          <Grid item md={10} xs={6}>
-            <StockToggle />
-          </Grid>
-          <Grid item xs={12}>
-            {data.length > 0 ? component : <Nothing spinner={spinner} />}
+      <Container maxWidth="lg">
+        <Grid item xs={12} className={classes.content}>
+          <Grid container spacing={2} alignContent="center" alignItems="center">
+            <Grid item xs={6}>
+              <StoreDropdown />
+            </Grid>
+            <Grid item xs={6}>
+              <StockDropdown />
+            </Grid>
+            <Grid item xs={12}>
+              {data.length > 0 ? component : <Nothing spinner={spinner} />}
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </Container>
 
-      <Toolbar>
-        <Typography variant="body1" color="inherit">
-          © 2022 Dimitris Raviolos - Last update: {toDate(data)}
-        </Typography>
-      </Toolbar>
+      <Grid item xs={12}>
+        <Toolbar>
+          <Typography variant="body1" color="inherit">
+            © 2022 Dimitris Raviolos - Last update: {toDate(data)}
+          </Typography>
+        </Toolbar>
+      </Grid>
     </Grid>
   )
 }

@@ -2,25 +2,22 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import CardHeader from '@material-ui/core/CardHeader';
-import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
-import { red } from '@material-ui/core/colors';
 import ShareIcon from '@material-ui/icons/Share';
 import { useDispatch } from "react-redux";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { Link } from "react-router-dom";
+import { Typography } from '@material-ui/core';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    minHeight: 350
-  },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '75%', // 16:9
   },
-  avatar: {
-    backgroundColor: red[500],
+  card_header: {
+    minHeight: 110,
   },
 }));
 
@@ -53,33 +50,33 @@ const Media = props => {
 export default props => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const { url, boardgame_name, name, store_name, price } = props.boardgame;
+  const { url, name, store_name, price } = props.boardgame;
 
   return (
-    <Card className={classes.root}>
+    <Card>
       <Media {...props} />
-      <CardHeader
-        avatar={
-          <Avatar className={classes.avatar}>
-            {boardgame_name[0]}
-          </Avatar>
-        }
-        action={
-          <div>
-            <IconButton href={url}>
-              <ShareIcon />
-            </IconButton>
-            <IconButton onClick={() => dispatch({
-              type: "ADD_TO_CART",
-              cart: props.boardgame,
-            })}>
-              <AddShoppingCartIcon />
-            </IconButton>
-          </div>
-        }
-        title={name}
-        subheader={store_name + " - € " + price}
-      />
+      <CardContent className={classes.card_header}>
+        <Typography variant="subtitle1" color="textSecondary">
+          {store_name}
+        </Typography>
+        <Typography variant="subtitle1">
+          {name}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <IconButton href={url}>
+          <ShareIcon />
+        </IconButton>
+        <IconButton onClick={() => dispatch({
+          type: "ADD_TO_CART",
+          cart: props.boardgame,
+        })}>
+          <AddShoppingCartIcon />
+        </IconButton>
+        <div style={{ marginLeft: 'auto', marginRight: 10}}>
+          {"€ " + price}
+        </div>
+      </CardActions>
     </Card>
   )
 }

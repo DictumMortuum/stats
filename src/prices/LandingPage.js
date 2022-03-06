@@ -25,7 +25,7 @@ const pricesToGroups = data => {
 }
 
 export default props => {
-  const page_size = 21
+  const page_size = 40
   const { page } = useSelector(state => state.pricesReducer)
   const dispatch = useDispatch();
   const grouped = pricesToGroups(props.data)
@@ -45,7 +45,7 @@ export default props => {
             }} />
           </Grid>
           {page_data.map((tile) => (
-            <Grid key={tile.id} item xs={12} md={6} lg={4}>
+            <Grid key={tile.id} item xs={12} md={6} lg={3}>
               <BoardgameCard {...tile} />
             </Grid>
           ))}
