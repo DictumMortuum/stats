@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   card_header: {
-    minHeight: 110,
+    minHeight: 120,
   },
   cover: {
     paddingTop: '75%', // 16:9
@@ -20,18 +20,37 @@ const useStyles = makeStyles((theme) => ({
 
 export default props => {
   const classes = useStyles();
+  const { id, boardgame_id, thumb, boardgame_name, rank, items } = props;
+  const available_prices = items.sort((a, b) => a.price > b.price)
+  const l = available_prices.length;
+
+  let lowest = undefined;
+  let highest = undefined;
+
+  if (l >= 1) {
+    lowest = available_prices[0]
+  }
+
+  if (l >= 2) {
+    if (lowest.price !== available_prices[l-1].price) {
+      highest = available_prices[l-1]
+    }
+  }
 
   return (
-    <Card key={props.id}>
-      <Link to={"/prices/item/" + props.boardgame_id}>
-        <CardMedia className={classes.cover} image={props.thumb} />
+    <Card key={id}>
+      <Link to={"/prices/item/" + boardgame_id}>
+        <CardMedia className={classes.cover} image={thumb} />
       </Link>
       <CardContent className={classes.card_header}>
         <Typography variant="subtitle1" color="textSecondary">
-          BGG Rank {props.rank}
+          BGG Rank {rank}
+        </Typography>
+        <Typography variant="subtitle1" color="textSecondary">
+          {lowest && "€" + lowest.price} {highest && "- €" + highest.price}
         </Typography>
         <Typography variant="subtitle1">
-          {props.boardgame_name}
+          {boardgame_name}
         </Typography>
       </CardContent>
       {/* <CardActions>

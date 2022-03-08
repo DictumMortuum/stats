@@ -32,7 +32,7 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination count={parseInt(search_results.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
+            <Pagination variant="outlined" shape="rounded" count={parseInt(search_results.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
           </Grid>
           <Grid item xs={12}>
             <Typography variant="body1" color="inherit">
@@ -44,6 +44,9 @@ export default props => {
               <PriceCard boardgame={tile} self_ref={true} />
             </Grid>
           ))}
+          <Grid item xs={12}>
+            <Pagination variant="outlined" shape="rounded" count={parseInt(search_results.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
+          </Grid>
         </Grid>
       }
     />

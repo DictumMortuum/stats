@@ -37,7 +37,7 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination count={parseInt(grouped.length/page_size)} page={page} onChange={(event, value) => {
+            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={(event, value) => {
               dispatch({
                 type: "SET_PAGE",
                 page: value
@@ -49,6 +49,14 @@ export default props => {
               <BoardgameCard {...tile} />
             </Grid>
           ))}
+          <Grid item xs={12}>
+            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={(event, value) => {
+              dispatch({
+                type: "SET_PAGE",
+                page: value
+              })
+            }} />
+          </Grid>
         </Grid>
       }
     />

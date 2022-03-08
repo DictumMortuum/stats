@@ -18,13 +18,16 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination count={parseInt(data.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
+            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
           </Grid>
           {page_data.sort((a, b) => a.price > b.price).map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>
               <PriceCard boardgame={tile} />
             </Grid>
           ))}
+          <Grid item xs={12}>
+            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
+          </Grid>
         </Grid>
       }
     />
