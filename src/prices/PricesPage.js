@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import { useSelector } from "react-redux";
 import Pagination from '@material-ui/lab/Pagination';
-import { paginate } from '../common';
+import { paginate, changePage, useParams } from '../common';
+import { useHistory } from 'react-router-dom';
 
 export default props => {
   const page_size = 20
-  const [page, setPage] = useState(1)
+  const history = useHistory();
+  const { page } = useParams();
   const { data } = useSelector(state => state.pricesReducer)
   const page_data = paginate(data, page_size, page)
   const stores = [...new Set(data.map(d => d.store_name))].sort()
@@ -20,7 +22,7 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
+            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={changePage("/prices/all", history)} />
           </Grid>
           {page_data.sort((a, b) => a.price > b.price).map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>
@@ -28,7 +30,7 @@ export default props => {
             </Grid>
           ))}
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={(event, value) => setPage(value)} />
+            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={changePage("/prices/all", history)} />
           </Grid>
         </Grid>
       }

@@ -1,3 +1,22 @@
+import { useLocation } from 'react-router-dom';
+
+export const useParams = () => {
+  const { search } = useLocation();
+  const params = new URLSearchParams(search)
+  const page = parseInt(params.get("page")) || 1
+  return {
+    page
+  }
+}
+
+export const changePage = (path, history) => (event, value) => {
+  if (value === 1) {
+    history.push(path)
+  } else {
+    history.push(path + "?page=" + value)
+  }
+}
+
 /*
  * Returns the distinct elements of an array.
  */

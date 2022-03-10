@@ -55,7 +55,6 @@ const init = json => ({
   cart_show: [],
   boardgames: extractBoardgames(json),
   data: calculateNewData(json)(true, "", ""),
-  page: 1,
   search_term: "",
   search_results: [],
   json,
@@ -63,6 +62,7 @@ const init = json => ({
 })
 
 export const reducer = (state = init([]), action) => {
+  console.log(action)
   switch (action.type) {
     case "INIT":
       return {
@@ -104,11 +104,6 @@ export const reducer = (state = init([]), action) => {
         ...state,
         cart,
         cart_show: calculateNewData(cart)(state.instock, state.store, "")
-      }
-    case "SET_PAGE":
-      return {
-        ...state,
-        page: action.page,
       }
     case "SEARCH":
       const search_term = action.payload;

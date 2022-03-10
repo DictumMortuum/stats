@@ -3,8 +3,8 @@ import { Grid } from '@material-ui/core';
 import Pagination from '@material-ui/lab/Pagination';
 import BoardgameCard from './BoardgameCard';
 import GenericPage from './GenericPage';
-import { useDispatch, useSelector } from "react-redux";
-import { paginate } from '../common';
+import { paginate, changePage, useParams } from '../common';
+import { useHistory } from 'react-router-dom';
 
 const pricesToGroups = data => {
   const rs = [];
@@ -26,8 +26,8 @@ const pricesToGroups = data => {
 
 export default props => {
   const page_size = 40
-  const { page } = useSelector(state => state.pricesReducer)
-  const dispatch = useDispatch();
+  const history = useHistory();
+  const { page } = useParams();
   const grouped = pricesToGroups(props.data)
   const page_data = paginate(grouped, page_size, page)
 
@@ -37,12 +37,7 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={(event, value) => {
-              dispatch({
-                type: "SET_PAGE",
-                page: value
-              })
-            }} />
+            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={changePage("/prices", history)} />
           </Grid>
           {page_data.map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>
@@ -50,12 +45,7 @@ export default props => {
             </Grid>
           ))}
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={(event, value) => {
-              dispatch({
-                type: "SET_PAGE",
-                page: value
-              })
-            }} />
+            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={changePage("/prices", history)} />
           </Grid>
         </Grid>
       }
