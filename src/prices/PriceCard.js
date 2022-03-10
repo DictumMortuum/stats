@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { Typography } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import classNames from 'classnames';
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -19,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   card_header: {
     minHeight: 110,
   },
+  out_of_stock: {
+    opacity: 0.5,
+  }
 }));
 
 const Media = props => {
@@ -50,10 +54,10 @@ const Media = props => {
 export default props => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const { url, name, store_name, price } = props.boardgame;
+  const { url, name, store_name, price, stock } = props.boardgame;
 
   return (
-    <Card>
+    <Card className={classNames({[classes.out_of_stock]: !stock})}>
       <Media {...props} />
       <CardContent className={classes.card_header}>
         <Typography variant="subtitle1" color="textSecondary">
