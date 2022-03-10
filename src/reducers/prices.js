@@ -51,7 +51,7 @@ const init = json => ({
   store: "",
   stores: [...new Set(json.map(d => d.store_name))].sort(),
   stock: "In stock",
-  stocks: ["In stock", "Out of stock"],
+  stocks: ["In stock", "In stock + Out of stock"],
   cart: [],
   cart_show: [],
   boardgames: extractBoardgames(json),
@@ -113,11 +113,12 @@ export const reducer = (state = init([]), action) => {
       }
     case "SEARCH":
       const search_term = action.payload;
+      const results = calculateNewData(state.json)(false, state.store, search_term)
 
       return {
         ...state,
         search_term,
-        search_results: search_term === "" ? [] : calculateNewData(state.json)(state.instock, state.store, search_term)
+        search_results: search_term === "" ? [] : results
       }
     default:
       return state;
