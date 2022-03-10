@@ -48,9 +48,10 @@ const Nothing = props => (
 export default props => {
   const classes = useStyles();
   const { data : json, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
-  const { component, data } = props;
+  const { component, data, stores } = props;
+  const current_stores = stores === undefined ? [...new Set(json.map(d => d.store_name))].sort() : stores;
 
-    return (
+  return (
     <Grid container className={classes.root} alignContent="center" alignItems="center">
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
@@ -78,7 +79,7 @@ export default props => {
         <Grid item xs={12} className={classes.content}>
           <Grid container spacing={2} alignContent="center" alignItems="center">
             <Grid item xs={6}>
-              <StoreDropdown />
+              <StoreDropdown stores={current_stores} />
             </Grid>
             <Grid item xs={6}>
               <StockDropdown />

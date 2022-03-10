@@ -25,10 +25,12 @@ export default props => {
   const [page, setPage] = useState(1)
   const { search_results, search_term } = useSelector(state => state.pricesReducer)
   const page_data = paginate(search_results, page_size, page)
+  const stores = [...new Set(search_results.map(d => d.store_name))].sort()
 
   return (
     <GenericPage
       data={page_data}
+      stores={stores}
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>

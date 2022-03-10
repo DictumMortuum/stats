@@ -13,9 +13,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default () => {
+export default props => {
   const classes = useStyles();
-  const {store, stores} = useSelector(state => state.pricesReducer)
+  const { stores } = props;
+  const { store } = useSelector(state => state.pricesReducer)
   const dispatch = useDispatch();
 
   return (

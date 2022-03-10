@@ -49,7 +49,6 @@ const extractBoardgames = json => {
 const init = json => ({
   instock: true,
   store: "",
-  stores: [...new Set(json.map(d => d.store_name))].sort(),
   stock: "In stock",
   stocks: ["In stock", "In stock + Out of stock"],
   cart: [],
