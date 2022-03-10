@@ -56,17 +56,17 @@ export default props => {
         <Toolbar>
           <Breadcrumbs className={classes.title} />
           <SearchInput />
-          <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={9999}>
+          <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={99999}>
             <Link to={"/prices/search"} style={{ color: "white" }}>
               <SearchIcon />
             </Link>
           </Badge>
-          <Badge className={classes.margin} badgeContent={json.length} color="secondary" max={9999}>
+          <Badge className={classes.margin} badgeContent={json.length} color="secondary" max={99999}>
             <Link to={"/prices/all"} style={{ color: "white" }}>
               <PriceIcon />
             </Link>
           </Badge>
-          <Badge badgeContent={cart_show.length} color="secondary" max={9999}>
+          <Badge badgeContent={cart_show.length} color="secondary" max={99999}>
             <Link to={"/prices/cart"} style={{ color: "white" }}>
               <ShoppingCartIcon />
             </Link>
