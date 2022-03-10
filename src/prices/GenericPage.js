@@ -94,7 +94,7 @@ export default props => {
       <Grid item xs={12}>
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            © 2022 Dimitris Raviolos - Last update: {toDate(data)}
+            © 2022 Dimitris Raviolos - v0.1.8 - Last update: {toDate(data)}
           </Typography>
         </Toolbar>
       </Grid>
