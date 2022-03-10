@@ -26515,5 +26515,237 @@
       false,
       false
     ]
+  },
+  {
+    "id": 311,
+    "boardgame_id": 229220,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "colonists",
+          "type": "int"
+        },
+        {
+          "name": "monks",
+          "type": "int"
+        },
+        {
+          "name": "harbor",
+          "type": "int"
+        },
+        {
+          "name": "tiles",
+          "type": "int"
+        },
+        {
+          "name": "happiness",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-08T15:08:51+02:00",
+    "date": "2022-03-07T02:00:00+02:00",
+    "boardgame": "Santa Maria",
+    "stats": [
+      {
+        "id": 921,
+        "play_id": 311,
+        "player_id": 1,
+        "data": {
+          "coin": 3,
+          "colonists": 26,
+          "happiness": 11,
+          "harbor": 6,
+          "monks": 8,
+          "score": 77,
+          "tiles": 23
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.200653824807098,
+        "sigma": 0.7190281467645375,
+        "trueskill": 29.043569384513486,
+        "delta": 0.07622368204435048
+      },
+      {
+        "id": 922,
+        "play_id": 311,
+        "player_id": 2,
+        "data": {
+          "coin": 3,
+          "colonists": 13,
+          "happiness": 7,
+          "harbor": 0,
+          "monks": 24,
+          "score": 64,
+          "tiles": 17
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.379800410644684,
+        "sigma": 0.7195882795097579,
+        "trueskill": 29.22103557211541,
+        "delta": -0.08385527122110403
+      }
+    ],
+    "probability": 42.83646446809707,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 312,
+    "boardgame_id": 199792,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-10T00:39:31+02:00",
+    "date": "2022-03-10T02:00:00+02:00",
+    "boardgame": "Everdell",
+    "stats": [
+      {
+        "id": 923,
+        "play_id": 312,
+        "player_id": 1,
+        "data": {
+          "score": 65
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.253332317111635,
+        "sigma": 0.7208698499607086,
+        "trueskill": 29.090722767229508,
+        "delta": 0.04715338271602221
+      },
+      {
+        "id": 924,
+        "play_id": 312,
+        "player_id": 3,
+        "data": {
+          "score": 62
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.44535853688286,
+        "sigma": 0.7004705959246206,
+        "trueskill": 26.343946749109,
+        "delta": -0.05641034860234484
+      }
+    ],
+    "probability": 62.88106300105867,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 313,
+    "boardgame_id": 229220,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "colonists",
+          "type": "int"
+        },
+        {
+          "name": "monks",
+          "type": "int"
+        },
+        {
+          "name": "harbor",
+          "type": "int"
+        },
+        {
+          "name": "tiles",
+          "type": "int"
+        },
+        {
+          "name": "happiness",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-10T00:40:24+02:00",
+    "date": "2022-03-10T02:00:00+02:00",
+    "boardgame": "Santa Maria",
+    "stats": [
+      {
+        "id": 927,
+        "play_id": 313,
+        "player_id": 1,
+        "data": {
+          "coin": 4,
+          "colonists": 21,
+          "happiness": 29,
+          "harbor": 3,
+          "monks": 6,
+          "score": 89,
+          "tiles": 26
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.350692885981264,
+        "sigma": 0.7209859649245928,
+        "trueskill": 29.187734991207485,
+        "delta": 0.09701222397797693
+      },
+      {
+        "id": 926,
+        "play_id": 313,
+        "player_id": 3,
+        "data": {
+          "coin": 3,
+          "colonists": 11,
+          "happiness": 19,
+          "harbor": 3,
+          "monks": 10,
+          "score": 68,
+          "tiles": 22
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.490628971170395,
+        "sigma": 0.6998511931132317,
+        "trueskill": 26.3910753918307,
+        "delta": 0.04712864272169881
+      },
+      {
+        "id": 925,
+        "play_id": 313,
+        "player_id": 2,
+        "data": {
+          "coin": 2,
+          "colonists": 10,
+          "happiness": 5,
+          "harbor": 3,
+          "monks": 2,
+          "score": 54,
+          "tiles": 32
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.23504085311939,
+        "sigma": 0.7191899604790128,
+        "trueskill": 29.077470971682356,
+        "delta": -0.14356460043305574
+      }
+    ],
+    "probability": 10.378039463860924,
+    "draws": [
+      false,
+      false
+    ]
   }
 ]
