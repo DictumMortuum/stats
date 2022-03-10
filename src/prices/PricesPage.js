@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
@@ -14,6 +14,10 @@ export default props => {
   const { data } = useSelector(state => state.pricesReducer)
   const page_data = paginate(data, page_size, page)
   const stores = [...new Set(data.map(d => d.store_name))].sort()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
 
   return (
     <GenericPage

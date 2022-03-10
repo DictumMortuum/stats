@@ -62,7 +62,6 @@ const init = json => ({
 })
 
 export const reducer = (state = init([]), action) => {
-  console.log(action)
   switch (action.type) {
     case "INIT":
       return {

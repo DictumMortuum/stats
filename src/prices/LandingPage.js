@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import Pagination from '@material-ui/lab/Pagination';
 import BoardgameCard from './BoardgameCard';
@@ -30,6 +30,10 @@ export default props => {
   const { page } = useParams();
   const grouped = pricesToGroups(props.data)
   const page_data = paginate(grouped, page_size, page)
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
 
   return (
     <GenericPage
