@@ -4,8 +4,12 @@ export const useParams = () => {
   const { search } = useLocation();
   const params = new URLSearchParams(search)
   const page = parseInt(params.get("page")) || 1
+  const stock = params.get("stock") || 0
+
   return {
-    page
+    page,
+    stock,
+    has_stock: params.has("stock"),
   }
 }
 

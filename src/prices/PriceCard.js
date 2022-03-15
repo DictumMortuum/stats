@@ -26,13 +26,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Media = props => {
-  const { store_thumb, url, thumb, boardgame_id } = props.boardgame;
+  const { store_thumb, url, thumb, boardgame_id, stock } = props.boardgame;
   const { self_ref } = props;
   const classes = useStyles();
+  let idx = stock ? 0 : 1;
 
   if(self_ref) {
     return (
-      <Link to={"/prices/item/" + boardgame_id}>
+      <Link to={"/prices/item/" + boardgame_id + "?stock=" + idx}>
         <CardMedia
           className={classes.media}
           image={store_thumb === "" ? thumb : store_thumb}
