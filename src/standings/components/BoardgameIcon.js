@@ -36,7 +36,9 @@ import {
   GiCloakDagger,
   GiEgyptianProfile,
   GiTriquetra,
-  GiEarthAfricaEurope
+  GiEarthAfricaEurope,
+  GiOasis,
+  GiPentacle
 } from 'react-icons/gi';
 import {
   FaChessBoard,
@@ -48,7 +50,12 @@ import {
   FaChessBishop,
   FaVirus
 } from 'react-icons/fa';
-import { WiTrain } from 'react-icons/wi';
+import {
+  SiPrometheus
+} from 'react-icons/si';
+import {
+  WiTrain
+} from 'react-icons/wi';
 import { IconContext } from "react-icons";
 
 export default props => (
@@ -61,6 +68,14 @@ const Icon = props => {
   const { boardgame } = props;
 
   switch(boardgame) {
+    case "7 Wonders":
+      return <SiPrometheus />
+    case "Santa Maria":
+      return <GiShipWheel />
+    case "Elder Sign":
+      return <GiPentacle />
+    case "Targi":
+      return <GiOasis />
     case "A War of Whispers":
       return <GiCloakDagger />
     case "Colt Express":
