@@ -26747,5 +26747,250 @@
       false,
       false
     ]
+  },
+  {
+    "id": 314,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-03-15T20:22:37+02:00",
+    "date": "2022-03-11T02:00:00+02:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 928,
+        "play_id": 314,
+        "player_id": 1,
+        "data": {
+          "won": false
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 929,
+        "play_id": 314,
+        "player_id": 3,
+        "data": {
+          "won": false
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
+  },
+  {
+    "id": 315,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-03-15T20:22:48+02:00",
+    "date": "2022-03-11T02:00:00+02:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 930,
+        "play_id": 315,
+        "player_id": 1,
+        "data": {
+          "won": false
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 931,
+        "play_id": 315,
+        "player_id": 3,
+        "data": {
+          "won": false
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
+  },
+  {
+    "id": 316,
+    "boardgame_id": 100423,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-03-15T20:23:57+02:00",
+    "date": "2022-03-11T02:00:00+02:00",
+    "boardgame": "Elder Sign",
+    "stats": [
+      {
+        "id": 932,
+        "play_id": 316,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 933,
+        "play_id": 316,
+        "player_id": 2,
+        "data": {
+          "won": true
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 934,
+        "play_id": 316,
+        "player_id": 3,
+        "data": {
+          "won": true
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 935,
+        "play_id": 316,
+        "player_id": 8,
+        "data": {
+          "won": true
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
+  },
+  {
+    "id": 317,
+    "boardgame_id": 118048,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-15T20:24:08+02:00",
+    "date": "2022-03-12T02:00:00+02:00",
+    "boardgame": "Targi",
+    "stats": [
+      {
+        "id": 937,
+        "play_id": 317,
+        "player_id": 2,
+        "data": {
+          "score": 40
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.313144116430827,
+        "sigma": 0.7204570050011707,
+        "trueskill": 29.151773101427317,
+        "delta": 0.07430212974496087
+      },
+      {
+        "id": 936,
+        "play_id": 317,
+        "player_id": 1,
+        "data": {
+          "score": 36
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.272204221692792,
+        "sigma": 0.7222147886716815,
+        "trueskill": 29.105559855677743,
+        "delta": -0.08217513552974154
+      }
+    ],
+    "probability": 44.309055693622156,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 318,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-03-15T20:24:21+02:00",
+    "date": "2022-03-13T02:00:00+02:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 938,
+        "play_id": 318,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 939,
+        "play_id": 318,
+        "player_id": 3,
+        "data": {
+          "won": true
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
   }
 ]
