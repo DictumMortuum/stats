@@ -7,7 +7,6 @@ import Badge from '@material-ui/core/Badge';
 import StockDropdown from './StockDropdown';
 import StoreDropdown from './StoreDropdown';
 import Breadcrumbs from './Breadcrumbs';
-import IconButton from '@material-ui/core/IconButton';
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
@@ -61,6 +60,7 @@ const Nothing = props => (
 // }
 
 /* eslint-disable no-script-url */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 export default props => {
   const classes = useStyles();
@@ -89,9 +89,10 @@ export default props => {
               <ShoppingCart />
             </Link>
           </Badge>
-          <IconButton style={{ color: "white" }} href="javascript:(function()%7Bvar%20raw%20%3D%20window.location.toString().split(%22%2F%22)%5B4%5D%0Avar%20id%20%3D%20parseInt(raw)%0A%0Aif%20(isNaN(id))%20%7B%0A%20%20alert(%22Could%20not%20find%20a%20boardgame%20id.%20Please%20navigate%20to%20a%20boardgame%20page.%22)%0A%7D%20else%20%7B%0A%20%20var%20url%20%3D%20%22https%3A%2F%2Fstats.dictummortuum.com%2F%23%2Fprices%2Fitem%2F%22%20%2B%20id%20%2B%20%22%3Fstock%3D1%22%0A%20%20window.open(url%2C%20'_blank')%20%0A%7D%7D)()%3B">
+          <a style={{ color: "white", marginLeft: 20 }} href="javascript:(function()%7Bvar%20raw%20%3D%20window.location.toString().split(%22%2F%22)%5B4%5D%0Avar%20id%20%3D%20parseInt(raw)%0A%0Aif%20(isNaN(id))%20%7B%0A%20%20alert(%22Could%20not%20find%20a%20boardgame%20id.%20Please%20navigate%20to%20a%20boardgame%20page.%22)%0A%7D%20else%20%7B%0A%20%20var%20url%20%3D%20%22https%3A%2F%2Fstats.dictummortuum.com%2F%23%2Fprices%2Fitem%2F%22%20%2B%20id%20%2B%20%22%3Fstock%3D1%22%0A%20%20window.open(url%2C%20'_blank')%20%0A%7D%7D)()%3B">
             <Bookmark />
-          </IconButton>
+            <span style={{ display: "none" }}>Boardgame Prices</span>
+          </a>
         </Toolbar>
       </AppBar>
 
