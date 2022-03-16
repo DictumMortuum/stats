@@ -25,6 +25,20 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const addUTM = url => {
+  let rs;
+  if(url[url.length-1] === "/") {
+    rs = url.slice(0, -1)
+  } else {
+    rs = url
+  }
+
+  rs += "?utm_source=dictummortuum"
+  rs += "&utm_medium=dictummortuum"
+  rs += "&utm_campaign=dictummortuum"
+  return rs
+}
+
 const Media = props => {
   const { store_thumb, url, thumb, boardgame_id, stock } = props.boardgame;
   const { self_ref } = props;
@@ -42,7 +56,7 @@ const Media = props => {
     )
   } else {
     return (
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <a href={addUTM(url)} target="_blank" rel="noopener noreferrer">
         <CardMedia
           className={classes.media}
           image={store_thumb === "" ? thumb : store_thumb}
