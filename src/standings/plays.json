@@ -27162,5 +27162,275 @@
       false,
       false
     ]
+  },
+  {
+    "id": 321,
+    "boardgame_id": 266192,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "birds",
+          "type": "int"
+        },
+        {
+          "name": "bonus",
+          "type": "int"
+        },
+        {
+          "name": "eggs",
+          "type": "int"
+        },
+        {
+          "name": "endofround",
+          "type": "int"
+        },
+        {
+          "name": "food",
+          "type": "int"
+        },
+        {
+          "name": "nectar",
+          "type": "int"
+        },
+        {
+          "name": "tucked",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-21T11:09:09+02:00",
+    "date": "2022-03-20T02:00:00+02:00",
+    "boardgame": "Wingspan",
+    "stats": [
+      {
+        "id": 949,
+        "play_id": 321,
+        "player_id": 3,
+        "data": {
+          "birds": 52,
+          "bonus": 12,
+          "eggs": 20,
+          "endofround": 19,
+          "food": 0,
+          "nectar": 3,
+          "score": 121,
+          "tucked": 15
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.569274214340084,
+        "sigma": 0.699554651092536,
+        "trueskill": 26.47061026106248,
+        "delta": 0.16506803427593297
+      },
+      {
+        "id": 946,
+        "play_id": 321,
+        "player_id": 16,
+        "data": {
+          "birds": 43,
+          "bonus": 7,
+          "eggs": 23,
+          "endofround": 5,
+          "food": 6,
+          "nectar": 8,
+          "score": 109,
+          "tucked": 17
+        },
+        "player": "Andreas",
+        "player_surname": "Boviatsis",
+        "mu": 28.0575656033888,
+        "sigma": 1.0254544884871892,
+        "trueskill": 24.981202137927227,
+        "delta": 0.24184795282579685
+      },
+      {
+        "id": 948,
+        "play_id": 321,
+        "player_id": 1,
+        "data": {
+          "birds": 61,
+          "bonus": 10,
+          "eggs": 10,
+          "endofround": 16,
+          "food": 0,
+          "nectar": 10,
+          "score": 107,
+          "tucked": 0
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.346577180249096,
+        "sigma": 0.7206958276511278,
+        "trueskill": 29.18448969729571,
+        "delta": -0.07866779212588426
+      },
+      {
+        "id": 947,
+        "play_id": 321,
+        "player_id": 2,
+        "data": {
+          "birds": 43,
+          "bonus": 11,
+          "eggs": 21,
+          "endofround": 9,
+          "food": 2,
+          "nectar": 1,
+          "score": 100,
+          "tucked": 13
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.136877827118635,
+        "sigma": 0.7190718787906147,
+        "trueskill": 28.97966219074679,
+        "delta": -0.17211091068052653
+      }
+    ],
+    "probability": 0.5756858293701264,
+    "draws": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 322,
+    "boardgame_id": 68448,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "battle",
+          "type": "int"
+        },
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "pyramid",
+          "type": "int"
+        },
+        {
+          "name": "blue",
+          "type": "int"
+        },
+        {
+          "name": "yellow",
+          "type": "int"
+        },
+        {
+          "name": "green",
+          "type": "int"
+        },
+        {
+          "name": "purple",
+          "type": "int"
+        },
+        {
+          "name": "leader",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-21T11:11:25+02:00",
+    "date": "2022-03-20T02:00:00+02:00",
+    "boardgame": "7 Wonders",
+    "stats": [
+      {
+        "id": 953,
+        "play_id": 322,
+        "player_id": 2,
+        "data": {
+          "battle": 13,
+          "blue": 19,
+          "coin": 4,
+          "green": 0,
+          "leader": 0,
+          "purple": 11,
+          "pyramid": 10,
+          "score": 57,
+          "yellow": 0
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.252088794091893,
+        "sigma": 0.7185537970275552,
+        "trueskill": 29.09642740300923,
+        "delta": 0.11676521226243963
+      },
+      {
+        "id": 952,
+        "play_id": 322,
+        "player_id": 16,
+        "data": {
+          "battle": 11,
+          "blue": 21,
+          "coin": 5,
+          "green": 0,
+          "leader": 0,
+          "purple": 4,
+          "pyramid": 10,
+          "score": 55,
+          "yellow": 4
+        },
+        "player": "Andreas",
+        "player_surname": "Boviatsis",
+        "mu": 28.22797969947546,
+        "sigma": 1.0091081749300241,
+        "trueskill": 25.200655174685387,
+        "delta": 0.21945303675816064
+      },
+      {
+        "id": 951,
+        "play_id": 322,
+        "player_id": 3,
+        "data": {
+          "battle": -1,
+          "blue": 0,
+          "coin": 1,
+          "green": 31,
+          "leader": 0,
+          "purple": 14,
+          "pyramid": 3,
+          "score": 48,
+          "yellow": 0
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.556307373689695,
+        "sigma": 0.6980108153562354,
+        "trueskill": 26.462274927620985,
+        "delta": -0.00833533344149373
+      },
+      {
+        "id": 950,
+        "play_id": 322,
+        "player_id": 1,
+        "data": {
+          "battle": 1,
+          "blue": 16,
+          "coin": 7,
+          "green": 10,
+          "leader": 0,
+          "purple": 0,
+          "pyramid": 10,
+          "score": 47,
+          "yellow": 3
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.159863880940676,
+        "sigma": 0.7193559939002462,
+        "trueskill": 29.001795899239937,
+        "delta": -0.18269379805577302
+      }
+    ],
+    "probability": 1.6179430754381992,
+    "draws": [
+      false,
+      false,
+      false
+    ]
   }
 ]
