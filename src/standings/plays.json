@@ -13424,6 +13424,16 @@
           "desc": "End of game bottom",
           "name": "bottom",
           "type": "int"
+        },
+        {
+          "desc": "Adornments",
+          "name": "adornments",
+          "type": "int"
+        },
+        {
+          "desc": "Tools",
+          "name": "tools",
+          "type": "int"
         }
       ]
     },
@@ -13519,6 +13529,16 @@
         {
           "desc": "End of game bottom",
           "name": "bottom",
+          "type": "int"
+        },
+        {
+          "desc": "Adornments",
+          "name": "adornments",
+          "type": "int"
+        },
+        {
+          "desc": "Tools",
+          "name": "tools",
           "type": "int"
         }
       ]
@@ -17181,6 +17201,16 @@
         {
           "desc": "End of game bottom",
           "name": "bottom",
+          "type": "int"
+        },
+        {
+          "desc": "Adornments",
+          "name": "adornments",
+          "type": "int"
+        },
+        {
+          "desc": "Tools",
+          "name": "tools",
           "type": "int"
         }
       ]
@@ -21516,6 +21546,16 @@
         {
           "desc": "End of game bottom",
           "name": "bottom",
+          "type": "int"
+        },
+        {
+          "desc": "Adornments",
+          "name": "adornments",
+          "type": "int"
+        },
+        {
+          "desc": "Tools",
+          "name": "tools",
           "type": "int"
         }
       ]
@@ -27430,6 +27470,295 @@
     "draws": [
       false,
       false,
+      false
+    ]
+  },
+  {
+    "id": 323,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-03-23T13:41:18+02:00",
+    "date": "2022-03-21T02:00:00+02:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 954,
+        "play_id": 323,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 955,
+        "play_id": 323,
+        "player_id": 3,
+        "data": {
+          "won": true
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
+  },
+  {
+    "id": 324,
+    "boardgame_id": 254591,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-03-23T13:41:29+02:00",
+    "date": "2022-03-21T02:00:00+02:00",
+    "boardgame": "Heroes of Terrinoth",
+    "stats": [
+      {
+        "id": 956,
+        "play_id": 324,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 957,
+        "play_id": 324,
+        "player_id": 3,
+        "data": {
+          "won": true
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
+  },
+  {
+    "id": 326,
+    "boardgame_id": 256916,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "concordia",
+          "type": "int"
+        },
+        {
+          "name": "jupiter",
+          "type": "int"
+        },
+        {
+          "name": "mars",
+          "type": "int"
+        },
+        {
+          "name": "mercurius",
+          "type": "int"
+        },
+        {
+          "name": "minerva",
+          "type": "int"
+        },
+        {
+          "name": "saturnus",
+          "type": "int"
+        },
+        {
+          "name": "venus",
+          "type": "int"
+        },
+        {
+          "name": "vesta",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-23T16:42:17+02:00",
+    "date": "2022-03-23T02:00:00+02:00",
+    "boardgame": "Concordia Venus",
+    "stats": [
+      {
+        "id": 961,
+        "play_id": 326,
+        "player_id": 2,
+        "data": {
+          "concordia": 7,
+          "jupiter": 44,
+          "mars": 6,
+          "mercurius": 16,
+          "minerva": 24,
+          "saturnus": 18,
+          "score": 149,
+          "venus": 30,
+          "vesta": 4
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.328043180103464,
+        "sigma": 0.7198716558375464,
+        "trueskill": 29.168428212590822,
+        "delta": 0.07200080958159205
+      },
+      {
+        "id": 960,
+        "play_id": 326,
+        "player_id": 1,
+        "data": {
+          "concordia": 0,
+          "jupiter": 16,
+          "mars": 24,
+          "mercurius": 16,
+          "minerva": 32,
+          "saturnus": 35,
+          "score": 136,
+          "venus": 10,
+          "vesta": 3
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.083742060562702,
+        "sigma": 0.7206569252085213,
+        "trueskill": 28.921771284937137,
+        "delta": -0.0800246143028005
+      }
+    ],
+    "probability": 45.68442706977033,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 325,
+    "boardgame_id": 236457,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "buildings",
+          "type": "int"
+        },
+        {
+          "name": "cathedral",
+          "type": "int"
+        },
+        {
+          "name": "debt",
+          "type": "int"
+        },
+        {
+          "name": "gold-marble",
+          "type": "int"
+        },
+        {
+          "factor": 0.01,
+          "name": "money",
+          "tiebreak": "asc",
+          "type": "int"
+        },
+        {
+          "name": "prison",
+          "type": "int"
+        },
+        {
+          "factor": 0.1,
+          "name": "virtue",
+          "tiebreak": "asc",
+          "type": "int"
+        },
+        {
+          "desc": "End of game bottom",
+          "name": "bottom",
+          "type": "int"
+        },
+        {
+          "desc": "Adornments",
+          "name": "adornments",
+          "type": "int"
+        },
+        {
+          "desc": "Tools",
+          "name": "tools",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-23T13:42:03+02:00",
+    "date": "2022-03-30T03:00:00+03:00",
+    "boardgame": "Architects of the west kingdom",
+    "stats": [
+      {
+        "id": 959,
+        "play_id": 325,
+        "player_id": 1,
+        "data": {
+          "adornments": 5,
+          "bottom": 0,
+          "buildings": 23,
+          "cathedral": 20,
+          "debt": 0,
+          "gold-marble": 3,
+          "money": 1,
+          "prison": 0,
+          "score": 55.012,
+          "tools": 1,
+          "virtue": 2
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.163425249079033,
+        "sigma": 0.7218696938989815,
+        "trueskill": 28.99781616738209,
+        "delta": 0.076044882444954
+      },
+      {
+        "id": 958,
+        "play_id": 325,
+        "player_id": 2,
+        "data": {
+          "adornments": 8,
+          "bottom": 4,
+          "buildings": 28,
+          "cathedral": 0,
+          "debt": 0,
+          "gold-marble": 0,
+          "money": 0,
+          "prison": 0,
+          "score": 42.001999999999995,
+          "tools": 0,
+          "virtue": 2
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.248531261636792,
+        "sigma": 0.7211012134953017,
+        "trueskill": 29.085227621150885,
+        "delta": -0.08320059143993674
+      }
+    ],
+    "probability": 43.46111844794215,
+    "draws": [
       false
     ]
   }
