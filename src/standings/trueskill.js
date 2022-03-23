@@ -25,7 +25,7 @@ const transform = (data, player) => {
     }
   }
 
-  data.filter(d => d.boardgame_data.cooperative !== true).map(d => {
+  data.filter(d => d.boardgame_data.cooperative !== true).sort((a, b) => a.date >= b.date).map(d => {
     d.stats.map(s => {
       const date = dateFormat(d.date)
 
