@@ -18,8 +18,8 @@ import {
   Bookmark,
   ShoppingCart,
   LocalOffer,
-  Search,
-  Favorite
+  Favorite,
+  Pageview
 } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 10
   },
   margin: {
-    marginRight: 20
+    marginRight: theme.spacing(3),
   }
 }));
 
@@ -74,15 +74,15 @@ export default props => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Breadcrumbs className={classes.title} />
-          <Badge color="secondary">
-            <Link to={"/prices/wishlist"} style={{ color: "white" }}>
-              <Favorite />
-            </Link>
-          </Badge>
           <SearchInput />
           <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={99999}>
             <Link to={"/prices/search"} style={{ color: "white" }}>
-              <Search />
+              <Pageview />
+            </Link>
+          </Badge>
+          <Badge color="secondary" className={classes.margin}>
+            <Link to={"/prices/wishlist"} style={{ color: "white" }}>
+              <Favorite />
             </Link>
           </Badge>
           <Badge className={classes.margin} badgeContent={json.length} color="secondary" max={99999}>

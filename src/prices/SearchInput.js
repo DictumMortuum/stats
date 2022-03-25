@@ -1,83 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { alpha, makeStyles } from '@material-ui/core/styles';
-import { useDispatch } from "react-redux";
-import SearchIcon from '@material-ui/icons/Search';
+import React from 'react';
+import { useDispatch } from 'react-redux';
 import InputBase from '@material-ui/core/InputBase';
-import { useHistory } from "react-router-dom";
+import SearchButton from './SearchButton';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
-  search: {
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
-      width: 'auto',
-    },
+  input: {
+    margin: theme.spacing(0.5),
   },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  inputRoot: {
-    color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
+  root: {
+    margin: theme.spacing(1),
+    marginRight: theme.spacing(3),
+  }
 }));
 
-export default props => {
-  const history = useHistory();
-  const [searchTerm, setSearchTerm] = useState("")
-  const classes = useStyles();
+const onChange = dispatch => event => dispatch({
+  type: "SET_SEARCH_TERM",
+  payload: event.target.value,
+})
+
+const Component = props => {
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    const delayDebounceFn = setTimeout(() => {
-      if (searchTerm !== "") {
-        history.push("/prices/search")
-        dispatch({
-          type: "SEARCH",
-          payload: searchTerm.target.value
-        })
-      }
-    }, 1200)
-
-    return () => clearTimeout(delayDebounceFn)
-  }, [searchTerm])
+  const classes = useStyles();
 
   return (
-    <div className={classes.search}>
-      <div className={classes.searchIcon}>
-        <SearchIcon />
-      </div>
+    <Paper component="form" className={classes.root}>
       <InputBase
         placeholder="Search..."
-        classes={{
-          root: classes.inputRoot,
-          input: classes.inputInput,
-        }}
+        className={classes.input}
+        fullWidth
         inputProps={{ 'aria-label': 'search' }}
-        onChange={setSearchTerm}
+        onChange={onChange(dispatch)}
+        endAdornment={<SearchButton />}
       />
-    </div>
+    </Paper>
   )
 }
+
+export default Component;

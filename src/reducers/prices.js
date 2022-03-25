@@ -115,6 +115,11 @@ export const reducer = (state = init([]), action) => {
         search_term,
         search_results: search_term === "" ? [] : results
       }
+    case "SET_SEARCH_TERM":
+      return {
+        ...state,
+        search_term: action.payload
+      }
     case "SET_WISHLIST":
       return {
         ...state,
