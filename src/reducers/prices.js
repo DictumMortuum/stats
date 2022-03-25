@@ -57,6 +57,8 @@ const init = json => ({
   data: calculateNewData(json)(true, "", ""),
   search_term: "",
   search_results: [],
+  wishlist_term: "",
+  wishlist: [],
   json,
   spinner: false,
 })
@@ -112,6 +114,21 @@ export const reducer = (state = init([]), action) => {
         ...state,
         search_term,
         search_results: search_term === "" ? [] : results
+      }
+    case "SET_WISHLIST":
+      return {
+        ...state,
+        wishlist: action.payload
+      }
+    case "SET_WISHLIST_USERNAME":
+      return {
+        ...state,
+        wishlist_term: action.payload
+      }
+    case "TOGGLE_SPINNER":
+      return {
+        ...state,
+        spinner: !state.spinner
       }
     default:
       return state;

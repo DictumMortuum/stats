@@ -18,7 +18,8 @@ import {
   Bookmark,
   ShoppingCart,
   LocalOffer,
-  Search
+  Search,
+  Favorite
 } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
@@ -73,6 +74,11 @@ export default props => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Breadcrumbs className={classes.title} />
+          <Badge color="secondary">
+            <Link to={"/prices/wishlist"} style={{ color: "white" }}>
+              <Favorite />
+            </Link>
+          </Badge>
           <SearchInput />
           <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={99999}>
             <Link to={"/prices/search"} style={{ color: "white" }}>
@@ -115,7 +121,7 @@ export default props => {
       <Grid item xs={12}>
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            © 2022 Dimitris Raviolos - v0.1.9 - Last update: {toDate(data)}
+            © 2022 Dimitris Raviolos - v0.1.10 - Last update: {toDate(data)}
           </Typography>
         </Toolbar>
       </Grid>

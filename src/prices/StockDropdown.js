@@ -4,18 +4,9 @@ import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import MenuItem from '@material-ui/core/MenuItem';
-import { makeStyles } from '@material-ui/core/styles';
 import { useParams } from '../common';
 
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1),
-    width: "90%",
-  },
-}));
-
 export default () => {
-  const classes = useStyles();
   const { stock, stocks } = useSelector(state => state.pricesReducer)
   const { stock: url_stock, has_stock } = useParams();
   const dispatch = useDispatch();
@@ -37,7 +28,7 @@ export default () => {
   }, [stocks, url_stock]);
 
   return (
-    <FormControl variant="outlined" className={classes.formControl}>
+    <FormControl variant="outlined" fullWidth>
       <InputLabel id="stock-select-label">Stock</InputLabel>
       <Select
         labelId="stock-select-label"

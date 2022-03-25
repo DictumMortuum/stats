@@ -6,6 +6,7 @@ import BoardgamePage from './BoardgamePage';
 import CartPage from './CartPage';
 import PricesPage from './PricesPage';
 import SearchPage from './SearchPage';
+import WishlistPage from './WishlistPage';
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import * as fflate from 'fflate';
 
@@ -41,6 +42,9 @@ export default () => {
       </Route>
       <Route path={`${url}/search`} exact>
         <SearchPage />
+      </Route>
+      <Route path={`${url}/wishlist`} exact>
+        <WishlistPage data={data} />
       </Route>
       <Route path={`${url}/item/:boardgame_id`}>
         <BoardgamePage data={data} />
