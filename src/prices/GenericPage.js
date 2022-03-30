@@ -15,6 +15,7 @@ import EmptyImg from './cartoff.svg';
 import SearchInput from './SearchInput';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Container from '@material-ui/core/Container';
+import packagejs from '../../package.json';
 import {
   Bookmark,
   ShoppingCart,
@@ -157,7 +158,7 @@ export default props => {
       <Grid item xs={12}>
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            © 2022 Dimitris Raviolos - v0.1.11 - Last update: {toDate(data)}
+            © 2022 Dimitris Raviolos - {packagejs.version} - Last update: {toDate(data)}
           </Typography>
         </Toolbar>
       </Grid>

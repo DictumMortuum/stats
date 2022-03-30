@@ -1,6 +1,6 @@
 {
   "name": "scythe-react",
-  "version": "0.1.1",
+  "version": "0.1.11",
   "private": true,
   "homepage": "https://stats.dictummortuum.com",
   "dependencies": {
@@ -58,7 +58,8 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "stats": "curl 'localhost:1234/rest/v1/play?_resource=stats' | jq  > ./src/standings/plays.json; curl 'localhost:1234/rest/v1/trueskill' > ./src/standings/ratings.json; curl 'localhost:1234/rest/v1/trueskill/overall' > ./src/standings/overall.json"
+    "stats": "curl 'localhost:1234/rest/v1/play?_resource=stats' | jq  > ./src/standings/plays.json; curl 'localhost:1234/rest/v1/trueskill' > ./src/standings/ratings.json; curl 'localhost:1234/rest/v1/trueskill/overall' > ./src/standings/overall.json",
+    "prices": "curl 'localhost:1234/rest/v1/price?_resource=history'"
   },
   "eslintConfig": {
     "extends": "react-app"
