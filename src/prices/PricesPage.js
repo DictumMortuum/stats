@@ -4,13 +4,22 @@ import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import { useSelector } from "react-redux";
 import Pagination from '@material-ui/lab/Pagination';
-import { paginate, changePage, useParams } from '../common';
+import Paper from '@material-ui/core/Paper';
+import { paginate, pages, changePage, useParams } from '../common';
 import { useHistory } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  pagination: {
+    padding: theme.spacing(1),
+  },
+}));
 
 export default props => {
   const page_size = 20
   const history = useHistory();
   const { page } = useParams();
+  const classes = useStyles();
   const { data } = useSelector(state => state.pricesReducer)
   const page_data = paginate(data, page_size, page)
   const stores = [...new Set(data.map(d => d.store_name))].sort()
@@ -26,7 +35,9 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={changePage("/prices/all", history)} />
+            <Paper className={classes.pagination}>
+              <Pagination siblingCount={0} variant="outlined" shape="rounded" count={pages(data, page_size)} page={page} onChange={changePage("/prices/all", history)} />
+            </Paper>
           </Grid>
           {page_data.sort((a, b) => a.price > b.price).map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>
@@ -34,7 +45,9 @@ export default props => {
             </Grid>
           ))}
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(data.length/page_size)} page={page} onChange={changePage("/prices/all", history)} />
+            <Paper className={classes.pagination}>
+              <Pagination siblingCount={0} variant="outlined" shape="rounded" count={pages(data, page_size)} page={page} onChange={changePage("/prices/all", history)} />
+            </Paper>
           </Grid>
         </Grid>
       }

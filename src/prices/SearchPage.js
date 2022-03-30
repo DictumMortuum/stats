@@ -7,8 +7,16 @@ import Pagination from '@material-ui/lab/Pagination';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { useDispatch } from "react-redux";
-import { paginate, changePage, useParams } from '../common';
+import { paginate, pages, changePage, useParams } from '../common';
 import { useHistory } from 'react-router-dom';
+import Paper from '@material-ui/core/Paper';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  pagination: {
+    padding: theme.spacing(1),
+  },
+}));
 
 const emptySearch = (history, dispatch) => {
   history.push("/prices")
@@ -23,6 +31,7 @@ export default props => {
   const history = useHistory();
   const dispatch = useDispatch()
   const { page } = useParams();
+  const classes = useStyles();
   const { search_results, search_term } = useSelector(state => state.pricesReducer)
   const page_data = paginate(search_results, page_size, page)
   const stores = [...new Set(search_results.map(d => d.store_name))].sort()
@@ -38,7 +47,9 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(search_results.length/page_size)} page={page} onChange={changePage("/prices/search", history)} />
+            <Paper className={classes.pagination}>
+              <Pagination variant="outlined" shape="rounded" count={pages(search_results, page_size)} page={page} onChange={changePage("/prices/search", history)} />
+            </Paper>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="body1" color="inherit">
@@ -51,7 +62,9 @@ export default props => {
             </Grid>
           ))}
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(search_results.length/page_size)} page={page} onChange={changePage("/prices/search", history)} />
+            <Paper className={classes.pagination}>
+              <Pagination variant="outlined" shape="rounded" count={pages(search_results, page_size)} page={page} onChange={changePage("/prices/search", history)} />
+            </Paper>
           </Grid>
         </Grid>
       }

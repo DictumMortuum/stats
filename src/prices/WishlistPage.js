@@ -3,11 +3,19 @@ import { Grid } from '@material-ui/core';
 import Pagination from '@material-ui/lab/Pagination';
 import BoardgameCard from './BoardgameCard';
 import GenericPage from './GenericPage';
-import { paginate, changePage, useParams } from '../common';
+import { paginate, pages, changePage, useParams } from '../common';
 import { useHistory } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import CircularProgress from '@material-ui/core/CircularProgress';
 import BggInput from './BggInput';
+import Paper from '@material-ui/core/Paper';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  pagination: {
+    padding: theme.spacing(1),
+  },
+}));
 
 const pricesToGroups = data => {
   const rs = [];
@@ -36,8 +44,9 @@ const Spinner = () => (
 )
 
 export default props => {
-  const page_size = 40
+  const page_size = 20
   const history = useHistory();
+  const classes = useStyles();
   const { page } = useParams();
   const { wishlist, spinner } = useSelector(state => state.pricesReducer)
   const filtered = props.data.filter(d => wishlist.includes(d.boardgame_id))
@@ -56,18 +65,22 @@ export default props => {
           <Grid item xs={12}>
             <BggInput />
           </Grid>
-          <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={changePage("/prices", history)} />
-          </Grid>
+          { grouped.length > page_size && <Grid item xs={12}>
+            <Paper className={classes.pagination}>
+              <Pagination variant="outlined" shape="rounded" count={pages(grouped, page_size)} page={page} onChange={changePage("/prices/wishlist", history)} />
+            </Paper>
+          </Grid> }
           { spinner && <Spinner /> }
           { !spinner && page_data.map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>
               <BoardgameCard {...tile} />
             </Grid>
           ))}
-          <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={changePage("/prices", history)} />
-          </Grid>
+          { grouped.length > page_size && <Grid item xs={12}>
+            <Paper className={classes.pagination}>
+              <Pagination variant="outlined" shape="rounded" count={pages(grouped, page_size)} page={page} onChange={changePage("/prices/wishlist", history)} />
+            </Paper>
+          </Grid> }
         </Grid>
       }
     />

@@ -3,8 +3,16 @@ import { Grid } from '@material-ui/core';
 import Pagination from '@material-ui/lab/Pagination';
 import BoardgameCard from './BoardgameCard';
 import GenericPage from './GenericPage';
-import { paginate, changePage, useParams } from '../common';
+import Paper from '@material-ui/core/Paper';
+import { paginate, pages, changePage, useParams } from '../common';
 import { useHistory } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  pagination: {
+    padding: theme.spacing(1),
+  },
+}));
 
 const pricesToGroups = data => {
   const rs = [];
@@ -30,6 +38,7 @@ export default props => {
   const { page } = useParams();
   const grouped = pricesToGroups(props.data)
   const page_data = paginate(grouped, page_size, page)
+  const classes = useStyles();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,7 +50,9 @@ export default props => {
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={changePage("/prices", history)} />
+            <Paper className={classes.pagination}>
+              <Pagination variant="outlined" shape="rounded" count={pages(grouped, page_size)} page={page} onChange={changePage("/prices", history)} />
+            </Paper>
           </Grid>
           {page_data.map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>
@@ -49,7 +60,9 @@ export default props => {
             </Grid>
           ))}
           <Grid item xs={12}>
-            <Pagination variant="outlined" shape="rounded" count={parseInt(grouped.length/page_size)} page={page} onChange={changePage("/prices", history)} />
+            <Paper className={classes.pagination}>
+              <Pagination variant="outlined" shape="rounded" count={pages(grouped, page_size)} page={page} onChange={changePage("/prices", history)} />
+            </Paper>
           </Grid>
         </Grid>
       }
