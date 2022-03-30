@@ -11,7 +11,9 @@ const useStyles = makeStyles((theme) => ({
   },
   root: {
     margin: theme.spacing(1),
-    marginRight: theme.spacing(3),
+    [theme.breakpoints.up('md')]: {
+      marginRight: theme.spacing(3),
+    },
   }
 }));
 
@@ -27,7 +29,7 @@ const Component = props => {
   return (
     <Paper component="form" className={classes.root}>
       <InputBase
-        placeholder="Search..."
+        placeholder=" Search..."
         className={classes.input}
         fullWidth
         inputProps={{ 'aria-label': 'search' }}
