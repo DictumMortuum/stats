@@ -7,6 +7,7 @@ import Badge from '@material-ui/core/Badge';
 import StockDropdown from './StockDropdown';
 import StoreDropdown from './StoreDropdown';
 import Breadcrumbs from './Breadcrumbs';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
@@ -29,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
   },
   appbar: {
     marginBottom: 5
+  },
+  bottomBar: {
+    top: 'auto',
+    bottom: 0,
   },
   content: {
     minHeight: '90vh',
@@ -65,7 +70,8 @@ const Nothing = props => (
 
 export default props => {
   const classes = useStyles();
-  const { data : json, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
+  const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
+  const { data: json, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
   const { component, data, stores } = props;
   const current_stores = stores === undefined ? [...new Set(json.map(d => d.store_name))].sort() : stores;
 
@@ -74,7 +80,52 @@ export default props => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Breadcrumbs className={classes.title} />
-          <SearchInput />
+          { matches && <SearchInput /> }
+          { matches && <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={99999}>
+            <Link to={"/prices/search"} style={{ color: "white" }}>
+              <Pageview />
+            </Link>
+          </Badge>}
+          { matches && <Badge color="secondary" className={classes.margin}>
+            <Link to={"/prices/wishlist"} style={{ color: "white" }}>
+              <Favorite />
+            </Link>
+          </Badge>}
+          { matches && <Badge className={classes.margin} badgeContent={json.length} color="secondary" max={99999}>
+            <Link to={"/prices/all"} style={{ color: "white" }}>
+              <LocalOffer />
+            </Link>
+          </Badge>}
+          { matches && <Badge badgeContent={cart_show.length} color="secondary" max={99999}>
+            <Link to={"/prices/cart"} style={{ color: "white" }}>
+              <ShoppingCart />
+            </Link>
+          </Badge>}
+          { matches && <a style={{ color: "white", marginLeft: 20 }} href="javascript:(function()%7Bvar%20raw%20%3D%20window.location.toString().split(%22%2F%22)%5B4%5D%0Avar%20id%20%3D%20parseInt(raw)%0A%0Aif%20(isNaN(id))%20%7B%0A%20%20alert(%22Could%20not%20find%20a%20boardgame%20id.%20Please%20navigate%20to%20a%20boardgame%20page.%22)%0A%7D%20else%20%7B%0A%20%20var%20url%20%3D%20%22https%3A%2F%2Fstats.dictummortuum.com%2F%23%2Fprices%2Fitem%2F%22%20%2B%20id%20%2B%20%22%3Fstock%3D1%22%0A%20%20window.open(url%2C%20'_blank')%20%0A%7D%7D)()%3B">
+            <Bookmark />
+            <span style={{ display: "none" }}>Boardgame Prices</span>
+          </a>}
+        </Toolbar>
+      </AppBar>
+
+      <Container maxWidth="lg">
+        <Grid item xs={12} className={classes.content}>
+          <Grid container spacing={2} alignContent="center" alignItems="center">
+            <Grid item xs={6}>
+              <StoreDropdown stores={current_stores} />
+            </Grid>
+            <Grid item xs={6}>
+              <StockDropdown />
+            </Grid>
+            <Grid item xs={12}>
+              {data.length > 0 ? component : <Nothing spinner={spinner} />}
+            </Grid>
+          </Grid>
+        </Grid>
+      </Container>
+
+      { !matches && <AppBar position="fixed" className={classes.bottomBar}>
+        <Toolbar>
           <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={99999}>
             <Link to={"/prices/search"} style={{ color: "white" }}>
               <Pageview />
@@ -99,29 +150,14 @@ export default props => {
             <Bookmark />
             <span style={{ display: "none" }}>Boardgame Prices</span>
           </a>
+          <SearchInput />
         </Toolbar>
-      </AppBar>
-
-      <Container maxWidth="lg">
-        <Grid item xs={12} className={classes.content}>
-          <Grid container spacing={2} alignContent="center" alignItems="center">
-            <Grid item xs={6}>
-              <StoreDropdown stores={current_stores} />
-            </Grid>
-            <Grid item xs={6}>
-              <StockDropdown />
-            </Grid>
-            <Grid item xs={12}>
-              {data.length > 0 ? component : <Nothing spinner={spinner} />}
-            </Grid>
-          </Grid>
-        </Grid>
-      </Container>
+      </AppBar>}
 
       <Grid item xs={12}>
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            © 2022 Dimitris Raviolos - v0.1.10 - Last update: {toDate(data)}
+            © 2022 Dimitris Raviolos - v0.1.11 - Last update: {toDate(data)}
           </Typography>
         </Toolbar>
       </Grid>
