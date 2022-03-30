@@ -3,24 +3,18 @@ import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-// import CardActions from '@material-ui/core/CardActions';
-// import IconButton from '@material-ui/core/IconButton';
-// import ShareIcon from '@material-ui/icons/Share';
+import BoardgameImage from './BoardgameImage';
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   card_header: {
     minHeight: 120,
   },
-  cover: {
-    paddingTop: '75%', // 16:9
-  },
 }));
 
 export default props => {
   const classes = useStyles();
-  const { id, boardgame_id, thumb, boardgame_name, rank, items } = props;
+  const { id, boardgame_id, thumb, store_thumb, boardgame_name, rank, items } = props;
   const available_prices = items.sort((a, b) => a.price > b.price)
   const l = available_prices.length;
 
@@ -40,7 +34,7 @@ export default props => {
   return (
     <Card key={id}>
       <Link to={"/prices/item/" + boardgame_id}>
-        <CardMedia className={classes.cover} image={thumb} />
+        <BoardgameImage srcs={[thumb, store_thumb]} />
       </Link>
       <CardContent className={classes.card_header}>
         <Typography variant="subtitle1" color="textSecondary">
@@ -53,13 +47,6 @@ export default props => {
           {boardgame_name}
         </Typography>
       </CardContent>
-      {/* <CardActions>
-        <Link to={"/prices/item/" + props.boardgame_id}>
-          <IconButton>
-            <ShareIcon />
-          </IconButton>
-        </Link>
-      </CardActions> */}
     </Card>
   )
 }
