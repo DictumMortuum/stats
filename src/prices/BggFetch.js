@@ -69,7 +69,7 @@ const Component = props => {
 
   return (
     <InputAdornment position="end">
-      <IconButton type="submit" disabled={isSending} onClick={sendRequest} aria-label="search">
+      <IconButton type="submit" disabled={isSending} onClick={e => { e.preventDefault(); sendRequest() }} aria-label="search">
         <SearchIcon />
       </IconButton>
     </InputAdornment>
