@@ -61,3 +61,5 @@ export const discrete = data => {
 export const paginate = (array, pageSize, pageNumber) => {
   return array.slice((pageNumber-1) * pageSize, pageNumber * pageSize);
 }
+
+export const pages = (col, pageSize) => Math.ceil(col.length/pageSize)
