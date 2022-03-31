@@ -7,6 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import { paginate, pages, changePage, useParams } from '../common';
 import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import { useSelector } from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
   pagination: {
@@ -36,7 +37,8 @@ export default props => {
   const page_size = 40
   const history = useHistory();
   const { page } = useParams();
-  const grouped = pricesToGroups(props.data)
+  const { data } = useSelector(state => state.pricesReducer)
+  const grouped = pricesToGroups(data)
   const page_data = paginate(grouped, page_size, page)
   const classes = useStyles();
 
@@ -46,7 +48,7 @@ export default props => {
 
   return (
     <GenericPage
-      data={props.data}
+      data={data}
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>

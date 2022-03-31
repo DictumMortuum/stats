@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 import LandingPage from './LandingPage';
 import BoardgamePage from './BoardgamePage';
@@ -22,7 +22,6 @@ const fetchPosts = createAsyncThunk('posts/fetchPrices', async () => {
 
 export default () => {
   const { url } = useRouteMatch();
-  const { data } = useSelector(state => state.pricesReducer)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -32,7 +31,7 @@ export default () => {
   return (
     <Switch >
       <Route path={`${url}/`} exact>
-        <LandingPage data={data} />
+        <LandingPage />
       </Route>
       <Route path={`${url}/cart`} exact>
         <CartPage />
@@ -44,10 +43,10 @@ export default () => {
         <SearchPage />
       </Route>
       <Route path={`${url}/wishlist`} exact>
-        <WishlistPage data={data} />
+        <WishlistPage />
       </Route>
       <Route path={`${url}/item/:boardgame_id`}>
-        <BoardgamePage data={data} />
+        <BoardgamePage />
       </Route>
     </Switch>
   )

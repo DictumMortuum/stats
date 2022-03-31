@@ -4,11 +4,12 @@ import { Grid } from '@material-ui/core';
 import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import BoardgameHistoricPrice from './BoardgameHistoricPrice';
+import { useSelector } from "react-redux";
 
 export default props => {
   const { pathname } = useLocation();
   const id = parseInt(pathname.split("/")[3])
-  const { data } = props;
+  const { data } = useSelector(state => state.pricesReducer)
   const items = data.filter(d => d.boardgame_id === id)
 
   return (

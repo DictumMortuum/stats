@@ -48,8 +48,8 @@ export default props => {
   const history = useHistory();
   const classes = useStyles();
   const { page } = useParams();
-  const { wishlist, spinner } = useSelector(state => state.pricesReducer)
-  const filtered = props.data.filter(d => wishlist.includes(d.boardgame_id))
+  const { wishlist, spinner, data } = useSelector(state => state.pricesReducer)
+  const filtered = data.filter(d => wishlist.includes(d.boardgame_id))
   const grouped = pricesToGroups(filtered)
   const page_data = paginate(grouped, page_size, page)
 
