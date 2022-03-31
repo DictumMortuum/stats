@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
   input: {
-    margin: theme.spacing(0.5),
+    margin: theme.spacing(1),
   },
   root: {
     margin: theme.spacing(1),
@@ -27,7 +27,7 @@ const Component = props => {
   const classes = useStyles();
 
   return (
-    <Paper component="form" className={classes.root} onSubmit={e => { e.preventDefault(); }}>
+    <Paper component="form" onSubmit={e => { e.preventDefault(); }}>
       <InputBase
         placeholder=" Search..."
         className={classes.input}

@@ -10,23 +10,21 @@ export default props => {
   const { pathname } = useLocation();
   const id = parseInt(pathname.split("/")[3])
   const { data } = useSelector(state => state.pricesReducer)
-  const items = data.filter(d => d.boardgame_id === id)
+  const items = data.filter(d => d.boardgame_id === id).sort((a, b) => a.price > b.price)
 
   return (
     <GenericPage
-      data={items}
-      component={
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <BoardgameHistoricPrice boardgame_id={id} />
-          </Grid>
-          {items.sort((a, b) => a.price > b.price).map((tile) => (
-            <Grid key={tile.id} item xs={12} md={6} lg={3}>
-              <PriceCard boardgame={tile} />
-            </Grid>
-          ))}
+      child_data={items}
+      pre_component={
+        <Grid item xs={12}>
+          <BoardgameHistoricPrice boardgame_id={id} />
         </Grid>
       }
+      component={data => data.map((tile) => (
+        <Grid key={tile.id} item xs={12} md={6} lg={3}>
+          <PriceCard boardgame={tile} />
+        </Grid>
+      ))}
     />
   )
 }

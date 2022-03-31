@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -12,10 +12,14 @@ import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import EmptyImg from './cartoff.svg';
+import Paper from '@material-ui/core/Paper';
 import SearchInput from './SearchInput';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Container from '@material-ui/core/Container';
 import packagejs from '../../package.json';
+import Pagination from '@material-ui/lab/Pagination';
+import { paginate, pages, changePage, useParams } from '../common';
+import { useHistory } from 'react-router-dom';
 import {
   Bookmark,
   ShoppingCart,
@@ -41,8 +45,12 @@ const useStyles = makeStyles((theme) => ({
     padding: 10
   },
   margin: {
-    marginRight: theme.spacing(3),
-  }
+    marginLeft: theme.spacing(3),
+    color: "white"
+  },
+  pagination: {
+    padding: theme.spacing(1),
+  },
 }));
 
 const toDate = data => data.length > 0 ? new Date(data[0].cr_date).toLocaleDateString('el-GR') : ""
@@ -73,17 +81,25 @@ export default props => {
   const classes = useStyles();
   const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
   const { data, stores, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
-  const { component } = props;
+  const { child_data, page_name, component, pre_component } = props;
   const store_ids = [...new Set(data.map(d => d.store_id))]
   // const current_stores = stores === undefined ? stores.filter(d => store_ids.includes(d.id)) : stores;
   const current_stores = stores.filter(d => store_ids.includes(d.id));
+  const page_size = 40
+  const history = useHistory();
+  const { page } = useParams();
+  const page_data = paginate(child_data, page_size, page)
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
 
   return (
     <Grid container className={classes.root} alignContent="center" alignItems="center">
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Breadcrumbs className={classes.title} />
-          { matches && <SearchInput /> }
+          { matches && <SearchInput className={classes.margin} /> }
           { matches && <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={99999}>
             <Link to={"/prices/search"} style={{ color: "white" }}>
               <Pageview />
@@ -99,12 +115,12 @@ export default props => {
               <LocalOffer />
             </Link>
           </Badge>}
-          { matches && <Badge badgeContent={cart_show.length} color="secondary" max={99999}>
+          { matches && <Badge className={classes.margin} badgeContent={cart_show.length} color="secondary" max={99999}>
             <Link to={"/prices/cart"} style={{ color: "white" }}>
               <ShoppingCart />
             </Link>
           </Badge>}
-          { matches && <a style={{ color: "white", marginLeft: 20 }} href="javascript:(function()%7Bvar%20raw%20%3D%20window.location.toString().split(%22%2F%22)%5B4%5D%0Avar%20id%20%3D%20parseInt(raw)%0A%0Aif%20(isNaN(id))%20%7B%0A%20%20alert(%22Could%20not%20find%20a%20boardgame%20id.%20Please%20navigate%20to%20a%20boardgame%20page.%22)%0A%7D%20else%20%7B%0A%20%20var%20url%20%3D%20%22https%3A%2F%2Fstats.dictummortuum.com%2F%23%2Fprices%2Fitem%2F%22%20%2B%20id%20%2B%20%22%3Fstock%3D1%22%0A%20%20window.open(url%2C%20'_blank')%20%0A%7D%7D)()%3B">
+          { matches && <a className={classes.margin} href="javascript:(function()%7Bvar%20raw%20%3D%20window.location.toString().split(%22%2F%22)%5B4%5D%0Avar%20id%20%3D%20parseInt(raw)%0A%0Aif%20(isNaN(id))%20%7B%0A%20%20alert(%22Could%20not%20find%20a%20boardgame%20id.%20Please%20navigate%20to%20a%20boardgame%20page.%22)%0A%7D%20else%20%7B%0A%20%20var%20url%20%3D%20%22https%3A%2F%2Fstats.dictummortuum.com%2F%23%2Fprices%2Fitem%2F%22%20%2B%20id%20%2B%20%22%3Fstock%3D1%22%0A%20%20window.open(url%2C%20'_blank')%20%0A%7D%7D)()%3B">
             <Bookmark />
             <span style={{ display: "none" }}>Boardgame Prices</span>
           </a>}
@@ -121,7 +137,20 @@ export default props => {
               <StockDropdown />
             </Grid>
             <Grid item xs={12}>
-              {data.length > 0 ? component : <Nothing spinner={spinner} />}
+              <Grid container spacing={2}>
+                {child_data.length > page_size && <Grid item xs={12}>
+                  <Paper className={classes.pagination}>
+                    <Pagination variant="outlined" shape="rounded" count={pages(child_data, page_size)} page={page} onChange={changePage(page_name, history)} />
+                  </Paper>
+                </Grid>}
+                {pre_component !== undefined && pre_component}
+                {data.length > 0 ? component(page_data) : <Nothing spinner={spinner} />}
+                {child_data.length > page_size && <Grid item xs={12}>
+                  <Paper className={classes.pagination}>
+                    <Pagination variant="outlined" shape="rounded" count={pages(child_data, page_size)} page={page} onChange={changePage(page_name, history)} />
+                  </Paper>
+                </Grid>}
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
@@ -129,6 +158,7 @@ export default props => {
 
       { !matches && <AppBar position="fixed" className={classes.bottomBar}>
         <Toolbar>
+          <SearchInput />
           <Badge className={classes.margin} badgeContent={search_results.length} color="secondary" max={99999}>
             <Link to={"/prices/search"} style={{ color: "white" }}>
               <Pageview />
@@ -144,16 +174,16 @@ export default props => {
               <LocalOffer />
             </Link>
           </Badge>
-          <Badge badgeContent={cart_show.length} color="secondary" max={99999}>
+          <Badge className={classes.margin} badgeContent={cart_show.length} color="secondary" max={99999}>
             <Link to={"/prices/cart"} style={{ color: "white" }}>
               <ShoppingCart />
             </Link>
           </Badge>
-          <a style={{ color: "white", marginLeft: 20 }} href="javascript:(function()%7Bvar%20raw%20%3D%20window.location.toString().split(%22%2F%22)%5B4%5D%0Avar%20id%20%3D%20parseInt(raw)%0A%0Aif%20(isNaN(id))%20%7B%0A%20%20alert(%22Could%20not%20find%20a%20boardgame%20id.%20Please%20navigate%20to%20a%20boardgame%20page.%22)%0A%7D%20else%20%7B%0A%20%20var%20url%20%3D%20%22https%3A%2F%2Fstats.dictummortuum.com%2F%23%2Fprices%2Fitem%2F%22%20%2B%20id%20%2B%20%22%3Fstock%3D1%22%0A%20%20window.open(url%2C%20'_blank')%20%0A%7D%7D)()%3B">
+          <a className={classes.margin} href="javascript:(function()%7Bvar%20raw%20%3D%20window.location.toString().split(%22%2F%22)%5B4%5D%0Avar%20id%20%3D%20parseInt(raw)%0A%0Aif%20(isNaN(id))%20%7B%0A%20%20alert(%22Could%20not%20find%20a%20boardgame%20id.%20Please%20navigate%20to%20a%20boardgame%20page.%22)%0A%7D%20else%20%7B%0A%20%20var%20url%20%3D%20%22https%3A%2F%2Fstats.dictummortuum.com%2F%23%2Fprices%2Fitem%2F%22%20%2B%20id%20%2B%20%22%3Fstock%3D1%22%0A%20%20window.open(url%2C%20'_blank')%20%0A%7D%7D)()%3B">
             <Bookmark />
             <span style={{ display: "none" }}>Boardgame Prices</span>
           </a>
-          <SearchInput />
+
         </Toolbar>
       </AppBar>}
 
