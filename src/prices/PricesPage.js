@@ -20,12 +20,13 @@ const transform = d => {
 }
 
 export default props => {
-  const { data } = useSelector(state => state.pricesReducer)
-  const filtered = data.map(transform).sort(sorter)
+  const { data, store } = useSelector(state => state.pricesReducer)
+  const filtered = data.filter(d => d.store_id === store || store === -1).map(transform).sort(sorter)
 
   return (
     <GenericPage
       child_data={filtered}
+      store_data={data}
       page_name="/prices/all"
       component={data => data.map((tile) => (
         <Grid key={tile.id} item xs={12} md={6} lg={3}>

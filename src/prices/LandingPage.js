@@ -23,12 +23,14 @@ export const pricesToGroups = data => {
 }
 
 export default props => {
-  const { data } = useSelector(state => state.pricesReducer)
-  const grouped = pricesToGroups(data)
+  const { data, store } = useSelector(state => state.pricesReducer)
+  const filtered = data.filter(d => d.store_id === store || store === -1)
+  const grouped = pricesToGroups(filtered)
 
   return (
     <GenericPage
       child_data={grouped}
+      store_data={data}
       page_name="/prices"
       component={data => data.map((tile) => (
         <Grid key={tile.id} item xs={12} md={6} lg={3}>

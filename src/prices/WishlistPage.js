@@ -16,13 +16,15 @@ const Spinner = () => (
 )
 
 export default props => {
-  const { wishlist, spinner, data } = useSelector(state => state.pricesReducer)
+  const { wishlist, spinner, data, store } = useSelector(state => state.pricesReducer)
   const filtered = data.filter(d => wishlist.includes(d.boardgame_id))
-  const grouped = pricesToGroups(filtered)
+  const by_store = filtered.filter(d => d.store_id === store || store === -1)
+  const grouped = pricesToGroups(by_store)
 
   return (
     <GenericPage
       child_data={grouped}
+      store_data={filtered}
       page_name="/prices/wishlist"
       pre_component={
         <Grid item xs={12}>

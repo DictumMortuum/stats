@@ -81,9 +81,8 @@ export default props => {
   const classes = useStyles();
   const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
   const { data, stores, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
-  const { child_data, page_name, component, pre_component } = props;
-  const store_ids = [...new Set(data.map(d => d.store_id))]
-  // const current_stores = stores === undefined ? stores.filter(d => store_ids.includes(d.id)) : stores;
+  const { child_data, store_data, page_name, component, pre_component } = props;
+  const store_ids = [...new Set(store_data.map(d => d.store_id))]
   const current_stores = stores.filter(d => store_ids.includes(d.id));
   const page_size = 40
   const history = useHistory();

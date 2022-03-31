@@ -28,7 +28,7 @@ const calculateStores = (prices, stores) => {
 }
 
 const calculateNewData = (col)  => (instock, store, search) => {
-  return searchFilter(col, search).filter(stockFilter(instock)).filter(d => d.store_id === store || store === -1)
+  return searchFilter(col, search).filter(stockFilter(instock))
 }
 
 const extractBoardgames = json => {
@@ -98,9 +98,6 @@ export const reducer = (state = init({prices: [], history: [], stores: []}), act
       return {
         ...state,
         store,
-        data: calculateNewData(state.prices)(state.instock, store, ""),
-        cart_show: calculateNewData(state.cart)(state.instock, store, ""),
-        search_results: state.search_term === "" ? [] : calculateNewData(state.prices)(state.instock, store, state.search_term),
       }
     case "ADD_TO_CART":
       const cart = [...state.cart.filter(d => d.id !== action.cart.id), action.cart]
