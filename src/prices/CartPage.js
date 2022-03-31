@@ -6,12 +6,10 @@ import { useSelector } from "react-redux";
 
 export default props => {
   const { cart_show } = useSelector(state => state.pricesReducer)
-  const stores = [...new Set(cart_show.map(d => d.store_name))].sort()
 
   return (
     <GenericPage
       data={cart_show}
-      stores={stores}
       component={
         <Grid container spacing={2}>
           {cart_show.sort((a, b) => a.price > b.price).map((tile) => (

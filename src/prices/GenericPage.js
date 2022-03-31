@@ -72,9 +72,11 @@ const Nothing = props => (
 export default props => {
   const classes = useStyles();
   const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
-  const { data: json, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
-  const { component, data, stores } = props;
-  const current_stores = stores === undefined ? [...new Set(json.map(d => d.store_name))].sort() : stores;
+  const { data: prices, stores, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
+  const { component, data } = props;
+  const store_ids = [...new Set(data.map(d => d.store_id))]
+  // const current_stores = stores === undefined ? stores.filter(d => store_ids.includes(d.id)) : stores;
+  const current_stores = stores.filter(d => store_ids.includes(d.id));
 
   return (
     <Grid container className={classes.root} alignContent="center" alignItems="center">
@@ -92,7 +94,7 @@ export default props => {
               <Favorite />
             </Link>
           </Badge>}
-          { matches && <Badge className={classes.margin} badgeContent={json.length} color="secondary" max={99999}>
+          { matches && <Badge className={classes.margin} badgeContent={prices.length} color="secondary" max={99999}>
             <Link to={"/prices/all"} style={{ color: "white" }}>
               <LocalOffer />
             </Link>
@@ -137,7 +139,7 @@ export default props => {
               <Favorite />
             </Link>
           </Badge>
-          <Badge className={classes.margin} badgeContent={json.length} color="secondary" max={99999}>
+          <Badge className={classes.margin} badgeContent={prices.length} color="secondary" max={99999}>
             <Link to={"/prices/all"} style={{ color: "white" }}>
               <LocalOffer />
             </Link>

@@ -22,7 +22,6 @@ export default props => {
   const classes = useStyles();
   const { data } = useSelector(state => state.pricesReducer)
   const page_data = paginate(data, page_size, page)
-  const stores = [...new Set(data.map(d => d.store_name))].sort()
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,7 +30,6 @@ export default props => {
   return (
     <GenericPage
       data={page_data}
-      stores={stores}
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>

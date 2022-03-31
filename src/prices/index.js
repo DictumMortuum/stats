@@ -12,7 +12,7 @@ import * as fflate from 'fflate';
 
 const fetchPosts = createAsyncThunk('posts/fetchPrices', async () => {
   const compressed = new Uint8Array(
-    await fetch('https://raw.githubusercontent.com/DictumMortuum/json-api/master/prices.json.gz').then(res => res.arrayBuffer())
+    await fetch('https://raw.githubusercontent.com/DictumMortuum/json-api/master/final.json.gz').then(res => res.arrayBuffer())
   );
 
   const decompressed = fflate.decompressSync(compressed);

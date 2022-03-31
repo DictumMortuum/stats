@@ -10,16 +10,14 @@ export default props => {
   const id = parseInt(pathname.split("/")[3])
   const { data } = props;
   const items = data.filter(d => d.boardgame_id === id)
-  const stores = [...new Set(items.map(d => d.store_name))].sort()
 
   return (
     <GenericPage
       data={items}
-      stores={stores}
       component={
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <BoardgameHistoricPrice data={items} />
+            <BoardgameHistoricPrice boardgame_id={id} />
           </Grid>
           {items.sort((a, b) => a.price > b.price).map((tile) => (
             <Grid key={tile.id} item xs={12} md={6} lg={3}>

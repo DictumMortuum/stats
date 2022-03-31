@@ -22,12 +22,14 @@ const searchFilter = (col, term) => {
   }
 }
 
-const calculateNewData = col => (instock, store, search) => searchFilter(col, search)
-  .filter(stockFilter(instock))
-  .filter(d => d.store_name === store || store === "")
-  // .filter(d => d.levenshtein < 10)
-  // .filter(d => d.levenshtein < d.boardgame_name.length/2.5)
-  // .filter(d => d.hamming < 4 || d.levenshtein < 2)
+const calculateStores = (prices, stores) => {
+  const store_ids = [...new Set(prices.map(d => d.store_id))]
+  return stores.filter(d => store_ids.includes(d.id))
+}
+
+const calculateNewData = (col)  => (instock, store, search) => {
+  return searchFilter(col, search).filter(stockFilter(instock)).filter(d => d.store_id === store || store === -1)
+}
 
 const extractBoardgames = json => {
   const hm = {};
@@ -46,24 +48,26 @@ const extractBoardgames = json => {
   return rs
 }
 
-const init = json => ({
+const init = ({ prices, history, stores }) => ({
   instock: true,
-  store: "",
+  store: -1,
   stock: "In stock",
   stocks: ["In stock", "In stock + Out of stock"],
   cart: [],
   cart_show: [],
-  boardgames: extractBoardgames(json),
-  data: calculateNewData(json)(true, "", ""),
+  boardgames: extractBoardgames(prices),
+  data: calculateNewData(prices)(true, -1, ""),
   search_term: "",
   search_results: [],
   wishlist_term: "",
   wishlist: [],
-  json,
+  prices,
+  history,
+  stores: calculateStores(prices, stores),
   spinner: false,
 })
 
-export const reducer = (state = init([]), action) => {
+export const reducer = (state = init({prices: [], history: [], stores: []}), action) => {
   switch (action.type) {
     case "INIT":
       return {
@@ -84,9 +88,9 @@ export const reducer = (state = init([]), action) => {
         ...state,
         instock,
         stock,
-        data: calculateNewData(state.json)(instock, state.store, ""),
+        data: calculateNewData(state.prices)(instock, state.store, ""),
         cart_show: calculateNewData(state.cart)(instock, state.store, ""),
-        search_results: state.search_term === "" ? [] : calculateNewData(state.json)(instock, state.store, state.search_term),
+        search_results: state.search_term === "" ? [] : calculateNewData(state.prices)(instock, state.store, state.search_term),
       }
     case "SET_STORE":
       const store = action.store
@@ -94,9 +98,9 @@ export const reducer = (state = init([]), action) => {
       return {
         ...state,
         store,
-        data: calculateNewData(state.json)(state.instock, store, ""),
+        data: calculateNewData(state.prices)(state.instock, store, ""),
         cart_show: calculateNewData(state.cart)(state.instock, store, ""),
-        search_results: state.search_term === "" ? [] : calculateNewData(state.json)(state.instock, store, state.search_term),
+        search_results: state.search_term === "" ? [] : calculateNewData(state.prices)(state.instock, store, state.search_term),
       }
     case "ADD_TO_CART":
       const cart = [...state.cart.filter(d => d.id !== action.cart.id), action.cart]
@@ -108,7 +112,7 @@ export const reducer = (state = init([]), action) => {
       }
     case "SEARCH":
       const search_term = action.payload;
-      const results = calculateNewData(state.json)(false, state.store, search_term)
+      const results = calculateNewData(state.prices)(false, state.store, search_term)
 
       return {
         ...state,

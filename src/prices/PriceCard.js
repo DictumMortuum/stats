@@ -7,6 +7,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import { useDispatch } from "react-redux";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { Typography } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
@@ -69,14 +70,16 @@ const Media = props => {
 export default props => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const { url, name, store_name, price, stock } = props.boardgame;
+  const { stores } = useSelector(state => state.pricesReducer)
+  const { url, name, store_id, price, stock } = props.boardgame;
+  const price_store = stores.filter(d => d.id === store_id)[0]
 
   return (
     <Card className={classNames({[classes.out_of_stock]: !stock})}>
       <Media {...props} />
       <CardContent className={classes.card_header}>
         <Typography variant="subtitle1" color="textSecondary">
-          {store_name}
+          {price_store.name}
         </Typography>
         <Typography variant="subtitle1">
           {name}

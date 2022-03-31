@@ -26,8 +26,8 @@ export default props => {
             })
           }}
         >
-          <MenuItem key={-1} value="">None</MenuItem>
-          {stores.map(d => <MenuItem key={d} value={d}>{d}</MenuItem>)}
+          <MenuItem key={-1} value={-1}>None</MenuItem>
+          {stores.map(d => <MenuItem key={d.id} value={d.id}>{d.name}</MenuItem>)}
         </Select>
       </FormControl>
     </Paper>
