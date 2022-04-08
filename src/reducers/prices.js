@@ -1,4 +1,4 @@
-import fuse from 'fuse.js';
+const storeFilter = store => d => d.store_id === store || store === -1
 
 const stockFilter = toggle => d => {
   if(toggle) {
@@ -8,75 +8,53 @@ const stockFilter = toggle => d => {
   }
 }
 
-const searchFilter = (col, term) => {
-  if(term !== "") {
-    const options = {
-      includeScore: true,
-      keys: ['name']
-    }
-
-    const f = new fuse(col, options)
-    return f.search(term).map(d => d.item)
-  } else {
-    return col
-  }
-}
-
-const calculateStores = (prices, stores) => {
-  const store_ids = [...new Set(prices.map(d => d.store_id))]
-  return stores.filter(d => store_ids.includes(d.id))
-}
-
-const calculateNewData = (col)  => (instock, store, search) => {
-  return searchFilter(col, search).filter(stockFilter(instock))
-}
-
-const extractBoardgames = json => {
-  const hm = {};
-
-  json.map(d => {
-    hm[d.boardgame_id] = d
-    return d
-  })
-
-  const rs = [];
-
-  for (let id in hm) {
-    rs.push(hm[id])
-  }
-
-  return rs
-}
-
-const init = ({ prices, history, stores }) => ({
-  instock: true,
-  store: -1,
-  stock: "In stock",
-  stocks: ["In stock", "In stock + Out of stock"],
-  cart: [],
-  cart_show: [],
-  boardgames: extractBoardgames(prices),
-  data: calculateNewData(prices)(true, -1, ""),
-  search_term: "",
-  search_results: [],
-  wishlist_term: "",
-  wishlist: [],
-  prices,
-  history,
-  stores: calculateStores(prices, stores),
-  spinner: false,
-})
-
-export const reducer = (state = init({prices: [], history: [], stores: []}), action) => {
+export const reducer = (state = {}, action) => {
   switch (action.type) {
     case "INIT":
       return {
-        ...state,
-        spinner: true
+        instock: true,
+        store: -1,
+        stock: "In stock",
+        stocks: ["In stock", "In stock + Out of stock"],
+        cart_results: [],
+        search_term: "",
+        search_results: [],
+        wishlist_term: "",
+        wishlist: [],
+        prices: [],
+        history: [],
+        stores: [],
+        spinner: true,
+        page_filtered: [],
+        stock_filtered: [],
+        store_filtered: [],
       }
-    case "posts/fetchPrices/fulfilled":
-      return init(action.payload)
-    case "SET_STOCK":
+    case "prices/fulfilled": {
+      const { store, instock, filter } = state;
+      const page_filtered = filter(action.payload.prices)
+      const stock_filtered = page_filtered.filter(stockFilter(instock))
+      const store_filtered = stock_filtered.filter(storeFilter(store))
+
+      return {
+        ...state,
+        spinner: false,
+        prices: action.payload.prices,
+        page_filtered,
+        stock_filtered,
+        store_filtered,
+      }
+    }
+    case "stores/fulfilled":
+      return {
+        ...state,
+        stores: action.payload
+      }
+    case "history/fulfilled":
+      return {
+        ...state,
+        history: action.payload
+      }
+    case "SET_STOCK": {
       const stock = action.stock;
       let instock = false;
 
@@ -84,37 +62,53 @@ export const reducer = (state = init({prices: [], history: [], stores: []}), act
         instock = true
       }
 
+      const { prices, store, filter } = state;
+      const page_filtered = filter(prices)
+      const stock_filtered = page_filtered.filter(stockFilter(instock))
+      const store_filtered = stock_filtered.filter(storeFilter(store))
+
       return {
         ...state,
-        instock,
         stock,
-        data: calculateNewData(state.prices)(instock, state.store, ""),
-        cart_show: calculateNewData(state.cart)(instock, state.store, ""),
-        search_results: state.search_term === "" ? [] : calculateNewData(state.prices)(instock, state.store, state.search_term),
+        instock,
+        page_filtered,
+        stock_filtered,
+        store_filtered,
       }
-    case "SET_STORE":
-      const store = action.store
+    }
+    case "SET_PAGE_FILTER": {
+      const { prices, store, instock } = state;
+      const page_filtered = action.func(prices)
+      const stock_filtered = page_filtered.filter(stockFilter(instock))
+      const store_filtered = stock_filtered.filter(storeFilter(store))
+
+      return {
+        ...state,
+        filter: action.func,
+        page_filtered,
+        stock_filtered,
+        store_filtered,
+      }
+    }
+    case "SET_STORE": {
+      const store = action.store;
+      const { prices, instock, filter } = state;
+      const page_filtered = filter(prices)
+      const stock_filtered = page_filtered.filter(stockFilter(instock))
+      const store_filtered = stock_filtered.filter(storeFilter(store))
 
       return {
         ...state,
         store,
+        page_filtered,
+        stock_filtered,
+        store_filtered,
       }
+    }
     case "ADD_TO_CART":
-      const cart = [...state.cart.filter(d => d.id !== action.cart.id), action.cart]
-
       return {
         ...state,
-        cart,
-        cart_show: calculateNewData(cart)(state.instock, state.store, "")
-      }
-    case "SEARCH":
-      const search_term = action.payload;
-      const results = calculateNewData(state.prices)(false, state.store, search_term)
-
-      return {
-        ...state,
-        search_term,
-        search_results: search_term === "" ? [] : results
+        cart_results: [...state.cart_results.filter(d => d.id !== action.cart.id), action.cart],
       }
     case "SET_SEARCH_TERM":
       return {

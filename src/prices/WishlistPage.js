@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import BoardgameCard from './BoardgameCard';
 import GenericPage from './GenericPage';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { pricesToGroups } from './LandingPage';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import BggInput from './BggInput';
@@ -15,16 +15,21 @@ const Spinner = () => (
   </Grid>
 )
 
-export default props => {
-  const { wishlist, spinner, data, store } = useSelector(state => state.pricesReducer)
-  const filtered = data.filter(d => wishlist.includes(d.boardgame_id))
-  const by_store = filtered.filter(d => d.store_id === store || store === -1)
-  const grouped = pricesToGroups(by_store)
+export default () => {
+  const dispatch = useDispatch();
+  const { store_filtered, wishlist, spinner } = useSelector(state => state.pricesReducer)
+  const grouped = pricesToGroups(store_filtered)
+
+  useEffect(() => {
+    dispatch({
+      type: "SET_PAGE_FILTER",
+      func: col => col.filter(d => wishlist.includes(d.boardgame_id))
+    })
+  }, [wishlist])
 
   return (
     <GenericPage
       child_data={grouped}
-      store_data={filtered}
       page_name="/prices/wishlist"
       pre_component={
         <Grid item xs={12}>

@@ -1,18 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import SearchInput from './SearchInput';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import fuse from 'fuse.js';
 
-export default props => {
-  const { search_results, store } = useSelector(state => state.pricesReducer)
-  const filtered = search_results.filter(d => d.store_id === store || store === -1)
+const searchFilter = term => col => {
+  if(term !== "") {
+    const options = {
+      includeScore: true,
+      keys: ['name']
+    }
+
+    const f = new fuse(col, options)
+    return f.search(term).map(d => d.item)
+  } else {
+    return []
+  }
+}
+export default () => {
+  const dispatch = useDispatch();
+  const { store_filtered, search_term } = useSelector(state => state.pricesReducer)
+
+  useEffect(() => {
+    dispatch({
+      type: "SET_PAGE_FILTER",
+      func: searchFilter(search_term)
+    })
+  }, [search_term])
 
   return (
     <GenericPage
-      store_data={search_results}
-      child_data={filtered}
+      child_data={store_filtered}
       page_name="/prices/search"
       pre_component={
         <Grid item xs={12}>

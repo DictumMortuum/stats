@@ -80,11 +80,11 @@ const Nothing = props => (
 export default props => {
   const classes = useStyles();
   const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
-  const { data, stores, cart_show, search_results, spinner } = useSelector(state => state.pricesReducer)
-  const { child_data, store_data, page_name, component, pre_component } = props;
-  const store_ids = [...new Set(store_data.map(d => d.store_id))]
+  const { store_filtered, stores, stock_filtered, cart_results, search_results, spinner } = useSelector(state => state.pricesReducer)
+  const { child_data, page_name, component, pre_component } = props;
+  const store_ids = [...new Set(stock_filtered.map(d => d.store_id))]
   const current_stores = stores.filter(d => store_ids.includes(d.id));
-  const page_size = 40
+  const page_size = 12;
   const history = useHistory();
   const { page } = useParams();
   const page_data = paginate(child_data, page_size, page)
@@ -104,17 +104,17 @@ export default props => {
               <Pageview />
             </Link>
           </Badge>}
-          { matches && <Badge color="secondary" className={classes.margin}>
+          { matches && <Badge className={classes.margin} color="secondary" max={99999}>
             <Link to={"/prices/wishlist"} style={{ color: "white" }}>
               <Favorite />
             </Link>
           </Badge>}
-          { matches && <Badge className={classes.margin} badgeContent={data.length} color="secondary" max={99999}>
+          { matches && <Badge className={classes.margin} badgeContent={store_filtered.length} color="secondary" max={99999}>
             <Link to={"/prices/all"} style={{ color: "white" }}>
               <LocalOffer />
             </Link>
           </Badge>}
-          { matches && <Badge className={classes.margin} badgeContent={cart_show.length} color="secondary" max={99999}>
+          { matches && <Badge className={classes.margin} badgeContent={cart_results.length} color="secondary" max={99999}>
             <Link to={"/prices/cart"} style={{ color: "white" }}>
               <ShoppingCart />
             </Link>
@@ -143,7 +143,7 @@ export default props => {
                   </Paper>
                 </Grid>}
                 {pre_component !== undefined && pre_component}
-                {data.length > 0 ? component(page_data) : <Nothing spinner={spinner} />}
+                {store_filtered.length > 0 ? component(page_data) : <Nothing spinner={spinner} />}
                 {child_data.length > page_size && <Grid item xs={12}>
                   <Paper className={classes.pagination}>
                     <Pagination variant="outlined" shape="rounded" count={pages(child_data, page_size)} page={page} onChange={changePage(page_name, history)} />
@@ -163,17 +163,17 @@ export default props => {
               <Pageview />
             </Link>
           </Badge>
-          <Badge color="secondary" className={classes.margin}>
+          <Badge className={classes.margin} color="secondary" max={99999}>
             <Link to={"/prices/wishlist"} style={{ color: "white" }}>
               <Favorite />
             </Link>
           </Badge>
-          <Badge className={classes.margin} badgeContent={data.length} color="secondary" max={99999}>
+          <Badge className={classes.margin} badgeContent={store_filtered.length} color="secondary" max={99999}>
             <Link to={"/prices/all"} style={{ color: "white" }}>
               <LocalOffer />
             </Link>
           </Badge>
-          <Badge className={classes.margin} badgeContent={cart_show.length} color="secondary" max={99999}>
+          <Badge className={classes.margin} badgeContent={cart_results.length} color="secondary" max={99999}>
             <Link to={"/prices/cart"} style={{ color: "white" }}>
               <ShoppingCart />
             </Link>
@@ -189,7 +189,7 @@ export default props => {
       <Grid item xs={12}>
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            © 2022 Dimitris Raviolos - {packagejs.version} - Last update: {toDate(data)}
+            © 2022 Dimitris Raviolos - {packagejs.version} - Last update: {toDate(store_filtered)}
           </Typography>
         </Toolbar>
       </Grid>

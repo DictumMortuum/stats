@@ -7,18 +7,8 @@ import CartPage from './CartPage';
 import PricesPage from './PricesPage';
 import SearchPage from './SearchPage';
 import WishlistPage from './WishlistPage';
-import { createAsyncThunk } from '@reduxjs/toolkit'
-import * as fflate from 'fflate';
-
-const fetchPosts = createAsyncThunk('posts/fetchPrices', async () => {
-  const compressed = new Uint8Array(
-    await fetch('https://raw.githubusercontent.com/DictumMortuum/json-api/master/final.json.gz').then(res => res.arrayBuffer())
-  );
-
-  const decompressed = fflate.decompressSync(compressed);
-  const origText = fflate.strFromU8(decompressed);
-  return JSON.parse(origText);
-})
+import { fetchPosts } from './api/prices';
+import { fetchStores } from './api/stores';
 
 export default () => {
   const { url } = useRouteMatch();
@@ -26,6 +16,7 @@ export default () => {
 
   useEffect(() => {
     dispatch(fetchPosts())
+    dispatch(fetchStores())
   }, [])
 
   return (

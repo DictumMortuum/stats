@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import BoardgameHistoricPrice from './BoardgameHistoricPrice';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
-export default props => {
+export default () => {
+  const dispatch = useDispatch();
   const { pathname } = useLocation();
   const id = parseInt(pathname.split("/")[3])
-  const { data, store } = useSelector(state => state.pricesReducer)
-  const items = data.filter(d => d.boardgame_id === id).sort((a, b) => a.price > b.price)
-  const filtered = items.filter(d => d.store_id === store || store === -1)
+  const { store_filtered } = useSelector(state => state.pricesReducer)
+
+  useEffect(() => {
+    dispatch({
+      type: "SET_PAGE_FILTER",
+      func: col => col.filter(d => d.boardgame_id === id).sort((a, b) => a.price > b.price),
+    })
+  }, [id])
 
   return (
     <GenericPage
-      child_data={filtered}
-      store_data={items}
+      child_data={store_filtered}
       pre_component={
         <Grid item xs={12}>
           <BoardgameHistoricPrice boardgame_id={id} />
