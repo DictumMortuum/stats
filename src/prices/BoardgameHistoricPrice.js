@@ -1,8 +1,9 @@
-import React from 'react';
+import React,  { useEffect } from 'react';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { makeStyles } from '@material-ui/core/styles';
+import { fetchHistory } from "./api/history";
 import {
   Line,
   XAxis,
@@ -85,11 +86,17 @@ const formatLabel = d => {
 }
 
 export default props => {
-  const { boardgame_id } = props;
-  const { store, instock, history } = useSelector(state => state.pricesReducer)
   const classes = useStyles();
-  const p = history.filter(d => d.boardgame_id === boardgame_id).filter(d => d.stock === instock).filter(d => d.store_id === store || store === -1)
+  const dispatch = useDispatch();
+  const { boardgame_id } = props;
+  const thunk = fetchHistory(boardgame_id)
+  const { store, instock, history } = useSelector(state => state.pricesReducer)
+  const p = history.filter(d => d.stock === instock).filter(d => d.store_id === store || store === -1)
   const processed = transform(p).sort((a, b) => a.cr_date > b.cr_date)
+
+  useEffect(() => {
+    dispatch(thunk())
+  }, [boardgame_id])
 
   return (
      <Paper className={classes.root}>
