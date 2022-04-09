@@ -56,11 +56,6 @@ export const reducer = (state = {}, action) => {
         ...state,
         stores: action.payload
       }
-    case "history/fulfilled":
-      return {
-        ...state,
-        history: action.payload
-      }
     case "SET_STOCK": {
       const stock = action.stock;
       let instock = false;
