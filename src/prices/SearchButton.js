@@ -3,8 +3,26 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import InputAdornment from "@material-ui/core/InputAdornment";
 import { useHistory } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import fuse from 'fuse.js';
+
+const searchFilter = term => col => {
+  if(term !== "") {
+    const options = {
+      includeScore: true,
+      keys: ['name']
+    }
+
+    const f = new fuse(col, options)
+    return f.search(term).map(d => d.item)
+  } else {
+    return []
+  }
+}
 
 const Component = () => {
+  const dispatch = useDispatch();
+  const { search_term } = useSelector(state => state.pricesReducer)
   const [isSending, setIsSending] = useState(false)
   const history = useHistory();
   const isMounted = useRef(true)
@@ -22,12 +40,17 @@ const Component = () => {
     // update state
     setIsSending(true)
 
+    dispatch({
+      type: "SET_PAGE_FILTER",
+      func: searchFilter(search_term)
+    })
+
     history.push("/prices/search")
 
     // once the request is sent, update state again
     if (isMounted.current) // only update if we are still mounted
       setIsSending(false)
-  }, []) // update the callback if the state changes
+  }, [search_term]) // update the callback if the state changes
 
   return (
     <InputAdornment position="end">
