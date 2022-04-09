@@ -52,8 +52,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const toDate = data => data.length > 0 ? new Date(data[0].cr_date).toLocaleDateString('el-GR') : ""
-
 const Nothing = props => (
   <Grid container alignContent="center" alignItems="center" direction="column">
     <Grid item xs={12}>
@@ -79,7 +77,7 @@ const Nothing = props => (
 export default props => {
   const classes = useStyles();
   const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
-  const { store_filtered, stores, stock_filtered, cart_results, search_results, spinner } = useSelector(state => state.pricesReducer)
+  const { store_filtered, stores, stock_filtered, cart_results, search_results, spinner, date } = useSelector(state => state.pricesReducer)
   const { child_data, page_name, component, pre_component, paging=true } = props;
   const store_ids = [...new Set(stock_filtered.map(d => d.store_id))]
   const current_stores = stores.filter(d => store_ids.includes(d.id));
@@ -178,7 +176,7 @@ export default props => {
       <Grid item xs={12}>
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            © 2022 Dimitris Raviolos - {packagejs.version} - Last update: {toDate(store_filtered)}
+            © 2022 Dimitris Raviolos - {packagejs.version} - Last update: {new Date(date).toLocaleDateString('el-GR')}
           </Typography>
         </Toolbar>
       </Grid>

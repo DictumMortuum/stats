@@ -43,6 +43,7 @@ export const reducer = (state = {}, action) => {
         page_filtered: [],
         stock_filtered: [],
         store_filtered: [],
+        date: new Date(),
       }
     case "prices/fulfilled": {
       return step({
@@ -50,6 +51,12 @@ export const reducer = (state = {}, action) => {
         spinner: false,
         prices: action.payload,
       })
+    }
+    case "date/fulfilled": {
+      return {
+        ...state,
+        date: new Date(action.payload.date),
+      }
     }
     case "stores/fulfilled":
       return {

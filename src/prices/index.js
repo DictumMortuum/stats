@@ -8,6 +8,7 @@ import SearchPage from './SearchPage';
 import WishlistPage from './WishlistPage';
 import { fetchAllPrices } from './api/prices';
 import { fetchStores } from './api/stores';
+import { fetchDate } from './api/date';
 
 export default () => {
   const { url } = useRouteMatch();
@@ -16,6 +17,7 @@ export default () => {
   useEffect(() => {
     dispatch(fetchAllPrices())
     dispatch(fetchStores())
+    dispatch(fetchDate())
   }, [])
 
   return (
