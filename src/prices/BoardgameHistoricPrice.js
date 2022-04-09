@@ -3,7 +3,6 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { useSelector } from "react-redux";
 import { makeStyles } from '@material-ui/core/styles';
-import { useHistory } from './hooks/useHistory';
 import {
   Line,
   XAxis,
@@ -85,29 +84,38 @@ const formatLabel = d => {
   return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()
 }
 
+const domain = col => {
+  if(col.length === 0) {
+    return []
+  } else {
+    return [col[0].cr_date - 43200000, col[col.length-1].cr_date + 43200000]
+  }
+}
+
 export default props => {
   const classes = useStyles();
-  const { boardgame_id } = props;
-  const history = useHistory(boardgame_id)
+  const { history } = props;
   const { store, instock } = useSelector(state => state.pricesReducer)
   const p = history.filter(d => d.stock === instock).filter(d => d.store_id === store || store === -1)
   const processed = transform(p).sort((a, b) => a.cr_date > b.cr_date)
+
+  console.log(processed)
 
   return (
      <Paper className={classes.root}>
       <Typography variant="body1" color="inherit" className={classes.label}>
         Price history
       </Typography>
-      { processed.length > 0 && <ResponsiveContainer width="100%" height={200} >
+      <ResponsiveContainer width="100%" height={200} >
         <ComposedChart data={processed}>
           <CartesianGrid strokeDasharray="5 5" />
-          <XAxis dataKey="cr_date" scale="time" type="number" domain={[processed[0].cr_date - 43200000, processed[processed.length-1].cr_date + 43200000]} tickFormatter={formatDate} />
+          <XAxis dataKey="cr_date" scale="time" type="number" domain={domain(processed)} tickFormatter={formatDate} />
           <YAxis domain={['auto', 'auto']} type="number" />
           <Tooltip labelFormatter={formatLabel} />
           <Area type="monotone" dataKey="range" fillOpacity={0.3} fill="#5e81ac" />
           <Line type="monotone" dataKey="avg" stroke="#bf616a" strokeWidth={3} activeDot={{ r: 8 }} />
         </ComposedChart>
-      </ResponsiveContainer>}
+      </ResponsiveContainer>
     </Paper>
   )
 }

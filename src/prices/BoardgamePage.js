@@ -6,12 +6,14 @@ import GenericPage from './GenericPage';
 import BoardgameHistoricPrice from './BoardgameHistoricPrice';
 import { useSelector, useDispatch } from "react-redux";
 import { usePrices } from './hooks/usePrices';
+import { useHistory } from './hooks/useHistory';
 
 export default () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
   const id = parseInt(pathname.split("/")[3])
   const { store_filtered } = useSelector(state => state.pricesReducer)
+  const history = useHistory(id)
   const prices = usePrices(id)
   const price_ids = store_filtered.map(d => d.id)
 
@@ -28,7 +30,7 @@ export default () => {
       paging={false}
       pre_component={
         <Grid item xs={12}>
-          <BoardgameHistoricPrice boardgame_id={id} />
+          <BoardgameHistoricPrice history={history} />
         </Grid>
       }
       component={data => data.map((tile) => (
