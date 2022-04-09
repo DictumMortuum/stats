@@ -4,10 +4,9 @@ import { Route, Switch, useRouteMatch } from "react-router-dom";
 import LandingPage from './LandingPage';
 import BoardgamePage from './BoardgamePage';
 import CartPage from './CartPage';
-import PricesPage from './PricesPage';
 import SearchPage from './SearchPage';
 import WishlistPage from './WishlistPage';
-import { fetchPosts } from './api/prices';
+import { fetchAllPrices } from './api/prices';
 import { fetchStores } from './api/stores';
 
 export default () => {
@@ -15,7 +14,7 @@ export default () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchPosts())
+    dispatch(fetchAllPrices())
     dispatch(fetchStores())
   }, [])
 
@@ -26,9 +25,6 @@ export default () => {
       </Route>
       <Route path={`${url}/cart`} exact>
         <CartPage />
-      </Route>
-      <Route path={`${url}/all`} exact>
-        <PricesPage />
       </Route>
       <Route path={`${url}/search`} exact>
         <SearchPage />

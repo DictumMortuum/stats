@@ -9,7 +9,7 @@ const sorter = (a, b) => {
 }
 
 const transform = d => {
-  if (d.rank === 0 || d.rank === null) {
+  if (d.rank === 0 || d.rank === null || d.rank === undefined) {
     return {
       ...d,
       rank: 999999
