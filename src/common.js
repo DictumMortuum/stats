@@ -58,8 +58,8 @@ export const discrete = data => {
   return Array(high - low + 1).fill(low).map((d, i) => d + i);
 };
 
-export const paginate = (array, pageSize, pageNumber) => {
-  return array.slice((pageNumber-1) * pageSize, pageNumber * pageSize);
+export const paginate = (array, pageSize, pageNumber, paging) => {
+  return paging === true ? array.slice((pageNumber-1) * pageSize, pageNumber * pageSize) : array;
 }
 
 export const pages = (col, pageSize) => Math.ceil(col.length/pageSize)
