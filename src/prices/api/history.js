@@ -3,6 +3,6 @@ import { base } from "./common";
 
 export const fetchHistory = id => {
   return createAsyncThunk('history', async () => {
-    return await fetch(base + '/rest/v1/prices/' + id + '/history.json').then(res => res.json())
+    return await fetch(base + '/rest/v1/boardgames/' + id + '/history.json').then(res => res.json())
   })
 }

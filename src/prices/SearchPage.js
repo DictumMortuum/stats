@@ -1,49 +1,36 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import SearchInput from './SearchInput';
-import { useSelector, useDispatch } from "react-redux";
-import fuse from 'fuse.js';
+import { useSelector } from "react-redux";
+import { usePrice } from './hooks/usePrices';
 
-const searchFilter = term => col => {
-  if(term !== "") {
-    const options = {
-      includeScore: true,
-      keys: ['name']
-    }
+const Price = props => {
+  const { id } = props;
+  const price = usePrice(id);
 
-    const f = new fuse(col, options)
-    return f.search(term).map(d => d.item)
-  } else {
-    return []
-  }
+  return (
+    <Grid key={id} item xs={12} md={6} lg={3}>
+      <PriceCard boardgame={price} self_ref={true} />
+    </Grid>
+  )
 }
-export default () => {
-  const dispatch = useDispatch();
-  const { store_filtered, search_term } = useSelector(state => state.pricesReducer)
 
-  useEffect(() => {
-    dispatch({
-      type: "SET_PAGE_FILTER",
-      func: searchFilter(search_term)
-    })
-  }, [search_term])
+export default () => {
+  const { store_filtered } = useSelector(state => state.pricesReducer)
 
   return (
     <GenericPage
       child_data={store_filtered}
+      paging={true}
       page_name="/prices/search"
       pre_component={
         <Grid item xs={12}>
           <SearchInput />
         </Grid>
       }
-      component={data => data.map((tile) => (
-        <Grid key={tile.id} item xs={12} md={6} lg={3}>
-          <PriceCard boardgame={tile} self_ref={true} />
-        </Grid>
-      ))}
+      component={data => data.map((tile) => <Price id={tile.id} />)}
     />
   )
 }

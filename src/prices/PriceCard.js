@@ -72,14 +72,13 @@ export default props => {
   const dispatch = useDispatch();
   const { stores } = useSelector(state => state.pricesReducer)
   const { url, name, store_id, price, stock } = props.boardgame;
-  const price_store = stores.filter(d => d.id === store_id)[0]
 
   return (
     <Card className={classNames({[classes.out_of_stock]: !stock})}>
-      <Media {...props} />
+      { url && <Media {...props} />}
       <CardContent className={classes.card_header}>
         <Typography variant="subtitle1" color="textSecondary">
-          {price_store.name}
+          {stores.filter(d => d.id === store_id).map(d => d.name)}
         </Typography>
         <Typography variant="subtitle1">
           {name}

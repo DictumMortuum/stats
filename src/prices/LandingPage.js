@@ -37,6 +37,7 @@ export default () => {
   return (
     <GenericPage
       child_data={grouped}
+      paging={true}
       page_name="/prices"
       component={data => data.map((tile) => (
         <Grid key={tile.id} item xs={12} md={6} lg={3}>

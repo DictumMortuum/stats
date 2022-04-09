@@ -8,6 +8,20 @@ const stockFilter = toggle => d => {
   }
 }
 
+const step = state => {
+  const { store, instock, filter, prices } = state;
+  const page_filtered = filter !== undefined ? filter(prices) : prices
+  const stock_filtered = page_filtered.filter(stockFilter(instock))
+  const store_filtered = stock_filtered.filter(storeFilter(store))
+
+  return {
+    ...state,
+    page_filtered,
+    stock_filtered,
+    store_filtered,
+  }
+}
+
 export const reducer = (state = {}, action) => {
   switch (action.type) {
     case "INIT":
@@ -24,25 +38,18 @@ export const reducer = (state = {}, action) => {
         prices: [],
         history: [],
         stores: [],
+        filter: () => [],
         spinner: true,
         page_filtered: [],
         stock_filtered: [],
         store_filtered: [],
       }
     case "prices/fulfilled": {
-      const { store, instock, filter } = state;
-      const page_filtered = filter(action.payload.prices)
-      const stock_filtered = page_filtered.filter(stockFilter(instock))
-      const store_filtered = stock_filtered.filter(storeFilter(store))
-
-      return {
+      return step({
         ...state,
         spinner: false,
-        prices: action.payload.prices,
-        page_filtered,
-        stock_filtered,
-        store_filtered,
-      }
+        prices: action.payload,
+      })
     }
     case "stores/fulfilled":
       return {
@@ -62,48 +69,23 @@ export const reducer = (state = {}, action) => {
         instock = true
       }
 
-      const { prices, store, filter } = state;
-      const page_filtered = filter(prices)
-      const stock_filtered = page_filtered.filter(stockFilter(instock))
-      const store_filtered = stock_filtered.filter(storeFilter(store))
-
-      return {
+      return step({
         ...state,
         stock,
         instock,
-        page_filtered,
-        stock_filtered,
-        store_filtered,
-      }
+      })
     }
     case "SET_PAGE_FILTER": {
-      const { prices, store, instock } = state;
-      const page_filtered = action.func(prices)
-      const stock_filtered = page_filtered.filter(stockFilter(instock))
-      const store_filtered = stock_filtered.filter(storeFilter(store))
-
-      return {
+      return step({
         ...state,
         filter: action.func,
-        page_filtered,
-        stock_filtered,
-        store_filtered,
-      }
+      })
     }
     case "SET_STORE": {
-      const store = action.store;
-      const { prices, instock, filter } = state;
-      const page_filtered = filter(prices)
-      const stock_filtered = page_filtered.filter(stockFilter(instock))
-      const store_filtered = stock_filtered.filter(storeFilter(store))
-
-      return {
+      return step({
         ...state,
-        store,
-        page_filtered,
-        stock_filtered,
-        store_filtered,
-      }
+        store: action.store,
+      })
     }
     case "ADD_TO_CART":
       return {

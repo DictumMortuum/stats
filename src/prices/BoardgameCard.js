@@ -5,6 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import BoardgameImage from './BoardgameImage';
 import { Link } from "react-router-dom";
+import { useBoardgame } from './hooks/useBoardgame';
 
 const useStyles = makeStyles((theme) => ({
   card_header: {
@@ -13,8 +14,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default props => {
+  const { id, boardgame_id, rank, items } = props;
   const classes = useStyles();
-  const { id, boardgame_id, thumb, store_thumb, boardgame_name, rank, items } = props;
+  const boardgame = useBoardgame(boardgame_id);
+  const { images, boardgame_name } = boardgame;
   const available_prices = items.sort((a, b) => a.price > b.price)
   const l = available_prices.length;
 
@@ -34,7 +37,7 @@ export default props => {
   return (
     <Card key={id}>
       <Link to={"/prices/item/" + boardgame_id}>
-        <BoardgameImage srcs={[thumb, store_thumb]} />
+        <BoardgameImage srcs={images} />
       </Link>
       <CardContent className={classes.card_header}>
         <Typography variant="subtitle1" color="textSecondary">

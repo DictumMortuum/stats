@@ -23,7 +23,6 @@ import { useHistory } from 'react-router-dom';
 import {
   Bookmark,
   ShoppingCart,
-  LocalOffer,
   Favorite,
   Pageview
 } from '@material-ui/icons';
@@ -81,13 +80,13 @@ export default props => {
   const classes = useStyles();
   const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
   const { store_filtered, stores, stock_filtered, cart_results, search_results, spinner } = useSelector(state => state.pricesReducer)
-  const { child_data, page_name, component, pre_component } = props;
+  const { child_data, page_name, component, pre_component, paging=true } = props;
   const store_ids = [...new Set(stock_filtered.map(d => d.store_id))]
   const current_stores = stores.filter(d => store_ids.includes(d.id));
   const page_size = 12;
   const history = useHistory();
   const { page } = useParams();
-  const page_data = paginate(child_data, page_size, page)
+  const page_data = paginate(child_data, page_size, page, paging)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -107,11 +106,6 @@ export default props => {
           { matches && <Badge className={classes.margin} color="secondary" max={99999}>
             <Link to={"/prices/wishlist"} style={{ color: "white" }}>
               <Favorite />
-            </Link>
-          </Badge>}
-          { matches && <Badge className={classes.margin} badgeContent={store_filtered.length} color="secondary" max={99999}>
-            <Link to={"/prices/all"} style={{ color: "white" }}>
-              <LocalOffer />
             </Link>
           </Badge>}
           { matches && <Badge className={classes.margin} badgeContent={cart_results.length} color="secondary" max={99999}>
@@ -137,14 +131,14 @@ export default props => {
             </Grid>
             <Grid item xs={12}>
               <Grid container spacing={2}>
-                {child_data.length > page_size && <Grid item xs={12}>
+                {child_data.length > page_size && paging && <Grid item xs={12}>
                   <Paper className={classes.pagination}>
                     <Pagination variant="outlined" shape="rounded" count={pages(child_data, page_size)} page={page} onChange={changePage(page_name, history)} />
                   </Paper>
                 </Grid>}
                 {pre_component !== undefined && pre_component}
                 {store_filtered.length > 0 ? component(page_data) : <Nothing spinner={spinner} />}
-                {child_data.length > page_size && <Grid item xs={12}>
+                {child_data.length > page_size && paging && <Grid item xs={12}>
                   <Paper className={classes.pagination}>
                     <Pagination variant="outlined" shape="rounded" count={pages(child_data, page_size)} page={page} onChange={changePage(page_name, history)} />
                   </Paper>
@@ -166,11 +160,6 @@ export default props => {
           <Badge className={classes.margin} color="secondary" max={99999}>
             <Link to={"/prices/wishlist"} style={{ color: "white" }}>
               <Favorite />
-            </Link>
-          </Badge>
-          <Badge className={classes.margin} badgeContent={store_filtered.length} color="secondary" max={99999}>
-            <Link to={"/prices/all"} style={{ color: "white" }}>
-              <LocalOffer />
             </Link>
           </Badge>
           <Badge className={classes.margin} badgeContent={cart_results.length} color="secondary" max={99999}>
