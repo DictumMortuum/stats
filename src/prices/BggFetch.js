@@ -35,7 +35,7 @@ const Component = props => {
 
   const sendRequest = useCallback(async() => {
     // don't send again while we are sending
-    if (isSending) return
+    // if (isSending) return
     // update state
     setIsSending(true)
 
@@ -50,7 +50,7 @@ const Component = props => {
       onFailedAttempt: error => {
         console.log(`Attempt ${error.attemptNumber} failed. There are ${error.retriesLeft} retries left.`);
       },
-      retries: 5
+      retries: 2
     })
 
     dispatch({
