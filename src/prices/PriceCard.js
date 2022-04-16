@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
-import ShareIcon from '@material-ui/icons/Share';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useDispatch } from "react-redux";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { Link } from "react-router-dom";
@@ -12,6 +12,18 @@ import { Typography } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import classNames from 'classnames';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  FacebookMessengerShareButton,
+  FacebookMessengerIcon,
+  ViberShareButton,
+  ViberIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from "react-share";
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -70,8 +82,10 @@ const Media = props => {
 export default props => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const { stores } = useSelector(state => state.pricesReducer)
+  const matches = useMediaQuery(theme => theme.breakpoints.up('sm'));
+  const { stores } = useSelector(state => state.pricesReducer);
   const { url, name, store_id, price, stock } = props.boardgame;
+  const self = window.location.href;
 
   return (
     <Card className={classNames({[classes.out_of_stock]: !stock})}>
@@ -85,9 +99,36 @@ export default props => {
         </Typography>
       </CardContent>
       <CardActions>
-        <IconButton href={url}>
-          <ShareIcon />
+        <IconButton component="div">
+          <FacebookShareButton style={{ height: 24 }} url={self}>
+            <FacebookIcon size={24} round />
+          </FacebookShareButton>
         </IconButton>
+
+        <IconButton component="div">
+          <FacebookMessengerShareButton style={{ height: 24 }} url={self}>
+            <FacebookMessengerIcon size={24} round />
+          </FacebookMessengerShareButton>
+        </IconButton>
+
+        <IconButton component="div">
+          <ViberShareButton style={{ height: 24 }} url={self}>
+            <ViberIcon size={24} round />
+          </ViberShareButton>
+        </IconButton>
+
+        { matches && <IconButton component="div">
+          <WhatsappShareButton style={{ height: 24 }} url={self}>
+            <WhatsappIcon size={24} round />
+          </WhatsappShareButton>
+        </IconButton> }
+
+        { matches && <IconButton component="div">
+          <TwitterShareButton style={{ height: 24 }} url={self}>
+            <TwitterIcon size={24} round />
+          </TwitterShareButton>
+        </IconButton> }
+
         <IconButton onClick={() => dispatch({
           type: "ADD_TO_CART",
           cart: props.boardgame,
