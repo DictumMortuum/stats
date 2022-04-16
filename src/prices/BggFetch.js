@@ -35,7 +35,7 @@ const Component = props => {
 
   const sendRequest = useCallback(async() => {
     // don't send again while we are sending
-    // if (isSending) return
+    if (isSending) return
     // update state
     setIsSending(true)
 
