@@ -10,11 +10,14 @@ const searchFilter = term => col => {
   if(term !== "") {
     const options = {
       includeScore: true,
+      shouldSort: true,
+      ignoreLocation: true,
       keys: ['name']
     }
 
     const f = new fuse(col, options)
-    return f.search(term).map(d => d.item)
+    const res = f.search(term).filter(d => d.score <= 0.6)
+    return res.map(d => d.item)
   } else {
     return []
   }
