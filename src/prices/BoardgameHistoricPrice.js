@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { useSelector } from "react-redux";
 import { makeStyles } from '@material-ui/core/styles';
+import { stockFilter, storeFilter } from '../reducers/prices';
 import {
   Line,
   XAxis,
@@ -96,10 +97,8 @@ export default props => {
   const classes = useStyles();
   const { history } = props;
   const { store, instock } = useSelector(state => state.pricesReducer)
-  const p = history.filter(d => d.stock === instock).filter(d => d.store_id === store || store === -1)
+  const p = history.filter(stockFilter(instock)).filter(storeFilter(store))
   const processed = transform(p).sort((a, b) => a.cr_date > b.cr_date)
-
-  console.log(processed)
 
   return (
      <Paper className={classes.root}>

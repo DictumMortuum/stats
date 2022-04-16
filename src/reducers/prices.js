@@ -1,6 +1,6 @@
-const storeFilter = store => d => d.store_id === store || store === -1
+export const storeFilter = store => d => d.store_id === store || store === -1
 
-const stockFilter = toggle => d => {
+export const stockFilter = toggle => d => {
   if(toggle) {
     return d.stock === true
   } else {
