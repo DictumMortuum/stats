@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useDispatch } from "react-redux";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { Link } from "react-router-dom";
@@ -82,7 +81,6 @@ const Media = props => {
 export default props => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const matches = useMediaQuery(theme => theme.breakpoints.up('sm'));
   const { stores } = useSelector(state => state.pricesReducer);
   const { url, name, store_id, price, stock } = props.boardgame;
   const self = window.location.href;
@@ -90,14 +88,6 @@ export default props => {
   return (
     <Card className={classNames({[classes.out_of_stock]: !stock})}>
       { url && <Media {...props} />}
-      <CardContent className={classes.card_header}>
-        <Typography variant="subtitle1" color="textSecondary">
-          {stores.filter(d => d.id === store_id).map(d => d.name)}
-        </Typography>
-        <Typography variant="subtitle1">
-          {name}
-        </Typography>
-      </CardContent>
       <CardActions>
         <IconButton component="div">
           <FacebookShareButton style={{ height: 24 }} url={self}>
@@ -117,18 +107,27 @@ export default props => {
           </ViberShareButton>
         </IconButton>
 
-        { matches && <IconButton component="div">
+        <IconButton component="div">
           <WhatsappShareButton style={{ height: 24 }} url={self}>
             <WhatsappIcon size={24} round />
           </WhatsappShareButton>
-        </IconButton> }
+        </IconButton>
 
-        { matches && <IconButton component="div">
+        <IconButton component="div">
           <TwitterShareButton style={{ height: 24 }} url={self}>
             <TwitterIcon size={24} round />
           </TwitterShareButton>
-        </IconButton> }
-
+        </IconButton>
+      </CardActions>
+      <CardContent className={classes.card_header}>
+        <Typography variant="subtitle1" color="textSecondary">
+          {stores.filter(d => d.id === store_id).map(d => d.name)}
+        </Typography>
+        <Typography variant="subtitle1">
+          {name}
+        </Typography>
+      </CardContent>
+      <CardActions>
         <IconButton onClick={() => dispatch({
           type: "ADD_TO_CART",
           cart: props.boardgame,
