@@ -9842,16 +9842,6 @@
     "boardgame_data": {
       "columns": [
         {
-          "desc": "King's orders",
-          "name": "order",
-          "type": "int"
-        },
-        {
-          "desc": "Black track",
-          "name": "black",
-          "type": "int"
-        },
-        {
           "desc": "Blue track",
           "name": "blue",
           "type": "int"
@@ -9862,7 +9852,45 @@
           "type": "int"
         },
         {
+          "desc": "Black track",
+          "name": "black",
+          "type": "int"
+        },
+        {
+          "desc": "White track",
+          "name": "white",
+          "type": "int"
+        },
+        {
           "name": "develop",
+          "type": "int"
+        },
+        {
+          "name": "commission",
+          "type": "int"
+        },
+        {
+          "name": "absolve",
+          "type": "int"
+        },
+        {
+          "name": "fortify",
+          "type": "int"
+        },
+        {
+          "name": "garrison",
+          "type": "int"
+        },
+        {
+          "name": "convert",
+          "type": "int"
+        },
+        {
+          "name": "muster",
+          "type": "int"
+        },
+        {
+          "name": "negotiate",
           "type": "int"
         },
         {
@@ -9875,23 +9903,8 @@
           "type": "int"
         },
         {
-          "name": "commission",
-          "type": "int"
-        },
-        {
-          "name": "fortify",
-          "type": "int"
-        },
-        {
-          "name": "garrison",
-          "type": "int"
-        },
-        {
-          "name": "absolve",
-          "type": "int"
-        },
-        {
-          "name": "convert",
+          "desc": "King's orders",
+          "name": "order",
           "type": "int"
         }
       ]
@@ -10858,16 +10871,6 @@
     "boardgame_data": {
       "columns": [
         {
-          "desc": "King's orders",
-          "name": "order",
-          "type": "int"
-        },
-        {
-          "desc": "Black track",
-          "name": "black",
-          "type": "int"
-        },
-        {
           "desc": "Blue track",
           "name": "blue",
           "type": "int"
@@ -10878,7 +10881,45 @@
           "type": "int"
         },
         {
+          "desc": "Black track",
+          "name": "black",
+          "type": "int"
+        },
+        {
+          "desc": "White track",
+          "name": "white",
+          "type": "int"
+        },
+        {
           "name": "develop",
+          "type": "int"
+        },
+        {
+          "name": "commission",
+          "type": "int"
+        },
+        {
+          "name": "absolve",
+          "type": "int"
+        },
+        {
+          "name": "fortify",
+          "type": "int"
+        },
+        {
+          "name": "garrison",
+          "type": "int"
+        },
+        {
+          "name": "convert",
+          "type": "int"
+        },
+        {
+          "name": "muster",
+          "type": "int"
+        },
+        {
+          "name": "negotiate",
           "type": "int"
         },
         {
@@ -10891,23 +10932,8 @@
           "type": "int"
         },
         {
-          "name": "commission",
-          "type": "int"
-        },
-        {
-          "name": "fortify",
-          "type": "int"
-        },
-        {
-          "name": "garrison",
-          "type": "int"
-        },
-        {
-          "name": "absolve",
-          "type": "int"
-        },
-        {
-          "name": "convert",
+          "desc": "King's orders",
+          "name": "order",
           "type": "int"
         }
       ]
@@ -20114,16 +20140,6 @@
     "boardgame_data": {
       "columns": [
         {
-          "desc": "King's orders",
-          "name": "order",
-          "type": "int"
-        },
-        {
-          "desc": "Black track",
-          "name": "black",
-          "type": "int"
-        },
-        {
           "desc": "Blue track",
           "name": "blue",
           "type": "int"
@@ -20134,7 +20150,45 @@
           "type": "int"
         },
         {
+          "desc": "Black track",
+          "name": "black",
+          "type": "int"
+        },
+        {
+          "desc": "White track",
+          "name": "white",
+          "type": "int"
+        },
+        {
           "name": "develop",
+          "type": "int"
+        },
+        {
+          "name": "commission",
+          "type": "int"
+        },
+        {
+          "name": "absolve",
+          "type": "int"
+        },
+        {
+          "name": "fortify",
+          "type": "int"
+        },
+        {
+          "name": "garrison",
+          "type": "int"
+        },
+        {
+          "name": "convert",
+          "type": "int"
+        },
+        {
+          "name": "muster",
+          "type": "int"
+        },
+        {
+          "name": "negotiate",
           "type": "int"
         },
         {
@@ -20147,23 +20201,8 @@
           "type": "int"
         },
         {
-          "name": "commission",
-          "type": "int"
-        },
-        {
-          "name": "fortify",
-          "type": "int"
-        },
-        {
-          "name": "garrison",
-          "type": "int"
-        },
-        {
-          "name": "absolve",
-          "type": "int"
-        },
-        {
-          "name": "convert",
+          "desc": "King's orders",
+          "name": "order",
           "type": "int"
         }
       ]
@@ -20266,16 +20305,6 @@
     "boardgame_data": {
       "columns": [
         {
-          "desc": "King's orders",
-          "name": "order",
-          "type": "int"
-        },
-        {
-          "desc": "Black track",
-          "name": "black",
-          "type": "int"
-        },
-        {
           "desc": "Blue track",
           "name": "blue",
           "type": "int"
@@ -20286,7 +20315,45 @@
           "type": "int"
         },
         {
+          "desc": "Black track",
+          "name": "black",
+          "type": "int"
+        },
+        {
+          "desc": "White track",
+          "name": "white",
+          "type": "int"
+        },
+        {
           "name": "develop",
+          "type": "int"
+        },
+        {
+          "name": "commission",
+          "type": "int"
+        },
+        {
+          "name": "absolve",
+          "type": "int"
+        },
+        {
+          "name": "fortify",
+          "type": "int"
+        },
+        {
+          "name": "garrison",
+          "type": "int"
+        },
+        {
+          "name": "convert",
+          "type": "int"
+        },
+        {
+          "name": "muster",
+          "type": "int"
+        },
+        {
+          "name": "negotiate",
           "type": "int"
         },
         {
@@ -20299,23 +20366,8 @@
           "type": "int"
         },
         {
-          "name": "commission",
-          "type": "int"
-        },
-        {
-          "name": "fortify",
-          "type": "int"
-        },
-        {
-          "name": "garrison",
-          "type": "int"
-        },
-        {
-          "name": "absolve",
-          "type": "int"
-        },
-        {
-          "name": "convert",
+          "desc": "King's orders",
+          "name": "order",
           "type": "int"
         }
       ]
@@ -22229,16 +22281,6 @@
     "boardgame_data": {
       "columns": [
         {
-          "desc": "King's orders",
-          "name": "order",
-          "type": "int"
-        },
-        {
-          "desc": "Black track",
-          "name": "black",
-          "type": "int"
-        },
-        {
           "desc": "Blue track",
           "name": "blue",
           "type": "int"
@@ -22249,7 +22291,45 @@
           "type": "int"
         },
         {
+          "desc": "Black track",
+          "name": "black",
+          "type": "int"
+        },
+        {
+          "desc": "White track",
+          "name": "white",
+          "type": "int"
+        },
+        {
           "name": "develop",
+          "type": "int"
+        },
+        {
+          "name": "commission",
+          "type": "int"
+        },
+        {
+          "name": "absolve",
+          "type": "int"
+        },
+        {
+          "name": "fortify",
+          "type": "int"
+        },
+        {
+          "name": "garrison",
+          "type": "int"
+        },
+        {
+          "name": "convert",
+          "type": "int"
+        },
+        {
+          "name": "muster",
+          "type": "int"
+        },
+        {
+          "name": "negotiate",
           "type": "int"
         },
         {
@@ -22262,23 +22342,8 @@
           "type": "int"
         },
         {
-          "name": "commission",
-          "type": "int"
-        },
-        {
-          "name": "fortify",
-          "type": "int"
-        },
-        {
-          "name": "garrison",
-          "type": "int"
-        },
-        {
-          "name": "absolve",
-          "type": "int"
-        },
-        {
-          "name": "convert",
+          "desc": "King's orders",
+          "name": "order",
           "type": "int"
         }
       ]
@@ -27651,6 +27716,272 @@
     ]
   },
   {
+    "id": 327,
+    "boardgame_id": 283863,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-03-25T21:38:20+02:00",
+    "date": "2022-03-25T02:00:00+02:00",
+    "boardgame": "The Magnificent",
+    "stats": [
+      {
+        "id": 963,
+        "play_id": 327,
+        "player_id": 2,
+        "data": {
+          "score": 176
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.402801752363068,
+        "sigma": 0.7211902128395594,
+        "trueskill": 29.23923111384439,
+        "delta": 0.07080290125356825
+      },
+      {
+        "id": 962,
+        "play_id": 327,
+        "player_id": 1,
+        "data": {
+          "score": 145
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.0088224570435,
+        "sigma": 0.721958981901861,
+        "trueskill": 28.842945511337916,
+        "delta": -0.07882577359922038
+      }
+    ],
+    "probability": 46.694349324418155,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 328,
+    "boardgame_id": 54998,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-04-01T20:35:49+03:00",
+    "date": "2022-03-27T02:00:00+02:00",
+    "boardgame": "Cyclades",
+    "stats": [
+      {
+        "id": 966,
+        "play_id": 328,
+        "player_id": 4,
+        "data": {
+          "score": 2
+        },
+        "player": "Elena",
+        "player_surname": "Panagiotopoulou",
+        "mu": 27.03527492676545,
+        "sigma": 0.8897327445812847,
+        "trueskill": 24.366076693021597,
+        "delta": 0.31705490727457075
+      },
+      {
+        "id": 965,
+        "play_id": 328,
+        "player_id": 2,
+        "data": {
+          "score": 1
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.365971560929335,
+        "sigma": 0.7180442984080586,
+        "trueskill": 29.21183866570516,
+        "delta": -0.027392448139231362
+      },
+      {
+        "id": 964,
+        "play_id": 328,
+        "player_id": 1,
+        "data": {
+          "score": 1
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 30.985099281458325,
+        "sigma": 0.7187740040471077,
+        "trueskill": 28.828777269317,
+        "delta": -0.014168242020915045
+      },
+      {
+        "id": 968,
+        "play_id": 328,
+        "player_id": 5,
+        "data": {
+          "score": 0
+        },
+        "player": "Kostas",
+        "player_surname": "Aggelidis",
+        "mu": 29.326111258063865,
+        "sigma": 0.7430631350820864,
+        "trueskill": 27.0969218528176,
+        "delta": -0.07685158563520389
+      },
+      {
+        "id": 967,
+        "play_id": 328,
+        "player_id": 16,
+        "data": {
+          "score": 0
+        },
+        "player": "Andreas",
+        "player_surname": "Boviatsis",
+        "mu": 28.139644661185304,
+        "sigma": 0.9926392603542872,
+        "trueskill": 25.161726880122444,
+        "delta": -0.03892829456294322
+      }
+    ],
+    "probability": 0.06066901850307502,
+    "draws": [
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "id": 329,
+    "boardgame_id": 177736,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "ships",
+          "type": "int"
+        },
+        {
+          "name": "emigrations",
+          "type": "int"
+        },
+        {
+          "name": "exploration_boards",
+          "type": "int"
+        },
+        {
+          "name": "sheds_and_houses",
+          "type": "int"
+        },
+        {
+          "name": "sheep_and_cattle",
+          "type": "int"
+        },
+        {
+          "name": "occupations",
+          "type": "int"
+        },
+        {
+          "name": "silver",
+          "type": "int"
+        },
+        {
+          "name": "final_income",
+          "type": "int"
+        },
+        {
+          "name": "english_crown",
+          "type": "int"
+        },
+        {
+          "name": "home_board_negative",
+          "type": "int"
+        },
+        {
+          "name": "exploration_boards_negative",
+          "type": "int"
+        },
+        {
+          "name": "sheds_and_houses_negative",
+          "type": "int"
+        },
+        {
+          "name": "thing_penalty",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-04-01T20:37:01+03:00",
+    "date": "2022-03-28T03:00:00+03:00",
+    "boardgame": "A Feast for Odin",
+    "stats": [
+      {
+        "id": 969,
+        "play_id": 329,
+        "player_id": 2,
+        "data": {
+          "emigrations": 7,
+          "english_crown": 0,
+          "exploration_boards": 12,
+          "exploration_boards_negative": 0,
+          "final_income": 20,
+          "home_board_negative": 0,
+          "occupations": 27,
+          "score": 119,
+          "sheds_and_houses": 0,
+          "sheds_and_houses_negative": 0,
+          "sheep_and_cattle": 25,
+          "ships": 8,
+          "silver": 20,
+          "thing_penalty": 0
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.43906131668338,
+        "sigma": 0.7194260937463701,
+        "trueskill": 29.280783035444266,
+        "delta": 0.068944369739107
+      },
+      {
+        "id": 970,
+        "play_id": 329,
+        "player_id": 1,
+        "data": {
+          "emigrations": 7,
+          "english_crown": 2,
+          "exploration_boards": 0,
+          "exploration_boards_negative": 0,
+          "final_income": 18,
+          "home_board_negative": 0,
+          "occupations": 8,
+          "score": 89,
+          "sheds_and_houses": 17,
+          "sheds_and_houses_negative": 0,
+          "sheep_and_cattle": 6,
+          "ships": 13,
+          "silver": 18,
+          "thing_penalty": 0
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 30.911862871970804,
+        "sigma": 0.7201405709039599,
+        "trueskill": 28.75144115925892,
+        "delta": -0.07733611005808072
+      }
+    ],
+    "probability": 47.60275786213906,
+    "draws": [
+      false
+    ]
+  },
+  {
     "id": 325,
     "boardgame_id": 236457,
     "boardgame_data": {
@@ -27727,10 +28058,10 @@
         },
         "player": "Dimitris",
         "player_surname": "Raviolos",
-        "mu": 31.163425249079033,
-        "sigma": 0.7218696938989815,
-        "trueskill": 28.99781616738209,
-        "delta": 0.076044882444954
+        "mu": 30.9942431796706,
+        "sigma": 0.7213145007555662,
+        "trueskill": 28.830299677403904,
+        "delta": 0.07885851814498324
       },
       {
         "id": 958,
@@ -27751,13 +28082,668 @@
         },
         "player": "Theoni",
         "player_surname": "Fytrou",
-        "mu": 31.248531261636792,
-        "sigma": 0.7211012134953017,
-        "trueskill": 29.085227621150885,
-        "delta": -0.08320059143993674
+        "mu": 31.35684223386727,
+        "sigma": 0.720615438109785,
+        "trueskill": 29.194995919537913,
+        "delta": -0.0857871159063528
       }
     ],
-    "probability": 43.46111844794215,
+    "probability": 41.60734525418992,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 330,
+    "boardgame_id": 265188,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-04-04T09:48:00+03:00",
+    "date": "2022-04-03T03:00:00+03:00",
+    "boardgame": "Glen More II: Chronicles",
+    "stats": [
+      {
+        "id": 974,
+        "play_id": 330,
+        "player_id": 1,
+        "data": {
+          "score": 55
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.087664525349805,
+        "sigma": 0.7213502964819775,
+        "trueskill": 28.923613635903877,
+        "delta": 0.09331395849997293
+      },
+      {
+        "id": 973,
+        "play_id": 330,
+        "player_id": 27,
+        "data": {
+          "score": 50
+        },
+        "player": "Manos",
+        "player_surname": "Maroudas",
+        "mu": 28.68273606000329,
+        "sigma": 4.301908314583317,
+        "trueskill": 15.77701111625334,
+        "delta": 15.77701111625334
+      },
+      {
+        "id": 972,
+        "play_id": 330,
+        "player_id": 3,
+        "data": {
+          "score": 50
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.586450818752517,
+        "sigma": 0.6971088897589839,
+        "trueskill": 26.49512414947557,
+        "delta": 0.03284922185458328
+      },
+      {
+        "id": 971,
+        "play_id": 330,
+        "player_id": 2,
+        "data": {
+          "score": 35
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.203595987795563,
+        "sigma": 0.7199109093466668,
+        "trueskill": 29.04386325975556,
+        "delta": -0.1511326597823519
+      }
+    ],
+    "probability": 0.5344509352345034,
+    "draws": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "id": 331,
+    "boardgame_id": 282414,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "gods",
+          "type": "int"
+        },
+        {
+          "name": "noble",
+          "type": "int"
+        },
+        {
+          "name": "artisan",
+          "type": "int"
+        },
+        {
+          "name": "pyramids",
+          "type": "int"
+        },
+        {
+          "name": "nile",
+          "type": "int"
+        },
+        {
+          "name": "tokens",
+          "type": "int"
+        },
+        {
+          "name": "firstplayer",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-04-07T14:08:19+03:00",
+    "date": "2022-04-06T03:00:00+03:00",
+    "boardgame": "Pharaon",
+    "stats": [
+      {
+        "id": 977,
+        "play_id": 331,
+        "player_id": 1,
+        "data": {
+          "artisan": 22,
+          "firstplayer": 0,
+          "gods": 38,
+          "nile": 10,
+          "noble": 38,
+          "pyramids": 33,
+          "score": 151,
+          "tokens": 10
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.182032128192116,
+        "sigma": 0.721813885167867,
+        "trueskill": 29.016590472688513,
+        "delta": 0.09297683678463642
+      },
+      {
+        "id": 975,
+        "play_id": 331,
+        "player_id": 2,
+        "data": {
+          "artisan": 12,
+          "firstplayer": 7.1,
+          "gods": 23,
+          "nile": 7,
+          "noble": 26,
+          "pyramids": 60,
+          "score": 141.1,
+          "tokens": 6
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.158313001078778,
+        "sigma": 0.7195069412287268,
+        "trueskill": 28.999792177392592,
+        "delta": -0.04407108236296864
+      },
+      {
+        "id": 976,
+        "play_id": 331,
+        "player_id": 8,
+        "data": {
+          "artisan": 29,
+          "firstplayer": 3,
+          "gods": 21,
+          "nile": 10,
+          "noble": 10,
+          "pyramids": 60,
+          "score": 138,
+          "tokens": 5
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.009729292805574,
+        "sigma": 0.99240961189429,
+        "trueskill": 22.032500457122705,
+        "delta": -0.0773600225339024
+      }
+    ],
+    "probability": 30.58587942666382,
+    "draws": [
+      false,
+      false
+    ]
+  },
+  {
+    "id": 332,
+    "boardgame_id": 68448,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "battle",
+          "type": "int"
+        },
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "pyramid",
+          "type": "int"
+        },
+        {
+          "name": "blue",
+          "type": "int"
+        },
+        {
+          "name": "yellow",
+          "type": "int"
+        },
+        {
+          "name": "green",
+          "type": "int"
+        },
+        {
+          "name": "purple",
+          "type": "int"
+        },
+        {
+          "name": "leader",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-04-12T23:26:28+03:00",
+    "date": "2022-04-08T03:00:00+03:00",
+    "boardgame": "7 Wonders",
+    "stats": [
+      {
+        "id": 981,
+        "play_id": 332,
+        "player_id": 1,
+        "data": {
+          "battle": 15,
+          "blue": 31,
+          "coin": 1,
+          "green": 1,
+          "leader": 0,
+          "purple": 11,
+          "pyramid": 0,
+          "score": 59,
+          "yellow": 0
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.314263853459792,
+        "sigma": 0.7207069850332433,
+        "trueskill": 29.15214289836006,
+        "delta": 0.13555242567154835
+      },
+      {
+        "id": 978,
+        "play_id": 332,
+        "player_id": 16,
+        "data": {
+          "battle": 11,
+          "blue": 15,
+          "coin": 6,
+          "green": 0,
+          "leader": 0,
+          "purple": 9,
+          "pyramid": 10,
+          "score": 51,
+          "yellow": 0
+        },
+        "player": "Andreas",
+        "player_surname": "Boviatsis",
+        "mu": 28.343888718891314,
+        "sigma": 0.9768016100087784,
+        "trueskill": 25.41348388886498,
+        "delta": 0.2517570087425369
+      },
+      {
+        "id": 982,
+        "play_id": 332,
+        "player_id": 2,
+        "data": {
+          "battle": 2,
+          "blue": 10,
+          "coin": 3,
+          "green": 21,
+          "leader": 0,
+          "purple": 0,
+          "pyramid": 10,
+          "score": 46,
+          "yellow": 0
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.104186432362244,
+        "sigma": 0.7164969829523007,
+        "trueskill": 28.954695483505343,
+        "delta": -0.04509669388724902
+      },
+      {
+        "id": 979,
+        "play_id": 332,
+        "player_id": 8,
+        "data": {
+          "battle": 12,
+          "blue": 14,
+          "coin": 3,
+          "green": 0,
+          "leader": 0,
+          "purple": 0,
+          "pyramid": 10,
+          "score": 45,
+          "yellow": 6
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 25.082627751545843,
+        "sigma": 0.9758505620303628,
+        "trueskill": 22.15507606545475,
+        "delta": 0.1225756083320455
+      },
+      {
+        "id": 980,
+        "play_id": 332,
+        "player_id": 13,
+        "data": {
+          "battle": -5,
+          "blue": 16,
+          "coin": 0,
+          "green": 0,
+          "leader": 0,
+          "purple": 18,
+          "pyramid": 10,
+          "score": 42,
+          "yellow": 3
+        },
+        "player": "Manolis",
+        "player_surname": "Argyriou",
+        "mu": 23.589311680512534,
+        "sigma": 1.65415661895312,
+        "trueskill": 18.626841823653177,
+        "delta": 0.3079422119852566
+      },
+      {
+        "id": 983,
+        "play_id": 332,
+        "player_id": 3,
+        "data": {
+          "battle": 1,
+          "blue": 0,
+          "coin": 5,
+          "green": 16,
+          "leader": 0,
+          "purple": 0,
+          "pyramid": 10,
+          "score": 36,
+          "yellow": 4
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.37421383132878,
+        "sigma": 0.6960139967652929,
+        "trueskill": 26.286171841032907,
+        "delta": -0.20895230844266166
+      }
+    ],
+    "probability": 0.07433350559288171,
+    "draws": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 333,
+    "boardgame_id": 266810,
+    "boardgame_data": {
+      "columns": [
+        {
+          "desc": "Blue track",
+          "name": "blue",
+          "type": "int"
+        },
+        {
+          "desc": "Red track",
+          "name": "red",
+          "type": "int"
+        },
+        {
+          "desc": "Black track",
+          "name": "black",
+          "type": "int"
+        },
+        {
+          "desc": "White track",
+          "name": "white",
+          "type": "int"
+        },
+        {
+          "name": "develop",
+          "type": "int"
+        },
+        {
+          "name": "commission",
+          "type": "int"
+        },
+        {
+          "name": "absolve",
+          "type": "int"
+        },
+        {
+          "name": "fortify",
+          "type": "int"
+        },
+        {
+          "name": "garrison",
+          "type": "int"
+        },
+        {
+          "name": "convert",
+          "type": "int"
+        },
+        {
+          "name": "muster",
+          "type": "int"
+        },
+        {
+          "name": "negotiate",
+          "type": "int"
+        },
+        {
+          "name": "debt",
+          "type": "int"
+        },
+        {
+          "desc": "Silver/Provisions",
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "desc": "King's orders",
+          "name": "order",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-04-12T23:34:53+03:00",
+    "date": "2022-04-10T03:00:00+03:00",
+    "boardgame": "Paladins of the West Kingdom",
+    "stats": [
+      {
+        "id": 985,
+        "play_id": 333,
+        "player_id": 1,
+        "data": {
+          "absolve": 0,
+          "black": 3,
+          "blue": 9,
+          "coin": 3,
+          "commission": 0,
+          "convert": 0,
+          "debt": 2,
+          "develop": 6,
+          "fortify": 9,
+          "garrison": 0,
+          "muster": 3,
+          "negotiate": 13,
+          "order": 20,
+          "red": 6,
+          "score": 94,
+          "white": 20
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.389528875912198,
+        "sigma": 0.7220011251345713,
+        "trueskill": 29.223525500508483,
+        "delta": 0.07138260214842163
+      },
+      {
+        "id": 984,
+        "play_id": 333,
+        "player_id": 2,
+        "data": {
+          "absolve": 1,
+          "black": 13,
+          "blue": 6,
+          "coin": 0,
+          "commission": 0,
+          "convert": 0,
+          "debt": 2,
+          "develop": 0,
+          "fortify": 6,
+          "garrison": 0,
+          "muster": 1,
+          "negotiate": 9,
+          "order": 6,
+          "red": 13,
+          "score": 63,
+          "white": 6
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 31.029786594066202,
+        "sigma": 0.7178795530712878,
+        "trueskill": 28.876147934852337,
+        "delta": -0.07854754865300606
+      }
+    ],
+    "probability": 46.466680069201104,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 334,
+    "boardgame_id": 266810,
+    "boardgame_data": {
+      "columns": [
+        {
+          "desc": "Blue track",
+          "name": "blue",
+          "type": "int"
+        },
+        {
+          "desc": "Red track",
+          "name": "red",
+          "type": "int"
+        },
+        {
+          "desc": "Black track",
+          "name": "black",
+          "type": "int"
+        },
+        {
+          "desc": "White track",
+          "name": "white",
+          "type": "int"
+        },
+        {
+          "name": "develop",
+          "type": "int"
+        },
+        {
+          "name": "commission",
+          "type": "int"
+        },
+        {
+          "name": "absolve",
+          "type": "int"
+        },
+        {
+          "name": "fortify",
+          "type": "int"
+        },
+        {
+          "name": "garrison",
+          "type": "int"
+        },
+        {
+          "name": "convert",
+          "type": "int"
+        },
+        {
+          "name": "muster",
+          "type": "int"
+        },
+        {
+          "name": "negotiate",
+          "type": "int"
+        },
+        {
+          "name": "debt",
+          "type": "int"
+        },
+        {
+          "desc": "Silver/Provisions",
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "desc": "King's orders",
+          "name": "order",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-04-16T15:24:59+03:00",
+    "date": "2022-04-15T03:00:00+03:00",
+    "boardgame": "Paladins of the West Kingdom",
+    "stats": [
+      {
+        "id": 987,
+        "play_id": 334,
+        "player_id": 1,
+        "data": {
+          "absolve": 0,
+          "black": 13,
+          "blue": 3,
+          "coin": 3,
+          "commission": 0,
+          "convert": 20,
+          "debt": 6,
+          "develop": 6,
+          "fortify": 0,
+          "garrison": 9,
+          "muster": 4,
+          "negotiate": 5,
+          "order": 18,
+          "red": 3,
+          "score": 110,
+          "white": 20
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.463613650678884,
+        "sigma": 0.7232966271581365,
+        "trueskill": 29.293723769204476,
+        "delta": 0.070198268695993
+      },
+      {
+        "id": 986,
+        "play_id": 334,
+        "player_id": 2,
+        "data": {
+          "absolve": 0,
+          "black": 3,
+          "blue": 20,
+          "coin": 3,
+          "commission": 0,
+          "convert": 5,
+          "debt": 3,
+          "develop": 1,
+          "fortify": 11,
+          "garrison": 0,
+          "muster": 1,
+          "negotiate": 7,
+          "order": 12,
+          "red": 11,
+          "score": 80,
+          "white": 3
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.956534148721854,
+        "sigma": 0.719261264107442,
+        "trueskill": 28.798750356399527,
+        "delta": -0.07739757845281048
+      }
+    ],
+    "probability": 47.46223557640485,
     "draws": [
       false
     ]
