@@ -29,7 +29,12 @@ const Component = props => {
     })
 
     // send the actual request
-    let rs = await fetchWishList(wishlist_term, 3)
+    let rs;
+    try {
+      rs = await fetchWishList(wishlist_term, 2)
+    } catch(e) {
+      rs = [];
+    }
 
     dispatch({
       type: "SET_WISHLIST",
