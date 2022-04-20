@@ -81,7 +81,7 @@ export default props => {
   const { child_data, page_name, component, pre_component, paging=true } = props;
   const store_ids = [...new Set(stock_filtered.map(d => d.store_id))]
   const current_stores = stores.filter(d => store_ids.includes(d.id));
-  const page_size = 12;
+  const page_size = props.page_size || 12;
   const history = useHistory();
   const { page } = useParams();
   const page_data = paginate(child_data, page_size, page, paging)
