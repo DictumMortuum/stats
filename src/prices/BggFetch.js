@@ -18,7 +18,7 @@ const Component = props => {
     }
   }, [])
 
-  const sendRequest = useCallback(async() => {
+  const sendRequest = useCallback(async term => {
     // don't send again while we are sending
     if (isSending) return
     // update state
@@ -31,7 +31,7 @@ const Component = props => {
     // send the actual request
     let rs;
     try {
-      rs = await fetchWishList(wishlist_term, 2)
+      rs = await fetchWishList(term, 2)
     } catch(e) {
       rs = [];
     }
@@ -48,11 +48,11 @@ const Component = props => {
     // once the request is sent, update state again
     if (isMounted.current) // only update if we are still mounted
       setIsSending(false)
-  }, [dispatch, wishlist_term]) // update the callback if the state changes
+  }, [dispatch]) // update the callback if the state changes
 
   return (
     <InputAdornment position="end">
-      <IconButton type="submit" disabled={isSending} onClick={e => { e.preventDefault(); sendRequest() }} aria-label="search">
+      <IconButton type="submit" disabled={isSending} onClick={e => { e.preventDefault(); sendRequest(wishlist_term) }} aria-label="search">
         <SearchIcon />
       </IconButton>
     </InputAdornment>

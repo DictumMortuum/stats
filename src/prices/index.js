@@ -34,6 +34,9 @@ export default () => {
       <Route path={`${url}/wishlist`} exact>
         <WishlistPage />
       </Route>
+      <Route path={`${url}/wishlist/:username`}>
+        <WishlistPage />
+      </Route>
       <Route path={`${url}/item/:boardgame_id`}>
         <BoardgamePage />
       </Route>

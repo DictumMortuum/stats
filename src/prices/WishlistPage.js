@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { pricesToGroups } from './LandingPage';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import BggInput from './BggInput';
+import { useWishlist } from './hooks/useWishlist';
 
 const Spinner = () => (
   <Grid container alignContent="center" alignItems="center" direction="column">
@@ -19,6 +20,7 @@ export default () => {
   const dispatch = useDispatch();
   const { store_filtered, wishlist, spinner } = useSelector(state => state.pricesReducer)
   const grouped = pricesToGroups(store_filtered)
+  useWishlist();
 
   useEffect(() => {
     dispatch({
