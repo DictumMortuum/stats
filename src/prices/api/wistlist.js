@@ -1,4 +1,4 @@
-import { bgg_xmlapi2, forceError, logError } from "./common";
+import { bgg_xmlapi2, forceError, logError, transformBggData } from "./common";
 import XMLParser from 'react-xml-parser';
 import pRetry from 'p-retry';
 
@@ -6,8 +6,8 @@ const req = name => fetch(`${bgg_xmlapi2}/collection?username=${encodeURICompone
   .then(forceError)
   .then(res => res.text())
   .then(data => {
-    var xml = new XMLParser().parseFromString(data);
-    return xml.children.map(d => parseInt(d.attributes.objectid))
+    const xml = new XMLParser().parseFromString(data);
+    return transformBggData(xml)
   })
 
 export const fetchWishList = (name, retries) => pRetry(async () => req(name), { onFailedAttempt: logError, retries })
