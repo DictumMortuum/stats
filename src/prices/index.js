@@ -9,6 +9,7 @@ import WishlistPage from './WishlistPage';
 import { fetchAllPrices } from './api/prices';
 import { fetchStores } from './api/stores';
 import { fetchDate } from './api/date';
+import GeeklistPage from './GeeklistPage';
 
 export default () => {
   const { url } = useRouteMatch();
@@ -36,6 +37,9 @@ export default () => {
       </Route>
       <Route path={`${url}/wishlist/:username`}>
         <WishlistPage />
+      </Route>
+      <Route path={`${url}/geeklist/:geeklist_id`}>
+        <GeeklistPage />
       </Route>
       <Route path={`${url}/item/:boardgame_id`}>
         <BoardgamePage />
