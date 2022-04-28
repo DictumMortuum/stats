@@ -43,7 +43,8 @@ export default () => {
             })
           }}
         >
-          {stocks.map(d => <MenuItem key={d} value={d}>{d}</MenuItem>)}
+          {stocks.map((d, i) => <MenuItem key={d} value={i}>{d}</MenuItem>)}
+          <MenuItem key={-1} value={-1}>Show all</MenuItem>
         </Select>
       </FormControl>
     </Paper>

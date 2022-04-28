@@ -96,8 +96,8 @@ const domain = col => {
 export default props => {
   const classes = useStyles();
   const { history } = props;
-  const { store, instock } = useSelector(state => state.pricesReducer)
-  const p = history.filter(stockFilter(instock)).filter(storeFilter(store))
+  const { store, stock } = useSelector(state => state.pricesReducer)
+  const p = history.filter(stockFilter(stock)).filter(storeFilter(store))
   const processed = transform(p).sort((a, b) => a.cr_date > b.cr_date)
 
   return (

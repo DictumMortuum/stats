@@ -55,11 +55,10 @@ const Media = props => {
   const { store_thumb, url, thumb, boardgame_id, stock } = props.boardgame;
   const { self_ref } = props;
   const classes = useStyles();
-  let idx = stock ? 0 : 1;
 
   if(self_ref) {
     return (
-      <Link to={"/prices/item/" + boardgame_id + "?stock=" + idx}>
+      <Link to={"/prices/item/" + boardgame_id + "?stock=" + stock}>
         <CardMedia
           className={classes.media}
           image={store_thumb === "" ? thumb : store_thumb}
@@ -86,7 +85,7 @@ export default props => {
   const self = window.location.href;
 
   return (
-    <Card className={classNames({[classes.out_of_stock]: !stock})}>
+    <Card className={classNames({[classes.out_of_stock]: stock === 2})}>
       { url && <Media {...props} />}
       <CardActions>
         <IconButton component="div">
