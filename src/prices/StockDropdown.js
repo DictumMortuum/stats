@@ -17,16 +17,11 @@ export default () => {
       return
     }
 
-    const state = stocks[url_stock]
-    if (state === "") {
-      return
-    }
-
     dispatch({
       type: "SET_STOCK",
-      stock: state
+      stock: parseInt(url_stock)
     })
-  }, [stocks, url_stock]);
+  }, [url_stock]);
 
   return (
     <Paper>

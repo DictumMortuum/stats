@@ -1,12 +1,13 @@
 import { useLocation } from 'react-router-dom';
 
 export const useParams = () => {
-  const { search } = useLocation();
+  const { search, ...rest } = useLocation();
   const params = new URLSearchParams(search)
   const page = parseInt(params.get("page")) || 1
   const stock = params.get("stock") || 0
 
   return {
+    ...rest,
     page,
     stock,
     has_stock: params.has("stock"),
