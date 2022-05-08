@@ -30268,5 +30268,191 @@
       false,
       false
     ]
+  },
+  {
+    "id": 347,
+    "boardgame_id": 14996,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-08T13:07:19+03:00",
+    "date": "2022-05-04T03:00:00+03:00",
+    "boardgame": "Ticket to ride: Europe",
+    "stats": [
+      {
+        "id": 1029,
+        "play_id": 347,
+        "player_id": 1,
+        "data": {
+          "score": 117
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 32.05054789232584,
+        "sigma": 0.7223813798420161,
+        "trueskill": 29.88340375279979,
+        "delta": 0.07971270794153185
+      },
+      {
+        "id": 1030,
+        "play_id": 347,
+        "player_id": 2,
+        "data": {
+          "score": 113
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.87906452628785,
+        "sigma": 0.7163786898212194,
+        "trueskill": 28.729928456824194,
+        "delta": -0.033026758659815414
+      },
+      {
+        "id": 1031,
+        "play_id": 347,
+        "player_id": 8,
+        "data": {
+          "score": 80
+        },
+        "player": "Popi",
+        "player_surname": "Kavadia",
+        "mu": 24.995723871204365,
+        "sigma": 0.9714394572619618,
+        "trueskill": 22.081405499418477,
+        "delta": -0.07367056603627375
+      }
+    ],
+    "probability": 36.29012234750234,
+    "draws": [
+      false,
+      false
+    ]
+  },
+  {
+    "id": 348,
+    "boardgame_id": 230802,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        },
+        {
+          "exclude": true,
+          "factor": 0.1,
+          "name": "rows",
+          "tiebreak": "asc",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-08T13:08:53+03:00",
+    "date": "2022-05-05T03:00:00+03:00",
+    "boardgame": "Azul",
+    "stats": [
+      {
+        "id": 1033,
+        "play_id": 348,
+        "player_id": 2,
+        "data": {
+          "rows": 0,
+          "score": 65
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.96706795240528,
+        "sigma": 0.7175269230214506,
+        "trueskill": 28.81448718334093,
+        "delta": 0.08455872651673602
+      },
+      {
+        "id": 1032,
+        "play_id": 348,
+        "player_id": 1,
+        "data": {
+          "rows": 1,
+          "score": 64.01
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.961083260963637,
+        "sigma": 0.7233974842846411,
+        "trueskill": 29.790890808109715,
+        "delta": -0.09251294469007476
+      }
+    ],
+    "probability": 37.46069578429995,
+    "draws": [
+      false
+    ]
+  },
+  {
+    "id": 349,
+    "boardgame_id": 275010,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-08T13:09:38+03:00",
+    "date": "2022-05-06T03:00:00+03:00",
+    "boardgame": "De Vulgari Eloquentia",
+    "stats": [
+      {
+        "id": 1034,
+        "play_id": 349,
+        "player_id": 27,
+        "data": {
+          "score": 65
+        },
+        "player": "Manos",
+        "player_surname": "Maroudas",
+        "mu": 33.890819112624094,
+        "sigma": 2.7265170543289505,
+        "trueskill": 25.711267949637243,
+        "delta": 2.3840360098814735
+      },
+      {
+        "id": 1035,
+        "play_id": 349,
+        "player_id": 1,
+        "data": {
+          "score": 50
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 31.966512742334764,
+        "sigma": 0.7227124903409659,
+        "trueskill": 29.798375271311865,
+        "delta": 0.007484463202150238
+      },
+      {
+        "id": 1036,
+        "play_id": 349,
+        "player_id": 2,
+        "data": {
+          "score": 40
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.869661814994195,
+        "sigma": 0.7179604236316388,
+        "trueskill": 28.715780544099278,
+        "delta": -0.09870663924165157
+      }
+    ],
+    "probability": 17.226169254526944,
+    "draws": [
+      false,
+      false
+    ]
   }
 ]
