@@ -10,6 +10,7 @@ import { fetchAllPrices } from './api/prices';
 import { fetchStores } from './api/stores';
 import { fetchDate } from './api/date';
 import GeeklistPage from './GeeklistPage';
+import JohnPage from './JohnPage';
 
 export default () => {
   const { url } = useRouteMatch();
@@ -43,6 +44,9 @@ export default () => {
       </Route>
       <Route path={`${url}/item/:boardgame_id`}>
         <BoardgamePage />
+      </Route>
+      <Route path={`${url}/johngetsgames`}>
+        <JohnPage />
       </Route>
     </Switch>
   )

@@ -23,3 +23,7 @@ export const fetchPrices = boardgame_id => {
 export const fetchPrice = price_id => {
   return fetch(base + '/rest/v1/prices/' + price_id + '.json').then(res => res.json())
 }
+
+export const fetchJohnGames = () => {
+  return fetch(base + '/rest/v1/jgg/jgg.json').then(res => res.json())
+}
