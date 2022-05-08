@@ -1,28 +1,41 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import PriceCard from './PriceCard';
 import GenericPage from './GenericPage';
 import SearchInput from './SearchInput';
 import { useSelector } from "react-redux";
-import { usePrice } from './hooks/usePrices';
+import BoardgameCard from './BoardgameCard';
 
-const Price = props => {
-  const { id } = props;
-  const price = usePrice(id);
+export const pricesToGroups = data => {
+  const rs = [];
+  const map = {};
 
-  return (
-    <Grid key={id} item xs={12} md={6} lg={3}>
-      <PriceCard boardgame={price} self_ref={true} />
-    </Grid>
-  )
+  data.map((d, i) => {
+    if (map[d.boardgame_id] !== undefined) {
+      i = map[d.boardgame_id];
+    }
+
+    if (rs[i] === undefined) {
+      rs[i] = {
+        ...d,
+        items: []
+      }
+      map[d.boardgame_id] = i
+    }
+
+    rs[i].items.push(d)
+    return d
+  })
+
+  return rs.filter(d => d.items.length > 0)
 }
 
 export default () => {
   const { store_filtered } = useSelector(state => state.pricesReducer)
+  const grouped = pricesToGroups(store_filtered)
 
   return (
     <GenericPage
-      child_data={store_filtered}
+      child_data={grouped}
       paging={true}
       page_name="/prices/search"
       pre_component={
@@ -30,7 +43,11 @@ export default () => {
           <SearchInput />
         </Grid>
       }
-      component={data => data.map((tile) => <Price id={tile.id} />)}
+      component={data => data.map((tile) => (
+        <Grid key={tile.id} item xs={12} md={6} lg={3}>
+          <BoardgameCard {...tile} />
+        </Grid>
+      ))}
     />
   )
 }
