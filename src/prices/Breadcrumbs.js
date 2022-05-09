@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export default () => {
   const classes = useStyles();
   const { pathname } = useLocation();
-  const args = pathname.split("/").slice(2).filter(d => d !== "item")
+  const args = pathname.split("/").slice(2).filter(d => d !== "item").filter(d => d !== "");
 
   return (
     <Breadcrumbs className={classes.root} separator="/" aria-label="breadcrumb">
