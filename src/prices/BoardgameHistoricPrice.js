@@ -3,7 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { useSelector } from "react-redux";
 import { makeStyles } from '@material-ui/core/styles';
-import { stockFilter, storeFilter } from '../reducers/prices';
+import { stockFilter, storeFilter } from './hooks/useStep';
 import {
   Line,
   XAxis,

@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { fetchWishList } from '../api/wistlist';
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useLocation } from 'react-router-dom';
 
 export const useWishlist = () => {
-  const [wishes, setWishes] = useState([]);
+  const { wishlist } = useSelector(state => state.pricesReducer)
   const { pathname } = useLocation();
   const username = pathname.split("/")[3]
   const dispatch = useDispatch();
@@ -28,9 +28,8 @@ export const useWishlist = () => {
         payload: rs
       })
 
-      setWishes(rs)
     }
   }, [username])
 
-  return wishes
+  return wishlist
 }

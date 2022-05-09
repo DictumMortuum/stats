@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import BoardgameCard from './BoardgameCard';
 import GenericPage from './GenericPage';
-import { useSelector, useDispatch } from "react-redux";
+import { useStep } from './hooks/useStep';
 
 export const pricesToGroups = data => {
   const rs = [];
@@ -23,20 +23,14 @@ export const pricesToGroups = data => {
 }
 
 export default () => {
-  const dispatch = useDispatch();
-  const { store_filtered } = useSelector(state => state.pricesReducer)
-  const grouped = pricesToGroups(store_filtered)
-
-  useEffect(() => {
-    dispatch({
-      type: "SET_PAGE_FILTER",
-      func: col => col
-    })
-  }, [])
+  const { store_filtered, stock_filtered } = useStep();
+  const grouped = pricesToGroups(store_filtered);
 
   return (
     <GenericPage
       child_data={grouped}
+      stock_filtered={stock_filtered}
+      store_filtered={store_filtered}
       paging={true}
       page_name="/prices"
       component={data => data.map((tile) => (

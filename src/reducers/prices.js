@@ -1,20 +1,3 @@
-export const storeFilter = store => d => d.store_id === store || store === -1
-export const stockFilter = stock => d => d.stock === stock || stock === -1
-
-const step = state => {
-  const { store, stock, filter, prices } = state;
-  const page_filtered = filter !== undefined ? filter(prices) : prices
-  const stock_filtered = page_filtered.filter(stockFilter(stock))
-  const store_filtered = stock_filtered.filter(storeFilter(store))
-
-  return {
-    ...state,
-    page_filtered,
-    stock_filtered,
-    store_filtered,
-  }
-}
-
 export const reducer = (state = {}, action) => {
   switch (action.type) {
     case "INIT":
@@ -25,24 +8,21 @@ export const reducer = (state = {}, action) => {
         cart_results: [],
         search_term: "",
         search_results: [],
+        search_enabled: false,
         wishlist_term: "",
         wishlist: [],
         prices: [],
         history: [],
         stores: [],
-        filter: () => [],
         spinner: true,
-        page_filtered: [],
-        stock_filtered: [],
-        store_filtered: [],
         date: new Date(),
       }
     case "prices/fulfilled": {
-      return step({
+      return {
         ...state,
         spinner: false,
         prices: action.payload,
-      })
+      }
     }
     case "date/fulfilled": {
       return {
@@ -56,22 +36,16 @@ export const reducer = (state = {}, action) => {
         stores: action.payload
       }
     case "SET_STOCK": {
-      return step({
+      return {
         ...state,
         stock: action.stock,
-      })
-    }
-    case "SET_PAGE_FILTER": {
-      return step({
-        ...state,
-        filter: action.func,
-      })
+      }
     }
     case "SET_STORE": {
-      return step({
+      return {
         ...state,
         store: action.store,
-      })
+      }
     }
     case "ADD_TO_CART":
       return {
@@ -81,7 +55,13 @@ export const reducer = (state = {}, action) => {
     case "SET_SEARCH_TERM":
       return {
         ...state,
-        search_term: action.payload
+        search_term: action.payload,
+        search_enabled: false,
+      }
+    case "EXECUTE_SEARCH":
+      return {
+        ...state,
+        search_enabled: true,
       }
     case "SET_WISHLIST":
       return {

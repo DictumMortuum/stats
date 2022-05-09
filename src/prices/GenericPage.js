@@ -77,8 +77,8 @@ const Nothing = props => (
 export default props => {
   const classes = useStyles();
   const matches = useMediaQuery(theme => theme.breakpoints.up('md'));
-  const { store_filtered, stores, stock_filtered, cart_results, search_results, spinner, date } = useSelector(state => state.pricesReducer)
-  const { child_data, page_name, component, pre_component, paging=true } = props;
+  const { stores, cart_results, search_results, spinner, date } = useSelector(state => state.pricesReducer)
+  const { store_filtered, stock_filtered, child_data, page_name, component, pre_component, paging=true } = props;
   const store_ids = [...new Set(stock_filtered.map(d => d.store_id))]
   const current_stores = stores.filter(d => store_ids.includes(d.id));
   const page_size = props.page_size || 12;
