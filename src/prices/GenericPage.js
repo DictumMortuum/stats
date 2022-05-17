@@ -121,6 +121,11 @@ export default props => {
       <Container maxWidth="lg">
         <Grid item xs={12} className={classes.content}>
           <Grid container spacing={2} alignContent="center" alignItems="center">
+            <Grid item xs={12}>
+              <Typography variant="h5" component={Paper} style={{ padding: 10 }}>
+                New Site! <a href="https://prices.dictummortuum.com">https://prices.dictummortuum.com</a> v0.2.0
+              </Typography>
+            </Grid>
             <Grid item xs={6}>
               <StoreDropdown stores={current_stores} />
             </Grid>
