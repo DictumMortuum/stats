@@ -30454,5 +30454,564 @@
       false,
       false
     ]
+  },
+  {
+    "id": 350,
+    "boardgame_id": 167355,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-05-08T13:37:02+03:00",
+    "date": "2022-05-08T03:00:00+03:00",
+    "boardgame": "Nemesis",
+    "stats": [
+      {
+        "id": 1037,
+        "play_id": 350,
+        "player_id": 1,
+        "data": {
+          "won": false
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 1038,
+        "play_id": 350,
+        "player_id": 2,
+        "data": {
+          "won": false
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 1039,
+        "play_id": 350,
+        "player_id": 18,
+        "data": {
+          "won": false
+        },
+        "player": "Antonis",
+        "player_surname": "Rigkos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 1040,
+        "play_id": 350,
+        "player_id": 17,
+        "data": {
+          "won": false
+        },
+        "player": "Nantia",
+        "player_surname": "Dimitriou",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
+  },
+  {
+    "id": 352,
+    "boardgame_id": 342942,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-16T13:46:18+03:00",
+    "date": "2022-05-13T03:00:00+03:00",
+    "boardgame": "Ark Nova",
+    "stats": [
+      {
+        "id": 1044,
+        "play_id": 352,
+        "player_id": 1,
+        "data": {
+          "score": 19
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 32.06651954064778,
+        "sigma": 0.7227130716579855,
+        "trueskill": 29.898380325673827,
+        "delta": 0.1000050543619615
+      },
+      {
+        "id": 1045,
+        "play_id": 352,
+        "player_id": 3,
+        "data": {
+          "score": 16
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.514286919791573,
+        "sigma": 0.6939892968153366,
+        "trueskill": 26.432319029345564,
+        "delta": 0.06911999145995296
+      },
+      {
+        "id": 1046,
+        "play_id": 352,
+        "player_id": 29,
+        "data": {
+          "score": 14
+        },
+        "player": "Filippos",
+        "player_surname": "Farmakis",
+        "mu": 27.099094350070164,
+        "sigma": 4.421082325079722,
+        "trueskill": 13.835847374830998,
+        "delta": 13.835847374830998
+      },
+      {
+        "id": 1047,
+        "play_id": 352,
+        "player_id": 2,
+        "data": {
+          "score": -17
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.683007203442,
+        "sigma": 0.7177233326660213,
+        "trueskill": 28.529837205443936,
+        "delta": -0.18594333865534196
+      }
+    ],
+    "probability": 1.2427890697875632,
+    "draws": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "id": 351,
+    "boardgame_id": 120677,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "town",
+          "type": "int"
+        },
+        {
+          "name": "fire_cult",
+          "type": "int"
+        },
+        {
+          "name": "water_cult",
+          "type": "int"
+        },
+        {
+          "name": "earth_cult",
+          "type": "int"
+        },
+        {
+          "name": "air_cult",
+          "type": "int"
+        },
+        {
+          "name": "coin",
+          "type": "int"
+        },
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-15T23:07:01+03:00",
+    "date": "2022-05-15T03:00:00+03:00",
+    "boardgame": "Terra Mystica",
+    "stats": [
+      {
+        "id": 1041,
+        "play_id": 351,
+        "player_id": 1,
+        "data": {
+          "air_cult": 4,
+          "coin": 0,
+          "earth_cult": 8,
+          "fire_cult": 8,
+          "score": 155,
+          "town": 13,
+          "water_cult": 4
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 32.146677974717136,
+        "sigma": 0.723246634805215,
+        "trueskill": 29.97693807030149,
+        "delta": 0.07855774462766263
+      },
+      {
+        "id": 1043,
+        "play_id": 351,
+        "player_id": 5,
+        "data": {
+          "air_cult": 8,
+          "coin": 1,
+          "earth_cult": 4,
+          "fire_cult": 4,
+          "score": 139,
+          "town": 17,
+          "water_cult": 8
+        },
+        "player": "Kostas",
+        "player_surname": "Aggelidis",
+        "mu": 29.235304445531824,
+        "sigma": 0.7284864028108304,
+        "trueskill": 27.049845237099337,
+        "delta": 0.020391574147922142
+      },
+      {
+        "id": 1042,
+        "play_id": 351,
+        "player_id": 3,
+        "data": {
+          "air_cult": 2,
+          "coin": 2,
+          "earth_cult": 2,
+          "fire_cult": 2,
+          "score": 124,
+          "town": 14,
+          "water_cult": 2
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.424784528674255,
+        "sigma": 0.6949435463114199,
+        "trueskill": 26.33995388973999,
+        "delta": -0.09236513960557247
+      }
+    ],
+    "probability": 23.958270775511203,
+    "draws": [
+      false,
+      false
+    ]
+  },
+  {
+    "id": 353,
+    "boardgame_id": 230802,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        },
+        {
+          "exclude": true,
+          "factor": 0.1,
+          "name": "rows",
+          "tiebreak": "asc",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-20T20:48:18+03:00",
+    "date": "2022-05-20T03:00:00+03:00",
+    "boardgame": "Azul",
+    "stats": [
+      {
+        "id": 1049,
+        "play_id": 353,
+        "player_id": 1,
+        "data": {
+          "rows": 0,
+          "score": 83
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 32.227591856226105,
+        "sigma": 0.7240564470288983,
+        "trueskill": 30.055422515139412,
+        "delta": 0.0784844448379225
+      },
+      {
+        "id": 1050,
+        "play_id": 353,
+        "player_id": 2,
+        "data": {
+          "rows": 1,
+          "score": 77.01
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.6579639420549,
+        "sigma": 0.7179014676048229,
+        "trueskill": 28.504259539240426,
+        "delta": -0.02557766620351032
+      },
+      {
+        "id": 1048,
+        "play_id": 353,
+        "player_id": 29,
+        "data": {
+          "rows": 1,
+          "score": 71.01
+        },
+        "player": "Filippos",
+        "player_surname": "Farmakis",
+        "mu": 25.052100462977016,
+        "sigma": 3.839838324483605,
+        "trueskill": 13.5325854895262,
+        "delta": -0.3032618853047975
+      }
+    ],
+    "probability": 29.611371771475977,
+    "draws": [
+      false,
+      false
+    ]
+  },
+  {
+    "id": 354,
+    "boardgame_id": 170042,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "armor",
+          "type": "int"
+        },
+        {
+          "name": "loot",
+          "type": "int"
+        },
+        {
+          "name": "points",
+          "type": "int"
+        },
+        {
+          "name": "valkyrie",
+          "type": "int"
+        },
+        {
+          "name": "cards",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-20T21:58:21+03:00",
+    "date": "2022-05-20T03:00:00+03:00",
+    "boardgame": "Raiders of the north sea",
+    "stats": [
+      {
+        "id": 1051,
+        "play_id": 354,
+        "player_id": 1,
+        "data": {
+          "armor": 4,
+          "cards": 6,
+          "loot": 1,
+          "points": 40,
+          "score": 55,
+          "valkyrie": 4
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 32.30376226128238,
+        "sigma": 0.7249620811542765,
+        "trueskill": 30.12887601781955,
+        "delta": 0.07345350268013817
+      },
+      {
+        "id": 1053,
+        "play_id": 354,
+        "player_id": 2,
+        "data": {
+          "armor": 2,
+          "cards": 0,
+          "loot": 6,
+          "points": 30,
+          "score": 41,
+          "valkyrie": 3
+        },
+        "player": "Theoni",
+        "player_surname": "Fytrou",
+        "mu": 30.626394881955353,
+        "sigma": 0.7181740166191206,
+        "trueskill": 28.47187283209799,
+        "delta": -0.032386707142435966
+      },
+      {
+        "id": 1052,
+        "play_id": 354,
+        "player_id": 29,
+        "data": {
+          "armor": 4,
+          "cards": 0,
+          "loot": 6,
+          "points": 20,
+          "score": 33,
+          "valkyrie": 3
+        },
+        "player": "Filippos",
+        "player_surname": "Farmakis",
+        "mu": 23.82843235413948,
+        "sigma": 3.4797235421851624,
+        "trueskill": 13.389261727583992,
+        "delta": -0.14332376194220764
+      }
+    ],
+    "probability": 36.68011045732465,
+    "draws": [
+      false,
+      false
+    ]
+  },
+  {
+    "id": 355,
+    "boardgame_id": 162886,
+    "boardgame_data": {
+      "cooperative": true
+    },
+    "cr_date": "2022-05-21T11:41:03+03:00",
+    "date": "2022-05-20T03:00:00+03:00",
+    "boardgame": "Spirit Island",
+    "stats": [
+      {
+        "id": 1054,
+        "play_id": 355,
+        "player_id": 1,
+        "data": {
+          "won": true
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 1055,
+        "play_id": 355,
+        "player_id": 3,
+        "data": {
+          "won": true
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      },
+      {
+        "id": 1056,
+        "play_id": 355,
+        "player_id": 29,
+        "data": {
+          "won": true
+        },
+        "player": "Filippos",
+        "player_surname": "Farmakis",
+        "mu": 0,
+        "sigma": 0,
+        "trueskill": 0,
+        "delta": 0
+      }
+    ],
+    "probability": 0,
+    "draws": null
+  },
+  {
+    "id": 356,
+    "boardgame_id": 224517,
+    "boardgame_data": {
+      "columns": [
+        {
+          "name": "score",
+          "type": "int"
+        }
+      ]
+    },
+    "cr_date": "2022-05-23T10:09:44+03:00",
+    "date": "2022-05-22T03:00:00+03:00",
+    "boardgame": "Brass: Birmingham",
+    "stats": [
+      {
+        "id": 1057,
+        "play_id": 356,
+        "player_id": 1,
+        "data": {
+          "score": 127
+        },
+        "player": "Dimitris",
+        "player_surname": "Raviolos",
+        "mu": 32.399560662253926,
+        "sigma": 0.7247895290348156,
+        "trueskill": 30.22519207514948,
+        "delta": 0.0963160573299291
+      },
+      {
+        "id": 1058,
+        "play_id": 356,
+        "player_id": 5,
+        "data": {
+          "score": 94
+        },
+        "player": "Kostas",
+        "player_surname": "Aggelidis",
+        "mu": 29.288699347077795,
+        "sigma": 0.7264100618498018,
+        "trueskill": 27.109469161528388,
+        "delta": 0.059623924429050845
+      },
+      {
+        "id": 1059,
+        "play_id": 356,
+        "player_id": 16,
+        "data": {
+          "score": 93
+        },
+        "player": "Andreas",
+        "player_surname": "Boviatsis",
+        "mu": 27.887374776043888,
+        "sigma": 0.9470542792597145,
+        "trueskill": 25.046211938264744,
+        "delta": 0.01677898890832452
+      },
+      {
+        "id": 1060,
+        "play_id": 356,
+        "player_id": 3,
+        "data": {
+          "score": 76
+        },
+        "player": "Panagiotis",
+        "player_surname": "Kolofousis",
+        "mu": 28.298070121211424,
+        "sigma": 0.6949932081919755,
+        "trueskill": 26.2130904966355,
+        "delta": -0.12686339310449313
+      }
+    ],
+    "probability": 5.875091698446198,
+    "draws": [
+      false,
+      false,
+      false
+    ]
   }
 ]
