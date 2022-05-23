@@ -101,7 +101,7 @@ export const playsPerMonth = json => {
     return d
   })
 
-  return rs
+  return rs.reverse()
 }
 
 export const playsPerDay = json => {
