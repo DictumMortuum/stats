@@ -17,6 +17,10 @@ import {
 export default props => {
   const { count, ratings, dataKey } = props;
 
+  if (ratings === undefined) {
+    return <div />
+  }
+
   const fixed_ratings = ratings.sort((a, b) => a.date >= b.date).map(d => ({
     ...d,
     trueskill: d.trueskill.toFixed(2),

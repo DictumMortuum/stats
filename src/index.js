@@ -15,8 +15,7 @@ import { reducer as duelReducer } from './reducers/duel';
 import { reducer as standingsReducer } from './reducers/standings';
 import { reducer as configReducer } from './reducers/config';
 import { reducer as pricesReducer } from './reducers/prices';
-import Infographic2021 from './infographic/year2021';
-import Infographic2022 from './infographic/year2022';
+import Infographic from './infographic/year';
 import Prices from './prices';
 import SecretSanta from './secretsanta';
 import TitlebarGridList from './Grid';
@@ -103,11 +102,8 @@ ReactDOM.render(
             <StandingsContent />
           </Game>
         </Route>
-        <Route path="/2021">
-          <Infographic2021 />
-        </Route>
-        <Route path="/2022">
-          <Infographic2022 />
+        <Route path="/boardgamereview/:raw_year">
+          <Infographic />
         </Route>
         <Route path="/prices">
           <Prices />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import StandingsLogo from './logo.png';
@@ -8,9 +8,18 @@ import Trueskill from './trueskill';
 import LatestTrueskill from './latest_trueskill';
 import Links from '../components/game/Links';
 import PlayerSelect from './components/PlayerSelect';
+import { useDispatch } from "react-redux";
+import { fetchOverall, fetchPlays, fetchRatings } from '../reducers/standings';
 
 export default () => {
+  const dispatch = useDispatch();
   const { ratings, overall } = useSelector(state => state.standingsReducer)
+
+  useEffect(() => {
+    dispatch(fetchOverall())
+    dispatch(fetchPlays())
+    dispatch(fetchRatings())
+  }, []);
 
   return (
     <Switch>

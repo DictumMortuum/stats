@@ -1,6 +1,18 @@
-import data from '../standings/plays.json';
-import ratings from '../standings/ratings.json';
-import overall from '../standings/overall.json';
+import { createAsyncThunk } from '@reduxjs/toolkit'
+
+const base = 'https://raw.githubusercontent.com/DictumMortuum/json-api/master'
+
+export const fetchPlays = createAsyncThunk('plays', async () => {
+  return await fetch(base + '/rest/v1/plays.json').then(res => res.json())
+})
+
+export const fetchRatings = createAsyncThunk('ratings', async () => {
+  return await fetch(base + '/rest/v1/ratings.json').then(res => res.json())
+})
+
+export const fetchOverall = createAsyncThunk('overall', async () => {
+  return await fetch(base + '/rest/v1/overall.json').then(res => res.json())
+})
 
 const getPositions = data => Math.max(...data.map(d => d.stats.length))
 
@@ -32,17 +44,16 @@ const dateSort = (a, b) => {
 export const reducer = (state = {}, action) => {
   switch (action.type) {
     case "INIT":
-      let sorted = data.sort(dateSort)
       return {
         ...state,
-        ratings,
-        overall,
-        positions: getPositions(data),
-        players: getPlayers(data),
+        ratings: [],
+        overall: [],
+        positions: getPositions([]),
+        players: getPlayers([]),
         player: "",
-        player_games: sorted,
-        data: sorted,
-        range: [0, data.length]
+        player_games: [],
+        data: [],
+        range: [0, 0]
       }
     case "RANGE":
       return {
@@ -65,6 +76,30 @@ export const reducer = (state = {}, action) => {
         player: action.player,
         player_games
       }
+    case "plays/fulfilled": {
+      let plays = action.payload;
+      let sorted = plays.sort(dateSort);
+      return {
+        ...state,
+        positions: getPositions(plays),
+        players: getPlayers(plays),
+        player_games: sorted,
+        data: sorted,
+        range: [0, plays.length]
+      }
+    }
+    case "ratings/fulfilled": {
+      return {
+        ...state,
+        ratings: action.payload,
+      }
+    }
+    case "overall/fulfilled": {
+      return {
+        ...state,
+        overall: action.payload,
+      }
+    }
     default:
       return state
   }

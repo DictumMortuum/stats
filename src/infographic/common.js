@@ -1,11 +1,9 @@
-import json from '../standings/plays.json';
-
-export const year = data => y => json.filter(d => {
+export const year = data => y => data.filter(d => {
   let date = new Date(d.date)
   return date.getYear() + 1900 === y
 })
 
-export const up_to_year = data => y => json.filter(d => {
+export const up_to_year = data => y => data.filter(d => {
   let date = new Date(d.date)
   return date.getYear() + 1900 <= y
 })
@@ -133,8 +131,6 @@ export const playsPerDay = json => {
 
     return day
   })
-
-  console.log(data)
 
   let rs = [];
 

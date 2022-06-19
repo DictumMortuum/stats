@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -6,8 +6,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
 import BarChart from './components/bar';
 import PieChart from './components/pie';
-import { connect } from 'react-redux';
 import { playsPerPlayer, playsPerMonth, playsPerDay, playsPerGame, playersPerPlay, year, sortPlayers } from './common';
+import { useDispatch } from "react-redux";
+import { useParams } from 'react-router-dom';
+import { fetchOverall, fetchPlays, fetchRatings } from '../reducers/standings';
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,10 +33,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const mapStateToProps = (state, props) => ({
-  ...state.standingsReducer,
-})
-
 const GraphItem = props => {
   const classes = useStyles();
   const { children } = props;
@@ -45,12 +44,14 @@ const GraphItem = props => {
   )
 }
 
-const infographic = props => {
-  const { data } = props;
-  const current_year = 2022;
+const Infographic = props => {
+  const { data } = useSelector(state => state.standingsReducer)
+  const classes = useStyles();
+  const dispatch = useDispatch();
+  const { raw_year }= useParams();
+  const current_year = parseInt(raw_year);
   const previous_year = current_year - 1;
   const next_year = current_year + 1;
-  const classes = useStyles();
   const games_previous_year = year(data)(previous_year)
   const games = year(data)(current_year)
   const perPlayer = playsPerPlayer(games)
@@ -58,6 +59,12 @@ const infographic = props => {
   const perDay = playsPerDay(games)
   const perGame = playsPerGame(games)
   const playerCountPerGame = playersPerPlay(games)
+
+  useEffect(() => {
+    dispatch(fetchOverall())
+    dispatch(fetchPlays())
+    dispatch(fetchRatings())
+  }, []);
 
   return (
     <Grid container className={classes.root}>
@@ -100,4 +107,4 @@ const infographic = props => {
   )
 }
 
-export default connect(mapStateToProps)(infographic);
+export default Infographic;
