@@ -6,11 +6,15 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
 import BarChart from './components/bar';
 import PieChart from './components/pie';
+import Button from '@material-ui/core/Button';
 import { playsPerPlayer, playsPerMonth, playsPerDay, playsPerGame, playersPerPlay, year, sortPlayers } from './common';
 import { useDispatch } from "react-redux";
 import { useParams } from 'react-router-dom';
 import { fetchOverall, fetchPlays, fetchRatings } from '../reducers/standings';
 import { useSelector } from 'react-redux';
+import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,10 +39,10 @@ const useStyles = makeStyles((theme) => ({
 
 const GraphItem = props => {
   const classes = useStyles();
-  const { children } = props;
+  const { children, xs=12, lg=6 } = props;
 
   return (
-    <Grid item xs={12} lg={6} className={classes.height}>
+    <Grid item xs={xs} lg={lg} className={classes.height}>
       {children}
     </Grid>
   )
@@ -72,6 +76,8 @@ const Infographic = props => {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h5" style={{ flexGrow: 1 }}>Απολογισμός επιτραπεζίων παιχνιδιών <span className={classes.color}>{current_year}</span></Typography>
+            <Button color="inherit" component={Link} to={`/review/${previous_year}`} startIcon={<ArrowLeftIcon />}>{previous_year}</Button>
+            <Button color="inherit" component={Link} to={`/review/${next_year}`} endIcon={<ArrowRightIcon />}>{next_year}</Button>
           </Toolbar>
         </AppBar>
       </Grid>
@@ -90,13 +96,13 @@ const Infographic = props => {
             <BarChart title="Παιχνίδια ανά παίχτη" data={perPlayer.filter(d => d.plays > 3)} dataKeys={[{ dataKey: "plays", color: "#4c566a" }]} />
           </GraphItem>
           <GraphItem>
-            <BarChart title="Αριθμός διαφορετικών παιχνιδιών" data={perGame.slice(0, 5)} dataKeys={[{ dataKey: "plays", color: "#a3be8c" }]} />
-          </GraphItem>
-          <GraphItem>
             <PieChart title="Αριθμός παιχτών ανά παιχνίδι" data={playerCountPerGame} dataKeys={[{ dataKey: "size", color: ["#bf616a", "#d08770", "#b48ead", "#4c566a", "#81a1c1"] }]} />
           </GraphItem>
-          <GraphItem>
-            <BarChart title="Δημοφιλή παιχνίδια" data={perGame.sort(sortPlayers).filter(d => d.players > 6)} dataKeys={[{ dataKey: "players", color: "#b48ead" }]} />
+          <GraphItem lg={12}>
+            <BarChart title="Αριθμός διαφορετικών παιχνιδιών" data={perGame.slice(0, 5)} dataKeys={[{ dataKey: "plays", color: "#a3be8c" }]} />
+          </GraphItem>
+          <GraphItem lg={12}>
+            <BarChart title="Δημοφιλή παιχνίδια" data={perGame.sort(sortPlayers).slice(0, 5)} dataKeys={[{ dataKey: "players", color: "#b48ead" }]} />
           </GraphItem>
           <Grid item xs={12} className={classes.p}>
             <Typography variant="h5" gutterBottom>Ευχαριστούμε για τα παιχνίδια! Τα λέμε το {next_year}!</Typography>

@@ -102,7 +102,7 @@ ReactDOM.render(
             <StandingsContent />
           </Game>
         </Route>
-        <Route path="/boardgamereview/:raw_year">
+        <Route path="/review/:raw_year">
           <Infographic />
         </Route>
         <Route path="/prices">
