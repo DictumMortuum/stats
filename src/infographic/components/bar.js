@@ -4,6 +4,7 @@ import { Typography } from '@material-ui/core';
 import classes from './graph.css';
 
 export default props => {
+  const { desc } = props;
   let axis_x;
   let axis_y;
 
@@ -17,7 +18,10 @@ export default props => {
 
   return (
     <div style={{ width: '95%', height: '95%' }}>
-      <Typography variant="h4" gutterBottom={true}>{props.title || ""}</Typography>
+      <Typography variant="h4" gutterBottom>{props.title || ""}</Typography>
+      { desc && <Typography gutterBottom>
+        {desc}
+      </Typography>}
       <ResponsiveContainer width="95%" height="85%">
         <BarChart layout={props.layout || "horizontal"} className={classes.wrapper} data={props.data}>
           {props.dataKeys.map(k => <Bar key={k.dataKey} dataKey={k.dataKey} fill={k.color} stackId={k.stack || null} />)}
