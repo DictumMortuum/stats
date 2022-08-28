@@ -16,6 +16,7 @@ import { reducer as standingsReducer } from './reducers/standings';
 import { reducer as configReducer } from './reducers/config';
 import { reducer as pricesReducer } from './reducers/prices';
 import Infographic from './infographic/year';
+import LastPlayed from './infographic/lastplayed';
 import Prices from './prices';
 import SecretSanta from './secretsanta';
 import TitlebarGridList from './Grid';
@@ -104,6 +105,9 @@ ReactDOM.render(
         </Route>
         <Route path="/review/:raw_year">
           <Infographic />
+        </Route>
+        <Route path="/lastplayed">
+          <LastPlayed />
         </Route>
         <Route path="/prices">
           <Prices />
