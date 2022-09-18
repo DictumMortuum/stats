@@ -98,8 +98,8 @@ ReactDOM.render(
             <DuelContent />
           </Game>
         </Route>
-        <Route path="/standings">
-          <Game basename="standings" linkObj={<StandingsLinks />} rightNav={StandingsRight}>
+        <Route path="/standingshidden">
+          <Game basename="standingshidden" linkObj={<StandingsLinks />} rightNav={StandingsRight}>
             <StandingsContent />
           </Game>
         </Route>
