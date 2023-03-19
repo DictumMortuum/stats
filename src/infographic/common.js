@@ -8,28 +8,56 @@ export const up_to_year = data => y => data.filter(d => {
   return date.getYear() + 1900 <= y
 })
 
+export const filterGamesOnPlayers = (players, data) => data.filter(d => {
+  let ids = d.stats.map(d => d.player);
+  console.log(ids);
+
+  for(let i = 0; i < ids.length; i++) {
+    if(!players.includes(ids[i])) {
+      return false
+    }
+  }
+
+  return true
+})
+
 export const sortPlayers = (a, b) => {
-  return a.players < b.players
+  return b.players - a.players
 }
 
 export const sortPlays = (a, b) => {
-  return a.plays < b.plays
+  return b.plays - a.plays
 }
 
 export const sortSize = (a, b) => {
-  return a.size < b.size
+  return a.size - b.size
 }
 
 export const sortName = (a, b) => {
-  return a.name > b.name
+  return b.name - a.name
 }
 
 export const sortTag = tag => (a, b) => {
-  return a[tag] > b[tag]
+  return b[tag] - a[tag]
 }
 
 export const sortTagDesc = tag => (a, b) => {
-  return a[tag] < b[tag]
+  return a[tag] - b[tag]
+}
+
+function onlyUnique(value, index, self) {
+  return self.indexOf(value) === index;
+}
+
+export const getPlayers = json => {
+  let rs = [];
+
+  json.map(d => d.stats.map(stats => {
+    rs.push(stats.player);
+    return stats;
+  }));
+
+  return rs.filter(onlyUnique);
 }
 
 export const playsPerPlayer = json => {
@@ -40,8 +68,8 @@ export const playsPerPlayer = json => {
     return stats
   }))
 
-  delete data["Dimitris"]
-  delete data["Theoni"]
+  // delete data["Dimitris"]
+  // delete data["Theoni"]
 
   let rs = [];
 

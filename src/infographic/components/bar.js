@@ -7,13 +7,16 @@ export default props => {
   const { desc } = props;
   let axis_x;
   let axis_y;
+  let margin;
 
   if (props.layout === "vertical") {
     axis_x = <YAxis type="category" dataKey={props.name || "name"} />
     axis_y = <XAxis type="number" />
+    margin = { left: 80 }
   } else {
     axis_x = <XAxis dataKey={props.name || "name"} />
     axis_y = <YAxis type="number" />
+    margin = {}
   }
 
   return (
@@ -23,7 +26,7 @@ export default props => {
         {desc}
       </Typography>}
       <ResponsiveContainer width="95%" height="85%">
-        <BarChart layout={props.layout || "horizontal"} className={classes.wrapper} data={props.data}>
+        <BarChart layout={props.layout || "horizontal"} className={classes.wrapper} data={props.data} margin={margin}>
           {props.dataKeys.map(k => <Bar key={k.dataKey} dataKey={k.dataKey} fill={k.color} stackId={k.stack || null} />)}
           {axis_x}
           {axis_y}
